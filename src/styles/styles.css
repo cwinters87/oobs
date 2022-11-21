@@ -1,0 +1,13 @@
+:root {
+    --primary: #3A7492;
+    --secondary: #1D1B1B;
+    --tertiary: #2f2f35;
+    --primary-font-color: #ffff;
+    --font: 'Roboto', sans-serif;
+  }
+
+.layout-container {
+    font-family: var(--font);
+    color: var(--primary-font-color);
+    background-color: var(--secondary);
+}

@@ -1,0 +1,94 @@
+.navBar a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: var(--primary);
+}
+
+.navBar a:active {
+    color: var(--primary);
+}
+
+.dropdownMenu > div {
+    padding: 0;
+    border-style: none;
+    border-width: 3px;
+    background-color: var(--secondary); 
+    border-radius: 20px;
+}
+
+.dropDownProductContainer > div > a:hover {
+    background-color: var(--secondary);
+}
+
+.productSubContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.productSubContainer > a:hover {
+    border-radius: 20px;
+}
+
+.productItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.productItem:hover {
+    border-radius: 20px;
+    background-color: var(--tertiary);
+}
+
+.productIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productTextDiv {
+    width: 250px;
+}
+
+.productTitle {
+    font-weight: bold;
+}
+
+.productDescription {
+    font-size: 12px;
+}
+
+.button {
+    border: none;
+    background-color: var(--primary);
+}
+
+.button:hover {
+    background-color: var(--primary);
+    filter: brightness(90%);
+}
+
+.offCanvasBody {
+    font-family: var(--font);
+    color: var(--primary-font-color);
+    background-color: var(--secondary);
+}
+
+.offCanvasBody a {
+    text-decoration: none;
+    color: var(--primary-font-color)
+}
+
+@media screen and (max-width: 991px) {
+    .productSubContainer {
+        flex-direction: column;
+    }
+}
+
