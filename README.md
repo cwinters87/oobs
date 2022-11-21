@@ -6,7 +6,7 @@
     node --version
     ```
 
-    [GIT installation guide](https://www.atlassian.com/git/tutorials/install-git#windows)
+    [Node.js installation guide](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs)
 
 2.  **Make Sure you have GIT install on your system.**
 
