@@ -47,7 +47,7 @@
 
 6.  **Open the code and start developing!**
 
-    Your site is now running at http://localhost:8000!
+    Your site is now running at http://localhost:8000
 
     Edit `src/pages/index.js` to see your site update in real-time!
 

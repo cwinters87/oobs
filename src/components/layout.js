@@ -2,6 +2,7 @@ import React from "react"
 import NavigationBar from "./navbar"
 import Footer from "./footer"
 import Container from 'react-bootstrap/Container'
+import * as styles from './layout.module.css'
 
 
 export default function Layout({ children }) {
@@ -9,9 +10,9 @@ export default function Layout({ children }) {
     <div className="layout-container">
       <Container>
         <NavigationBar/>
-          <Container fluid>
-            {children}
-          </Container>
+            <div className={styles.siteContainer}>
+              {children}
+            </div>
         <Footer/>
       </Container>
     </div>
