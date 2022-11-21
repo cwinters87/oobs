@@ -1,30 +1,57 @@
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Make sure to have Node.js installed (v18 or newer)**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    node --version
     ```
 
-2.  **Start developing.**
+    [GIT installation guide](https://www.atlassian.com/git/tutorials/install-git#windows)
 
-    Navigate into your new site’s directory and start it up.
+2.  **Make Sure you have GIT install on your system.**
+
+    ```shell
+    git --version
+    ```
+
+    [GIT installation guide](https://www.atlassian.com/git/tutorials/install-git#windows)
+
+3.  **Install Gatsby CLI on your device (v5 or newer).**
+
+    ```shell
+    npm install -g gatsby-cli
+    ```
+
+    Check version.
+
+    ```shell
+    gatsby --version
+    ```
+
+4.  **Install the dependencies.**
+
+    Navigate into the website directory and install dependencies.
 
     ```shell
     cd tasksuite-website/
+    npm install
+    ```
+
+5.  **Start developing.**
+
+    Start it up.
+
+    ```shell
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+6.  **Open the code and start developing!**
 
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+7.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
