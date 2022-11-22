@@ -1,4 +1,5 @@
 .container {
+    margin-bottom: 4%;
     display: flex;
     gap: 20px;
 }
@@ -12,10 +13,13 @@
 }
 
 .header {
-    /* color: var(--primary); */
     color: white;
     font-size: 40px;
     font-weight: bold;
+}
+
+.header > span {
+    color: var(--primary);
 }
 
 .button {

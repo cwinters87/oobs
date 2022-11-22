@@ -22,7 +22,7 @@ const Footer = () => {
         <div className={styles.group}>
           <div className={styles.contactPositionContianer}>
             <div className={styles.contactContainer}>
-              <div>Contact Info</div>
+              <div className={styles.contactInfo}>Contact Info</div>
               <div className={styles.item}>
                 <div><img src={EmailIcon} alt="email icon"/></div>
                 <div className={styles.detail}>Email: info@tasksuite.com</div>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.group}>
-          <div className={styles.socialsPositionContianer}>
+          <div className={styles.socialsPositionContainer}>
             <div className={styles.socialsContainer}>
               <div className={styles.socialsHeader}>Connect with us</div>
               <div className={styles.socials}>

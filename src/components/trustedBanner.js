@@ -1,32 +1,45 @@
 import * as React from 'react'
-import Button from 'react-bootstrap/Button'
+import CountUp from 'react-countup'
 import * as styles from './trustedBanner.module.css'
-// import MainGif from '../images/hero/hero-main.gif'
+import Logo from '../images/trustedBanner/tasksuite-icon.svg'
 
 
 const TrustedBanner = () => {
   return (
     <div class={styles.container}>
-      <div class={styles.icon}>
-        <img src="/public/assets/svg/b-tasksuite-icon.svg" onload="SVGInject(this)" />
+      <div className={styles.titleContainer}>
+        <div class={styles.icon}>
+          <img src={Logo} alt='tasksuite logo'/>
+        </div>      
+        <h3 class={styles.header}>Trusted by Lenders<br />Worldwide</h3>
       </div>
-      <div class={styles.title}>
-        <h3 class={styles.header}>Trusted by Businesses<br />Worldwide</h3>
+
+
+      
+      <div class={styles.itemsContainer}>
+        <div  class={styles.items}>
+          
+
+          <div class={styles.item}>
+            <div class={styles.count}><CountUp duration={1} delay={.5} end={500} enableScrollSpy/>%</div>
+            <div class={styles.text}>Increase in Originations</div>
+          </div>
+
+          <div class={styles.item}>
+            <div class={styles.count}><CountUp duration={1} delay={.5} end={30} enableScrollSpy />%</div>
+            <div class={styles.text}>Reduction in Software Cost</div>
+          </div>
+
+          <div class={styles.item}>
+            <div class={styles.count}><CountUp duration={1} delay={.5} end={5000} enableScrollSpy />+</div>
+            <div class={styles.text}>Users</div>
+          </div>
+
+
+        </div>
       </div>
-      <div class={styles.items}>
-        <div class={styles.item}>
-          <div class={styles.count}>500%</div>
-          <div class={styles.text}>Increase in Originations</div>
-        </div>
-        <div class={styles.item}>
-          <div class={styles.count}>30%</div>
-          <div class={styles.text}>Reduction in Software Cost</div>
-        </div>
-        <div class={styles.item}>
-          <div class={styles.count}>5,000+</div>
-          <div class={styles.text}>Users</div>
-        </div>
-      </div>
+      
+      
     </div>
   )
 }

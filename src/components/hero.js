@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div class={styles.container}>
       <div class={styles.textContainer}>
-        <h1 class={styles.header}>Loan Management, Origination, Servicing, and Credit Software</h1>
+        <h1 class={styles.header}><span>Loan</span> Management, Origination, Servicing, and Credit <span>Software</span></h1>
         <p>TaskSuite combines 4 powerful systems into a single product, enabling lenders to streamline their operations.</p>
         <div className={styles.buttonContainer}>
           <Button className={styles.button}>Schedule a Demo</Button>
