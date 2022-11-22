@@ -42,7 +42,7 @@
     Start it up.
 
     ```shell
-    npm run develop
+    gatsby develop
     ```
 
 6.  **Open the code and start developing!**
