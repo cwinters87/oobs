@@ -3,12 +3,11 @@ import CountUp from 'react-countup'
 import * as styles from './trustedBanner.module.css'
 import Logo from '../images/trustedBanner/tasksuite-icon.svg'
 
-
 const TrustedBanner = () => {
   return (
     <div class={styles.container}>
       <div className={styles.titleContainer}>
-        <div class={styles.icon}>
+        <div>
           <img src={Logo} alt='tasksuite logo'/>
         </div>      
         <h3 class={styles.header}>Trusted by Lenders<br />Worldwide</h3>

@@ -87,27 +87,15 @@
         display: flex;
         justify-content: flex-start;
     }
-}
-
-@media screen and (max-width: 991px) {
     .group {
         width: 60%;
     }
-}
-
-@media screen and (max-width: 991px) {
     .contactContainer {
         padding-left: 0;
     }
-}
-
-@media screen and (max-width: 991px) {
     .socialsHeader {
         padding-left: 0;
     }
-}
-
-@media screen and (max-width: 991px) {
     .socials {
         position: relative;
         right: 10px;
@@ -138,6 +126,3 @@
         width: 100%;
     }
 }
-
-
-
