@@ -9,8 +9,8 @@ const LoanCard = () => {
             <div className={styles.imgContainer}><img src={LoanSuiteGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Loan Suite</h1>
-                <p className={styles.subTitle}>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book</p>
-                <div className={styles.bulletContainer}>
+                <p>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
+                <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={checkMark} alt='checkmark' /></div>
                         <div className={styles.text}>Fully customizable to any loan product</div>
