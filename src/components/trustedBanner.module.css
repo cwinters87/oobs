@@ -42,7 +42,6 @@
 }
 
 .count {
-    /* color: var(--primary); */
     height: 60%;
     display: flex;
     align-items: center;

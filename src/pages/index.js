@@ -4,14 +4,16 @@ import Layout from "../components/layout"
 import Hero from '../components/hero'
 import TrustedBanner from '../components/trustedBanner'
 import ManageGrowCard from '../components/manageGrowCard'
+import LoanCard from '../components/loanCard'
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout>
-      <Hero/>
-      <TrustedBanner/>
-      <ManageGrowCard/>
+    <Layout >
+      <Hero />
+      <TrustedBanner />
+      <ManageGrowCard />
+      <LoanCard />
     </Layout>
   )
 }
