@@ -9,11 +9,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    width: 50%;
+    width: 60%;
 }
 
 .header {
-    color: white;
+    color: var(--primary-font-color);
     font-size: 40px;
     font-weight: bold;
 }
@@ -34,7 +34,7 @@
 }
 
 .imgContainer {
-    width: 50%;
+    width: 40%;
 }
 
 .imgContainer > img {
