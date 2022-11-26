@@ -29,4 +29,5 @@ const LoanCard = () => {
     )
 }
 
+
 export default LoanCard
