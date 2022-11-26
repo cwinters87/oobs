@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Offcanvas from 'react-bootstrap/Offcanvas'
-import * as styles from "./navBar.module.css"
+import * as styles from "./navbar.module.css"
 import Logo from '../images/navbar/nav-tasksuite-logo.svg'
 import LoanIcon from '../images/navbar/nav-taskloan-icon.svg'
 import ServiceIcon from '../images/navbar/nav-service-icon.svg'
