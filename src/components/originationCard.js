@@ -1,14 +1,14 @@
 import * as React from 'react'
-import * as styles from './loanCard.module.css'
+import * as styles from './originationCard.module.css'
 import LoanSuiteGif from '../images/loanCard/loan-suite.gif'
 import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
-const LoanCard = () => {
+const OriginationCard = () => {
   return (
         <div className={styles.container}>
             <div className={styles.imgContainer}><img src={LoanSuiteGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Loan Suite</h1>
+                <h1 className={styles.title}>Origination Suite</h1>
                 <p>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
                 <div>
                     <div className={styles.bullet}>
@@ -29,4 +29,4 @@ const LoanCard = () => {
     )
 }
 
-export default LoanCard
+export default OriginationCard

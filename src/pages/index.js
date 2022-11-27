@@ -5,6 +5,9 @@ import Hero from '../components/hero'
 import TrustedBanner from '../components/trustedBanner'
 import ManageGrowCard from '../components/manageGrowCard'
 import LoanCard from '../components/loanCard'
+import OriginationCard from '../components/originationCard'
+import ServicingCard from '../components/servicingCard'
+import CreditAiCard from '../components/creditAiCard'
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -14,6 +17,9 @@ const IndexPage = () => {
       <TrustedBanner />
       <ManageGrowCard />
       <LoanCard />
+      <OriginationCard />
+      <ServicingCard />
+      <CreditAiCard />
     </Layout>
   )
 }

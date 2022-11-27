@@ -1,5 +1,5 @@
 import React from "react"
-import NavigationBar from "./navbar.js"
+import NavigationBar from "./navbar"
 import Footer from "./footer"
 import Container from 'react-bootstrap/Container'
 import * as styles from './layout.module.css'
