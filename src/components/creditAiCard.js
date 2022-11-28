@@ -1,27 +1,27 @@
 import * as React from 'react'
 import * as styles from './creditAiCard.module.css'
-import LoanSuiteGif from '../images/loanCard/loan-suite.gif'
+import CreditAiGif from '../images/creditAiCard/creditai-suite.gif'
 import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
 const CreditCard = () => {
   return (
         <div className={styles.container}>
-            <div className={styles.imgContainer}><img src={LoanSuiteGif} alt='pie chart gif' /></div>
+            <div className={styles.imgContainer}><img src={CreditAiGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Credit AI Suite</h1>
-                <p>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
+                <p>Work with us to implement your business specific credit engine or model.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Fully customizable to any loan product</div>
+                        <div className={styles.text}>Python based backend</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>API enabled</div>
+                        <div className={styles.text}>Compatible with Decision Rules, Machine learning engines, Score Based or Neural Nets</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Powerful integrations</div>
+                        <div className={styles.text}>All major US Credit Bureaus supported</div>
                     </div>
                 </div>   
             </div>
