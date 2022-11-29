@@ -8,8 +8,8 @@ import LoanCard from '../components/loanCard'
 import OriginationCard from '../components/originationCard'
 import ServicingCard from '../components/servicingCard'
 import CreditAiCard from '../components/creditAiCard'
+import TestimonialCard from '../components/testimonialCard'
 
-// Step 2: Define your component
 const IndexPage = () => {
   return (
     <Layout >
@@ -20,6 +20,7 @@ const IndexPage = () => {
       <OriginationCard />
       <ServicingCard />
       <CreditAiCard />
+      <TestimonialCard />
     </Layout>
   )
 }

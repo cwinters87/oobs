@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.textContainer {
+    width: 50%;
+}
+
+.carouselContainer {
+    width: 50%;
+}

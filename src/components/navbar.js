@@ -107,7 +107,7 @@ const NavigationBar = () => {
                   </NavDropdown>
                   {/* Need to fix the nested <a>'s */}
                   <Nav.Link ><Link to="/about">About</Link></Nav.Link>
-                  <Nav.Link ><Link to="/partners">Partners</Link></Nav.Link>
+                  {/* <Nav.Link ><Link to="/partners">Partners</Link></Nav.Link> */}
                   <Nav.Link ><Link to="/contact">Contact</Link></Nav.Link>
                   <Button className={styles.button}>Schedule a Demo</Button>
                 </Nav>
