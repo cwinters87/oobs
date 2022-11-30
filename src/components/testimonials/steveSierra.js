@@ -16,10 +16,13 @@ const SteveSierraTestimony = () => {
                 </div>
             </div>
             <div className={styles.divider}></div>       
-            <div className={styles.body} >TaskSuite’s talented development team has been responsive and helped our business provide
-                custom solutions for our clients. An affordable alternative to SalesForce, TaskSuite is simple easy to use
-                and
-                powerful. We liked the tool and service so much, we are using TaskSuite as our own CRM tool.
+            <div className={styles.body} >
+                <p>
+                    TaskSuite’s talented development team has been responsive and helped our business provide
+                    custom solutions for our clients. An affordable alternative to SalesForce, TaskSuite is simple easy to use
+                    and
+                    powerful. We liked the tool and service so much, we are using TaskSuite as our own CRM tool.
+                </p>
             </div>
             <div className={styles.quote}><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>

@@ -16,9 +16,12 @@ const TomSultenfussTestimony = () => {
                 </div>
             </div>
             <div className={styles.divider}></div>
-            <div className={styles.body} >We've been working with the TaskSuite team for over a year. They provide our contact center
-                with the best multi-channel communication tools in the industry at very competitive pricing. I am impressed
-                with their product and their capabilities.
+            <div className={styles.body} >
+                <p>
+                    We've been working with the TaskSuite team for over a year. They provide our contact center
+                    with the best multi-channel communication tools in the industry at very competitive pricing. I am impressed
+                    with their product and their capabilities.
+                </p>                
             </div>
             <div className={styles.quote} ><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>

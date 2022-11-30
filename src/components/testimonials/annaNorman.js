@@ -16,11 +16,14 @@ const AnnaNormanTestimony = () => {
         </div>
       </div>
       <div className={styles.divider}></div>
-      <div className={styles.body} >We’ve worked with TaskSuite to develop a customized product that is tailored to our exact
+      <div className={styles.body} >
+        <p>
+          We’ve worked with TaskSuite to develop a customized product that is tailored to our exact
           business needs. They’ve done this seamlessly – and provide ongoing support and valuable insight as to how we
           can continue to utilize these tools to increase productivity and operate our business efficiently. I’ve
           implemented 3 separate CRMs throughout my 15+ year career and this one is by far the best experience I have
           had to date!
+        </p>
       </div>
       <div className={styles.quote} ><img src={QuoteIcon} alt='quotation icon'/></div>
     </div>

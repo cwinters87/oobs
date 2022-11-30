@@ -1,8 +1,9 @@
 .review {
     background-color: var(--tertiary);
-    width: 310px;
-    display: grid;
-    grid-template-rows: 100px auto auto;
+    height: 100%;
+    width: 50%;
+    /* display: grid; */
+    /* grid-template-rows: 100px auto auto; */
     padding: 20px;
     position: relative;
     border-radius: 10px;
@@ -13,6 +14,7 @@
     display: grid;
     grid-template-columns: 60px 1fr;
     gap: 10px;
+    height: 22%;
 }
 
 .image {
@@ -49,12 +51,14 @@
 }
 
 .divider {
-    height: 2px;
+    height: .5%;
     background-color: var(--light-background-color);
 }
 
 .body {
-    padding: 10px;
+    height: 77.5%;
+
+    padding: 25px 10px;
     font-size: 15px;
 }
 
