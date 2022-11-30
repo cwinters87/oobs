@@ -1,0 +1,65 @@
+.review {
+    background-color: var(--tertiary);
+    width: 310px;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+}
+
+.image {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.image > img {
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.name:hover {
+    color: var(--primary);
+}
+
+.position {
+    font-size: 15px;
+}
+
+.divider {
+    height: 2px;
+    background-color: var(--light-background-color);
+}
+
+.body {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.quote {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
