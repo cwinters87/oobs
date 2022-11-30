@@ -2,8 +2,6 @@
     background-color: var(--tertiary);
     height: 100%;
     width: 50%;
-    /* display: grid; */
-    /* grid-template-rows: 100px auto auto; */
     padding: 20px;
     position: relative;
     border-radius: 10px;
@@ -56,13 +54,75 @@
 }
 
 .body {
-    height: 77.5%;
+    height: 72%;
     padding: 25px 10px;
-    font-size: 15px;
+    font-size:.92rem;
+    max-height: 100%;
+    /* overflow: auto; */
 }
 
 .quote {
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+@media screen and (max-width: 1399px) {
+    .name {
+        font-size: .82rem;    
+    }
+    .position {
+        font-size: .82rem;
+    }
+    .body {
+        font-size: .82rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .name {
+        font-size: .85rem;    
+    }
+    .position {
+        font-size: .85rem;
+    }
+    .body {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .name {
+        font-size: .85rem;    
+    }
+    .position {
+        font-size: .85rem;
+    }
+    .body {
+        font-size: .72rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .name {
+        font-size: .6rem;    
+    }
+    .position {
+        font-size: .6rem;
+    }
+    .body {
+        font-size: .57rem;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .name {
+        font-size: .57rem;    
+    }
+    .position {
+        font-size: .55rem;
+    }
+    .body {
+        font-size: .57rem;
+    }
 }

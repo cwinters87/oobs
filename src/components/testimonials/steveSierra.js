@@ -8,7 +8,7 @@ const SteveSierraTestimony = () => {
         <div className={styles.review} >
             <div className={styles.header} >
                 <div className={styles.image} >
-                    <img src={SteveImg} alt='picture of Steve Sierra' />
+                    <img src={SteveImg} alt='Steve Sierra' />
                 </div>
                 <div className={styles.details} >
                     <a className={styles.name} href="https://www.linkedin.com/in/stevesierra/" target="_blank" rel="noreferrer">Steve Sierra</a>
@@ -17,12 +17,7 @@ const SteveSierraTestimony = () => {
             </div>
             <div className={styles.divider}></div>       
             <div className={styles.body} >
-                <p>
-                    TaskSuite’s talented development team has been responsive and helped our business provide
-                    custom solutions for our clients. An affordable alternative to SalesForce, TaskSuite is simple easy to use
-                    and
-                    powerful. We liked the tool and service so much, we are using TaskSuite as our own CRM tool.
-                </p>
+                <p>TaskSuite's talented development team has been responsive and helped our business provide custom solutions for our clients. TaskSuite is simple easy to use and powerful. We liked the tool and service so much.</p>
             </div>
             <div className={styles.quote}><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>

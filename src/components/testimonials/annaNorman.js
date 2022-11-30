@@ -8,11 +8,11 @@ const AnnaNormanTestimony = () => {
     <div className={styles.review} >
       <div className={styles.header} >
         <div className={styles.image} >
-          <img src={AnnaImg} alt='picture of Anna Norman' />
+          <img src={AnnaImg} alt='Anna Norman' />
         </div>
         <div className={styles.details} >
             <a className={styles.name} href="https://www.linkedin.com/in/aspradnorman/" target="_blank" rel="noreferrer">Anna Norman</a>
-          <div className={styles.position} >Director of Business Operations at GetBackd</div>
+          <div className={styles.position} >Director of Business Operations at Backd</div>
         </div>
       </div>
       <div className={styles.divider}></div>

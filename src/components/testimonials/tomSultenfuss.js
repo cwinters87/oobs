@@ -8,7 +8,7 @@ const TomSultenfussTestimony = () => {
         <div className={styles.review} >
             <div className={styles.header} >
                 <div className={styles.image} >
-                    <img src={TomImg} alt='picture of Tom Sultenfuss' />
+                    <img src={TomImg} alt='Tom Sultenfuss' />
                 </div>
                 <div className={styles.details} >
                     <a className={styles.name} href="https://www.linkedin.com/in/tomsultenfuss/" target="_blank" rel="noreferrer">Tom Sultenfuss</a>
@@ -17,11 +17,7 @@ const TomSultenfussTestimony = () => {
             </div>
             <div className={styles.divider}></div>
             <div className={styles.body} >
-                <p>
-                    We've been working with the TaskSuite team for over a year. They provide our contact center
-                    with the best multi-channel communication tools in the industry at very competitive pricing. I am impressed
-                    with their product and their capabilities.
-                </p>                
+                <p>We've been working with the TaskSuite team for over three years. They provide our business with the best tools in the industry. I am impressed with their product and their capabilities.</p>                
             </div>
             <div className={styles.quote} ><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>
