@@ -3,19 +3,14 @@ import Button from 'react-bootstrap/Button'
 import * as styles from './futureProofCard.module.css'
 import planeIcon from '../images/futureProofCard/fp-plane.svg'
 import taskRobotGif from '../images/futureProofCard/Tasksuite - Dance.gif'
-import backgroundFPBottom from '../images/futureProofCard/fp-bg.svg'
-import backgroundFPLeft from '../images/futureProofCard/fp-bg-left.svg'
-import backgroundFPRight from '../images/futureProofCard/fp-bg-right.svg'
-
-
-
 
 const FutureProofCard = () => {
+
   return (
 
     <div className={styles.container}>
       {/* <div class="main"> */}
-        <div className={styles.card}>
+        <div className={styles.card} >
           <div className={styles.plane} >
             <img src={planeIcon} alt='paper airplane' />
           </div>
