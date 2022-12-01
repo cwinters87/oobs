@@ -38,8 +38,10 @@
     justify-content: center;
 }
 
-.left, .right {
-    cursor: pointer;
+.button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
 }
 
 .testimonials {

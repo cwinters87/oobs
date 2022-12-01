@@ -9,6 +9,23 @@ import * as styles from './testimonialCard.module.css'
 const TestimonialCard = () => {
 
     const [activeButton, setActiveButton] = useState(false);
+
+    // Transistion effect
+    const transistion = () => {
+        document.getElementById('transistion').animate([
+            {left: '0', width: '0'},
+            {left: '0', width: '100%'}
+            ], {
+            duration: 250,
+            easing: 'ease'
+            })    
+    };
+
+    // Button Cursor
+    const pointerStyle = {
+        cursor: 'pointer',
+      };
+
     
     return (
         <div className={styles.container}>
@@ -34,35 +51,43 @@ const TestimonialCard = () => {
                 <div className={styles.controls}>
                     {!activeButton ? (
                     <>
-                        <div className={styles.left} ><img src={ActiveIcon} alt='active circle' />
+                        <div style={pointerStyle} ><img src={ActiveIcon} alt='active circle' />
                         </div>
-                        <div className={styles.right} ><img src={InactiveIcon} alt='inactive circle' onClick={function () {
-                            setActiveButton(true)
-                            document.getElementById('transistion').animate([
-                                {left: '0', width: '0'},
-                                {left: '0', width: '100%'}
-                                ], {
-                                duration: 250,
-                                easing: 'ease'
-                                })
-                            }} />
+                        <div style={pointerStyle} >
+                            <button
+                                className={styles.button}
+                                onKeyDown={function(){
+                                    setActiveButton(true)
+                                    transistion()
+                                    }}
+                                onClick={function(){
+                                    setActiveButton(true)
+                                    transistion()
+                                    }}
+                                >
+                                <img src={InactiveIcon} alt='inactive circle'/>
+                            </button>
                         </div>
                     </>
                     ) : (
                     <>
-                        <div className={styles.left} ><img src={InactiveIcon} alt='inactive circle' onClick={function () {
+                        <div style={pointerStyle} >
+                            <button
+                                className={styles.button}
+                                onKeyDown={function(){
+                                    transistion()
+                                    setActiveButton(false)
+                                }} 
+                                onClick={function() {
+                                    transistion()
+                                    setActiveButton(false)
+                                }}>
+                                <img src={InactiveIcon} alt='inactive circle' />
+                            </button>
                             
-                            document.getElementById('transistion').animate([
-                                {left: '0', width: '0'},
-                                {left: '0', width: '100%'}
-                                ], {
-                                duration: 250,
-                                easing: 'ease'
-                                })
-                                setActiveButton(false)
-                            }}/>
                         </div>
-                        <div className={styles.right} ><img src={ActiveIcon} alt='active circle' />
+                        <div style={pointerStyle} >
+                            <img src={ActiveIcon} alt='active circle' />
                         </div>
                     </>
                     )}
