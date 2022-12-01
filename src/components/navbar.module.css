@@ -65,16 +65,6 @@
     font-size: 12px;
 }
 
-.button {
-    border: none;
-    background-color: var(--primary);
-}
-
-.button:hover {
-    background-color: var(--primary);
-    filter: brightness(90%);
-}
-
 .offCanvasBody {
     font-family: var(--font);
     color: var(--primary-font-color);

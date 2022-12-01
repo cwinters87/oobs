@@ -1,0 +1,25 @@
+.button:hover {
+    background-color: var(--primary);
+    filter: brightness(90%);
+}
+
+.button {
+    border: none;
+    background-color: var(--primary);
+    width: fit-content;
+}
+
+.header {
+    height: 25px;
+    width: 100%;
+    display: flex;
+}
+
+.headerLogo {
+    
+}
+
+.headerLogo > img {
+    height: auto;
+    width: 100%;
+}

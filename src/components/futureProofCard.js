@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Button from 'react-bootstrap/Button'
+import DemoButton from './demoButtonModal'
 import * as styles from './futureProofCard.module.css'
 import planeIcon from '../images/futureProofCard/fp-plane.svg'
 import taskRobotGif from '../images/futureProofCard/Tasksuite - Dance.gif'
@@ -7,9 +7,7 @@ import taskRobotGif from '../images/futureProofCard/Tasksuite - Dance.gif'
 const FutureProofCard = () => {
 
   return (
-
     <div className={styles.container}>
-      {/* <div class="main"> */}
         <div className={styles.card} >
           <div className={styles.plane} >
             <img src={planeIcon} alt='paper airplane' />
@@ -19,15 +17,14 @@ const FutureProofCard = () => {
             processes with TaskSuite—give us a call. We’re happy to answer any questions you may have about getting started
             with our platform.</div>
           <div className={styles.actionContainer}>
-            <Button className={styles.button}>Schedule a Demo</Button>
+            {/* <Button className={styles.button}>Schedule a Demo</Button> */}
+            <DemoButton></DemoButton>
             <div className={styles.gifContainer}>
               <img className={styles.robotGif} src={taskRobotGif} alt='dancing robot'/>
             </div>
           </div>
         </div>
-      {/* </div> */}
     </div>
-    
   )
 }
 

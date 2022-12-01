@@ -49,15 +49,8 @@
     width: 40%;
 }
 
-.button {
+.actionContainer > button {
     width: 50%;
-    border: none;
-    background-color: var(--primary);
-}
-
-.button:hover {
-    background-color: var(--primary);
-    filter: brightness(90%);
 }
 
 .gifContainer {
@@ -82,19 +75,19 @@
 }
 
 @media screen and (max-width: 445px) {
-    .button {
+    .actionContainer > button {
         font-size: .9rem;
     }
 }
 
 @media screen and (max-width: 414px) {
-    .button {
+    .actionContainer > button {
         font-size: .8rem;
     }
 }
 
 @media screen and (max-width: 383px) {
-    .button {
+    .actionContainer > button {
         font-size: .7rem;
     }
 }

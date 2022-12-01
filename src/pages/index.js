@@ -11,6 +11,7 @@ import CreditAiCard from '../components/creditAiCard'
 import TestimonialCard from '../components/testimonialCard'
 import FutureProofCard from '../components/futureProofCard'
 
+
 const IndexPage = () => {
   return (
     <Layout >
