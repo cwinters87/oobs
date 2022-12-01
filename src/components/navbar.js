@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Offcanvas from 'react-bootstrap/Offcanvas'
+import DemoButton from './demoButtonModal'
 import * as styles from "./navbar.module.css"
 import Logo from '../images/navbar/nav-tasksuite-logo.svg'
 import LoanIcon from '../images/navbar/nav-taskloan-icon.svg'
@@ -109,7 +109,7 @@ const NavigationBar = () => {
                   <Nav.Link ><Link to="/about">About</Link></Nav.Link>
                   {/* <Nav.Link ><Link to="/partners">Partners</Link></Nav.Link> */}
                   <Nav.Link ><Link to="/contact">Contact</Link></Nav.Link>
-                  <Button className={styles.button}>Schedule a Demo</Button>
+                  <DemoButton>Schedule a Demo</DemoButton>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

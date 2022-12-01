@@ -22,17 +22,6 @@
     color: var(--primary);
 }
 
-.button {
-    border: none;
-    background-color: var(--primary);
-    width: fit-content;
-}
-
-.button:hover {
-    background-color: var(--primary);
-    filter: brightness(90%);
-}
-
 .imgContainer {
     width: 40%;
 }
