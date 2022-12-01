@@ -9,6 +9,7 @@ import OriginationCard from '../components/originationCard'
 import ServicingCard from '../components/servicingCard'
 import CreditAiCard from '../components/creditAiCard'
 import TestimonialCard from '../components/testimonialCard'
+import FutureProofCard from '../components/futureProofCard'
 
 const IndexPage = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage = () => {
       <ServicingCard />
       <CreditAiCard />
       <TestimonialCard />
+      <FutureProofCard />
     </Layout>
   )
 }
