@@ -10,7 +10,7 @@ const TestimonialCard = () => {
 
     const [activeButton, setActiveButton] = useState(false);
 
-    // Transistion effect
+    // Transistion Effect
     const transistion = () => {
         document.getElementById('transistion').animate([
             {left: '0', width: '0'},
@@ -21,7 +21,7 @@ const TestimonialCard = () => {
             })    
     };
 
-    // Button Cursor
+    // Button Cursor Style
     const pointerStyle = {
         cursor: 'pointer',
       };
