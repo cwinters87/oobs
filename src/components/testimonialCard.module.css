@@ -54,7 +54,8 @@
 
 @media screen and (max-width: 1199px) {
     .testimonials {
-        padding-bottom: 5px;    
+        padding-bottom: 5px;  
+        height: 375px;  
     }
     .container {
         flex-direction: column;    
@@ -64,8 +65,29 @@
     }
     .testimonyContainer {
         width: 100%;
-    }
+    } 
+}
+
+@media screen and (max-width: 502px) {
     .testimonials {
-        height: 375px;
+        flex-direction: column;
+        height: 450px; 
     }
+    
+}
+
+@media screen and (max-width: 431px) {
+    .testimonials {
+        flex-direction: column;
+        height: 700px; 
+    }
+    
+}
+
+@media screen and (max-width: 361x) {
+    .testimonials {
+        flex-direction: column;
+        height: 500px; 
+    }
+    
 }
