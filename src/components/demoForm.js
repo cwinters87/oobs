@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import * as styles from './demoForm.module.css'
 
 function DemoForm({closeForm}) {
 
@@ -28,12 +29,11 @@ function DemoForm({closeForm}) {
   
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-      <Row className="mb-3">
+    <Form className={styles.container} noValidate validated={validated} onSubmit={handleSubmit}>
+      <Row className={styles.row}>
 
-
-        <Form.Group as={Col} md="4" controlId="validationFirstName">
-          <Form.Label>First name</Form.Label>
+        <Form.Group as={Col} controlId="validationFirstName">
+          <Form.Label>First name:</Form.Label>
           <Form.Control
             required
             type="text"
@@ -45,9 +45,8 @@ function DemoForm({closeForm}) {
           </Form.Control.Feedback>
         </Form.Group>
 
-
-        <Form.Group as={Col} md="4" controlId="validationLastName">
-          <Form.Label>Last name</Form.Label>
+        <Form.Group as={Col} controlId="validationLastName">
+          <Form.Label>Last name:</Form.Label>
           <Form.Control
             required
             type="text"
@@ -59,9 +58,11 @@ function DemoForm({closeForm}) {
           </Form.Control.Feedback>
         </Form.Group>
 
+      </Row>
+      <Row className={styles.row}>
 
-        <Form.Group as={Col} md="4" controlId="validationEmail">
-          <Form.Label>Email address</Form.Label>
+        <Form.Group as={Col} controlId="validationEmail">
+          <Form.Label>Email address:</Form.Label>
             <Form.Control
               type="email"
               placeholder="Email Address"
@@ -73,13 +74,8 @@ function DemoForm({closeForm}) {
             </Form.Control.Feedback>
         </Form.Group>
 
-
-      </Row>
-      <Row className="mb-3">
-
-
-        <Form.Group as={Col} md="6" controlId="validationCompany">
-          <Form.Label>Company Name</Form.Label>
+        <Form.Group as={Col} controlId="validationCompany">
+          <Form.Label>Company Name:</Form.Label>
           <Form.Control type="text" placeholder="Company name" required />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
@@ -87,9 +83,11 @@ function DemoForm({closeForm}) {
           </Form.Control.Feedback>
         </Form.Group>
 
+      </Row>
+      <Row className={styles.row}>
 
-        <Form.Group as={Col} md="3" controlId="validationPhone">
-          <Form.Label>Phone Number</Form.Label>
+        <Form.Group as={Col} controlId="validationPhone">
+          <Form.Label>Phone Number:</Form.Label>
           <Form.Control type="tel" placeholder="Phone Number" required />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
@@ -97,23 +95,18 @@ function DemoForm({closeForm}) {
           </Form.Control.Feedback>
         </Form.Group>
 
-
-        <Form.Group as={Col} md="3" controlId="validationWebsite">
-          <Form.Label>Website</Form.Label>
+        <Form.Group as={Col} controlId="validationWebsite">
+          <Form.Label>Website:</Form.Label>
           <Form.Control type="url" placeholder="Website" />
         </Form.Group>
 
       </Row>
-
-
-      
-
-
-      <Button type="submit">Submit form</Button>
+    
+      <Button className={styles.button} type="submit">Request Demo</Button>
+    
     </Form>
   );
   
 }
 
 export default DemoForm
-

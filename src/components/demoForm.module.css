@@ -1,0 +1,23 @@
+.container {
+    font-family: var(--font);
+}
+
+.row {
+    padding-bottom: .9rem;
+}
+
+.button {
+    border: none;
+    background-color: var(--primary);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    filter: brightness(90%);
+}
+
+
+
+
