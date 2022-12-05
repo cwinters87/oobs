@@ -1,0 +1,93 @@
+.container {
+    padding-bottom: 120px;
+    width: 100%;
+    background: url("../images/futureProofCard/fp-bg.svg");
+    background-position: right -30px bottom 20px;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 100%;
+    padding: 50px 20px;
+    border-radius: 60px 10px 10px 10px;
+    background: url("../images/futureProofCard/fp-bg-left.svg"), url("../images/futureProofCard/fp-bg-right.svg"), var(--accent-background-color);
+    background-position: left bottom, right top, top;
+    background-repeat: no-repeat;
+    gap: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 12px;
+    max-width: 640px;
+    color: var(--subtitle-color);
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+
+.actionContainer > button {
+    width: 50%;
+}
+
+.gifContainer {
+    width: 40%;
+}
+
+.robotGif {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .actionContainer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .actionContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .actionContainer > button {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .actionContainer > button {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 383px) {
+    .actionContainer > button {
+        font-size: .7rem;
+    }
+}

@@ -5,6 +5,8 @@
     --primary-font-color: #ffff;
     --light-background-color: #ffff;
     --font: 'Roboto', sans-serif;
+    --accent-background-color: #e0e8f5;
+    --subtitle-color: #737b7d;
   }
 
 .layout-container {
