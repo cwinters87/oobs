@@ -1,3 +1,5 @@
+//not being used right now. needs work
+
 import React, { useEffect, useState } from 'react'
 import * as styles from './carousel.module.css'
 

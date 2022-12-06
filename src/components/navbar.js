@@ -40,7 +40,7 @@ const NavigationBar = () => {
                     id={`offcanvasNavbarDropdown-expand-lg`}>
                     <div className={styles.dropDownProductContainer}>
                       <div className={styles.productSubContainer}>
-                          <Link to="/">
+                          <Link to="#loan">
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={LoanIcon} alt="loan suite icon" />
@@ -55,7 +55,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="/">
+                          <Link to="#origination">
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={OrginationIcon} alt="loan orgination icon"/>
@@ -72,7 +72,7 @@ const NavigationBar = () => {
                           </Link>
                       </div>
                       <div className={styles.productSubContainer}>
-                          <Link to="/">
+                          <Link to="#servicing">
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={ServiceIcon} alt="servicing icon" />
@@ -87,7 +87,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="/">
+                          <Link to="#credit-ai">
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={CreditIcon} alt="credit icon" />

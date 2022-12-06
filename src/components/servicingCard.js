@@ -5,7 +5,7 @@ import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
 const ServicingCard = () => {
   return (
-        <div className={styles.container}>
+        <div className={styles.container} id='servicing'>
             <div className={styles.imgContainer}><img src={ServicingGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Servicing Suite</h1>
