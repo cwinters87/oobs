@@ -14,3 +14,9 @@
     color: var(--primary-font-color);
     background-color: var(--secondary);
 }
+
+.modal-content {
+    background: url("../images/futureProofCard/fp-bg-left.svg"), url("../images/futureProofCard/fp-bg-right.svg");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+}

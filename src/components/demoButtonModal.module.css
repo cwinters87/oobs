@@ -10,7 +10,7 @@
 }
 
 .header {
-    
+    border: none;
     display: flex;
     flex-direction: column;
     font-family: var(--font);
@@ -31,7 +31,6 @@
 }
 
 .title {
-    /* text-align: center; */
     font-weight: bold;
     font-family: var(--font);
 }
