@@ -105,10 +105,8 @@ const NavigationBar = () => {
                       </div>
                     </div>
                   </NavDropdown>
-                  {/* Need to fix the nested <a>'s */}
-                  <Nav.Link ><Link to="/about">About</Link></Nav.Link>
-                  {/* <Nav.Link ><Link to="/partners">Partners</Link></Nav.Link> */}
-                  <Nav.Link ><Link to="/contact">Contact</Link></Nav.Link>
+                  <Link to="/about" className={styles.pageLink}>About</Link>
+                  <Link to="/contact" className={styles.pageLink}>Contact</Link>
                   <DemoButton>Schedule a Demo</DemoButton>
                 </Nav>
               </Offcanvas.Body>

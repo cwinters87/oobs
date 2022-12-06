@@ -10,7 +10,7 @@
 }
 
 .header {
-    
+    border: none;
     display: flex;
     flex-direction: column;
     font-family: var(--font);
@@ -31,13 +31,11 @@
 }
 
 .title {
-    /* text-align: center; */
     font-weight: bold;
     font-family: var(--font);
 }
 
 .subTitle {
-    
     padding: 1.2rem 1rem .8rem 1rem;
     margin-bottom: 0;
     text-align: center;
