@@ -7,23 +7,35 @@
 }
 
 .group {
+    width: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+    /* gap: 20px; */
+}
+
+.titleContainer {
     width: 33%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.desc {
-    font-size: 15px;
-    font-weight: 100;
+.subGroup {
+    display: flex;
 }
 
-.contactPositionContianer {
-    display: flex;
-    justify-content: flex-end;
+.desc {
+    font-size: 15px;
+}
+
+.desc > span {
+    color: var(--primary);
 }
 
 .contactContainer {
+    
     padding-left: 5%;
     display: flex;
     flex-direction: column;
@@ -41,7 +53,7 @@
 
 .socialsPositionContainer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .socialsContainer {
@@ -67,7 +79,6 @@
 @media screen and (max-width: 991px) {
     .footer {
         flex-direction: column;
-        /* align-items: center; */
     }
     .socialsPositionContainer {
         display: flex;
@@ -77,12 +88,21 @@
         display: flex;
         justify-content: flex-start;
     }
+    .titleContainer {
+        width: 100%;
+    }
     .group {
-        width: 60%;
+        width: 100%;
+        justify-content: space-between;
     }
     .contactContainer {
         padding-left: 0;
     }
+
+    .socialsContainer{
+        margin-right: 15px;
+    }
+
     .socialsHeader {
         padding-left: 0;
     }
@@ -96,23 +116,5 @@
     .footer {
         align-items: center;
     }
-    .group {
-        width: 80%;
-        align-items: center;
-    }
-    .title {
-        text-align: center;
-    }
-    .desc {
-        text-align: center;
-    }
-    .contactInfo {
-        text-align: center;
-    }
 }
 
-@media screen and (max-width: 600px) {
-    .group {
-        width: 100%;
-    }
-}
