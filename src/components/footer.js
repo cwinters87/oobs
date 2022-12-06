@@ -1,6 +1,8 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 import Container from 'react-bootstrap/Container'
 import * as styles from './footer.module.css'
+import Logo from '../images/navbar/nav-tasksuite-logo.svg'
 import EmailIcon from '../images/footer/f-email.svg'
 import CallIcon from '../images/footer/f-call.svg'
 import HouseIcon from '../images/footer/f-house.svg'
@@ -14,7 +16,7 @@ const Footer = () => {
     <Container fluid>
       <footer className={styles.footer}>
         <div className={styles.group}>
-          <div className={styles.title}>T<span>A</span>SKSU<span>I</span>TE</div>
+          <Link to="/" className={styles.title}><img src={Logo} alt="tasksuite logo" /></Link>
           <div className={styles.desc}>T<span>A</span>SKSU<span>I</span>TE is driven solely by the defined purpose to connect people by connecting businesses
             with their customers. We embrace and honor the beliefs of people before profits and that profit comes with the
             quality connections of good people.</div>
