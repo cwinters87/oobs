@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import * as styles from './demoForm.module.css'
 
 function DemoForm({closeForm}) {
+  
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
   const [validated, setValidated] = useState(false);
@@ -158,7 +159,6 @@ function DemoForm({closeForm}) {
       <Button className={styles.button} type="submit">Request Demo</Button>
     </Form>
   );
-  
 }
 
 export default DemoForm

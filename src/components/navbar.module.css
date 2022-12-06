@@ -11,6 +11,18 @@
     color: var(--primary);
 }
 
+.pagesContainer {
+    background-color: yellow;
+}
+
+.pageLink {
+    padding: 8px 24px 8px 0px;
+}
+
+.dropdownMenu {
+    padding-right: 18px;
+}
+
 .dropdownMenu > div {
     padding: 0;
     border-style: none;
