@@ -15,49 +15,50 @@ const Footer = () => {
     
     <Container fluid>
       <footer className={styles.footer}>
-        <div className={styles.group}>
+        <div className={styles.titleContainer}>
           <Link to="/" className={styles.title}><img src={Logo} alt="tasksuite logo" /></Link>
-          <div className={styles.desc}>T<span>A</span>SKSU<span>I</span>TE is driven solely by the defined purpose to connect people by connecting businesses
+          <div className={styles.desc}>T<span>a</span>sksu<span>i</span>te is driven solely by the defined purpose to connect people by connecting businesses
             with their customers. We embrace and honor the beliefs of people before profits and that profit comes with the
             quality connections of good people.</div>
         </div>
         <div className={styles.group}>
-          <div className={styles.contactPositionContianer}>
-            <div className={styles.contactContainer}>
-              <div className={styles.contactInfo}>Contact Info</div>
-              <div className={styles.item}>
-                <div><img src={EmailIcon} alt="email icon"/></div>
-                <div className={styles.detail}>Email: info@tasksuite.com</div>
+          <div className={styles.subGroup}>
+              <div className={styles.contactContainer}>
+                <div className={styles.contactInfo}>Contact Info</div>
+                <div className={styles.item}>
+                  <div><img src={EmailIcon} alt="email icon"/></div>
+                  <div className={styles.detail}>Email: info@tasksuite.com</div>
+                </div>
+                <div className={styles.item}>
+                  <div><img src={CallIcon} alt="phone icon"/></div>
+                  <div className={styles.detail}>Call us: 512-900-7468</div>
+                </div>
+                <div className={styles.item}>
+                  <div><img src={HouseIcon} alt="house icon"/></div>
+                  <div className={styles.detail}>2101 S I-35 Frontage Road<br/>Austin, Texas 78741</div>
+                </div>
               </div>
-              <div className={styles.item}>
-                <div><img src={CallIcon} alt="phone icon"/></div>
-                <div className={styles.detail}>Call us: 512-900-7468</div>
-              </div>
-              <div className={styles.item}>
-                <div><img src={HouseIcon} alt="house icon"/></div>
-                <div className={styles.detail}>2101 S I-35 Frontage Road<br/>Austin, Texas 78741</div>
+          </div>
+          <div className={styles.subGroup}>
+            <div className={styles.socialsPositionContainer}>
+              <div className={styles.socialsContainer}>
+                <div className={styles.socialsHeader}>Connect with us</div>
+                <div className={styles.socials}>
+                  <a href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer">
+                    <img src={FacebookIcon} alt="facebook icon"/>
+                  </a>
+                  <a href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer">
+                    <img src={LinkedinIcon} alt="linkedin icon"/>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer">
+                    <img src={YoutubeIcon} alt="youtube icon"/>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.group}>
-          <div className={styles.socialsPositionContainer}>
-            <div className={styles.socialsContainer}>
-              <div className={styles.socialsHeader}>Connect with us</div>
-              <div className={styles.socials}>
-                <a href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer">
-                  <img src={FacebookIcon} alt="facebook icon"/>
-                </a>
-                <a href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer">
-                  <img src={LinkedinIcon} alt="linkedin icon"/>
-                </a>
-                <a href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer">
-                  <img src={YoutubeIcon} alt="youtube icon"/>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </footer>
     </Container>
   )
