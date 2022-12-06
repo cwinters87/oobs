@@ -2,3 +2,8 @@
     margin: 5% 10% 10% 10%;
 }
 
+@media screen and (max-width: 991px) {
+    .siteContainer {
+        margin: 5% 0 0 0;
+    }
+}

@@ -10,6 +10,7 @@
     --font: 'Roboto', sans-serif;
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
+    background-color: var(--secondary);
   }
 
 .layout-container {
