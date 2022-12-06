@@ -13,16 +13,6 @@
     gap: 10px;
 }
 
-.title {
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 20px;
-}
-
-.title span {
-    color: var(--primary);
-}
-
 .desc {
     font-size: 15px;
     font-weight: 100;

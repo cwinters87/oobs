@@ -1,3 +1,12 @@
+.navBar {
+    background-color: var(--secondary);
+    position: sticky;
+    top: -15px;
+    z-index: 1
+    /* filter: alpha(opacity=60);
+    opacity: 0.6; */
+}
+
 .navBar a {
     color: var(--primary-font-color);
     text-decoration: none;
@@ -25,7 +34,8 @@
 
 .dropdownMenu > div {
     padding: 0;
-    border-style: none;
+    border-style: solid;
+    border-color: var(--primary);
     border-width: 3px;
     background-color: var(--secondary); 
     border-radius: 20px;
@@ -91,6 +101,11 @@
 @media screen and (max-width: 991px) {
     .productSubContainer {
         flex-direction: column;
+    }
+    .dropdownMenu > div {
+        border-style: none;
+        
+        
     }
 }
 

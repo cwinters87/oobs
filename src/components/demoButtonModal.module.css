@@ -5,7 +5,7 @@
 
 .button {
     border: none;
-    background-color: var(--primary);
+    background-color: var(--button-color);
     width: fit-content;
 }
 
