@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 767px) {
     .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .imgContainer {
         width: 100%;

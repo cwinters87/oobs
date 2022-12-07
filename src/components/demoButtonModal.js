@@ -25,7 +25,7 @@ function DemoButton({propButtonStyle}) {
               <img className={styles.logo} src={Logo} alt='robot' />
               <Modal.Title className={styles.title}>Ready to get Started?</Modal.Title>
               <CloseButton className={styles.close} onClick={handleClose} />
-            <p className={styles.subTitle}>We're happy to help with addressing your needs and assist with finding the best solution for your business. We look forward to working with you!</p>
+              <p className={styles.subTitle}>We're happy to help with addressing your needs and assist with finding the best solution for your business. We look forward to working with you!</p>
              </Modal.Header>
         <Modal.Body>
           <DemoForm closeForm={handleClose}/>

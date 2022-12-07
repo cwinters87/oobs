@@ -3,8 +3,6 @@ import DemoButton from './demoButtonModal'
 import * as styles from './hero.module.css'
 import MainGif from '../images/hero/hero-main.gif'
 
-
-
 const Hero = () => {
   return (
     <div className={styles.container}>
@@ -16,8 +14,13 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <img src={MainGif} alt="product offering gif"/>
+        <div className={styles.imgSide}></div>
+        {/* <div className={styles.imgContainer}> */}
+        <img className={styles.image} src={MainGif} alt="product offering gif"/>
+        {/* </div> */}
+        <div className={styles.imgSide}></div>
       </div>
+      
   </div>
   )
 }

@@ -1,9 +1,10 @@
-import * as React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'gatsby'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import CloseButton from 'react-bootstrap/CloseButton';
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import DemoButton from './demoButtonModal'
 import * as styles from "./navbar.module.css"
@@ -14,21 +15,27 @@ import OrginationIcon from '../images/navbar/nav-orgination-icon.svg'
 import CreditIcon from '../images/navbar/nav-credit-icon.svg'
 
 const NavigationBar = () => {
-  
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
         <header className={styles.navBar}>
         <Navbar bg="transparent" variant="dark" expand='lg' className="mb-3">
           <Container fluid>
             <Navbar.Brand><Link to="/"><img src={Logo} alt="tasksuite logo" /></Link></Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`}></Navbar.Toggle>
-            <Navbar.Offcanvas 
+            <Navbar.Toggle id={styles.hamburger} aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleShow}></Navbar.Toggle>
+            <Navbar.Offcanvas
+              show={show} 
               className={styles.offCanvasBody}
               id={`offcanvasNavbar-expand-lg`}
               aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
               placement="end">
-              <Offcanvas.Header closeButton closeVariant="white">
+              <Offcanvas.Header >
+                <CloseButton variant="white" className={styles.close} onClick={handleClose} />
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  <img src={Logo} alt="tasksuite logo" />
+                  <Link to="/" onClick={handleClose}><img src={Logo} alt="tasksuite logo" /></Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -40,7 +47,7 @@ const NavigationBar = () => {
                     id={`offcanvasNavbarDropdown-expand-lg`}>
                     <div className={styles.dropDownProductContainer}>
                       <div className={styles.productSubContainer}>
-                          <Link to="#loan">
+                          <Link to="#loan" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={LoanIcon} alt="loan suite icon" />
@@ -55,7 +62,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="#origination">
+                          <Link to="#origination" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={OrginationIcon} alt="loan orgination icon"/>
@@ -72,7 +79,7 @@ const NavigationBar = () => {
                           </Link>
                       </div>
                       <div className={styles.productSubContainer}>
-                          <Link to="#servicing">
+                          <Link to="#servicing" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={ServiceIcon} alt="servicing icon" />
@@ -87,7 +94,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="#credit-ai">
+                          <Link to="#credit-ai" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={CreditIcon} alt="credit icon" />
