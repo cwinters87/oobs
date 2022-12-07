@@ -18,7 +18,7 @@ function DemoButton({propButtonStyle}) {
   return (
     <>
       <Button className={styles.button} style={propButtonStyle} onClick={handleShow}>
-        Schedule a Demo
+        Schedule Your Demo
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className={styles.header}>

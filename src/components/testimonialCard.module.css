@@ -1,6 +1,4 @@
 .container {
-    /* margin-top: 200px;
-    margin-bottom: 200px; */
     display: flex;
     gap: 20px;
 }
@@ -73,18 +71,25 @@
 @media screen and (max-width: 502px) {
     .testimonials {
         flex-direction: column;
-        height: 450px; 
+        height: 580px; 
     }
 }
 
 @media screen and (max-width: 431px) {
     .testimonials {
-        height: 700px; 
+        height: 620px; 
     }
 }
 
-@media screen and (max-width: 361x) {
+@media screen and (max-width: 395px) {
     .testimonials {
-        height: 500px; 
+        height: 600px; 
     }
 }
+
+@media screen and (max-width: 328px) {
+    .testimonials {
+        height: 650px; 
+    }
+}
+

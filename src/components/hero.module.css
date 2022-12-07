@@ -22,6 +22,11 @@
     color: var(--primary);
 }
 
+.buttonContainer {
+    width: 100%;
+    display: flex;
+}
+
 .imgContainer {
     width: 40%;
 }
