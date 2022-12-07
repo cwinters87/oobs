@@ -9,10 +9,7 @@
 .group {
     width: 66%;
     display: flex;
-    
     margin-top: 15px;
-
-    /* gap: 20px; */
 }
 
 .titleContainer {
@@ -45,11 +42,6 @@
     justify-content: flex-end;
     
 }
-
-#connectInfo {
-    /* padding-right: 5%; */
-}
-
 
 .item {
     display: flex;
@@ -89,14 +81,9 @@
     .footer {
         flex-direction: column;
     }
-    /* .socialsPositionContainer {
-        display: flex;
-        justify-content: flex-start;
-    } */
     #contactInfo {
         display: flex;
         justify-content: flex-start;
-        
     }
 
     .contactPositionContianer {

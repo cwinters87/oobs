@@ -16,7 +16,7 @@ const Footer = () => {
     <Container fluid>
       <footer className={styles.footer}>
         <div className={styles.titleContainer}>
-          <Link to="/" className={styles.title}><img src={Logo} alt="tasksuite logo" /></Link>
+          <Link to="/" ><img src={Logo} alt="tasksuite logo" /></Link>
           <div className={styles.desc}>T<span>a</span>sksu<span>i</span>te is driven solely by the defined purpose to connect people by connecting businesses
             with their customers. We embrace and honor the beliefs of people before profits and that profit comes with the
             quality connections of good people.</div>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
               </div>
           </div>
-          <div className={styles.subGroup} id={styles.connectInfo}>
+          <div className={styles.subGroup}>
             <div className={styles.socialsPositionContainer}>
               <div className={styles.socialsContainer}>
                 <div className={styles.socialsHeader}>Connect with us</div>

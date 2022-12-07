@@ -1,6 +1,6 @@
 .container {
-    /* margin: 100px 0px 50px 0px; */
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -26,10 +26,9 @@
     width: 40%;
 }
 
-.imgContainer > img {
+.image {
     width: 100%;
     height: auto;
-    max-height: 500px;
 }
 
 @media screen and (max-width: 991px) {
@@ -40,11 +39,30 @@
     .textContainer {
         width: 100%;
     }
+    
     .imgContainer {
-        width: 100%;
+        width:100%;
+        display: flex;
+    }
+    .imgSide {
+        width: 15%;
+    }
+    .image {
+        width: 70%;
+        height: auto;
     }
     .buttonContainer {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imgSide {
+        width: 0;
+    }
+    .image {
+        width: 100%;
+        height: auto;
     }
 }
