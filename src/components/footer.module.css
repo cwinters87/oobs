@@ -9,7 +9,7 @@
 .group {
     width: 66%;
     display: flex;
-    justify-content: space-evenly;
+    
     margin-top: 15px;
 
     /* gap: 20px; */
@@ -23,7 +23,7 @@
 }
 
 .subGroup {
-    display: flex;
+    width: 50%;
 }
 
 .desc {
@@ -35,12 +35,21 @@
 }
 
 .contactContainer {
-    
-    padding-left: 5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+#contactInfo {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#connectInfo {
+    /* padding-right: 5%; */
+}
+
 
 .item {
     display: flex;
@@ -80,10 +89,16 @@
     .footer {
         flex-direction: column;
     }
-    .socialsPositionContainer {
+    /* .socialsPositionContainer {
         display: flex;
         justify-content: flex-start;
+    } */
+    #contactInfo {
+        display: flex;
+        justify-content: flex-start;
+        
     }
+
     .contactPositionContianer {
         display: flex;
         justify-content: flex-start;
@@ -95,7 +110,7 @@
         width: 100%;
         justify-content: space-between;
     }
-    .contactContainer {
+    #contactInfo {
         padding-left: 0;
     }
 
@@ -115,6 +130,19 @@
 @media screen and (max-width: 767px) {
     .footer {
         align-items: center;
+    }
+    .socialsContainer{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .group {
+        flex-direction: column;
+    }
+    .socialsPositionContainer {
+        margin-top: 20px;
+        justify-content: flex-start;
     }
 }
 

@@ -22,7 +22,7 @@ const Footer = () => {
             quality connections of good people.</div>
         </div>
         <div className={styles.group}>
-          <div className={styles.subGroup}>
+          <div className={styles.subGroup} id={styles.contactInfo}>
               <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>Contact Info</div>
                 <div className={styles.item}>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
               </div>
           </div>
-          <div className={styles.subGroup}>
+          <div className={styles.subGroup} id={styles.connectInfo}>
             <div className={styles.socialsPositionContainer}>
               <div className={styles.socialsContainer}>
                 <div className={styles.socialsHeader}>Connect with us</div>
