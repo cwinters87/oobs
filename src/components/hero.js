@@ -13,7 +13,7 @@ const Hero = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.header}><span>Loan</span> Management, Origination, Servicing, and Credit <span>Software</span></h1>
-        <p>TaskSuite combines 4 powerful systems into a single product, enabling lenders to streamline their operations.</p>
+        <p className={styles.subTitle}>TaskSuite combines 4 powerful systems into a single product, enabling lenders to streamline their operations.</p>
         <div className={styles.buttonContainer}>
           <DemoButton propButtonStyle={buttonStyle}/>
         </div>

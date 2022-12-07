@@ -1,9 +1,9 @@
 .siteContainer {
-    margin: 5% 10% 10% 10%;
+    margin: 0 3% 0% 3%;
 }
 
 @media screen and (max-width: 991px) {
     .siteContainer {
-        margin: 5% 0 0 0;
+        margin: 0;
     }
 }
