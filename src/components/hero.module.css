@@ -22,6 +22,10 @@
     color: var(--primary);
 }
 
+.subTitle {
+    max-width: 80%;
+}
+
 .buttonContainer {
     width: 100%;
     display: flex;
@@ -36,6 +40,18 @@
     height: auto;
 }
 
+@media screen and (max-width: 1399px) {
+    .subTitle {
+        max-width: 93%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .subTitle {
+        max-width: 95%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .container {
         display: flex;
@@ -44,7 +60,10 @@
     .textContainer {
         width: 100%;
     }
-    
+    .subTitle {
+        max-width: 82%;
+    }
+
     .imgContainer {
         width:100%;
         display: flex;
