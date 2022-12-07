@@ -9,7 +9,7 @@ const OriginationCard = () => {
             <div className={styles.imgContainer}><img src={OriginationGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Origination Suite</h1>
-                <p>With a powerful CRM at it's core, it's easy to track client applications and communication.</p>
+                <p>With a powerful CRM at its core, it's easy to track client applications and communication.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
