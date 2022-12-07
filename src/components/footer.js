@@ -27,15 +27,15 @@ const Footer = () => {
                 <div className={styles.contactInfo}>Contact Info</div>
                 <div className={styles.item}>
                   <div><img src={EmailIcon} alt="email icon"/></div>
-                  <div className={styles.detail}>Email: info@tasksuite.com</div>
+                  <div className={styles.detail}>Email: <a href='mailto:info@tasksuite.com'>info@tasksuite.com</a></div>
                 </div>
                 <div className={styles.item}>
                   <div><img src={CallIcon} alt="phone icon"/></div>
-                  <div className={styles.detail}>Call us: 512-900-7468</div>
+                  <div className={styles.detail}>Call us: <a href='tel:512.900.7468'>512-900-7468</a></div>
                 </div>
                 <div className={styles.item}>
                   <div><img src={HouseIcon} alt="house icon"/></div>
-                  <div className={styles.detail}>2101 S I-35 Frontage Road<br/>Austin, Texas 78741</div>
+                  <div className={styles.detail}><a href='https://goo.gl/maps/tdqF64woYZh98rD48' target="_blank" rel="noreferrer">2101 S I-35 Frontage Road<br/>Austin, Texas 78741</a></div>
                 </div>
               </div>
           </div>

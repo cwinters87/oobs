@@ -12,6 +12,7 @@
 
 .navBar a:hover {
     color: var(--primary);
+    transition: 500ms;
 }
 
 .navBar a:active {
@@ -20,6 +21,7 @@
 
 #hamburger {
     border: none;
+    padding: 4px 0px;
 }
 
 .close {  
@@ -40,13 +42,14 @@
     padding: 0;
     border-style: solid;
     border-color: var(--primary);
-    border-width: 3px;
+    border-width: 2px;
     background-color: var(--secondary); 
     border-radius: 20px;
 }
 
 .dropDownProductContainer > div > a:hover {
     background-color: var(--secondary);
+    transition: 500ms;
 }
 
 .productSubContainer {
@@ -57,6 +60,7 @@
 
 .productSubContainer > a:hover {
     border-radius: 20px;
+    transition: 500ms;
 }
 
 .productItem {
@@ -71,6 +75,7 @@
 .productItem:hover {
     border-radius: 20px;
     background-color: var(--tertiary);
+    transition: 500ms;
 }
 
 .productIcon {
@@ -108,8 +113,6 @@
     }
     .dropdownMenu > div {
         border-style: none;
-        
-        
     }
 }
 

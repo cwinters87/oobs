@@ -1,6 +1,7 @@
 .button:hover {
     background-color: var(--primary);
     filter: brightness(90%);
+    transition: 500ms;
 }
 
 .button {

@@ -26,6 +26,19 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      // Favicon change below
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        // name: 'TaskSuite',
+        // short_name: 'TaskSuite',
+        // start_url: '/',
+        // background_color: '#1D1B1B',
+        // theme_color: '#a2466c',
+        // display: 'standalone',
+        icon: 'src/images/favicon/tasksuite.gif',
+      },
     }
   ],
 };

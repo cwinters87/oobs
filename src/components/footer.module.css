@@ -52,6 +52,17 @@
     font-size: 15px;
 }
 
+.detail a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    
+}
+
+.detail a:hover {
+    color: var(--primary);
+    transition: 500ms;
+}
+
 .socialsPositionContainer {
     display: flex;
     justify-content: flex-end;
