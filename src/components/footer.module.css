@@ -60,7 +60,6 @@
 
 .detail a:hover {
     color: var(--primary);
-    transition: 500ms;
 }
 
 .socialsPositionContainer {

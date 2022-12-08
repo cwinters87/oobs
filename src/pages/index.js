@@ -15,25 +15,35 @@ import SpacingCard from '../components/spacingCard'
 const IndexPage = () => {
   return (
     <Layout >
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <Hero />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <TrustedBanner />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <ManageGrowCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <LoanCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <OriginationCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <ServicingCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <CreditAiCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <TestimonialCard />
-      <SpacingCard margin={'100px'}/>
+
+      <SpacingCard margin={'220px'}/>
       <FutureProofCard />
-      <SpacingCard margin={'100px'}/>
+      
+      <SpacingCard margin={'400px'}/>
     </Layout>
   )
 }
