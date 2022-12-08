@@ -8,6 +8,7 @@ const SpacingCard = ({margin}) => {
 
   return (
         <div style={spaceCardStyle}>
+          {/* empty space here */}
         </div>
     )
 }

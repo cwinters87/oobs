@@ -10,13 +10,14 @@ import ServicingCard from '../components/servicingCard'
 import CreditAiCard from '../components/creditAiCard'
 import TestimonialCard from '../components/testimonialCard'
 import FutureProofCard from '../components/futureProofCard'
+import FirstSpacingCard from '../components/firstSpacingCard'
 import SpacingCard from '../components/spacingCard'
 
 const IndexPage = () => {
   return (
     <Layout >
 
-      <SpacingCard margin={'220px'}/>
+      <FirstSpacingCard/>
       <Hero />
 
       <SpacingCard margin={'220px'}/>
