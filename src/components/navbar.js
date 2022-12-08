@@ -13,6 +13,7 @@ import LoanIcon from '../images/navbar/nav-taskloan-icon.svg'
 import ServiceIcon from '../images/navbar/nav-service-icon.svg'
 import OrginationIcon from '../images/navbar/nav-orgination-icon.svg'
 import CreditIcon from '../images/navbar/nav-credit-icon.svg'
+import hamburger from '../images/navbar/hamburger.png'
 
 const NavigationBar = () => {
 
@@ -25,7 +26,9 @@ const NavigationBar = () => {
         <Navbar bg="transparent" variant="dark" expand='lg' className="mb-3">
           <Container fluid>
             <Navbar.Brand><Link to="/"><img src={Logo} alt="tasksuite logo" /></Link></Navbar.Brand>
-            <Navbar.Toggle id={styles.hamburger} aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleShow}></Navbar.Toggle>
+            <Navbar.Toggle id={styles.hamburger} aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleShow}>
+              <span><img id={styles.icon} src={hamburger} alt='menu'/></span>
+              </Navbar.Toggle>
             <Navbar.Offcanvas
               show={show} 
               className={styles.offCanvasBody}

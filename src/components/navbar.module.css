@@ -24,6 +24,17 @@
     padding: 4px 0px;
 }
 
+#hamburger.active.focus, #hamburger.active:focus,
+#hamburger.focus, #hamburger:active.focus, 
+#hamburger:active:focus, #hamburger:focus {
+  box-shadow: none;
+}
+
+#icon {
+    height: 30px;
+    width: 30px;
+}
+
 .close {  
     position: absolute;
     top: 42px;
