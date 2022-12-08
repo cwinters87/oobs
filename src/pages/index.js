@@ -14,34 +14,37 @@ import FirstSpacingCard from '../components/firstSpacingCard'
 import SpacingCard from '../components/spacingCard'
 
 const IndexPage = () => {
+
+  const heightSpacing = '220px'
+
   return (
     <Layout >
 
       <FirstSpacingCard/>
       <Hero />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <TrustedBanner />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <ManageGrowCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <LoanCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <OriginationCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <ServicingCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <CreditAiCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <TestimonialCard />
 
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={heightSpacing}/>
       <FutureProofCard />
       
       <SpacingCard margin={'400px'}/>
