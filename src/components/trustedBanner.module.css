@@ -93,12 +93,17 @@
         font-size: .7rem;
     }
     .container {
-        position:absolute;
-        left:0;
-        right:0;
-        width: 100%;
-        padding: 25px;
         border-radius: 0px;
+        width: 100vw;
+        right: 10%;
+        
+        /* 
+        
+        width: 100vw;
+        padding-right: 12%;
+        padding-left: 12%;
+        
+        margin-left: -24.2%; */
     }
 }
 
