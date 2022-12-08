@@ -6,29 +6,31 @@ import Row from 'react-bootstrap/Row'
 import * as styles from './contactForm.module.css'
 
 function ContactForm({closeForm}) {
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
   const [validated, setValidated] = useState(false);
 
   // Form Data with onChange data for future improvement
-  const [firstNameValue, setFirstNameValue] = useState(),
-        onFirstNameInput = ({target:{value}}) => setFirstNameValue(value)
-
-  const [lastNameValue, setLastNameValue] = useState(),
-        onLastNameInput = ({target:{value}}) => setLastNameValue(value)
+  const [nameValue, setNameValue] = useState(),
+        onNameInput = ({target:{value}}) => setNameValue(value)
 
   const [emailValue, setEmailValue] = useState(),
         onEmailInput = ({target:{value}}) => setEmailValue(value)
 
-  const [companyValue, setCompanyValue] = useState(),
-        onCompanyInput = ({target:{value}}) => setCompanyValue(value)
-
   const [phoneValue, setPhoneValue] = useState(),
         onPhoneInput = ({target:{value}}) => setPhoneValue(value)
 
-  const [websiteValue, setWebsiteValue] = useState(),
-        onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
+  const [subjectValue, setSubjectValue] = useState(),
+        onSubjectInput = ({target:{value}}) => setSubjectValue(value)
+
+  const [messageValue, setMessageValue] = useState(),
+        onMessageInput = ({target:{value}}) => setMessageValue(value)
 
   // On Submit
   // Need to trigger a success page for better Google Ad tracking
@@ -46,14 +48,12 @@ function ContactForm({closeForm}) {
                 'Content-Type': 'application/json'
               },
               body:JSON.stringify({
-                'type': 'demo',
-                'firstname': firstNameValue,
-                'lastname' :  lastNameValue,
+                'type': 'contactus',
+                'name': nameValue,
 					      'email' : emailValue,
-					      'companyname' : companyValue,
+					      'subject' : subjectValue,
 					      'phone' : phoneValue,
-					      'employeecount' : websiteValue,
-					      'notes' : 'source- website- Schedule a Demo Form Submission',
+					      'notes' : messageValue,
               })
             })
             .then(res => res.json())
@@ -64,100 +64,103 @@ function ContactForm({closeForm}) {
               console.log(error)
             }
             )
-            closeForm()
+            refreshPage()
           }
           setValidated(true)
         }
 
   return (
-    <Form className={styles.container} noValidate validated={validated} onSubmit={handleSubmit}>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationFirstName">
-          {/* <Form.Label>First name:</Form.Label> */}
-          <Form.Control
-            required
-            type="text"
-            onChange={onFirstNameInput}
-            value={firstNameValue}
-            placeholder="First name"
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide first name.
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} controlId="validationLastName">
-          {/* <Form.Label>Last name:</Form.Label> */}
-          <Form.Control
-            required
-            type="text"
-            onChange={onLastNameInput}
-            value={lastNameValue}
-            placeholder="Last name"
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a last name.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationEmail">
-          {/* <Form.Label>Email address:</Form.Label> */}
+    <div className={styles.container}>
+
+      <h3 className={styles.title}>Your Details</h3>
+      <Form className={styles.formContainer} noValidate validated={validated} onSubmit={handleSubmit}>
+        <Row className={styles.row}>
+          <Form.Group as={Col} controlId="validationName">
+            <Form.Label>Name</Form.Label>
             <Form.Control
-              type="email"
-              onChange={onEmailInput}
-              value={emailValue}
-              placeholder="Email Address"
+              className={styles.input}
+              required
+              type="text"
+              onChange={onNameInput}
+              value={nameValue}
+              placeholder="Your Name"
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              Please provide your name.
+            </Form.Control.Feedback>
+          </Form.Group>
+          <Form.Group as={Col} controlId="validationEmail">
+            <Form.Label>Email address</Form.Label>
+              <Form.Control
+                className={styles.input}
+                type="email"
+                onChange={onEmailInput}
+                value={emailValue}
+                placeholder="Your Email Address"
+                required
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please enter an email address.
+              </Form.Control.Feedback>
+          </Form.Group>
+          </Row>
+          <Row className={styles.row}>
+          <Form.Group as={Col} controlId="validationPhone">
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control
+              className={styles.input} 
+              type="tel" 
+              onChange={onPhoneInput}
+              value={phoneValue}
+              placeholder="Phone Number" 
+              required 
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              Please provide a phone number.
+            </Form.Control.Feedback>
+          </Form.Group>
+          </Row>
+          <Row className={styles.row}>
+          <Form.Group as={Col} controlId="validationSubject">
+            <Form.Label>Subject</Form.Label>
+            <Form.Control 
+              className={styles.input}
+              type="text" 
+              onChange={onSubjectInput}
+              value={subjectValue}
+              placeholder="Message Subject" 
+              required 
+            />
+            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              Please provide a subject title.
+            </Form.Control.Feedback>
+          </Form.Group>
+          </Row>
+        <Row className={styles.row}>
+          <Form.Group as={Col} controlId="validationMessage">
+            <Form.Label>Comments/Questions</Form.Label>
+            <Form.Control 
+              className={styles.input}
+              as="textarea" 
+              onChange={onMessageInput}
+              value={messageValue}
+              placeholder="Your Message"
+              rows={3}
               required
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please enter an email address.
+              Please provide message.
             </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} controlId="validationCompany">
-          {/* <Form.Label>Company Name:</Form.Label> */}
-          <Form.Control 
-            type="text" 
-            onChange={onCompanyInput}
-            value={companyValue}
-            placeholder="Company name" 
-            required 
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a company name.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationPhone">
-          {/* <Form.Label>Phone Number:</Form.Label> */}
-          <Form.Control 
-            type="tel" 
-            onChange={onPhoneInput}
-            value={phoneValue}
-            placeholder="Phone Number" 
-            required 
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a phone number.
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} controlId="validationWebsite">
-          {/* <Form.Label>Website:</Form.Label> */}
-          <Form.Control 
-            type="text" 
-            onChange={onWebsiteInput}
-            value={websiteValue}
-            placeholder="Website" 
-          />
-        </Form.Group>
-      </Row>
-      <Button className={styles.button} type="submit">Request Demo</Button>
-    </Form>
+          </Form.Group>
+        </Row>
+        <Button className={styles.button} type="submit">Submit</Button>
+      </Form>
+    </div>
   );
 }
 

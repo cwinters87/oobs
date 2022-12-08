@@ -16,8 +16,8 @@ const GetInTouchCard = () => {
             </div>
             <h2 className={styles.title}>Get In Touch</h2>
           </div>
-          <p className={styles.subTitle}>We’re happy to answer any questions you may have about TaskSuite—don’t hesitate to reach out!!</p>
-          <div className={styles.contactContainer}>
+          <p className={styles.subTitle}>We’re happy to answer any questions you may have about TaskSuite —don’t hesitate to reach out!!</p>
+          <div>
             <div className={styles.contactInfo}>
               <div className={styles.iconContainer}>
                 <img src={phoneIcon} alt='phone'></img>
