@@ -63,6 +63,8 @@
     transition: 500ms;
 }
 
+
+
 .productSubContainer {
     display: flex;
     align-items: center;
@@ -118,10 +120,14 @@
     color: var(--primary-font-color)
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
     .productSubContainer {
         flex-direction: column;
     }
+    
+}
+
+@media screen and (max-width: 991px) {
     .dropdownMenu > div {
         border-style: none;
     }
