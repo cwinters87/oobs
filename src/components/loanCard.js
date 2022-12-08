@@ -5,10 +5,10 @@ import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
 const LoanCard = () => {
   return (
-        <div className={styles.container} id='loan'>
+        <div className={styles.container} id='loan-management'>
             <div className={styles.imgContainer}><img src={LoanSuiteGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Loan Suite</h1>
+                <h1 className={styles.title}>Loan Mangagement Suite</h1>
                 <p>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
                 <div>
                     <div className={styles.bullet}>
