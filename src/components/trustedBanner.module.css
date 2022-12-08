@@ -93,19 +93,11 @@
     .text {
         font-size: .7rem;
     }
+    /* where to banner pulls across screen */
     .container {
-        /* position: static; */
         border-radius: 0px;
         width: 101vw;
         right: 23.6%;
-        
-        /* 
-        
-        width: 100vw;
-        padding-right: 12%;
-        padding-left: 12%;
-        
-        margin-left: -24.2%; */
     }
 }
 
@@ -138,7 +130,6 @@
 @media screen and (max-width: 664px) {
     .container {
         right: 13%;
-       /* margin-left: 1%; */
     }
 }
 

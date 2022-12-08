@@ -11,6 +11,7 @@
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
     background-color: var(--secondary);
+    overflow-x: hidden;
   }
 
 .layout-container {
