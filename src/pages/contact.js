@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { SEO } from "../components/seo"
 import Layout from "../components/layout"
 import ContactBanner from '../components/contactPage/contactBanner'
 import GetInTouch from '../components/contactPage/getInTouch'
@@ -19,6 +20,24 @@ const ContactPage = () => {
   )
 }
 
-export const Head = () => <title>TaskSuite - Contact US</title>
+export const Head = () => (
+  <SEO title="TaskSuite - Contact Us">
+    <script type="application/ld+json">
+      {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.tasksuite.com",
+          "name": "Tasksuite",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-512-900-7468",
+            "contactType": "Sales"
+          }
+        }
+      `}
+    </script>
+  </SEO>
+)
 
 export default ContactPage
