@@ -50,11 +50,12 @@ const NavigationBar = () => {
                     id={`offcanvasNavbarDropdown-expand-lg`}>
                     <div className={styles.dropDownProductContainer}>
                       <div className={styles.productSubContainer}>
-                          <Link to="#loan-management" onClick={handleClose}>
+                          <Link to="https://tasksuite.com/#loan-management" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={LoanIcon} alt="loan suite icon" />
                               </div>
+                              
                               <div className={styles.productTextDiv}>
                                   <div className={styles.productTitle}>
                                     <p>Loan Management Suite</p>
@@ -65,7 +66,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="#loan-origination" onClick={handleClose}>
+                          <Link to="https://tasksuite.com/#loan-origination" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={OrginationIcon} alt="loan orgination icon"/>
@@ -82,7 +83,7 @@ const NavigationBar = () => {
                           </Link>
                       </div>
                       <div className={styles.productSubContainer}>
-                          <Link to="#loan-servicing" onClick={handleClose}>
+                          <Link to="https://tasksuite.com/#loan-servicing" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={ServiceIcon} alt="servicing icon" />
@@ -97,7 +98,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="#credit-ai" onClick={handleClose}>
+                          <Link to="https://tasksuite.com/#credit-ai" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={CreditIcon} alt="credit icon" />
