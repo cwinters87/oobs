@@ -1,14 +1,18 @@
 import * as React from 'react'
 import Layout from "../components/layout"
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
+import AboutBanner from '../components/aboutPage/aboutBanner'
+import FutureProofCard from '../components/futureProofCard'
+import SpacingCard from '../components/spacingCard'
 
 const AboutPage = () => {
   return (
     <Layout>
-        <main>
-            <Link to="/">Back to Home</Link>
-            <h2 style={{height: "1000px"}}>About us Page! 🛑🛑🛑 🚧 Under Construction 🚧</h2>
-        </main>
+      <SpacingCard margin={'120px'}/>
+      <AboutBanner />
+      <SpacingCard margin={'120px'}/>
+      <FutureProofCard />
+      <SpacingCard margin={'60px'}/>
     </Layout>
   )
 }
