@@ -23,6 +23,8 @@ export const SEO = ({ title, description, pathname, children }) => {
       <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
 
+        <link rel="image_src" href="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+
         <meta property="og:title" content="TaskSuite" />
         <meta property="og:description" content={seo.description} />
         <meta property="og:url" content="https://i.ibb.co/HFcHY6K/tasksuite.png"/>
