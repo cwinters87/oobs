@@ -58,6 +58,11 @@
     font-size: 15px;
 }
 
+.contactText a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
 @media screen and (max-width: 767px) {
     .container {
         width: 100%;
