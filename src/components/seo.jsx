@@ -5,7 +5,7 @@ export const SEO = ({ title, description, pathname, children }) => {
   const { 
     title: defaultTitle, 
     description: defaultDescription, 
-    image, 
+    // image, 
     siteUrl, 
     // twitterUsername
     } = useSiteMetadata()
@@ -13,7 +13,7 @@ export const SEO = ({ title, description, pathname, children }) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
+    // image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
     // twitterUsername,
   }
@@ -27,8 +27,8 @@ export const SEO = ({ title, description, pathname, children }) => {
 
         <meta property="og:title" content="TaskSuite" />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:url" content="https://i.ibb.co/HFcHY6K/tasksuite.png"/>
-        <meta property="og:image" content={seo.image} />
+        <meta property="og:url" content={seo.url}/>
+        <meta property="og:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png" />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="945" />
         <meta name="twitter:title" content={seo.title} />
