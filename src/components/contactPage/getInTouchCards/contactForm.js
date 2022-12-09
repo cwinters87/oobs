@@ -75,7 +75,7 @@ function ContactForm({closeForm}) {
       <h3 className={styles.title}>Your Details</h3>
       <Form className={styles.formContainer} noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className={styles.row}>
-          <Form.Group as={Col} controlId="validationName">
+          <Form.Group as={Col} controlId="validationName" id={styles.nameRow}>
             <Form.Label>Name</Form.Label>
             <Form.Control
               className={styles.input}
