@@ -4,6 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `TaskSuite`,
+    description: `Loan Software Simplified`,
+    image: `./static/tasksuite.png`,
     siteUrl: `https://www.tasksuite.com`
   },
   
@@ -27,8 +29,8 @@ module.exports = {
         ],
       },
     },
+    // Favicon change below
     {
-      // Favicon change below
       resolve: `gatsby-plugin-manifest`,
       options: {
         // name: 'TaskSuite',
