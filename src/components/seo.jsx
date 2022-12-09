@@ -25,14 +25,14 @@ export const SEO = ({ title, description, pathname, children }) => {
 
         <meta property="og:title" content="TaskSuite" />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:url" content={seo.url} />
+        <meta property="og:url" content="https://i.ibb.co/HFcHY6K/tasksuite.png" alt="tasksuite" />
         <meta property="og:image" content={seo.image} />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="945" />
         <meta name="twitter:title" content={seo.title} />
         <meta name="twitter:url" content={seo.url} />
         <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content={seo.image} />
+        <meta name="twitter:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png" alt="tasksuite" />
 
       {/* <meta name="image" content={seo.image} /> */}
 
