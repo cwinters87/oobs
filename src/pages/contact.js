@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { SEO } from "../components/seo"
+import { Seo } from "../components/seo"
 import Layout from "../components/layout"
 import ContactBanner from '../components/contactPage/contactBanner'
 import GetInTouch from '../components/contactPage/getInTouch'
@@ -21,7 +21,7 @@ const ContactPage = () => {
 }
 
 export const Head = () => (
-  <SEO title="TaskSuite - Contact Us">
+  <Seo title="TaskSuite - Contact Us">
     <script type="application/ld+json">
       {`
         {
@@ -37,7 +37,7 @@ export const Head = () => (
         }
       `}
     </script>
-  </SEO>
+  </Seo>
 )
 
 export default ContactPage

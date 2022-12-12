@@ -5,33 +5,34 @@
 }
 
 .title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: underline var(--primary);
     text-decoration-thickness: .1rem;
+    text-align: center;
 }
 
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
     .title {
         font-size: 1.5rem;
     }
-}
+} */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .title {
         font-size: 1.1rem;
     }
     
-}
+} */
 
 @media screen and (max-width: 767px) {
     .title {
-        font-size: .8rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 518px) {
     .title {
-        font-size: .6rem;
+        font-size: 1.2rem;
     }
 }

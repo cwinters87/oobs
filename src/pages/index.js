@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { SEO } from "../components/seo"
+import { Seo } from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../components/layout"
 import Hero from '../components/hero'
@@ -46,7 +46,7 @@ const IndexPage = () => {
 // export const Head = () => <title>TaskSuite</title>
 
 export const Head = () => (
-  <SEO />
+  <Seo />
 )
 
 export default IndexPage
