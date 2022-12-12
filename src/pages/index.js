@@ -38,7 +38,7 @@ const IndexPage = () => {
       <TestimonialCard />
       <SpacingCard margin={heightSpacing}/>
       <FutureProofCard />
-      <SpacingCard margin={'60px'}/>
+      <SpacingCard margin={'0px'}/>
     </Layout>
   )
 }

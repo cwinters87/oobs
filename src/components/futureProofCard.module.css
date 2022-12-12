@@ -1,14 +1,16 @@
 .container {
-    /* padding-bottom: 120px; */
+    padding-bottom: 140px;
+    
     width: 100%;
     background: url("../images/futureProofCard/fp-bg.svg");
-    background-position: right -30px bottom 20px;
+    background-position: right -30px bottom 5px;
     background-repeat: no-repeat;
 }
 
 .card {
+    
     width: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px;
     border-radius: 60px 10px 0px 0px;
     background: url("../images/futureProofCard/fp-bg-left.svg"), url("../images/futureProofCard/fp-bg-right.svg"), var(--accent-background-color);
     background-position: left bottom, right top, top;
@@ -72,12 +74,17 @@
     .actionContainer {
         width: 100%;
     }
+    .card {
+        border-radius: 60px 10px 10px 10px;
+    }
 }
 
 @media screen and (max-width: 575px) {
     .container {
         padding-left: 3%;
         padding-right: 3%;
+        padding-bottom: 110px;
+        background-position: right 6% bottom 5px;
     }
 }
 
