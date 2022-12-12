@@ -20,11 +20,11 @@ function ContactForm({closeForm}) {
   const [nameValue, setNameValue] = useState(),
         onNameInput = ({target:{value}}) => setNameValue(value)
 
-  const [emailValue, setEmailValue] = useState(),
-        onEmailInput = ({target:{value}}) => setEmailValue(value)
-
   const [phoneValue, setPhoneValue] = useState(),
         onPhoneInput = ({target:{value}}) => setPhoneValue(value)
+
+  const [emailValue, setEmailValue] = useState(),
+        onEmailInput = ({target:{value}}) => setEmailValue(value)
 
   const [subjectValue, setSubjectValue] = useState(),
         onSubjectInput = ({target:{value}}) => setSubjectValue(value)
@@ -71,7 +71,6 @@ function ContactForm({closeForm}) {
 
   return (
     <div className={styles.container}>
-
       <h3 className={styles.title}>Your Details</h3>
       <Form className={styles.formContainer} noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className={styles.row}>
@@ -90,23 +89,6 @@ function ContactForm({closeForm}) {
               Please provide your name.
             </Form.Control.Feedback>
           </Form.Group>
-          <Form.Group as={Col} controlId="validationEmail">
-            <Form.Label>Email address</Form.Label>
-              <Form.Control
-                className={styles.input}
-                type="email"
-                onChange={onEmailInput}
-                value={emailValue}
-                placeholder="Your Email Address"
-                required
-              />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-              <Form.Control.Feedback type="invalid">
-                Please enter an email address.
-              </Form.Control.Feedback>
-          </Form.Group>
-          </Row>
-          <Row className={styles.row}>
           <Form.Group as={Col} controlId="validationPhone">
             <Form.Label>Phone Number</Form.Label>
             <Form.Control
@@ -122,6 +104,24 @@ function ContactForm({closeForm}) {
               Please provide a phone number.
             </Form.Control.Feedback>
           </Form.Group>
+          </Row>
+          <Row className={styles.row}>
+          <Form.Group as={Col} controlId="validationEmail">
+            <Form.Label>Email address</Form.Label>
+              <Form.Control
+                className={styles.input}
+                type="email"
+                onChange={onEmailInput}
+                value={emailValue}
+                placeholder="Your Email Address"
+                required
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please enter an email address.
+              </Form.Control.Feedback>
+          </Form.Group>
+
           </Row>
           <Row className={styles.row}>
           <Form.Group as={Col} controlId="validationSubject">

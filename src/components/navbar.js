@@ -117,7 +117,7 @@ const NavigationBar = () => {
                     </div>
                   </NavDropdown>
                   <Link to="/about" className={styles.pageLink}>About</Link>
-                  <Link to="/contact" className={styles.pageLink}>Contact</Link>
+                  <Link to="/contact" className={styles.pageLink} id={styles.contactDiv}>Contact</Link>
                   <DemoButton>Schedule a Demo</DemoButton>
                 </Nav>
               </Offcanvas.Body>

@@ -6,6 +6,12 @@
     background-color: var(--tertiary);
     color: var(--primary-font-color);
     border-radius: 100px;
+
+    /* new style? */
+    /* border-style: solid;
+    border-color: var(--primary);
+    border-width: .15rem; */
+
     display: flex;
     align-items: center;
 }
