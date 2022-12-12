@@ -90,3 +90,10 @@
         height: auto;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

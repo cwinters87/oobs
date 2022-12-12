@@ -7,3 +7,15 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .htmlContainer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .siteContainer {
+        padding: 0;
+        width: 100%;
+    }
+}

@@ -7,7 +7,7 @@ import * as styles from './layout.module.css'
 export default function Layout({ children }) {
   return (
     <div className="layout-container">
-      <Container>
+      <Container className={styles.htmlContainer}>
         <NavigationBar/>
             <div className={styles.siteContainer}>
               {children}
