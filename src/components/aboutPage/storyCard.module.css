@@ -1,0 +1,42 @@
+.container {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+}
+
+.textContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}

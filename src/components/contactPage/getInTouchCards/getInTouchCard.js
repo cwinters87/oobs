@@ -34,7 +34,7 @@ const GetInTouchCard = () => {
               <div className={styles.iconContainer}>
                 <img src={pinIcon} alt='pin'></img>
               </div>
-              <h2 className={styles.contactText}><a href='https://goo.gl/maps/tdqF64woYZh98rD48' target="_blank" rel="noreferrer">2101 S I-35 Frontage Road, Austin, Texas 78741</a></h2>
+              <h2 className={styles.contactText}><a href='https://goo.gl/maps/tdqF64woYZh98rD48' target="_blank" rel="noreferrer">2101 S I-35 Frontage Road<br/> Austin, Texas 78741</a></h2>
             </div>
           </div>
         </div>

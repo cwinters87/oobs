@@ -17,7 +17,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.titleContainer}>
           <Link to="/" ><img src={Logo} alt="tasksuite logo" /></Link>
-          <div className={styles.desc}>T<span>a</span>sksu<span>i</span>te is driven solely by the defined purpose to connect people by connecting businesses
+          <div className={styles.desc}>T<span>a</span>skSu<span>i</span>te is driven solely by the defined purpose to connect people by connecting businesses
             with their customers. We embrace and honor the beliefs of people before profits and that profit comes with the
             quality connections of good people.</div>
         </div>

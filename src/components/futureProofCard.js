@@ -17,7 +17,6 @@ const FutureProofCard = () => {
             processes with TaskSuite—give us a call. We’re happy to answer any questions you may have about getting started
             with our platform.</div>
           <div className={styles.actionContainer}>
-            {/* <Button className={styles.button}>Schedule a Demo</Button> */}
             <DemoButton></DemoButton>
             <div className={styles.gifContainer}>
               <img className={styles.robotGif} src={taskRobotGif} alt='dancing robot'/>

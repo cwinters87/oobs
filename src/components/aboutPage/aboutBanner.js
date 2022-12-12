@@ -6,10 +6,10 @@ const AboutBanner = () => {
   return (
         <div className={styles.container}>
               <h1 className={styles.title}>
-                MEET TASKSUITE
+                MEET T<span>A</span>SKSU<span>I</span>TE
               </h1>
               <p className={styles.subTitle}>
-                Throughout our eight years in business, we’ve built a strong team of knowledgeable experts ready to help bring your business into the 21st century.
+                Throughout our decade in business, we’ve developed a strong team of knowledgeable experts ready to help your business compete and excel in today's market.
               </p>
         </div>
     )
