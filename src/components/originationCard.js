@@ -8,7 +8,7 @@ const OriginationCard = () => {
         <div className={styles.container} id='loan-origination'>
             <div className={styles.imgContainer}><img src={OriginationGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Loan Origination Suite</h1>
+                <h1 className={styles.title}>Lo<span>a</span>n Origination Su<span>i</span>te</h1>
                 <p>With a powerful CRM at its core, it's easy to track client applications and communication.</p>
                 <div>
                     <div className={styles.bullet}>

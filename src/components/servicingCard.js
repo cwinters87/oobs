@@ -8,7 +8,7 @@ const ServicingCard = () => {
         <div className={styles.container} id='loan-servicing'>
             <div className={styles.imgContainer}><img src={ServicingGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Loan Servicing Suite</h1>
+                <h1 className={styles.title}>Lo<span>a</span>n Servicing Su<span>i</span>te</h1>
                 <p>Cloud based loan servicing tools for managing and supporting your loan portfolio and customers.</p>
                 <div>
                     <div className={styles.bullet}>

@@ -8,7 +8,7 @@ const CreditCard = () => {
         <div className={styles.container} id='credit-ai'>
             <div className={styles.imgContainer}><img src={CreditAiGif} alt='pie chart gif' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Credit AI Suite</h1>
+                <h1 className={styles.title}>Credit <span>a</span>i Su<span>i</span>te</h1>
                 <p>Work with us to implement your business specific credit engine or model.</p>
                 <div>
                     <div className={styles.bullet}>
