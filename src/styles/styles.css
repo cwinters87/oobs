@@ -11,6 +11,7 @@
     --font: 'Roboto', sans-serif;
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
+    --gradient-purple: #4C40F7;
     background-color: var(--secondary);
     /* overflow-x: hidden; */
   }
@@ -24,6 +25,7 @@
     font-family: var(--font);
     color: var(--primary-font-color);
     background-color: var(--secondary);
+    /* background-image: linear-gradient(to bottom right, var(--secondary), var(--gradient-purple)); */
 }
 
 @media screen and (max-width: 767px) {
@@ -57,10 +59,4 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-/* media */
-
-.test {
-    background-color: yellow;
 }

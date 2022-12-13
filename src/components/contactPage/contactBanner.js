@@ -9,7 +9,7 @@ const ContactBanner = () => {
                 CONTACT US
               </h1>
               <p className={styles.subTitle}>
-                Our software is built to improve connections—so we value your questions, concerns, and feedback. We’re lookng
+                We value your questions, concerns, and feedback. We’re lookng
                 forward to hearing from you!
               </p>
         </div>

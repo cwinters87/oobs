@@ -18,9 +18,9 @@
     font-weight: bold;
 }
 
-/* .header > span {
+.header > span {
     color: var(--primary);
-} */
+}
 
 .subTitle {
     max-width: 80%;

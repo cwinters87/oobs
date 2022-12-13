@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../components/layout"
 import Hero from '../components/hero'
 import TrustedBanner from '../components/trustedBanner'
-import ManageGrowCard from '../components/manageGrowCard'
 import LoanCard from '../components/loanCard'
 import OriginationCard from '../components/originationCard'
 import ServicingCard from '../components/servicingCard'
@@ -24,8 +23,6 @@ const IndexPage = () => {
       <Hero />
       <SpacingCard margin={heightSpacing}/>
       <TrustedBanner />
-      {/* <SpacingCard margin={'55px'}/>
-      <ManageGrowCard /> */}
       <SpacingCard margin={'110px'}/>
       <LoanCard />
       <SpacingCard margin={heightSpacing}/>
