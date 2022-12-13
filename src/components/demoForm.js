@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row'
 import * as styles from './demoForm.module.css'
 
 function DemoForm({closeForm}) {
+
+  const url = 'https://tasksuite.com/success'
   
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
@@ -65,6 +67,7 @@ function DemoForm({closeForm}) {
             }
             )
             closeForm()
+            window.location.replace(url);
           }
           setValidated(true)
         }

@@ -23,6 +23,7 @@
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
+    "react-countdown": "^2.3.5",
     "react-countup": "^6.3.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"

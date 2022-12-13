@@ -7,11 +7,8 @@ import * as styles from './contactForm.module.css'
 
 function ContactForm({closeForm}) {
 
-  function refreshPage() {
-    window.location.reload(false);
-  }
+  const url = 'https://tasksuite.com'
 
-  
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
   const [validated, setValidated] = useState(false);
@@ -64,7 +61,8 @@ function ContactForm({closeForm}) {
               console.log(error)
             }
             )
-            refreshPage()
+            closeForm()
+            window.location.replace(url);
           }
           setValidated(true)
         }
