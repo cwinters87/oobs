@@ -9,13 +9,11 @@ const StoryCard = () => {
       <div className={styles.textContainer}>
         <h3 className={styles.title}>OUR STORY</h3>
         <div>
-          <p className={styles.desc}>It started with a small but bright idea in 2015. The idea was that all of the support, sales, and 
-            service components a business needs could and should be unified in one collaborative customer-centric software platform.
+          <p className={styles.desc}>
+            T<span>A</span>SKSU<span>I</span>TE began in 2015 as a small but bright idea⁠—that all of the support, sales, origination, and service software⁠ nessecary for running a financial business could be unified into a one system and be flexible enought to adapt to a changing market.
           </p>
           <p className={styles.desc}>
-            Today, we have more than 30,000 business vvusers. Now, more than ever, businesses need a platform like TASKSUITE
-            that is agile, unified, and lightspeed with the changing times. ​We integrate our people, process, and
-            technology to help companies grow and advance the world around them.
+            T<span>A</span>SKSU<span>I</span>TE has since grown to support over 5,000 users accross a variety of prestigious clients that we are proud to work with.
           </p>
         </div>
       </div>

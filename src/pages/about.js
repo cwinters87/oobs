@@ -12,9 +12,9 @@ const AboutPage = () => {
       <SpacingCard margin={'120px'}/>
       <AboutBanner />
       <SpacingCard margin={'120px'}/>
-      <WhoWeAreCard />
-      <SpacingCard margin={'120px'}/>
       <StoryCard />
+      <SpacingCard margin={'120px'}/>
+      <WhoWeAreCard />
       <SpacingCard margin={'120px'}/>      
       <FutureProofCard />
       <SpacingCard margin={'60px'}/>

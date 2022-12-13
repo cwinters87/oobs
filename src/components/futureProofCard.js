@@ -14,7 +14,7 @@ const FutureProofCard = () => {
           </div>
           <div className={styles.title}>Ready to Future-Proof Your Business?</div>
           <div className={styles.subTitle}>If you’re looking to grow your business by streamlining and simplifying
-            processes with TaskSuite—give us a call. We’re happy to answer any questions you may have about getting started
+            processes with T<span>A</span>SKSU<span>I</span>TE—give us a call. We’re happy to answer any questions you may have about getting started
             with our platform.</div>
           <div className={styles.actionContainer}>
             <DemoButton></DemoButton>

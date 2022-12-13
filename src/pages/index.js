@@ -24,8 +24,8 @@ const IndexPage = () => {
       <Hero />
       <SpacingCard margin={heightSpacing}/>
       <TrustedBanner />
-      <SpacingCard margin={'55px'}/>
-      <ManageGrowCard />
+      {/* <SpacingCard margin={'55px'}/>
+      <ManageGrowCard /> */}
       <SpacingCard margin={'110px'}/>
       <LoanCard />
       <SpacingCard margin={heightSpacing}/>

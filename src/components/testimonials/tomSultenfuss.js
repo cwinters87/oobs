@@ -17,7 +17,7 @@ const TomSultenfussTestimony = () => {
             </div>
             <div className={styles.divider}></div>
             <div className={styles.body} >
-                <p>We've been working with the TaskSuite team for over three years. They provide our business with the best tools in the industry. I am impressed with their product and their capabilities.</p>                
+                <p>We've been working with the TASKSUITE team for over three years. They provide our business with the best tools in the industry. I am impressed with their product and their capabilities.</p>                
             </div>
             <div className={styles.quote} ><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>

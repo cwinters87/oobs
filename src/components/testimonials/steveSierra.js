@@ -17,7 +17,7 @@ const SteveSierraTestimony = () => {
             </div>
             <div className={styles.divider}></div>       
             <div className={styles.body} >
-                <p>TaskSuite's talented development team has been responsive and helped our business provide custom solutions for our clients. TaskSuite is simple easy to use and powerful. We liked the tool and service so much.</p>
+                <p>TASKSUITE's talented development team has been responsive and helped our business provide custom solutions for our clients. TaskSuite is simple easy to use and powerful. We liked the tool and service so much.</p>
             </div>
             <div className={styles.quote}><img src={QuoteIcon} alt='quotation icon' /></div>
         </div>

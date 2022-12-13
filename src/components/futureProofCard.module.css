@@ -41,6 +41,10 @@
     color: var(--subtitle-color);
 }
 
+.subTitle span {
+    color: var(--primary)
+}
+
 .actionContainer {
     display: flex;
     justify-content: center;
