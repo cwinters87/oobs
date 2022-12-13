@@ -34,9 +34,9 @@
     font-size: 15px;
 }
 
-.desc span {
+/* .desc span {
     color: var(--primary)
-}
+} */
 
 @media screen and (max-width: 575px) {
     .container {

@@ -18,17 +18,17 @@
     font-weight: bold;
 }
 
-.header > span {
+/* .header > span {
     color: var(--primary);
-}
+} */
 
 .subTitle {
     max-width: 80%;
 }
 
-.subTitle span {
+/* .subTitle span {
     color: var(--primary)
-}
+} */
 
 .buttonContainer {
     width: 100%;
