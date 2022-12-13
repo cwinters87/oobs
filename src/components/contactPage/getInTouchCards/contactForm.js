@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import * as styles from './contactForm.module.css'
 
-function ContactForm({closeForm}) {
+function ContactForm() {
 
   const url = 'https://tasksuite.com'
 
@@ -61,7 +61,6 @@ function ContactForm({closeForm}) {
               console.log(error)
             }
             )
-            closeForm()
             window.location.replace(url);
           }
           setValidated(true)

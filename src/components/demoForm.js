@@ -66,7 +66,6 @@ function DemoForm({closeForm}) {
               console.log(error)
             }
             )
-            closeForm()
             window.location.replace(url);
           }
           setValidated(true)
