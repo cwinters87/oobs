@@ -7,7 +7,7 @@ import * as styles from './contactForm.module.css'
 
 function ContactForm() {
 
-  const url = 'https://tasksuite.com'
+  const url = 'https://tasksuite.com/success'
 
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
