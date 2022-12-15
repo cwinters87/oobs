@@ -63,6 +63,10 @@
     color: var(--primary-font-color);
 }
 
+.contactText a:hover {
+    color: var(--primary);
+}
+
 @media screen and (max-width: 767px) {
     .container {
         width: 100%;
