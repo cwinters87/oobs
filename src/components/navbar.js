@@ -17,6 +17,18 @@ import hamburger from '../images/navbar/hamburger.png'
 
 const NavigationBar = () => {
 
+  const [showDropDown, setShowDropDown] = useState(false);
+  const handleCloseDropDown = () => setShowDropDown(false);
+  const handleShowDropDown = () => setShowDropDown(true);
+
+  const dropDownToggle = () => {
+    if (showDropDown === false) {
+      handleShowDropDown()
+    } else {
+      handleCloseDropDown()
+    }
+  }
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -43,7 +55,9 @@ const NavigationBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <NavDropdown 
+                  <NavDropdown
+                    show={showDropDown}
+                    onClick={dropDownToggle} 
                     align="end"
                     className={styles.dropdownMenu}
                     title="Products"

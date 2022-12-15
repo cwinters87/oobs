@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { navigate } from "gatsby"
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
@@ -6,8 +7,6 @@ import Row from 'react-bootstrap/Row'
 import * as styles from './contactForm.module.css'
 
 function ContactForm() {
-
-  const url = 'https://tasksuite.com/success'
 
   // Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
@@ -61,7 +60,7 @@ function ContactForm() {
               console.log(error)
             }
             )
-            window.location.replace(url);
+            navigate("/success")
           }
           setValidated(true)
         }
