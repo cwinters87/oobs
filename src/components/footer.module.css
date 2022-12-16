@@ -87,6 +87,11 @@
     height: auto;
 }
 
+.socials img:hover {
+    filter: brightness(120%);
+    /* transition: 500ms; */
+}
+
 @media screen and (max-width: 991px) {
     .footer {
         flex-direction: column;
