@@ -54,10 +54,14 @@ const Footer = () => {
                     <img src={YoutubeIcon} alt="youtube icon"/>
                   </a>
                 </div>
+                {/* remove in Jan */}
+                <Link to="/careers" className={styles.careers}><p>Careers</p></Link>
               </div>
             </div>
           </div>
         </div>
+
+        
         
       </footer>
     </Container>

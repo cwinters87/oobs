@@ -71,6 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 .socialsHeader {
@@ -88,6 +89,18 @@
 }
 
 .socials img:hover {
+    filter: brightness(120%);
+    /* transition: 500ms; */
+}
+
+.careers {
+    padding-left: 8px;
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+.careers:hover {
+    color: var(--primary);
     filter: brightness(120%);
     /* transition: 500ms; */
 }
@@ -119,8 +132,10 @@
     .socialsContainer{
         margin-right: 15px;
     }
-
     .socialsHeader {
+        padding-left: 0;
+    }
+    .careers {
         padding-left: 0;
     }
     .socials {
