@@ -18,23 +18,33 @@ export const Seo = ({ title, description, pathname, children }) => {
     // twitterUsername,
   }
 
+  const googleScript = `
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KPV29SH');
+  `
+
   return (
     <>
       <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
+      <meta name="title" content=" Loan Management, Origination, Servicing, and Credit Software"></meta>
+      <script>{googleScript}</script>
+      <meta name="description" content={seo.description} />
 
-        <link rel="image_src" href="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+      <link rel="image_src" href="https://i.ibb.co/HFcHY6K/tasksuite.png" />
 
-        <meta property="og:title" content="TaskSuite" />
-        <meta property="og:description" content={seo.description} />
-        <meta property="og:url" content={seo.url}/>
-        <meta property="og:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="945" />
-        <meta name="twitter:title" content={seo.title} />
-        <meta name="twitter:url" content={seo.url} />
-        <meta name="twitter:description" content={seo.description} />
-        <meta name="twitter:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png"/>
+      <meta property="og:title" content="TaskSuite" />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:url" content={seo.url}/>
+      <meta property="og:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+      <meta property="og:image:width" content="1280" />
+      <meta property="og:image:height" content="945" />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:url" content={seo.url} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png"/>
 
       {/* <meta name="image" content={seo.image} /> */}
 

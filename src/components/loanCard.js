@@ -4,6 +4,7 @@ import LoanSuiteGif from '../images/loanCard/loan-suite.gif'
 import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
 const LoanCard = () => {
+
   return (
         <div className={styles.container} id='loan-management'>
             <div className={styles.imgContainer}><img src={LoanSuiteGif} alt='pie chart gif' /></div>

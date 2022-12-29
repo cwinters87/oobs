@@ -43,7 +43,7 @@ const IndexPage = () => {
 // export const Head = () => <title>TaskSuite</title>
 
 export const Head = () => (
-  <Seo />
+  <Seo/>
 )
 
 export default IndexPage

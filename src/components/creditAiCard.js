@@ -4,6 +4,7 @@ import CreditAiGif from '../images/creditAiCard/creditai-suite.gif'
 import CheckMark from '../images/loanCard/check-mark-icon.svg'
 
 const CreditCard = () => {
+    
   return (
         <div className={styles.container} id='credit-ai'>
             <div className={styles.imgContainer}><img src={CreditAiGif} alt='pie chart gif' /></div>
