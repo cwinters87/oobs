@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Tasksuite`,
+    title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,
     description: `TASKSUITE combines 4 powerful systems into a single product, enabling lenders to streamline their operations. Request a Demo`,
     image: `./static/tasksuite.png`,
     siteUrl: `https://www.tasksuite.com`
