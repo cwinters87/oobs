@@ -8,7 +8,7 @@ import CloseButton from 'react-bootstrap/CloseButton';
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import DemoButton from './demoButtonModal'
 import * as styles from "./navbar.module.css"
-import Logo from '../images/navbar/nav-tasksuite-logo.svg'
+import { StaticImage } from "gatsby-plugin-image"
 import LoanIcon from '../images/navbar/nav-taskloan-icon.svg'
 import ServiceIcon from '../images/navbar/nav-service-icon.svg'
 import OrginationIcon from '../images/navbar/nav-orgination-icon.svg'
@@ -37,7 +37,8 @@ const NavigationBar = () => {
         <header className={styles.navBar}>
         <Navbar bg="transparent" variant="dark" expand='lg' className="mb-3">
           <Container fluid>
-            <Navbar.Brand><Link to="/"><img src={Logo} alt="tasksuite logo" /></Link></Navbar.Brand>
+            {/* <Navbar.Brand><Link to="/"><img src={Logo} alt="tasksuite logo" /></Link></Navbar.Brand> */}
+            <Navbar.Brand><Link to="/"><StaticImage src="../images/navbar/nav-tasksuite-logo.svg" alt="tasksuite logo" /></Link></Navbar.Brand>
             <Navbar.Toggle id={styles.hamburger} aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleShow}>
               <span><img id={styles.icon} src={hamburger} alt='menu'/></span>
               </Navbar.Toggle>
@@ -50,7 +51,7 @@ const NavigationBar = () => {
               <Offcanvas.Header >
                 <CloseButton variant="white" className={styles.close} onClick={handleClose} />
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  <Link to="/" onClick={handleClose}><img src={Logo} alt="tasksuite logo" /></Link>
+                  <Link to="/" onClick={handleClose}><StaticImage src="../images/navbar/nav-tasksuite-logo.svg" alt="tasksuite logo" /></Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

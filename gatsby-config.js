@@ -10,7 +10,11 @@ module.exports = {
   },
   
   // Plug in tracking ID for google analytics below...
-  plugins: [{
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         "trackingId": "tracking_id_here"
