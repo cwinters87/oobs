@@ -13,8 +13,8 @@ const ServicingHero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1 className={styles.header}><span>Loan</span> Management, Origination, Servicing, and Credit <span>Software</span></h1>
-        <p className={styles.subTitle}>T<span>A</span>SKSU<span>I</span>TE combines 4 powerful systems into a single product, enabling lenders to streamline their operations.</p>
+        <h1 className={styles.header}><span>Loan</span> Servicing Suite</h1>
+        <p className={styles.subTitle}>Cloud based loan servicing tools for managing and supporting your loan portfolio and customers.</p>
         <div className={styles.buttonContainer}>
           <DemoButton propButtonStyle={buttonStyle}/>
         </div>

@@ -13,8 +13,8 @@ const ManagementHero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1 className={styles.header}><span>Loan</span> Management, Origination, Servicing, and Credit <span>Software</span></h1>
-        <p className={styles.subTitle}>T<span>A</span>SKSU<span>I</span>TE combines 4 powerful systems into a single product, enabling lenders to streamline their operations.</p>
+        <h1 className={styles.header}><span>Loan</span> Management Suite</h1>
+        <p className={styles.subTitle}>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
         <div className={styles.buttonContainer}>
           <DemoButton propButtonStyle={buttonStyle}/>
         </div>
