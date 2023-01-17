@@ -8,12 +8,19 @@ module.exports = {
     image: `./static/tasksuite.png`,
     siteUrl: `https://www.tasksuite.com`
   },
-  
-  // Plug in tracking ID for google analytics below...
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 100,
+          
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
+    // Plug in tracking ID for google analytics below...
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

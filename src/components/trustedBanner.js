@@ -1,14 +1,14 @@
 import * as React from 'react'
 import CountUp from 'react-countup'
 import * as styles from './trustedBanner.module.css'
-import Logo from '../images/trustedBanner/tasksuite-icon.svg'
+import { StaticImage } from "gatsby-plugin-image"
 
 const TrustedBanner = () => {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
         <div>
-          <img src={Logo} alt='tasksuite logo'/>
+          <StaticImage src="../images/trustedBanner/tasksuite-icon.svg" placeholder="" alt="tasksuite robot" />
         </div>      
         <h3 className={styles.header}>Trusted by Lenders<br />Worldwide</h3>
       </div>

@@ -60,7 +60,7 @@
 
 .dropDownProductContainer > div > a:hover {
     background-color: var(--secondary);
-    transition: 500ms;
+    transition: 200ms;
 }
 
 
@@ -73,7 +73,7 @@
 
 .productSubContainer > a:hover {
     border-radius: 20px;
-    transition: 500ms;
+    transition: 200ms;
 }
 
 .productItem {
@@ -88,7 +88,7 @@
 .productItem:hover {
     border-radius: 20px;
     background-color: var(--tertiary);
-    transition: 500ms;
+    transition: 200ms;
 }
 
 .productIcon {

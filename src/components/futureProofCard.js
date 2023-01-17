@@ -1,7 +1,8 @@
 import * as React from 'react'
 import DemoButton from './demoButtonModal'
 import * as styles from './futureProofCard.module.css'
-import planeIcon from '../images/futureProofCard/fp-plane.svg'
+import { StaticImage } from "gatsby-plugin-image"
+// import planeIcon from '../images/futureProofCard/fp-plane.svg'
 import taskRobotGif from '../images/futureProofCard/Tasksuite - Dance.gif'
 
 const FutureProofCard = () => {
@@ -10,7 +11,8 @@ const FutureProofCard = () => {
     <div className={styles.container}>
         <div className={styles.card} >
           <div className={styles.plane} >
-            <img src={planeIcon} alt='paper airplane' />
+            {/* <img src={planeIcon} alt='paper airplane' /> */}
+            <StaticImage src="../images/futureProofCard/fp-plane.svg" placeholder="" alt="paper airplane" />
           </div>
           <div className={styles.title}>Ready to Future-Proof Your Business?</div>
           <div className={styles.subTitle}>If you’re looking to grow your business by streamlining and simplifying
