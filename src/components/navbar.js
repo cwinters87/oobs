@@ -37,8 +37,7 @@ const NavigationBar = () => {
         <header className={styles.navBar}>
         <Navbar bg="transparent" variant="dark" expand='lg' className="mb-3">
           <Container fluid>
-            {/* <Navbar.Brand><Link to="/"><img src={Logo} alt="tasksuite logo" /></Link></Navbar.Brand> */}
-            <Navbar.Brand><Link to="/"><StaticImage src="../images/navbar/nav-tasksuite-logo.svg" alt="tasksuite logo" /></Link></Navbar.Brand>
+            <Navbar.Brand><Link to="/"><StaticImage src="../images/navbar/nav-tasksuite-logo.svg" placeholder="blurred" alt="tasksuite logo" /></Link></Navbar.Brand>
             <Navbar.Toggle id={styles.hamburger} aria-controls={`offcanvasNavbar-expand-lg`} onClick={handleShow}>
               <span><img id={styles.icon} src={hamburger} alt='menu'/></span>
               </Navbar.Toggle>
@@ -65,7 +64,7 @@ const NavigationBar = () => {
                     id={`offcanvasNavbarDropdown-expand-lg`}>
                     <div className={styles.dropDownProductContainer}>
                       <div className={styles.productSubContainer}>
-                          <Link to="/#loan-management" onClick={handleClose}>
+                          <Link to="/loanmanagement" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={LoanIcon} alt="loan suite icon" />
@@ -81,7 +80,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="/#loan-origination" onClick={handleClose}>
+                          <Link to="/loanorigination" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={OrginationIcon} alt="loan orgination icon"/>
@@ -98,7 +97,7 @@ const NavigationBar = () => {
                           </Link>
                       </div>
                       <div className={styles.productSubContainer}>
-                          <Link to="/#loan-servicing" onClick={handleClose}>
+                          <Link to="/loanservicing" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={ServiceIcon} alt="servicing icon" />
@@ -113,7 +112,7 @@ const NavigationBar = () => {
                               </div>
                             </div>
                           </Link>
-                          <Link to="/#credit-ai" onClick={handleClose}>
+                          <Link to="/creditai" onClick={handleClose}>
                             <div className={styles.productItem}>
                               <div className={styles.productIcon}>
                                 <img src={CreditIcon} alt="credit icon" />
