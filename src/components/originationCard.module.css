@@ -24,6 +24,10 @@
     justify-content: center;
 }
 
+.textContainer p {
+    font-family: var(--font-heading);
+}
+
 .title {
     font-weight: bold;
 }
@@ -45,6 +49,7 @@
 }
 
 .text {
+    font-family: var(--font-heading);
     margin-left: 20px;
     display: flex;
     flex-wrap: wrap;
