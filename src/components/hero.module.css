@@ -13,7 +13,6 @@
 }
 
 .header {
-    /* font-family: var(--font-heading); */
     color: var(--primary-font-color);
     font-size: 40px;
     font-weight: bold;
@@ -24,7 +23,7 @@
 }
 
 .subTitle {
-    font-family: var(--font-heading);
+    font-family: var(--font-sub);
     max-width: 80%;
 }
 

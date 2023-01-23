@@ -35,7 +35,7 @@
 }
 
 .subTitle {
-    font-family: var(--font-heading);
+    font-family: var(--font-sub);
     text-align: center;
     font-size: 12px;
     max-width: 640px;

@@ -7,6 +7,7 @@
 }
 
 .title {
+    font-weight: bold;
     text-align: center;
     font-size: 45px;  
 }
@@ -16,6 +17,7 @@
 }
 
 .subTitle {
+    font-family: var(--font-sub);
     text-align: center;
     font-size: 15px;
     max-width: 680px;

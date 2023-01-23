@@ -27,6 +27,7 @@
 }
 
 .subTitle {
+    font-family: var(--font-sub);
     font-size: 16px;
     margin-bottom: 40px;
 }
@@ -58,6 +59,7 @@
 }
 
 .contactText a {
+    font-family: var(--font-sub);
     text-decoration: none;
     color: var(--primary-font-color);
 }
