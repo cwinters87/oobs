@@ -55,6 +55,7 @@
 }
 
 .contactText {
+    font-family: var(--font-sub);
     font-size: 15px;
 }
 
