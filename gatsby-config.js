@@ -27,6 +27,16 @@ module.exports = {
         "trackingId": "tracking_id_here"
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `arvo`,
+    //       `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+    //     ],
+    //     display: 'swap'
+    //   }
+    // },
     {
       resolve: "gatsby-omni-font-loader",
       options: {

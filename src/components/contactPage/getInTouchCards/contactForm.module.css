@@ -12,7 +12,7 @@
 }
 
 .formContainer {
-    font-family: var(--font);
+    font-family: var(--font-sub);
 }
 
 .input {

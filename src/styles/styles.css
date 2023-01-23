@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Nunito&display=swap');
+
 :root {
     --primary: #3A7492;
     /* --primary: #7BA0B3; */
@@ -9,6 +11,8 @@
     --light-background-color: #ffff;
     --light-blue-background-color: #4f8fac;
     --font: 'Roboto', sans-serif;
+    /* --font-heading: 'Nunito', sans-serif; */
+    --font-sub: 'Nunito', sans-serif;
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
     --gradient-purple: #4C40F7;

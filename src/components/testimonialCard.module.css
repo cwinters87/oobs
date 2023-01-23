@@ -4,6 +4,7 @@
 }
 
 .textContainer {
+    
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
 }
 
 .subHeader {
+    font-family: var(--font-sub);
     font-size: 16px;
 }
 
