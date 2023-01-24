@@ -23,6 +23,7 @@
 }
 
 .subTitle {
+    font-family: var(--font-sub);
     max-width: 80%;
 }
 

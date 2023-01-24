@@ -15,6 +15,7 @@ import CustomDevelopmentCard from '../components/products/subProducts/customDeve
 import PaymentProcessingCard from '../components/products/subProducts/paymentProcessingCard'
 import IntegrationsCard from '../components/products/subProducts/integrationsCard'
 import HelpdeskCard from '../components/products/subProducts/helpdeskCard'
+import SubProductHeading from '../components/products/subProducts/subProductHeading'
 
 // import { Link } from 'gatsby'
 
@@ -23,7 +24,9 @@ const LoanManagementProduct = () => {
     <Layout>
       <FirstSpacingCard/>
       <ManagementHero />
-      <SpacingCard margin={'120px'}/>
+      <SpacingCard margin={'60px'}/>
+      <SubProductHeading/>
+      <SpacingCard margin={'60px'}/>
       <CrmCard/>
       <SpacingCard margin={'120px'}/>
       <BorrowerPortalCard/>

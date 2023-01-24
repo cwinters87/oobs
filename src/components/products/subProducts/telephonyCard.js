@@ -9,20 +9,20 @@ const TelephonyCard = () => {
         <div className={styles.container}>
             <div className={styles.imgContainer}><img src={PlaceholderGif} alt='placeholder' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>Fully Integrated Telephony System</h1>
-                <p>Description about the sub product</p>
+                <h1 className={styles.title}>Fully Integrated VOIP System</h1>
+                <p>Built right into the cloud-based Tasksuite application, this feature allows for smooth and effortless communication between your business and its customers with no hardware required.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Things it does</div>
+                        <div className={styles.text}>Supports Calling & Texting</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Another thing</div>
+                        <div className={styles.text}>Easily Scalable with Greater Accessibility</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Yet another</div>
+                        <div className={styles.text}>Real-Time Analytics & Recordings</div>
                     </div>
                 </div>   
             </div>

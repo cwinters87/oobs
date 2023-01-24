@@ -14,7 +14,8 @@ const ManagementHero = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.header}><span>Loan</span> Management Suite</h1>
-        <p className={styles.subTitle}>Allows you to manage the entire loan process from one system and provides a holistic view of your entire loan book.</p>
+        <p className={styles.subTitle}>Manage all stages of the loan life cycle in one innovative cloud-based system with Tasksuite.<br/>
+        Automate processess and streamline workflows using AI allowing for rapid processing of loan requests, scalabilty, and flexibilty for lenders and borrowers.</p>
         <div className={styles.buttonContainer}>
           <DemoButton propButtonStyle={buttonStyle}/>
         </div>

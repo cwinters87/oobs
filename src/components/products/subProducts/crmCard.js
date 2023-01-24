@@ -9,20 +9,20 @@ const CrmCard = () => {
         <div className={styles.container}>
             <div className={styles.imgContainer}><img src={PlaceholderGif} alt='placeholder' /></div>
             <div className={styles.textContainer}>
-                <h1 className={styles.title}>CRM</h1>
-                <p>Description about the CRM</p>
+                <h1 className={styles.title}>CRM System</h1>
+                <p>Manage loans from a centralized application to manage contacts, deals, team productivity, loan portfolio and email/text marketing campaigns.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Things it does</div>
+                        <div className={styles.text}>Revenue Tracking</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Another thing</div>
+                        <div className={styles.text}>Custom Fields</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Yet another</div>
+                        <div className={styles.text}>Simplified Collaboration</div>
                     </div>
                 </div>   
             </div>
