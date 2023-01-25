@@ -10,7 +10,7 @@ const PaymentProcessingCard = () => {
             <div className={styles.imgContainer}><img src={PlaceholderGif} alt='placeholder' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Payment Processing</h1>
-                <p>Description about payment processing</p>
+                <p>Allowing customers to make loan payments online, this gives you the ability to receive payments electronically, while also giving customers the convenience of making payments quickly, anywhere and anytime they need to ensure their loans are paid on time, every time.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>

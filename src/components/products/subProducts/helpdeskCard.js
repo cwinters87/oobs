@@ -10,19 +10,19 @@ const HelpdeskCard = () => {
             <div className={styles.imgContainer}><img src={PlaceholderGif} alt='placeholder' /></div>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>Helpdesk & Support</h1>
-                <p>Description about the helpdesk</p>
+                <p>This feature makes it easy to create tickets, track them through the process, assign them to the correct support person, keep track of who has been assigned what tickets and deliver real-time reporting on all open trouble tickets.</p>
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Things it does</div>
+                        <div className={styles.text}>Keeps Standards and Ensures Compliance</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Another thing</div>
+                        <div className={styles.text}>Improves Employee and Customer Experience</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Yet another</div>
+                        <div className={styles.text}>Automate Manual Tasks</div>
                     </div>
                 </div>   
             </div>
