@@ -14,15 +14,15 @@ const PaymentProcessingCard = () => {
                 <div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Things it does</div>
+                        <div className={styles.text}>Improve Customer Experience</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Another thing</div>
+                        <div className={styles.text}>Faster Transactions</div>
                     </div>
                     <div className={styles.bullet}>
                         <div className={styles.icon}><img src={CheckMark} alt='checkmark' /></div>
-                        <div className={styles.text}>Yet another</div>
+                        <div className={styles.text}>Multiple Payment Types</div>
                     </div>
                 </div>   
             </div>
