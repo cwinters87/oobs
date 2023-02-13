@@ -5,9 +5,10 @@ import SpacingCard from '../components/spacingCard'
 import StatusCard from '../components/statusCard'
 
 const websites = [
-  "https://tasksuite.com",
-  "https://crm.tasksuite.com",
-  "https://demo.tasksuite.com"
+  "https://demo.tasksuite.com/health_check",
+  "https://crm.tasksuite.com/health_check",
+  "https://crm.tasksuite.com/health_check",
+  "https://demo.tasksuite.com/health_check"
 ]
 
 const StatusPage = () => {
