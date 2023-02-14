@@ -5,16 +5,12 @@ import SpacingCard from '../components/spacingCard'
 import StatusCard from '../components/statusCard'
 import BackendData from '../components/backendData'
 
-const websites = [
-  "https://crm.tasksuite.com/web/login",
-  "https://crm.tasksuite.com/web/login",
-]
 
 const StatusPage = () => {
     return (
       <Layout>       
         <SpacingCard margin={'120px'}/>
-        <StatusCard websites={websites}/>
+        <StatusCard/>
         <SpacingCard margin={'120px'}/>
         <BackendData/>
       </Layout>
