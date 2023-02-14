@@ -13,7 +13,7 @@ const ContactPage = () => {
       <ContactBanner />
       <SpacingCard margin={'120px'}/>
       <GetInTouch />
-      <SpacingCard margin={'220px'}/>
+      <SpacingCard margin={'240px'}/>
       <FutureProofCard />
       <SpacingCard margin={'60px'}/>
     </Layout>

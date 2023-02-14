@@ -2,14 +2,17 @@ import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from '../components/layout'
 import SpacingCard from '../components/spacingCard'
-import BackendData from '../components/backendData'
+import StatusHero from '../components/statusPage/statusHero'
+import WebsiteStatus from '../components/statusPage/websiteStatus'
 
 const StatusPage = () => {
     return (
-      <Layout>       
+      <Layout>
         <SpacingCard margin={'120px'}/>
-        <BackendData/>
+        <StatusHero/>       
         <SpacingCard margin={'120px'}/>
+        <WebsiteStatus/>
+        <SpacingCard margin={'240px'}/>
       </Layout>
     )
   }

@@ -57,6 +57,7 @@ const Footer = () => {
                 </div>
                 {/* remove in Jan */}
                 <Link to="/careers" className={styles.careers}><p>Careers</p></Link>
+                <Link to="/status" className={styles.careers}><p>System Status</p></Link>
               </div>
             </div>
           </div>
