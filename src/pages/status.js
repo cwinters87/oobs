@@ -4,18 +4,14 @@ import Layout from '../components/layout'
 import SpacingCard from '../components/spacingCard'
 import StatusCard from '../components/statusCard'
 
-const websites = [
-  "https://demo.tasksuite.com/web/login",
-  "https://crm.tasksuite.com/web/login",
-  "https://crm.tasksuite.com/web/login",
-  "https://demo.tasksuite.com/web/login"
-]
+
+
 
 const StatusPage = () => {
     return (
       <Layout>       
         <SpacingCard margin={'120px'}/>
-        <StatusCard websites={websites}/>
+        <StatusCard/>
         <SpacingCard margin={'120px'}/>
       </Layout>
     )
