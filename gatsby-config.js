@@ -80,6 +80,14 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-source-rest-api`,
+    //   options: {
+    //     endpoints: [
+    //       'http://localhost:3000/data',
+    //     ],
+    //   },
+    // },
     // Favicon change below
     {
       resolve: `gatsby-plugin-manifest`,

@@ -3,12 +3,11 @@ import { Seo } from "../components/seo"
 import Layout from '../components/layout'
 import SpacingCard from '../components/spacingCard'
 import StatusCard from '../components/statusCard'
+import BackendData from '../components/backendData'
 
 const websites = [
-  "https://demo.tasksuite.com/web/login",
   "https://crm.tasksuite.com/web/login",
   "https://crm.tasksuite.com/web/login",
-  "https://demo.tasksuite.com/web/login"
 ]
 
 const StatusPage = () => {
@@ -17,6 +16,7 @@ const StatusPage = () => {
         <SpacingCard margin={'120px'}/>
         <StatusCard websites={websites}/>
         <SpacingCard margin={'120px'}/>
+        <BackendData/>
       </Layout>
     )
   }
