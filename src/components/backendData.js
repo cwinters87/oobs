@@ -1,30 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby";
-
-// const BackendData = () => {
-
-// const data = useStaticQuery(graphql`
-// query {
-//     allRestApiData {
-//         edges {
-//           node {    
-//             message
-//           }
-//         }
-//       }
-//     }
-// `);
-
-// console.log(data.allRestApiData.edges[0].node.message)
-
-// return <p>{data.allRestApiData.edges[0].node.message}</p>;
-
-// };
-
-
-// export default BackendData;
-
-
 
 const BackendData = () => {
     const [data, setData] = useState(null)
@@ -45,23 +19,12 @@ const BackendData = () => {
         }
       }
       fetchData()
-    }, [])
+    }, [])    
   
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error: {error.message}</p>
     if (!data) return null
-
-  
-    return (
-    //   <ul>
-    //     {data.map(item => (
-    //       <li key={item.id}>{item.name}</li>
-    //     ))}
-    //   </ul>
-        // <p>{data.message}</p>
-        <p>hi</p>
-
-    )
+    if (data) return (<p>{data.status}</p>)
   }
   
   export default BackendData
