@@ -36,8 +36,6 @@ const WebsiteStatus = () => {
     const status = data.instances[0].status
     const statusColor = data.instances[0].backgroundColor
     const fontColor = data.instances[0].fontColor
-    console.log(statusColor)
-    console.log("green")
     const statusStyle = {
       display: "flex",
       justifyContent: "space-between",
