@@ -10,7 +10,7 @@ const WebsiteStatus = () => {
     const fetchData = async () => {
       setLoading(true)
       try {
-        const response = await fetch("http://localhost:3000/data")
+        const response = await fetch("https://tasksuitebackend.herokuapp.com/data")
         const json = await response.json()
         setData(json)
       } catch (err) {
