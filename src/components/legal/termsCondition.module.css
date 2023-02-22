@@ -1,0 +1,34 @@
+.container {
+    font-family: var(--font-sub);
+}
+
+.container h1 {
+    font-family: var(--font);
+    text-align: center;
+}
+
+.container h2 {
+    font-family: var(--font);
+    text-align: center;
+}
+
+.container h3 {
+    font-family: var(--font);
+    text-align: center;
+}
+
+.upperRoman {
+    list-style-type: upper-roman;
+}
+
+.upperAlpha {
+    list-style-type: upper-alpha;
+}
+
+.lowerRoman {
+    list-style-type: lower-roman;
+}
+
+.underline {
+    text-decoration: underline;
+}
