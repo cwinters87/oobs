@@ -32,3 +32,17 @@
 .underline {
     text-decoration: underline;
 }
+
+.noticeAddressContainer {
+    font-family: var(--font);
+    margin: auto;
+    width: 75%;
+    text-decoration: underline;
+}
+
+.noticeAddress {
+    font-family: var(--font);
+    margin: auto;
+    width: 50%;
+    text-decoration: underline;
+}

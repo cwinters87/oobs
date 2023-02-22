@@ -122,7 +122,7 @@ const TermsCondition = () => {
                             may require..
                         </p>
                         <p>
-                            “Software Update/s” means modification of the Software &#40;any part of it, at any time) including
+                            “Software Update/s” means modification of the Software &#40;any part of it, at any time&#40; including
                             but not limited to, modifications which correct an error or defect, enhances or improves
                             previous form, provides more functionality and customisation.
                         </p>
@@ -173,18 +173,18 @@ const TermsCondition = () => {
                                     Subject to the terms and conditions of the Agreement, Service Provider hereby
                                     grants to Customer a non-exclusive, non-transferable right, during the Term of this Agreement,
                                     to use the Service. Nothing in this Agreement shall give Customer or others any right, title, or
-                                    interest whatsoever in and to the Software. Customer acknowledges and agrees that: (i) the
-                                    Service Provider Group retains all title, ownership interests and rights in and to the Software; (ii)
+                                    interest whatsoever in and to the Software. Customer acknowledges and agrees that: &#40;i&#40; the
+                                    Service Provider Group retains all title, ownership interests and rights in and to the Software; &#40;ii&#40;
                                     Customer shall not attempt to decompile or disassemble the object code of the Software, or to
-                                    otherwise reverse engineer the Software; (iii) Customer will maintain, and will use prudent
+                                    otherwise reverse engineer the Software; &#40;iii&#40; Customer will maintain, and will use prudent
                                     methods to cause its employees, consultants, subcontractors and agents to maintain, the
-                                    confidentiality and secrecy of the Software and all associated Intellectual Property; and (iv)
-                                    Customer will not: (a) remove or destroy any proprietary markings, copyright notices,
+                                    confidentiality and secrecy of the Software and all associated Intellectual Property; and &#40;iv&#40;
+                                    Customer will not: &#40;a&#40; remove or destroy any proprietary markings, copyright notices,
                                     confidential legends or any trademarks, trade names or brand names of the Service Provider
-                                    Group or its applicable vendors placed upon or contained within the Software: (b) sublicense,
-                                    lease (including operation of a time sharing service or service bureau), transfer or assign the
+                                    Group or its applicable vendors placed upon or contained within the Software: &#40;b&#40; sublicense,
+                                    lease &#40;including operation of a time sharing service or service bureau&#40;, transfer or assign the
                                     Service or any of its functionality, in whole or in part, to a third party, except to an affiliate of
-                                    Customer upon prior written notice to Service Provider; or (c) directly or indirectly export any
+                                    Customer upon prior written notice to Service Provider; or &#40;c&#40; directly or indirectly export any
                                     Software in violation of any applicable export laws and regulations. 
                                 </p>
                             </li>
@@ -203,7 +203,7 @@ const TermsCondition = () => {
                                 Failure to timely pay Subscription Fees or any other amounts due under this
                                 Agreement when due shall constitute a default, which may be enforced by Service Provider
                                 without any separate notice or cure period. Non-payment of Subscription Fees may result in
-                                the immediate deactivation of the Customer’s account and access credentials, and any
+                                the immediate deactivation of the Customer&#39;s account and access credentials, and any
                                 reactivation may be subject to additional credit requirements and/or a reactivation fee.
                             </li>
                             <li>
@@ -224,7 +224,7 @@ const TermsCondition = () => {
                     </li>
                     <li>
                         <h4>
-                            SERVICE PROVIDER’S OBLIGATIONS
+                            SERVICE PROVIDER&#39;S OBLIGATIONS
                         </h4>
                         <ol className={styles.upperAlpha}>
                             <li>
@@ -259,8 +259,8 @@ const TermsCondition = () => {
                             <li>
                                 <p>
                                     Service Provider will maintain a disaster recovery plan that is tested no less than
-                                    annually. In the event of a disaster, Service Provider will (i) replicate the Software as soon as
-                                    possible with the most recent backup date; and (ii) restore the Software with a recovery time
+                                    annually. In the event of a disaster, Service Provider will &#40;i&#40; replicate the Software as soon as
+                                    possible with the most recent backup date; and &#40;ii&#40; restore the Software with a recovery time
                                     objective of 24 hours and a recovery point objective of 24 hours. 
                                 </p>
                             </li>
@@ -268,7 +268,7 @@ const TermsCondition = () => {
                                 <p>
                                     Notwithstanding the foregoing or anything else to the contrary in this
                                     Agreement, Service Provider shall not be responsible for resolving or addressing any problem
-                                    with the Software or the Service that is caused by Customer’s misuse of the Service, or by any
+                                    with the Software or the Service that is caused by Customer&#39;s misuse of the Service, or by any
                                     modification or alteration of the Service by any party other than Service Provider or its duly
                                     authorized contractors or agents.
                                 </p>
@@ -277,7 +277,7 @@ const TermsCondition = () => {
                     </li>
                     <li>
                         <h4>
-                            CUSTOMER’S OBLIGATIONS
+                            CUSTOMER&#39;S OBLIGATIONS
                         </h4>
                         <ol className={styles.upperAlpha}>
                             <li>
@@ -303,7 +303,7 @@ const TermsCondition = () => {
                                     <li>
                                         shall not attempt to download, copy, or allow others to attempt to
                                         download or copy, the Software, or any portion thereof, in any form without Service
-                                        Provider’s prior written consent;.
+                                        Provider&#39;s prior written consent;.
                                     </li>
                                     <li>
                                         shall not modify, decompile, disassemble, or otherwise reverse engineer
@@ -346,7 +346,7 @@ const TermsCondition = () => {
                             <li>
                                 All support requests must be submitted via e-mail to support@tasksuite.com.
                                 Solely in the case of an emergency, a support request may only be submitted telephonically to
-                                (512) 900-7468, but any such telephonic report must be promptly followed up in writing to the
+                                &#40;512&#40; 900-7468, but any such telephonic report must be promptly followed up in writing to the
                                 email address specified above. 
                             </li>
                             <li>
@@ -368,11 +368,11 @@ const TermsCondition = () => {
                             </li>
                             <li>
                                 In the event that the Service is unavailable to Customer for more than four
-                                consecutive hours in a Business Day (or for more than eight hours on any non-Business Day),
+                                consecutive hours in a Business Day &#40;or for more than eight hours on any non-Business Day&#40;,
                                 and the lack of availability is caused by an unresolved issue that is within the scope of Service
-                                Provider’s responsibilities under this Agreement, Customer shall receive, as its remedy, a credit
-                                to its account in the applicable amount specified in the signed contract between <span className={styles.underline}>parties</span> (the
-                                “Penalties”), which shall be measured from the date on which the unavailability began. The
+                                Provider&#39;s responsibilities under this Agreement, Customer shall receive, as its remedy, a credit
+                                to its account in the applicable amount specified in the signed contract between <span className={styles.underline}>parties</span> &#40;the
+                                “Penalties”&#40;, which shall be measured from the date on which the unavailability began. The
                                 customer will be able to submit a request to terminate the agreement. 
                             </li>
                             <li>
@@ -382,10 +382,10 @@ const TermsCondition = () => {
                                 described in Section 14.1. 
                             </li>
                             <li>
-                                The Penalties are the Customer’s sole and exclusive remedy in respect of any
+                                The Penalties are the Customer&#39;s sole and exclusive remedy in respect of any
                                 non-performance of the Software, or any failure by Service Provider to deliver the Service in
                                 accordance with the Agreement. The Parties agree that the Penalties are a reasonable estimate
-                                of Customer’s damages arising from any such non-performance or other failure, which
+                                of Customer&#39;s damages arising from any such non-performance or other failure, which
                                 damages are by their nature difficult to estimate.
                             </li>
                         </ol>
@@ -397,24 +397,24 @@ const TermsCondition = () => {
                         <ol className={styles.upperAlpha}>
                             <li>
                                 Service Provider makes the following representations and warranties, and no
-                                others: (a) Service Provider holds an exclusive license to use and market the Software within
-                                the United States; (b) Service Provider’s employees, agents, and/or subcontractors assigned to
+                                others: &#40;a&#40; Service Provider holds an exclusive license to use and market the Software within
+                                the United States; &#40;b&#40; Service Provider&#39;s employees, agents, and/or subcontractors assigned to
                                 perform under the Agreement shall be qualified personnel with expertise in the field as
-                                described herein; (c) Service Provider will comply with all applicable laws, rules, regulations
+                                described herein; &#40;c&#40; Service Provider will comply with all applicable laws, rules, regulations
                                 and orders of any governmental authority, and will obtain at its expense all permits and
-                                licenses, pertaining to its obligations under the Agreement; (d) the Software provided to
+                                licenses, pertaining to its obligations under the Agreement; &#40;d&#40; the Software provided to
                                 Customer through the Service will be the current version of the Software, as supplemented or
-                                updated from time to time by Software Updates; and (e) the Service and the Software will
+                                updated from time to time by Software Updates; and &#40;e&#40; the Service and the Software will
                                 generally perform in accordance with its system functionalities per this Agreement and the
-                                Documentation, and will be available to Customer during the Term (provided, however, that in
-                                the event of any breach of the foregoing warranty (e), the Penalties described in your signed
-                                agreement shall be Customer’s sole and exclusive remedy).
+                                Documentation, and will be available to Customer during the Term &#40;provided, however, that in
+                                the event of any breach of the foregoing warranty &#40;e&#40;, the Penalties described in your signed
+                                agreement shall be Customer&#39;s sole and exclusive remedy&#40;.
                             </li>
                             <li>
                                 EXCEPT AS EXPRESSLY SET FORTH IN THE PRECEDING SECTION,
                                 SERVICE PROVIDER DOES NOT MAKE ANY WARRANTIES OR
                                 REPRESENTATIONS OF ANY KIND, EXPRESS OR IMPLIED, WITH RESPECT TO THE
-                                SERVICE OR SOFTWARE, INCLUDING (WITHOUT LIMITATION) IMPLIED
+                                SERVICE OR SOFTWARE, INCLUDING &#40;WITHOUT LIMITATION&#40; IMPLIED
                                 WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
                                 PURPOSE SERVICE PROVIDER DOES NOT WARRANT THE ACCURACY,
                                 PERFORMANCE OR COMPLETENESS OF THE SERVICE, OR THAT THE SERVICE
@@ -433,22 +433,22 @@ const TermsCondition = () => {
                                     <li>
                                         Customer shall defend, indemnify and hold harmless Service Provider,
                                         GoTech Investments LLC, dba Tasksuite, and the respective officers, directors,
-                                        members, managers, contractors and agents of each (“SP Indemnified Parties”) from
-                                        any and all losses, claims, liabilities and expenses (including reasonable attorneys’ fees)
-                                        to the extent arising out of or alleged to arise out of (i) Customer’s use of the Service
-                                        in a manner or for a purpose that (A) is illegal, unlawful, or unauthorized by Service
-                                        Provider or a third party to whom Customer owes a legal duty; (ii) the processing of
+                                        members, managers, contractors and agents of each &#40;“SP Indemnified Parties”&#40; from
+                                        any and all losses, claims, liabilities and expenses &#40;including reasonable attorneys&#39; fees&#40;
+                                        to the extent arising out of or alleged to arise out of &#40;i&#40; Customer&#39;s use of the Service
+                                        in a manner or for a purpose that &#40;A&#40; is illegal, unlawful, or unauthorized by Service
+                                        Provider or a third party to whom Customer owes a legal duty; &#40;ii&#40; the processing of
                                         Customer Data by Service Provider, or the incorporation of Customer Data into the
-                                        Software; or (iii) the use of the Service by any person who obtained access to the
+                                        Software; or &#40;iii&#40; the use of the Service by any person who obtained access to the
                                         Service through Customer, and who is not an Authorized User.
                                     </li>
                                     <li>
-                                        Customer shall defend (with counsel reasonably acceptable to Service
-                                        Provider) the SP Indemnified Parties from and against any third party claim, demand,
-                                        or action (regardless of the form of action) alleging a claim for which Customer is
+                                        Customer shall defend &#40;with counsel reasonably acceptable to Service
+                                        Provider&#40; the SP Indemnified Parties from and against any third party claim, demand,
+                                        or action &#40;regardless of the form of action&#40; alleging a claim for which Customer is
                                         required to indemnify the SP Indemnified Parties under the preceding subsection.
                                         Customer shall give Service Provider prompt written notice of any such third-party
-                                        claim. Upon Customer’s unqualified acceptance of such indemnification, Customer
+                                        claim. Upon Customer&#39;s unqualified acceptance of such indemnification, Customer
                                         shall have control of the defense of such third party claim and the settlement or
                                         compromise thereof; provided, however, that Service Provider shall have the right to
                                         participate in such defense through counsel of its own choosing and at its own expense.
@@ -460,19 +460,19 @@ const TermsCondition = () => {
                                 <ol className={styles.lowerRoman}>
                                     <li>
                                         Service Provider shall defend, indemnify and hold harmless Customer
-                                        and its officers, directors, members, managers, contractors and agents (“Customer
-                                        Indemnified Parties”) from any and all losses, claims, liabilities and expenses
-                                        (including reasonable attorneys’ fees) to the extent arising out of or alleged to arise out
+                                        and its officers, directors, members, managers, contractors and agents &#40;“Customer
+                                        Indemnified Parties”&#40; from any and all losses, claims, liabilities and expenses
+                                        &#40;including reasonable attorneys&#39; fees&#40; to the extent arising out of or alleged to arise out
                                         of any infringement of the Software or the Service on the Intellectual Property rights of
                                         a third party.
                                     </li>
                                     <li>
-                                        Service Provider shall defend (with counsel reasonably acceptable to
-                                        Customer) the Customer Indemnified Parties from and against any third party claim,
-                                        demand, or action (regardless of the form of action) alleging a claim for which Service
+                                        Service Provider shall defend &#40;with counsel reasonably acceptable to
+                                        Customer&#40; the Customer Indemnified Parties from and against any third party claim,
+                                        demand, or action &#40;regardless of the form of action&#40; alleging a claim for which Service
                                         Provider is required to indemnify the Customer Indemnified Parties under the preceding
                                         subsection. Service Provider shall give Customer prompt written notice of any such
-                                        third-party claim. Upon Service Provider’s unqualified acceptance of such
+                                        third-party claim. Upon Service Provider&#39;s unqualified acceptance of such
                                         indemnification, Service Provider shall have control of the defense of such third party
                                         claim and the settlement or compromise thereof; provided, however, that Customer
                                         shall have the right to participate in such defense through counsel of its own choosing
@@ -488,11 +488,11 @@ const TermsCondition = () => {
                             Customer acknowledges and agrees that the Service Provider Group owns all Intellectual
                             Property rights in and to the Software, the Service, and the Documentation. This Agreement
                             does not grant Customer any rights to, or in, patents, copyrights, database rights, creative
-                            properties, trade secrets, trade names, trademarks (whether registered or unregistered), source
+                            properties, trade secrets, trade names, trademarks &#40;whether registered or unregistered&#40;, source
                             code, object code, any other Intellectual Property rights in the Service, the Software, or the
                             Documentation. Without limiting the generality of the foregoing, the Service Provider Group
                             owns and shall continue to own all configurations, customizations and other Software Updates
-                            made by it during the Term, including (if applicable) any such Software Updates made for the
+                            made by it during the Term, including &#40;if applicable&#40; any such Software Updates made for the
                             benefit of Customer or at its request or suggestion. 
                         </p>
                     </li> 
@@ -500,21 +500,21 @@ const TermsCondition = () => {
                         <h4>CONFIDENTIALITY</h4>
                         <ol className={styles.upperAlpha}>
                             <li>
-                                Each party shall retain the other party’s Confidential Information in strict
+                                Each party shall retain the other party&#39;s Confidential Information in strict
                                 confidence, using the same degree of care with which it protects its own Confidential
-                                Information (but in no event less than reasonable care) and, except as specifically permitted in
+                                Information &#40;but in no event less than reasonable care&#40; and, except as specifically permitted in
                                 this Agreement, shall not disclose such Confidential Information to any third party without the
-                                other party’s express written consent.
+                                other party&#39;s express written consent.
                             </li>
                             <li>
                                 All Confidential Information shall be the property of the disclosing party. Each
                                 Party agrees, and shall ensure that any parent, subsidiary, affiliate, agent, consultant or
-                                otherwise agrees: (a) to use the Confidential Information only for the purposes of this
-                                Agreement and as expressly permitted by this Agreement; (b) not to make copies of or store
+                                otherwise agrees: &#40;a&#40; to use the Confidential Information only for the purposes of this
+                                Agreement and as expressly permitted by this Agreement; &#40;b&#40; not to make copies of or store
                                 Confidential Information or any part thereof except as expressly permitted by this Agreement;
-                                (c) to reproduce and maintain on any copies of any Confidential Information such proprietary
-                                legends or notices (whether of the other party or a third party) as are contained in or on the
-                                original or as the other party may otherwise reasonably request; and (d) not to modify or prepare
+                                &#40;c&#40; to reproduce and maintain on any copies of any Confidential Information such proprietary
+                                legends or notices &#40;whether of the other party or a third party&#40; as are contained in or on the
+                                original or as the other party may otherwise reasonably request; and &#40;d&#40; not to modify or prepare
                                 derivative works from, or decompile, disassemble, or sell, publish, make available, compile,
                                 display or transfer any Confidential Information except as expressly permitted by this
                                 Agreement.
@@ -530,7 +530,7 @@ const TermsCondition = () => {
                             </li>
                             <li>
                                 Upon expiration or earlier termination of this Agreement, each Party shall
-                                promptly, but in no event more than thirty (30) days thereafter, return to the other Party all
+                                promptly, but in no event more than thirty &#40;30&#40; days thereafter, return to the other Party all
                                 Confidential Information of such Party which is in tangible form, or certify in writing that all
                                 such Confidential Information has been destroyed, except as allowed by Section 9.2 hereof.
                             </li>
@@ -548,15 +548,15 @@ const TermsCondition = () => {
                         <h4>LIMITATION OF LIABILITY; LIMITATION OF ACTIONS</h4>
                         <p>
                             Notwithstanding anything to the contrary in this Agreement, and in addition to any
-                            other limitation on the Parties’ respective liabilities as set forth herein, each Party agrees to the
-                            following limitations on the other Party’s potential liability hereunder.
+                            other limitation on the Parties&#39; respective liabilities as set forth herein, each Party agrees to the
+                            following limitations on the other Party&#39;s potential liability hereunder.
                         </p>
                         <ol className={styles.upperAlpha}>
                             <li>
                                 THE TOTAL LIABILITY OF THE EITHER PARTY TO THE OTHER WILL
-                                NOT EXCEED ONE YEARS’ WORTH OF SUBSCRIPTION FEES UNDER THIS
+                                NOT EXCEED ONE YEARS&#39; WORTH OF SUBSCRIPTION FEES UNDER THIS
                                 AGREEMENT. The foregoing limitation shall not apply to any claim arising under Section 8
-                                (Indemnification), Section 9 (Confidentiality), or Section 10 (Intellectual Property) of this
+                                &#40;Indemnification&#40;, Section 9 &#40;Confidentiality&#40;, or Section 10 &#40;Intellectual Property&#40; of this
                                 Agreement.
                             </li>
                             <li>
@@ -565,13 +565,13 @@ const TermsCondition = () => {
                                 CONSEQUENTIAL, PUNITIVE, SPECIAL, EXEMPLARY, OR INCIDENTAL
                                 DAMAGES OF ANY NATURE WHATSOEVER, EVEN IF THE PARTY ALLEGED TO
                                 BE SO LIABLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. The
-                                foregoing limitation shall not apply to any claim arising under Section 8 (Indemnification),
-                                Section 9 (Confidentiality) or Section 10 (Intellectual Property) of this Agreement.
+                                foregoing limitation shall not apply to any claim arising under Section 8 &#40;Indemnification&#40;,
+                                Section 9 &#40;Confidentiality&#40; or Section 10 &#40;Intellectual Property&#40; of this Agreement.
                             </li>
                             <li>
                                 NO ACTION ARISING OUT OF THIS AGREEMENT MAY BE BROUGHT
-                                MORE THAN TWO (2) YEARS AFTER SUCH CAUSE OF ACTION ACCRUES. The
-                                foregoing limitation shall not apply to any claim arising under Section 8 (Indemnification) of
+                                MORE THAN TWO &#40;2&#40; YEARS AFTER SUCH CAUSE OF ACTION ACCRUES. The
+                                foregoing limitation shall not apply to any claim arising under Section 8 &#40;Indemnification&#40; of
                                 this Agreement.
                             </li>
                         </ol>
@@ -579,13 +579,13 @@ const TermsCondition = () => {
                     <li>
                         <h4>DEFAULT</h4>
                         <p>
-                            The following events shall constitute a default (“Default”) under this Agreement: (a)
-                            the failure by Customer to pay any fees or other charges under this Agreement within three (3)
-                            Business Days of the date on which such items are due; (b) the taking of any action by a Party
-                            that is specifically prohibited by this Agreement (such as, by way of example only, sharing of
+                            The following events shall constitute a default &#40;“Default”&#40; under this Agreement: &#40;a&#40;
+                            the failure by Customer to pay any fees or other charges under this Agreement within three &#40;3&#40;
+                            Business Days of the date on which such items are due; &#40;b&#40; the taking of any action by a Party
+                            that is specifically prohibited by this Agreement &#40;such as, by way of example only, sharing of
                             passwords; attempted unauthorized assignment of this Agreement; or disclosure of another
-                            Party’s Confidential Information); or (c) any other breach of this Agreement by a Party, if such
-                            Party has failed to cure such breach after five (5) Business Days’ written notice thereof. 
+                            Party&#39;s Confidential Information&#40;; or &#40;c&#40; any other breach of this Agreement by a Party, if such
+                            Party has failed to cure such breach after five &#40;5&#40; Business Days&#39; written notice thereof. 
                         </p>
                     </li> 
                     <li>
@@ -593,13 +593,13 @@ const TermsCondition = () => {
                         <ol className={styles.upperAlpha}>
                             <li>
                                 <span className={styles.underline}>Termination for Cause</span>. Either Party may terminate this Agreement upon
-                                immediate written notice to the other Party if (a) the other Party commits a Default (provided,
+                                immediate written notice to the other Party if &#40;a&#40; the other Party commits a Default &#40;provided,
                                 however, that the notice of termination shall describe such Default with reasonable
-                                particularity); (b) the other Party terminates or ceases business; (c) the other Party admits in
+                                particularity&#40;; &#40;b&#40; the other Party terminates or ceases business; &#40;c&#40; the other Party admits in
                                 writing its inability to pay its obligations as they become due; makes an assignment for the
                                 benefit of its creditors; or becomes the subject of a receivership or similar insolvency
-                                proceeding; or (d) a third party makes a bona fide, colorable claim that this Agreement (or the
-                                parties’ performance under this Agreement) infringes such third party’s intellectual property
+                                proceeding; or &#40;d&#40; a third party makes a bona fide, colorable claim that this Agreement &#40;or the
+                                parties&#39; performance under this Agreement&#40; infringes such third party&#39;s intellectual property
                                 rights. Ether Party will be granted a 30 day period to remedy any cause of termination from the
                                 other Party. If the other party can not remedy the cause of termination, then the terminations
                                 will continue.
@@ -608,26 +608,26 @@ const TermsCondition = () => {
                                 <span className={styles.underline}>Termination for Convenience</span>. This agreement is for a commitment of one
                                 calendar year from the signing date. This contract will automatically renew on a year to year
                                 basis until cancellation or until a new, amended contract is signed. Either Party may terminate
-                                this Agreement as of the end of the contractual one year term provided that at least ninety (90)
-                                days’ advance written notice of such termination is given to the other Party.
+                                this Agreement as of the end of the contractual one year term provided that at least ninety &#40;90&#40;
+                                days&#39; advance written notice of such termination is given to the other Party.
                             </li>
                             <li>
                                 <span className={styles.underline}>Effect of Termination; Survival</span>. Termination of this Agreement for any reason
-                                shall not affect Customer’s obligation to pay all Subscription Fees and other charges accruing
+                                shall not affect Customer&#39;s obligation to pay all Subscription Fees and other charges accruing
                                 under this Agreement prior to the date of termination, nor shall it affect the following
-                                provisions, which shall survive termination: (a) Sections 5.1.2 through 5.1.5; Section 5.1.7; and
-                                Sections 8, 9, 10, 11 and 15; (b) any other provision of this Agreement that, by its express
-                                terms, is intended to survive the termination or expiration of this Agreement; and (c) any other
+                                provisions, which shall survive termination: &#40;a&#40; Sections 5.1.2 through 5.1.5; Section 5.1.7; and
+                                Sections 8, 9, 10, 11 and 15; &#40;b&#40; any other provision of this Agreement that, by its express
+                                terms, is intended to survive the termination or expiration of this Agreement; and &#40;c&#40; any other
                                 provision of this Agreement that, in light of its context and underlying purpose, must survive
-                                such expiration or termination in order to give effect to the parties’ intent.
+                                such expiration or termination in order to give effect to the parties&#39; intent.
                             </li>
                         </ol>
                     </li>
                     <li>
                         <h4>FORCE MAJEURE</h4>
                         <p>
-                            Neither Party will be liable to the other for any failure to fulfil obligations (other than
-                            payment obligations) caused by circumstances beyond its reasonable control and not caused by
+                            Neither Party will be liable to the other for any failure to fulfil obligations &#40;other than
+                            payment obligations&#40; caused by circumstances beyond its reasonable control and not caused by
                             the negligence of the non-performing Party. Such circumstances shall include without
                             limitation acts of God, strikes, lockouts, riots, acts of war, epidemics, governmental laws and
                             regulations imposed after the fact, fire, communication line failures, power failures, internet
@@ -639,9 +639,9 @@ const TermsCondition = () => {
                         <h4>NON-SOLICITATION OF EMPLOYEES</h4>
                         <p>
                             As a material part of the consideration for this Agreement, and in recognition of the
-                            special access that each Party will have to the other Party’s employees, each Party agrees that
-                            during the Term of this Agreement and for a period of two (2) years thereafter, without the
-                            other Party’s prior written permission, such Party shall not directly or indirectly solicit for
+                            special access that each Party will have to the other Party&#39;s employees, each Party agrees that
+                            during the Term of this Agreement and for a period of two &#40;2&#40; years thereafter, without the
+                            other Party&#39;s prior written permission, such Party shall not directly or indirectly solicit for
                             employment, or contact with a view to employment, any person who is then employed by the
                             other Party or its affiliates, or any person who was so employed at any time during the sixmonth period prior to the date of such solicitation or contact.
                         </p>
@@ -666,7 +666,7 @@ const TermsCondition = () => {
                         <h4>SEVERABILITY</h4>
                         <ol className={styles.upperAlpha}>
                             <li>
-                                If any provision (or part of a provision) of this Agreement is found by a court
+                                If any provision &#40;or part of a provision&#40; of this Agreement is found by a court
                                 or administrative body of competent jurisdiction to be invalid, unenforceable or illegal, the
                                 other provisions shall remain in force.
                             </li>
@@ -716,8 +716,8 @@ const TermsCondition = () => {
                             <li>
                                 Each of the Parties acknowledges and agrees that in entering into this
                                 Agreement it does not rely on any undertaking, promise, assurance, statement, representation,
-                                warranty or understanding (whether in writing or not) of any person (whether party to this
-                                Agreement or not) relating to the subject matter of this Agreement, other than as expressly set
+                                warranty or understanding &#40;whether in writing or not&#40; of any person &#40;whether party to this
+                                Agreement or not&#40; relating to the subject matter of this Agreement, other than as expressly set
                                 out in this Agreement.
                             </li>
                         </ol>
@@ -739,16 +739,30 @@ const TermsCondition = () => {
                     </li>
                     <li>
                         <h4>NOTICES</h4>
+                        <ol className={styles.upperAlpha}>
+                            <li>
+                                All notices to be given hereunder shall be in writing, shall be effective when
+                                received or personally delivered, and shall be delivered personally, mailed by registered or
+                                certified mail &#40;return receipt requested&#40; with all postage prepaid, or sent by reputable express
+                                courier service &#40;receipt verified&#40;, to the respective parties at the addresses set forth below or
+                                such other address as may be specified by like notice.<br/><br/>
+                                <p className={styles.noticeAddressContainer}>Notice Address for Service Provider:</p>
+                                <br/>
+                                <p className={styles.noticeAddress}>
+                                    2301 S IH 35 Frontage Road, Austin, TX, 78741<br/>
+                                    Attn: Director of Operations 
+                                </p>
+                                <br/><br/>                                
+                            </li>
+                            <li>
+                                Either party may, by written notice to the other party, change any of the
+                                addresses at which, or the designated person for whose attention those notices or other
+                                communications are to be given. 
+                            </li>
+                        </ol>
                     </li>   
                 </ol>
-            </section>
-
-
-
-
-
-
-            
+            </section>            
         </main>
     )
 }
