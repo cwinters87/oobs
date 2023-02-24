@@ -17,8 +17,17 @@
     text-align: center;
 }
 
+.container h4 {
+    padding-top: 8px;
+    font-size: 20px;
+}
+
 .upperRoman {
     list-style-type: upper-roman;
+}
+
+.upperRoman > li::marker {
+    font-size: 20px;
 }
 
 .upperAlpha {
@@ -45,4 +54,21 @@
     margin: auto;
     width: 50%;
     text-decoration: underline;
+}
+
+.table {
+    margin: auto;
+    width: 75%;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+  border: 1px solid white;
+  padding: 5px 5px 5px 2px;
+}
+
+.tableHeader {
+    background-color: var(--tertiary);
+    font-family: var(--font);
 }
