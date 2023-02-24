@@ -1,4 +1,4 @@
-.footer {
+.mainFooter {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -105,6 +105,24 @@
     color: var(--primary);
     filter: brightness(120%);
     /* transition: 500ms; */
+}
+
+.subFooter {
+    padding-top: 5px;
+    width: 100%;
+    border-top: solid 1px white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal {
+    display: flex;
+    gap: 20px;
+}
+
+.legal a {
+    text-decoration: none;
+    color: var(--primary-font-color);
 }
 
 @media screen and (max-width: 991px) {
