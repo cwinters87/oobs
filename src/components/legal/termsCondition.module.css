@@ -74,6 +74,12 @@
 }
 
 @media screen and (max-width: 572px) {
+    .container {
+        padding: 0 2%;
+    }
+    .upperRoman {
+        padding: 0 8%;
+    }
     .tableSection {
         font-size: .8rem;
     }
@@ -83,4 +89,8 @@
     .tableSection {
         font-size: .5rem;
     }
+    .upperRoman {
+        padding-left: 12%;
+    }
 }
+
