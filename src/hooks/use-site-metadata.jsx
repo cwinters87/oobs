@@ -9,6 +9,8 @@ export const useSiteMetadata = () => {
           description
           image
           siteUrl
+          robots
+          noIndex
         }
       }
     }

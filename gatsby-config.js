@@ -6,7 +6,9 @@ module.exports = {
     title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,
     description: `TASKSUITE combines 4 powerful systems into a single product, enabling lenders to streamline their operations. Request a Demo`,
     image: `./static/tasksuite.png`,
-    siteUrl: `https://www.tasksuite.com`
+    siteUrl: `https://www.tasksuite.com`,
+    robots: `placeholderobot`,
+    noIndex: `placeholderindex`,
   },
   plugins: [
     {
@@ -45,6 +47,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,

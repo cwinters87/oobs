@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Seo } from "../components/seo"
 import { Link } from 'gatsby'
 import { navigate } from "gatsby"
 import Countdown from 'react-countdown';
@@ -53,6 +54,8 @@ const SuccessPage = () => {
 }
 
 
-export const Head = () => <title>Success!</title>
+export const Head = () => (
+    <Seo  title="TaskSuite - Success!" robots="robots" noIndex="noindex"/>
+)
 
 export default SuccessPage

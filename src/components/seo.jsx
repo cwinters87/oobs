@@ -1,18 +1,22 @@
 import React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-export const Seo = ({ title, description, pathname, children }) => {
+export const Seo = ({ title, description, pathname, children, robots, noIndex,  }) => {
   const { 
     title: defaultTitle, 
     description: defaultDescription, 
     // image, 
     siteUrl, 
+    robots: defaultRobots,
+    noIndex: defaultNoIndex
     // twitterUsername
     } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
+    robots: robots || defaultRobots,
+    noIndex: noIndex || defaultNoIndex,
     // image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
     // twitterUsername,
@@ -32,8 +36,11 @@ export const Seo = ({ title, description, pathname, children }) => {
       <meta name="title" content=" Loan Management, Origination, Servicing, and Credit Software"></meta>
       {/* <script>{googleScript}</script> */}
       <meta name="description" content={seo.description} />
-
       <link rel="image_src" href="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+
+     
+      <meta name={seo.robots} content={seo.noIndex} />
+      
 
       <meta property="og:title" content="TaskSuite" />
       <meta property="og:description" content={seo.description} />

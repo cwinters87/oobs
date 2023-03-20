@@ -54,7 +54,7 @@ const LoanManagementProduct = () => {
 }
 
 export const Head = () => (
-    <Seo  title="TaskSuite - Loan Managaement"/>
+    <Seo  title="TaskSuite - Loan Managaement" robots="robots" noIndex="noindex"/>
   )
 
 export default LoanManagementProduct

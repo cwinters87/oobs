@@ -21,23 +21,7 @@ const ContactPage = () => {
 }
 
 export const Head = () => (
-  <Seo title="TaskSuite - Contact Us">
-    <script type="application/ld+json">
-      {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "https://www.tasksuite.com",
-          "name": "Tasksuite",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-512-900-7468",
-            "contactType": "Sales"
-          }
-        }
-      `}
-    </script>
-  </Seo>
+  <Seo title="TaskSuite - Contact Us"/>
 )
 
 export default ContactPage

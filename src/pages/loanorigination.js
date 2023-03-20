@@ -21,7 +21,7 @@ const LoanOriginationProduct = () => {
 }
 
 export const Head = () => (
-    <Seo  title="TaskSuite - Loan Origination"/>
+    <Seo  title="TaskSuite - Loan Origination" robots="robots" noIndex="noindex"/>
   )
 
 export default LoanOriginationProduct

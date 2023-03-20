@@ -21,7 +21,7 @@ const CreditAiProduct = () => {
 }
 
 export const Head = () => (
-    <Seo  title="TaskSuite - Credit AI"/>
+    <Seo  title="TaskSuite - Credit AI" robots="robots" noIndex="noindex"/>
   )
 
 export default CreditAiProduct
