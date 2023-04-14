@@ -1,20 +1,17 @@
 import * as React from 'react'
 import Layout from "../../components/layout"
-import TermsCondition from '../../components/legal/termsCondition'
-
-
 import SpacingCard from '../../components/spacingCard'
 
-const TermsPage = () => {
+const PrivacyPage = () => {
   return (
     <Layout>
       <SpacingCard margin={'120px'}/>
-      <TermsCondition/>
+      <h1>Privacy Policy</h1>
       <SpacingCard margin={'120px'}/>
     </Layout>
   )
 }
 
-export const Head = () => <title>TaskSuite - Terms and Conditions</title>
+export const Head = () => <title>TaskSuite - Privacy Policy</title>
 
-export default TermsPage
+export default PrivacyPage

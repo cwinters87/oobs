@@ -1,21 +1,21 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Layout from "../components/layout/layout"
+import Layout from '../components/layout'
 import SpacingCard from '../components/spacingCard'
 
-const IndexPage = () => {
+// import { Link } from 'gatsby'
 
+const LoanSuite = () => {
   return (
-    <Layout >
+    <Layout>
       <SpacingCard margin={'120px'}/>
-      <h1>Homepage</h1>
+      <h1>Loan Suite</h1>
     </Layout>
   )
 }
 
 export const Head = () => (
-  <Seo/>
-)
+    <Seo  title="TaskSuite - Loan Credit AI"/>
+  )
 
-export default IndexPage
+export default LoanSuite

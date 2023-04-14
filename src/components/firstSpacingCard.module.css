@@ -1,9 +1,0 @@
-.space {
-    margin-top: 220px;
-}
-
-@media screen and (max-width: 991px) {
-    .space {
-        margin-top: 10px;
-    }
-}

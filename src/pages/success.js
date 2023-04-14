@@ -21,9 +21,9 @@ const SuccessPage = () => {
       };
 
     const mainStyle = {
-        backgroundColor: 'var(--secondary)',
-        color: 'var(--primary-font-color)',
-        fontFamily: 'var(--font)',
+        backgroundColor: 'black',
+        color: 'white',
+        // fontFamily: 'var(--font)',
         width: '100%',
         height: '500px',
         display: 'flex',
