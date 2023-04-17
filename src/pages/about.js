@@ -1,12 +1,10 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
-import Layout from "../components/layout"
-import SpacingCard from '../components/spacingCard'
+import Layout from "../layout/layout"
 
 const AboutPage = () => {
   return (
     <Layout>
-      <SpacingCard margin={'120px'}/>
       <h1>About Page</h1>
     </Layout>
   )

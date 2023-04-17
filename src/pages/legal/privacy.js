@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Layout from "../../components/layout"
-import SpacingCard from '../../components/spacingCard'
+import Layout from "../../layout/layout"
+import SpacingCard from '../../layout/spacingCard'
 
 const PrivacyPage = () => {
   return (
