@@ -1,19 +1,20 @@
 import React from "react"
 import NavigationBar from "./navbar"
 import Footer from "./footer"
-import Container from 'react-bootstrap/Container'
 import * as styles from './layout.module.css'
+// import TestNav from "./testnav"
 
 export default function Layout({ children }) {
   return (
-    <div className="layout-container">
-      <Container className={styles.htmlContainer}>
+    <div className="site-wrapper">
         <NavigationBar/>
-            <div className={styles.siteContainer}>
+        {/* <TestNav/> */}
+
+            
               {children}
-            </div>
+            
         <Footer/>
-      </Container>
+      
     </div>
   )
 }

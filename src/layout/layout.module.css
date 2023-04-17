@@ -1,14 +1,14 @@
-.siteContainer {
-    margin: 0 3% 0% 3%;
+/* .siteContainer {
+    margin: 0 0% 0% 0%;
 }
 
 @media screen and (max-width: 991px) {
     .siteContainer {
         margin: 0;
     }
-}
+} */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .htmlContainer{
         width: 100%;
         margin: 0;
@@ -18,4 +18,4 @@
         padding: 0;
         width: 100%;
     }
-}
+} */

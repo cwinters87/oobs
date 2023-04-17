@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
 module.exports = {
   siteMetadata: {
     title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,

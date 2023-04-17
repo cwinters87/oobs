@@ -2,41 +2,45 @@
 
 :root {
     --primary: #3A7492;
-    /* --primary: #7BA0B3; */
     --secondary: #1D1B1B;
-    /* --secondary: #303030; */
     --tertiary: #2f2f35;
     --button-color: #3A7492;
     --primary-font-color: #ffff;
     --light-background-color: #ffff;
     --light-blue-background-color: #4f8fac;
     --font: 'Roboto', sans-serif;
-    /* --font-heading: 'Nunito', sans-serif; */
     --font-sub: 'Nunito', sans-serif;
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
     --gradient-purple: #4C40F7;
-    background-color: var(--secondary);
-    /* overflow-x: hidden; */
+    
   }
 
-.modal-open {
-    background-color: var(--secondary);
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.layout-container {
+.site-wrapper {
     width: 100%;
+    height: 100%;
     font-family: var(--font);
-    color: var(--primary-font-color);
-    background-color: var(--secondary);
-    /* background-image: linear-gradient(to bottom right, var(--secondary), var(--gradient-purple)); */
+    background: red;
+    /* color: var(--primary-font-color);
+    background: var(--secondary); */
+   
 }
 
-@media screen and (max-width: 767px) {
-    .layout-container {
+/* @media screen and (max-width: 767px) {
+    .site-wrapper {
         display: flex;
         justify-content: center;
     }
+} */
+
+.modal-open {
+    background-color: var(--secondary);
 }
 
 .modal-content {
