@@ -163,6 +163,3 @@ function DemoForm({closeForm}) {
 }
 
 export default DemoForm
-
-
-
