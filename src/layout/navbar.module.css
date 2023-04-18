@@ -56,27 +56,19 @@
     padding-right: 1.5rem;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  /* .navBar a {
-      color: var(--primary-font-color);
-      text-decoration: none;
+#linkContainerOne a, #linkContainerTwo a {
+    color: var(--primary-font-color);
+    text-decoration: none;
   }
   
-  .navBar a:hover {
-      color: var(--lime-green);
-      transition: 250ms;
+#linkContainerOne a:hover, #linkContainerTwo a:hover {
+    color: var(--cobalt-blue);
+    transition: 250ms;
   }
   
-  .navBar a:active {
-      color: var(--cobalt-blue);
-  } */
+#linkContainerOne a:active, #linkContainerTwo a:active {
+    color: var(--cobalt-blue);
+  }
   
   
   
