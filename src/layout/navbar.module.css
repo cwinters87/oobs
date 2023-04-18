@@ -1,164 +1,204 @@
-.navBar {
-    /* background-color: var(--titanium-grey); */
-    /* position: sticky;
-    top: -15px;
-    z-index: 1 */
+#navBar {
+    width: 100svw;
     position: fixed;
     top: 0;
-    padding: 1% 5% 0 5%;
+    padding: 1% 5% 0 5%; 
+  }
+  
+#logoWrapper {
+    width: 33.33%;
     display: flex;
-}
-
-.navBar span {
-    margin: 0;
-    padding: 0;
-    width: 33.99%;
-
-}
-
-.navBar span > img {
-    
-}
-
-.navBar a {
-    color: var(--primary-font-color);
-    text-decoration: none;
-}
-
-.navBar a:hover {
-    color: var(--lime-green);
-    transition: 250ms;
-}
-
-.navBar a:active {
-    color: var(--cobalt-blue);
-}
-
-.navLinkWrapper {
-    padding: 0;
-    width: 66.99%;
-    
-}
-
-#test {
-    padding-left: 50;
-}
-
-#hamburger {
-    border: none;
-    padding: 4px 0px;
-}
-
-#hamburger.active.focus, #hamburger.active:focus,
-#hamburger.focus, #hamburger:active.focus, 
-#hamburger:active:focus, #hamburger:focus {
-  box-shadow: none;
-}
-
-#icon {
-    height: 30px;
-    width: 30px;
-}
-
-.close {  
-    position: absolute;
-    top: 42px;
-    right: 1.5rem;
-}
-
-/* .pageLink {
-    padding: 8px 24px 8px 0px;
-} */
-
-/* .dropdownMenu {
-    padding-right: 18px;
-} */
-
-/* .dropdownMenu > div {
-    padding: 0;
-    border-style: solid;
-    border-color: var(--titanium-grey);
-    border-width: 2px;
-    background-color: var(--titanium-grey); 
-    border-radius: 20px;
-} */
-
-/* .dropDownProductContainer > div > a:hover {
-    background-color: var(--secondary);
-    transition: 200ms;
-} */
-
-
-
-/* .productSubContainer {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-} */
-
-/* .productSubContainer > a:hover {
-    border-radius: 20px;
-    transition: 200ms;
-} */
-
-/* .productItem {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: 10px;
-} */
-
-/* .productItem:hover {
-    border-radius: 20px;
-    background-color: var(--tertiary);
-    transition: 200ms;
-} */
-
-/* .productIcon {
-    display: flex;
     align-items: center;
+  }
+
+#linkImgContainer {
+    width: 100%;
+    height: auto;
+  }
+
+#imgContainer {
+    width: 150px;
+    height: auto;
+  }
+  
+#image {
+    width: 100%;
+    height: auto;
+  }
+  
+#linkWrapper {
+    width: 66.66%;
+  }
+  
+#offCanvasBody {
+    width: 100%;
+  }
+  
+#linkContainerOne {
+    width: 50%;
+    display: flex;
     justify-content: center;
-} */
-
-/* .productTextDiv {
-    width: 250px;
-} */
-
-/* .productTitle {
-    font-weight: bold;
-} */
-
-/* .productDescription {
-    font-size: 12px;
-    font-family: var(--font-sub);
-} */
-
-.offCanvasBody {
-    font-family: var(--font);
-    color: var(--primary-font-color);
-    background-color: var(--titanium-grey);
-}
-
-.offCanvasBody a {
-    text-decoration: none;
-    color: var(--primary-font-color)
-}
-
-/* @media screen and (max-width: 1199px) {
-    .productSubContainer {
-        flex-direction: column;
-    }
-    
-} */
-
-/* @media screen and (max-width: 991px) {
-    .dropdownMenu > div {
-        border-width: .15rem 0 .15rem 0;
-        border-radius: 0;
-    }
-    #contactDiv {
-        margin-bottom: 15px;
-    }
-} */
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+#linkContainerTwo {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+#contactSales {
+    border-right: 1px solid grey;
+    padding-right: 1.5rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* .navBar a {
+      color: var(--primary-font-color);
+      text-decoration: none;
+  }
+  
+  .navBar a:hover {
+      color: var(--lime-green);
+      transition: 250ms;
+  }
+  
+  .navBar a:active {
+      color: var(--cobalt-blue);
+  } */
+  
+  
+  
+  
+  
+  
+  
+  #hamburger {
+      border: none;
+      padding: 4px 0px;
+  }
+  
+  #hamburger.active.focus, #hamburger.active:focus,
+  #hamburger.focus, #hamburger:active.focus, 
+  #hamburger:active:focus, #hamburger:focus {
+    box-shadow: none;
+  }
+  
+  #icon {
+      height: 30px;
+      width: 30px;
+  }
+  
+  .close {  
+      position: absolute;
+      top: 42px;
+      right: 1.5rem;
+  }
+  
+  /* .pageLink {
+      padding: 8px 24px 8px 0px;
+  } */
+  
+  /* .dropdownMenu {
+      padding-right: 18px;
+  } */
+  
+  /* .dropdownMenu > div {
+      padding: 0;
+      border-style: solid;
+      border-color: var(--titanium-grey);
+      border-width: 2px;
+      background-color: var(--titanium-grey); 
+      border-radius: 20px;
+  } */
+  
+  /* .dropDownProductContainer > div > a:hover {
+      background-color: var(--secondary);
+      transition: 200ms;
+  } */
+  
+  
+  
+  /* .productSubContainer {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  } */
+  
+  /* .productSubContainer > a:hover {
+      border-radius: 20px;
+      transition: 200ms;
+  } */
+  
+  /* .productItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin: 10px;
+  } */
+  
+  /* .productItem:hover {
+      border-radius: 20px;
+      background-color: var(--tertiary);
+      transition: 200ms;
+  } */
+  
+  /* .productIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  } */
+  
+  /* .productTextDiv {
+      width: 250px;
+  } */
+  
+  /* .productTitle {
+      font-weight: bold;
+  } */
+  
+  /* .productDescription {
+      font-size: 12px;
+      font-family: var(--font-sub);
+  } */
+  
+  .offCanvasBody {
+      font-family: var(--font);
+      color: var(--primary-font-color);
+      background-color: var(--titanium-grey);
+  }
+  
+  .offCanvasBody a {
+      text-decoration: none;
+      color: var(--primary-font-color)
+  }
+  
+  /* @media screen and (max-width: 1199px) {
+      .productSubContainer {
+          flex-direction: column;
+      }
+      
+  } */
+  
+  /* @media screen and (max-width: 991px) {
+      .dropdownMenu > div {
+          border-width: .15rem 0 .15rem 0;
+          border-radius: 0;
+      }
+      #contactDiv {
+          margin-bottom: 15px;
+      }
+  } */

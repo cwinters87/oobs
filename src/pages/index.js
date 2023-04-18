@@ -2,13 +2,14 @@ import * as React from 'react'
 import { Seo } from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../layout/layout"
-import Test from "../components/test"
+import Hero from '../components/homePage/hero'
 
 const IndexPage = () => {
 
   return (
     <Layout >
-      <Test/>
+      
+      <Hero/>
     </Layout>
   )
 }
