@@ -2,7 +2,8 @@
     width: 100svw;
     position: fixed;
     top: 0;
-    padding: 1% 5% 0 5%; 
+    background: var(--khaki-light);
+    padding: 1% 5% 1% 5%; 
   }
   
 #logoWrapper {

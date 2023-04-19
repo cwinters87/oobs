@@ -89,7 +89,7 @@
 } */
 
 .modal-open {
-    background-color: var(--titanium-grey);
+    background-color: var(--khaki-light);
 }
 
 /* .modal-content {
@@ -105,7 +105,7 @@
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--titanium-grey);
+    background: var(--khaki-light);
 }
   
 /* Handle */
