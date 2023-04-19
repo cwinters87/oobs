@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import CloseButton from 'react-bootstrap/CloseButton';
 import Offcanvas from 'react-bootstrap/Offcanvas'
-import DemoButton from './demoButtonModal'
+import DemoButton from '../components/buttons/demoButtonModal'
 import * as styles from "./navbar.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -41,12 +41,8 @@ const NavigationBar = () => {
               <span><img id={styles.icon} src={hamburger} alt='menu'/></span>
             </Navbar.Toggle>
 
-            <div id='hanleclose' onClick={handleClose} onKeyDown={(e) => {
-                                                        if (e.key === "Enter" || e.key === " ") {
-                                                        handleClose();
-                                                        }
-                                                        }}>
-           
+            <div id='hanleclose' onClick={handleClose} onKeyDown={(e) => {if (e.key === "Enter" || e.key === " ") {handleClose()}}}>
+                          
               <Navbar.Offcanvas
                 onClick={e => e.stopPropagation()}
                 show={show} 

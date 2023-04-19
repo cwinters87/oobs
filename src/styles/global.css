@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Nunito&display=swap');
+@font-face {
+    font-family: 'MatterLight';
+    src: url('./fonts/Matter-Light.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'MatterRegular';
+    src: url('./fonts/Matter-Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'MatterSemiBold';
+    src: url('./fonts/Matter-SemiBold.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'MatterBold';
+    src: url('./fonts/Matter-Bold.ttf') format('truetype');
+  }
 
 :root {
     --primary: #3A7492;
@@ -6,14 +21,19 @@
     --tertiary: #2f2f35;
     --button-color: #3A7492;
 
-    
     --light-background-color: #ffff;
     --light-blue-background-color: #4f8fac;
-    --font: 'Roboto', sans-serif;
-    --font-sub: 'Nunito', sans-serif;
+    --font: 'MatterLight', sans-serif;
+    --font-sub: 'MatterLight', sans-serif;
     --accent-background-color: #e0e8f5;
     --subtitle-color: #737b7d;
     --gradient-purple: #4C40F7;
+
+
+    --font-light: 'MatterLight', sans-serif;
+    --font-bold: 'MatterBold', sans-serif;
+    --font-semi-bold: 'MatterSemiBold', sans-serif;
+    --font-regular: 'MatterRegular', sans-serif;
 
     --money-green: #004535;
     --lime-green: #00F86F;
@@ -21,6 +41,7 @@
     --navy-blue: #0E2A52;
     --titanium-grey: #E1E1E1;
     --khaki: #DCCBB1;
+    --khaki-light: #EEE5D8;
 
     --primary-font-color: #000000;
     --secondary-font-color: #ffffff;
@@ -39,9 +60,6 @@
     --test-pallette-grey: #ada1ad;
     --test-pallette-green: #004535;
     --test-pallette-red: #ac0212;
-
-
-
     
   }
 
@@ -54,7 +72,7 @@
 .site-wrapper {
     width: 100%;
     height: 100%;
-    font-family: var(--font);
+    font-family: var(--font-light);
     background: #ffffff;
     /* padding: 0 5% 0 5%; */
     

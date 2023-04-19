@@ -1,14 +1,15 @@
-.button:hover {
-    background-color: var(--lime-green);
-    filter: brightness(90%);
-    transition: 500ms;
-}
-
 .button {
-    border: none;
+    border: solid 1px var(--cobalt-blue);
     border-radius: 4px;
     background-color: var(--cobalt-blue);
     width: fit-content;
+}
+
+.button:hover {
+    color: var(--cobalt-blue);
+    background-color: var(--lime-green);
+    filter: brightness(90%);
+    transition: 500ms;
 }
 
 .header {

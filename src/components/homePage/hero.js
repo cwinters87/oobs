@@ -1,23 +1,32 @@
 import * as React from 'react'
 import * as styles from './hero.module.css'
+import DemoButton from '../buttons/demoButtonModal'
+import ScrollButton from '../buttons/scrollButton';
 
 const Hero = () => {
+
+  const buttonStyle = {
+  };
+
+  const scrollButtonStyle = {
+  };
     
   return (
         <main className={styles.container}>
           <section className={styles.subContainer} id={styles.subContainerOne}>
             <h1>The complete loan processing and management system</h1>
             <h2>TaskSuite brings together loan origination and management into a single source of truth, enabling your team to save time and make better loan decisions.</h2>
-            <div>
-              <button className={styles.button} id={styles.heroButton}>Get Started</button>
-              <button className={styles.button} id={styles.worksButton}>See how it works</button>
+            <div id={styles.buttonContainer}>
+              {/* pass in: text={'text of your choice'} to change the text of the button
+                  pass in objects as style to customize style */}
+              <DemoButton  propButtonStyle={buttonStyle} text={'Get started'}/>
+              <ScrollButton propScrollButtonStyle={scrollButtonStyle} />
             </div>
           </section>
           <section className={styles.subContainer} id={styles.subContainerTwo}>
-
+            {/* hero image */}
           </section>
-        </main>
-            
+        </main> 
     )
 }
 

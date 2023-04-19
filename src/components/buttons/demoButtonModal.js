@@ -2,14 +2,20 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/CloseButton';
-import Logo from '../images/demoModal/logo.gif'
+import Logo from '../../images/navbar/nav-tasksuite-logo.png'
 
 import DemoForm from './demoForm';
 import * as styles from './demoButtonModal.module.css'
 
 
-function DemoButton({propButtonStyle}) {
-
+function DemoButton({propButtonStyle, text}) {
+  
+  let buttonText = 'Get a demo'
+  
+  if (typeof text === 'string') {
+    buttonText = text
+  }
+ 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -18,7 +24,7 @@ function DemoButton({propButtonStyle}) {
   return (
     <>
       <Button className={styles.button} style={propButtonStyle} onClick={handleShow}>
-        <span>Get a demo</span>
+        <span>{buttonText}</span>
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className={styles.header}>

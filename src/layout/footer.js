@@ -8,7 +8,7 @@ import EmailIcon from '../images/footer/f-email.svg'
 const Footer = () => {
   return (
     
-    <Container fluid>
+    
       <footer className={styles.footer}>
         <div className={styles.mainFooter}>
           <div className={styles.titleContainer}>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </Container>
+   
   )
 }
 

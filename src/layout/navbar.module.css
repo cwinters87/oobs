@@ -168,7 +168,7 @@
   } */
   
   .offCanvasBody {
-      font-family: var(--font);
+      font-family: var(--font-light);
       color: var(--primary-font-color);
       background-color: var(--titanium-grey);
   }
