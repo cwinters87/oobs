@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "gatsby": "^5.0.0",
+    "gatsby": "^5.9.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-tagmanager": "^5.8.0",
     "gatsby-plugin-image": "^3.3.2",
@@ -34,6 +34,11 @@
     "react-countup": "^6.3.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "webpack": "^5.80.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "postcss-loader": "^7.2.4"
   }
 }

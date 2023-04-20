@@ -1,8 +1,8 @@
 import * as React from 'react'
-import * as styles from './hero.module.css'
 import DemoButton from '../buttons/demoButtonModal'
 import ScrollButton from '../buttons/scrollButton';
 import { StaticImage } from "gatsby-plugin-image"
+import * as styles from './hero.module.css'
 
 const Hero = () => {
 
