@@ -2,6 +2,7 @@ import * as React from 'react'
 import * as styles from './hero.module.css'
 import DemoButton from '../buttons/demoButtonModal'
 import ScrollButton from '../buttons/scrollButton';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
 
@@ -24,7 +25,7 @@ const Hero = () => {
             </div>
           </section>
           <section className={styles.subContainer} id={styles.subContainerTwo}>
-            {/* hero image */}
+            <div id={styles.imgWrapper}><StaticImage id={styles.image} src="../../images/homePage/Hero.png" placeholder="" alt="hero" /></div>
           </section>
         </main> 
     )
