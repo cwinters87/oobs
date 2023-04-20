@@ -16,7 +16,8 @@
     border: none;
     display: flex;
     flex-direction: column;
-    font-family: var(--font);
+    font-family: var(--font-regular);
+    background-color: var(--khaki-light);
 }
 
 .close {
@@ -28,21 +29,31 @@
 .logo {
     position: absolute;
     top: 1.2rem;
-    left: 1.5rem;
-    width: 32px;
+    left: 3rem;
+    width: 30px;
     height: auto;
 }
 
 .title {
     font-weight: bold;
-    font-family: var(--font);
+    font-family: var(--font-light);
+    color: var(--money-green);
 }
 
 .subTitle {
-    font-family: var(--font-sub);
+    font-family: var(--font-light);
     padding: 1.2rem 1rem .8rem 1rem;
     margin-bottom: 0;
     text-align: center;
     font-size: .8rem;
+}
+
+.body {
+    background-color: var(--khaki-light);
+    border-radius: 5px;
+}
+
+#test {
+    background-color: var(--khaki-light);
 }
 

@@ -2,8 +2,8 @@ import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from '../layout/layout'
 import SpacingCard from '../layout/spacingCard'
-import StatusHero from '../components/statusPage/statusHero'
-import WebsiteStatus from '../components/statusPage/websiteStatus'
+import StatusHero from '../components/systemStatus/statusHero'
+import WebsiteStatus from '../components/systemStatus/websiteStatus'
 
 const StatusPage = () => {
     return (

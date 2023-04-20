@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.text {
+  margin-bottom: 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--secondary-font-color);
+}
+
+.text:hover {
+  color: var(--cobalt-blue);
+}
+
+
+.statusWrapper {
+  color: var(--secondary-font-color);
+  opacity: .8;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 7px;
+  border: solid 1px rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  margin-left: 4px;
+}
+
+.statusWrapper:hover {
+  color: var(--cobalt-blue);
+  background: var(--lime-green);
+  filter: brightness(90%);
+  border: solid 1px var(--cobalt-blue);
+}
+

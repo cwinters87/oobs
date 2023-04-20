@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import * as styles from './footer.module.css'
 import { StaticImage } from "gatsby-plugin-image"
+import StatusIcon from '../components/systemStatus/statusIcon'
 
 const Footer = () => {
   return (    
@@ -10,7 +11,7 @@ const Footer = () => {
 
           <div id={styles.imgContainer}>
             <div id={styles.imgWrapper}>
-              <StaticImage src="../images/footer/TaskSuite_Logo_Full_Equal_LimeWhite.png" placeholder="" alt="tasksuite logo" />
+              <StaticImage id={styles.image} src="../images/footer/TaskSuite_Logo_Full_Equal_LimeWhite.png" placeholder="" alt="tasksuite logo" />
             </div>
           </div>
 
@@ -52,18 +53,17 @@ const Footer = () => {
 
         <section id={styles.subContainerTwo}>
           <div className={styles.bottomColumn} id={styles.bottomColumnOne}>
-            <h5>© 2023 gotech investments. All rights reserved</h5>
-            <Link className={styles.link} to="/">Privacy Policy</Link>
-            <Link className={styles.link} to="/">Terms of Use</Link>
+            <h5 id={styles.rights}>© 2023 gotech investments. All rights reserved</h5>
+            <Link className={styles.link} id={styles.privacy} to="/">Privacy Policy</Link>
+            <Link className={styles.link} id={styles.term} to="/">Terms of Use</Link>
           </div>
           <div className={styles.bottomColumn} id={styles.bottomColumnTwo}>
-            {/* need small status component here */}
-            <div>0 Status: All systems normal</div>
+            <StatusIcon/>
           </div>
           <div className={styles.bottomColumn} id={styles.bottomColumnThree}>
-            <a className={styles.link} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer">in</a>
-            <a className={styles.link} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer">fa</a>
-            <a className={styles.link} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer">yt</a>
+            <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.svg" placeholder="" alt="linkedin logo" /></a>
+            <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.svg" placeholder="" alt="facebook logo" /></a>
+            <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a>
           </div>
         </section>
       </footer>

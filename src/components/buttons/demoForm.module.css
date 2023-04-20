@@ -7,14 +7,15 @@
 }
 
 .button {
-    border: none;
-    background-color: var(--button-color);
+    border: solid 1px var(--cobalt-blue);
+    background-color: var(--cobalt-blue);
     margin-top: 15px;
     width: 100%;
 }
 
 .button:hover {
-    background-color: var(--primary);
+    color: var(--cobalt-blue);
+    background-color: var(--lime-green);
     filter: brightness(90%);
     transition: 500ms;
 }

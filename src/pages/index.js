@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Layout from "../layout/layout"
 import Hero from '../components/homePage/hero'
 import SpacingCard from '../layout/spacingCard'
+import StatusIcon from '../components/systemStatus/statusIcon'
 
 const IndexPage = () => {
 
