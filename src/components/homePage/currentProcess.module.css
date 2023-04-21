@@ -1,0 +1,143 @@
+/* *, *:before, *:after {
+	box-sizing: border-box;
+} */
+
+
+.container {
+    height: 100svh;
+    width: 100%;
+    padding: 0% 7%;
+}
+
+#titleContainer {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-family: var(--font-regular);
+    font-size: 4rem;
+    color: var(--money-green);
+    margin: 0;
+}
+
+#subTitle {
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#linkContainer {
+    height: 15%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 50%;
+}
+
+.flexWrapper {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: solid .15rem var(--khaki);
+    border-radius: 18px;
+    background: var(--khaki-light);
+    height: 100%;
+    transition: .3s;
+}
+
+.textContainer {
+    height: 50%;
+}
+
+.textContainer p, .textContainer h3 {
+    margin: 0;
+}
+
+.buttonContainer {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#cardOne {
+    flex: 2;
+}
+
+#cardTwo {
+    flex: 1;
+}
+
+#cardThree {
+    flex: 1;
+}
+
+#cardFour {
+    flex: 1;
+}
+
+#cardFive {
+    flex: 2;
+}
+
+#cardOne:hover {
+    background: red;
+}
+
+#cardTwo:hover {
+    flex: 4;
+    background: red;
+}
+
+#cardFour:hover {
+    flex: 2;
+    background: red;
+    
+}
+
+#cardFour:hover + #cardFive {
+    background: blue;
+    flex: 1;
+}
+
+#cardThree:hover {
+    flex: 2;
+    background: red;
+}
+
+#cardThree:hover ~ #cardFive {
+    background: orange;
+    flex: 1;
+}
+
+#cardFive:hover {
+    background: pink;
+    flex:2
+}
+
+/* .icon {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+  } */
+
+
+  

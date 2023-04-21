@@ -3,8 +3,9 @@ import * as React from 'react'
 import backgroundImgFull from '../../images/homePage/full.png';
 import backgroundImgFit from '../../images/homePage/Fit.png';
 import backgroundImgUnified from '../../images/homePage/Unified.png';
+import ArrowLink from '../buttons/arrowLink';
 import * as styles from './comprehensiveSolution.module.css'
-import DiscoverLink from '../buttons/discoverLink';
+
 
 const ComprehensiveSolutionCard = () => {
     
@@ -29,7 +30,7 @@ const ComprehensiveSolutionCard = () => {
             </div>
           </div>
           <div className={styles.subContainer} id={styles.linkContainer}>
-            <DiscoverLink/>
+            <ArrowLink/>
           </div>
         </div>
     )
