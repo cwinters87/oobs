@@ -41,6 +41,19 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        // name: 'TaskSuite',
+        // short_name: 'TaskSuite',
+        // start_url: '/',
+        // background_color: '#1D1B1B',
+        // theme_color: '#a2466c',
+        // display: 'standalone',
+        icon: 'src/images/favicon/tasksuite.png',
+      },
+    },
+    
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -63,19 +76,19 @@ module.exports = {
     //     display: 'swap'
     //   }
     // },
-    {
-      resolve: "gatsby-omni-font-loader",
-      options: {
-        enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-        web: [
-          {
-            name: `Roboto`,
-            file: `https://fonts.googleapis.com/css2?family=Roboto&display=swap`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: "gatsby-omni-font-loader",
+    //   options: {
+    //     enableListener: true,
+    //     preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+    //     web: [
+    //       {
+    //         name: `Roboto`,
+    //         file: `https://fonts.googleapis.com/css2?family=Roboto&display=swap`,
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   resolve: `gatsby-source-rest-api`,
     //   options: {
@@ -85,17 +98,6 @@ module.exports = {
     //   },
     // },
     // Favicon change below
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        // name: 'TaskSuite',
-        // short_name: 'TaskSuite',
-        // start_url: '/',
-        // background_color: '#1D1B1B',
-        // theme_color: '#a2466c',
-        // display: 'standalone',
-        icon: 'src/images/favicon/tasksuite.png',
-      },
-    }
+    
   ],
 };
