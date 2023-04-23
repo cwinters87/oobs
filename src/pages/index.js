@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Layout >
       <Hero/>
-      {/* <ComprehensiveSolutionCard/> */}
+      <ComprehensiveSolutionCard/>
       {/* <SpacingCard margin={'300px'} /> */}
       <CurrentProcessCard />
       {/* <SpacingCard margin={'300px'} /> */}
