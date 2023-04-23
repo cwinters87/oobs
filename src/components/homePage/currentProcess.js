@@ -8,8 +8,8 @@ const CurrentProcessCard = () => {
   return (
     <div className={styles.container}>
         <div className={styles.subContainer} id={styles.titleContainer}>
-            <h2 id={styles.title}>The industry's only comprehensive loan management solution</h2>
-            <p id={styles.subTitle}>TaskSuite streamlines and automates the entire loan process, making it easy to manage and track loans from day zero to close.</p>
+            <h2 id={styles.title}>Are you happy with your current process?</h2>
+            <p id={styles.subTitle}>We know you aren't becasue we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
         </div>
         <div className={styles.subContainer} id={styles.cardContainer}>
 

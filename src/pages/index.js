@@ -6,6 +6,7 @@ import Hero from '../components/homePage/hero'
 import ComprehensiveSolutionCard from '../components/homePage/comprehensiveSolution'
 import CurrentProcessCard from '../components/homePage/currentProcess'
 import SpacingCard from '../layout/spacingCard'
+import CompleteToolsetCard from '../components/homePage/completeToolset'
 
 
 const IndexPage = () => {
@@ -17,6 +18,8 @@ const IndexPage = () => {
       {/* <SpacingCard margin={'300px'} /> */}
       <CurrentProcessCard />
       {/* <SpacingCard margin={'300px'} /> */}
+      <CompleteToolsetCard />
+      <SpacingCard margin={'800px'} />
     </Layout>
   )
 }
