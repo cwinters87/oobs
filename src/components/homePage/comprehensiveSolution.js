@@ -1,8 +1,8 @@
 import * as React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
-import backgroundImgFull from '../../../static/Full.png';
-import backgroundImgFit from '../../../static/Fit.png';
-import backgroundImgUnified from '../../../static/Unified.png'
+import backgroundImgFull from '../../../static/full.png';
+import backgroundImgFit from '../../../static/fit.png';
+import backgroundImgUnified from '../../../static/unified.png'
 import ArrowLink from '../buttons/arrowLink';
 import * as styles from './comprehensiveSolution.module.css'
 
