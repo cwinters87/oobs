@@ -53,25 +53,60 @@
 }
 
 .card {
-    border: solid .15rem var(--khaki);
+    border: solid .15rem var(--khaki--light);
     border-radius: 18px;
-    background: var(--khaki-light);
+    background-color: var(--khaki-light);
     height: 100%;
     transition: .3s;
 }
 
 .textContainer {
-    height: 50%;
+    height: 80%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.textContainer p, .textContainer h3 {
+.textContainer p {
     margin: 0;
 }
 
+.cardTitle {
+    margin: 0;
+    font-family: var(--font-bold);
+    font-size: 2.5rem;
+    color: var(--font-primanry-color);
+    
+}
+
+.cardSubTitle {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 1rem;
+    color: var(--font-primanry-color);
+}
+
+.cardHeader {
+    /* display: inline-block; */
+    margin: 0;
+    padding: 4px 12px;
+    border-radius: 25px;
+    font-size: .65rem;
+    font-family: var(--font-bold);
+    color: var(--money-green);
+    background-color: lightgrey;
+}
+
 .buttonContainer {
-    height: 50%;
+    height: 20%;
     display: flex;
     align-items: flex-end;
+}
+
+.card:hover {
+    
+    border: solid .15rem var(--khaki);
 }
 
 #cardOne {
@@ -95,17 +130,17 @@
 }
 
 #cardOne:hover {
-    background: red;
+    /* background: red; */
 }
 
 #cardTwo:hover {
     flex: 4;
-    background: red;
+    /* background: red; */
 }
 
 #cardFour:hover {
     flex: 2;
-    background: red;
+    /* background: red; */
     
 }
 
@@ -116,16 +151,16 @@
 
 #cardThree:hover {
     flex: 2;
-    background: red;
+    /* background: red; */
 }
 
 #cardThree:hover ~ #cardFive {
-    background: orange;
+    /* background: orange; */
     flex: 1;
 }
 
 #cardFive:hover {
-    background: pink;
+    /* background: pink; */
     flex:2
 }
 
