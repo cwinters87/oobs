@@ -1,23 +1,28 @@
 .container {
     height: 100svh;
     width: 100%;
-    padding: 5% 7%;
+    padding: 5% 7% 7%;
     background-color: var(--money-green);
     color: var(--secondary-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .subContainer {  
     width: 100%; 
 }
 
+
 #textContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #header {
-    margin-bottom: 4%;
     display: flex;
     justify-content: center;
     color: var(--khaki-light);
@@ -28,7 +33,7 @@
 }
 
 #title {
-    margin-bottom: 2%;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     font-family: var(--font-regular);
@@ -37,10 +42,11 @@
 #title h2 {
     text-align: center;
     margin: 0;
+    font-size: 3.5rem;
 }
 
 #subTitle {
-    margin-bottom: 5%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -48,24 +54,40 @@
 #subTitle p {
     text-align: center;
     margin: 0;
+    font-size: 1.2rem;
 }
 
-#cardContainer {
+#cardWrapper {
+    height: 100%;
     display: flex;
     gap: 20px;
-    width: 100%;
 }
 
 .card {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
+    margin: 5rem 0;
+    flex: 0 0 25%;
     text-decoration: none;
     color: var(--secondary-font-color);
     border: solid 1px var(--money-green);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.card > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .card:hover {
@@ -79,27 +101,44 @@
     color: var(--lime-green);
 }
 
+.cardContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 1rem;
+}
+
 .cardTitle {
     margin: 0;
     text-align: center;
     font-family: var(--font-regular);
+    font-size: 1.8rem;
 }
 
 .cardSubTitle {
     margin: 0;
+    margin-top: 10%;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 #imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    /* height: 40%; */
-    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+
+#imgWrapper {
+    width: auto;
+    height: 100%;
 }
 
-#image {
+.containedImage {
     width: 100%;
     height: auto;
 }
