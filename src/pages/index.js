@@ -7,6 +7,7 @@ import ComprehensiveSolutionCard from '../components/homePage/comprehensiveSolut
 import CurrentProcessCard from '../components/homePage/currentProcess'
 import SpacingCard from '../layout/spacingCard'
 import CompleteToolsetCard from '../components/homePage/completeToolset'
+import TestimonialCard from '../components/homePage/testimonial/testimonialCard'
 
 
 const IndexPage = () => {
@@ -19,7 +20,7 @@ const IndexPage = () => {
       <CurrentProcessCard />
       {/* <SpacingCard margin={'300px'} /> */}
       <CompleteToolsetCard />
-      <SpacingCard margin={'800px'} />
+      <TestimonialCard />
     </Layout>
   )
 }
