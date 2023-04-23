@@ -4,7 +4,6 @@ import * as styles from './testimonialCard.module.css'
 
 const cardData = [
   {
-    
     imageUrl: 'https://picsum.photos/200',
     quote: 'TaskSuite is awsesome!',
     quoteBy: 'Tom Sultenfuss',
@@ -12,7 +11,6 @@ const cardData = [
     company: 'CONTACTWORKS',
   },
   {
-    
     imageUrl: 'https://picsum.photos/200',
     quote: 'Who uses faxes?',
     quoteBy: 'Chris Winters',
@@ -20,7 +18,6 @@ const cardData = [
     company: 'TaskSuite',
   },
   {
-    
     imageUrl: 'https://picsum.photos/200',
     quote: 'Chris is prob the coolest guy I know',
     quoteBy: 'Michail Myburgh',
