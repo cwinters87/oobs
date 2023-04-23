@@ -145,7 +145,7 @@
 }
 
 #cardFour:hover + #cardFive {
-    background: blue;
+    /* background: blue; */
     flex: 1;
 }
 
