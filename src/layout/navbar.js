@@ -52,7 +52,7 @@ const NavigationBar = () => {
                 aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                 placement="end">
                 <Offcanvas.Header >
-                  <CloseButton variant="dark" className={styles.close} onClick={handleClose} />
+                  <CloseButton className={styles.close} onClick={handleClose} />
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                       <Link to="/" onClick={handleClose}><StaticImage src="../images/navbar/nav-tasksuite-logo.png" alt="tasksuite logo" /></Link>
                     </Offcanvas.Title>

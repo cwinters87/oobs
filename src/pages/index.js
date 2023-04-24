@@ -9,6 +9,7 @@ import SpacingCard from '../layout/spacingCard'
 import CompleteToolsetCard from '../components/homePage/completeToolset'
 import TestimonialCard from '../components/homePage/testimonial/testimonialCard'
 import ExclusivelyCard from '../components/homePage/exclusively'
+import ToolsCarousel from '../components/toolsCarousel/toolsCarousel'
 
 
 const IndexPage = () => {
@@ -21,7 +22,9 @@ const IndexPage = () => {
       <CompleteToolsetCard />
       <TestimonialCard />
       <ExclusivelyCard />
-      {/* <SpacingCard margin={'300px'} /> */}
+      {/* <SpacingCard margin={'3000px'} /> */}
+      <ToolsCarousel />
+      {/* <SpacingCard margin={'3000px'} /> */}
     </Layout>
   )
 }
