@@ -1,22 +1,31 @@
 import React from 'react';
+import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './card.module.css'
 
-const Card = ({imageUrl, quote, quoteBy, position, company }) => {
+
+const Card = ({ imageUrl, quote, author, position, company, prevCard, nextCard }) => {
+  console.log(imageUrl)
   return (
     <div className={styles.container}>
-      
-        <div className={styles.imgContainer}>
-            <img className={styles.cardImage} src={imageUrl} alt={company} />
+        <div style={{backgroundImage: `url(${imageUrl})`, backgroundRepeat  : 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}} className={styles.imgContainer}>
+            <p>{company}</p>
         </div>
         <div className={styles.cardContent}>
-            <div className={styles.quoteIcon}>quote icon</div>
+            <div className={styles.quoteIcon}>🙶</div>
             <blockquote className={styles.cardQuote}>
                 <p>{quote}</p>
             </blockquote>
-            <div className={styles.name}>{quoteBy}</div>
-            <div className={styles.nameJobTitle}>{position}, {company}</div>
+            <p className={styles.cardAuthor}>{author}</p>
+            <div className={styles.authorJobTitle}>{position}, {company}</div>
+            <div className={styles.buttonContainer}>
+              <button className={styles.button}  onClick={prevCard}>
+                <StaticImage className={styles.image} id={styles.previousArrow} src="../../../images/components/arrow.png" placeholder="" alt="arrow" />
+              </button>
+              <button className={styles.button} onClick={nextCard}>
+                <StaticImage className={styles.image} src="../../../images/components/arrow.png" placeholder="" alt="arrow" />
+              </button>
+            </div>
         </div>
-      
     </div>
   );
 };

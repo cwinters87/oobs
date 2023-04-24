@@ -14,18 +14,11 @@ const Carousel = ({ cards }) => {
   };
 
   return (
-    <div className={styles.container}>
-      <Card {...cards[currentIndex]} />
-      <div className={styles.buttonContainer}>
-        <button onClick={prevCard}>
-            &#8249;
-        </button>
-        <button onClick={nextCard}>
-            &#8250;
-        </button>
-      </div>
-      
-    </div>
+      <Card 
+        {...cards[currentIndex]}
+        prevCard={prevCard}
+        nextCard={nextCard} 
+        />
   );
 };
 

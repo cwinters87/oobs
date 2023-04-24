@@ -1,4 +1,96 @@
 .container {
     display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 70%;
+    height: 80%;
+}
+
+.imgContainer {
+    width: 45%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--secondary-font-color);
+    font-family: var(--font-semi-bold);
+    font-size: 1.8rem;
+    object-fit: cover;
+    max-height:100%; 
+    max-width:100%;
+}
+
+.image {
+    width: auto;
+    height : auto;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: cover;
+}
+
+.cardContent {
+    width: 55%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.quoteIcon {
+    color: var(--cobalt-blue);
+    font-size: 4rem;
+    height: 15%;
+    font-family: var(--font-regular);
+}
+
+.cardQuote {
+    height: 65%;
+    font-family: var(--font-semi-bold);
+    font-size: 2rem;
+    color: var(--cobalt-blue);
+    margin: 0;
+}
+
+.cardQuote p {
+    margin: 0;
+}
+
+.cardAuthor {
+    height: 6%;
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+    color: var(--primary-font-color);
+    margin: 0;
+}
+
+.authorJobTitle {
+    height: 6%;
+    font-family: var(--font-semi-bold);
+}
+
+.buttonContainer {
+    height: 8%;
+    display: flex;
+    align-items: flex-end;
     gap: 20px;
+    
+}
+
+.button {
+    all: unset;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 5px;
+    
+}
+
+#previousArrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }

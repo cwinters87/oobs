@@ -1,11 +1,28 @@
 .container {
     height: 100svh;
     width: 100%;
-    padding: 7%;
+    padding: 0 7%;
     overflow: hidden;
     color: var(--primary-font-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    /* justify-content: flex-end; */
+    /* gap: 15%; */
+}
+
+.titleContainer {
+    font-family: var(--font-regular);
+    font-size: 1.8rem;
+    color: var(--money-green);
+    margin: 0;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+
+.title {
+    margin: 0;
+    padding-bottom: 5%;
 }
