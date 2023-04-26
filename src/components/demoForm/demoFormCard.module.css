@@ -1,5 +1,5 @@
 .container {
-    height: 70svh;
+    height: 72svh;
     width: 100%;
     padding: 0 7% 7%;
     
@@ -22,7 +22,7 @@
 
 .formContainer {
     /* margin: 10em; */
-    border: solid 4px red;
+    /* border: solid 4px red; */
     height: 100%;
     width: 50%;
     /* height: 100%; */
@@ -37,7 +37,7 @@
 
 .formWrapper {
     height: 100%;
-    border: solid 4px green;
+    /* border: solid 4px green; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +48,6 @@
     margin: 0;
     font-family: var(--font-regular);
     font-weight: 600;
-    color: var(--money-green);
     font-size: 3em;
 }
 
@@ -68,7 +67,7 @@
     margin: 0;
     font-family: var(--font-semi-bold);
     color: var(--money-green);
-    font-size: .8em;
+    font-size: 1em;
 }
 
 
@@ -76,7 +75,7 @@
 
 
 .imgContainer {
-    border: solid 4px red;
+    /* border: solid 4px red; */
     width: 50%;
     height: 100%;
     display: flex;
@@ -87,7 +86,7 @@
 .imgWrapper {
     width: auto;
     height: 100%;
-    border: solid 4px green;
+    /* border: solid 4px green; */
     display: flex;
     justify-content: center;
     align-items: flex-end;

@@ -16,20 +16,20 @@ function DemoForm({closeForm}) {
   const [firstNameValue, setFirstNameValue] = useState(),
         onFirstNameInput = ({target:{value}}) => setFirstNameValue(value)
 
-  const [lastNameValue, setLastNameValue] = useState(),
-        onLastNameInput = ({target:{value}}) => setLastNameValue(value)
+  // const [lastNameValue, setLastNameValue] = useState(),
+  //       onLastNameInput = ({target:{value}}) => setLastNameValue(value)
 
   const [emailValue, setEmailValue] = useState(),
         onEmailInput = ({target:{value}}) => setEmailValue(value)
 
-  const [companyValue, setCompanyValue] = useState(),
-        onCompanyInput = ({target:{value}}) => setCompanyValue(value)
+  // const [companyValue, setCompanyValue] = useState(),
+  //       onCompanyInput = ({target:{value}}) => setCompanyValue(value)
 
   const [phoneValue, setPhoneValue] = useState(),
         onPhoneInput = ({target:{value}}) => setPhoneValue(value)
 
-  const [websiteValue, setWebsiteValue] = useState(),
-        onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
+  // const [websiteValue, setWebsiteValue] = useState(),
+  //       onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
 
   // On Submit
   // Need to trigger a success page for better Google Ad tracking
@@ -49,11 +49,11 @@ function DemoForm({closeForm}) {
               body:JSON.stringify({
                 'type': 'demo',
                 'firstname': firstNameValue,
-                'lastname' :  lastNameValue,
+                'lastname' :  'change to last name',
 					      'email' : emailValue,
-					      'companyname' : companyValue,
+					      'companyname' : 'from website',
 					      'phone' : phoneValue,
-					      'employeecount' : websiteValue,
+					      'employeecount' : '0000',
 					      'notes' : 'source- website- Schedule a Demo Form Submission',
               })
             })
@@ -76,19 +76,21 @@ function DemoForm({closeForm}) {
         <Form.Group as={Col} controlId="validationFirstName">
           {/* <Form.Label>First name:</Form.Label> */}
           <Form.Control
+            className={styles.formInput}
             required
             type="text"
             onChange={onFirstNameInput}
             value={firstNameValue}
-            placeholder="First name"
+            placeholder="Name"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
             Please provide first name.
           </Form.Control.Feedback>
         </Form.Group>
+      </Row>
+      {/* <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationLastName">
-          {/* <Form.Label>Last name:</Form.Label> */}
           <Form.Control
             required
             type="text"
@@ -101,24 +103,26 @@ function DemoForm({closeForm}) {
             Please provide a last name.
           </Form.Control.Feedback>
         </Form.Group>
-      </Row>
+      </Row> */}
       <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationEmail">
-          {/* <Form.Label>Email address:</Form.Label> */}
-            <Form.Control
-              type="email"
-              onChange={onEmailInput}
-              value={emailValue}
-              placeholder="Email Address"
-              required
+        <Form.Group as={Col} controlId="validationPhone">
+            {/* <Form.Label>Phone Number:</Form.Label> */}
+            <Form.Control 
+              className={styles.formInput}
+              type="tel" 
+              onChange={onPhoneInput}
+              value={phoneValue}
+              placeholder="Phone" 
+              required 
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
-              Please enter an email address.
+              Please provide a phone number.
             </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} controlId="validationCompany">
-          {/* <Form.Label>Company Name:</Form.Label> */}
+          </Form.Group>
+        
+        {/* <Form.Group as={Col} controlId="validationCompany">
+          
           <Form.Control 
             type="text" 
             onChange={onCompanyInput}
@@ -130,34 +134,34 @@ function DemoForm({closeForm}) {
           <Form.Control.Feedback type="invalid">
             Please provide a company name.
           </Form.Control.Feedback>
-        </Form.Group>
+        </Form.Group> */}
       </Row>
       <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationPhone">
-          {/* <Form.Label>Phone Number:</Form.Label> */}
-          <Form.Control 
-            type="tel" 
-            onChange={onPhoneInput}
-            value={phoneValue}
-            placeholder="Phone Number" 
-            required 
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a phone number.
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Form.Group as={Col} controlId="validationWebsite">
-          {/* <Form.Label>Website:</Form.Label> */}
+        <Form.Group as={Col} controlId="validationEmail">
+            {/* <Form.Label>Email address:</Form.Label> */}
+              <Form.Control
+                className={styles.formInput}
+                type="email"
+                onChange={onEmailInput}
+                value={emailValue}
+                placeholder="Business email"
+                required
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please enter an email address.
+              </Form.Control.Feedback>
+          </Form.Group>
+        {/* <Form.Group as={Col} controlId="validationWebsite">
           <Form.Control 
             type="text" 
             onChange={onWebsiteInput}
             value={websiteValue}
             placeholder="Website" 
           />
-        </Form.Group>
+        </Form.Group> */}
       </Row>
-      <Button className={styles.button} type="submit">Request Demo</Button>
+      <Button className={styles.button} type="submit">Submit request for demo</Button>
     </Form>
   );
 }
