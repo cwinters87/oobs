@@ -14,15 +14,15 @@ import * as styles from './connectTools.module.css'
 const ConnectTools = () => {
 
   const data = [
-    { image: SlackImg, title: "Slack" },
-    { image: CreditsafeImg, title: "Creditsafe" },
-    { image: ExperianImg, title: "Experian" },
-    { image: OcrolusImg, title: "Ocrolus" },
-    { image: PlaidImg, title: "Plaid" },
-    { image: TransUnionImg, title: "TransUnion" },
-    { image: EquifaxImg, title: "Equifax" },
-    { image: SalesforceImg, title: "Salesforce" },
-  ];
+    { image: SlackImg, title: 'Slack' },
+    { image: CreditsafeImg, title: 'Creditsafe' },
+    { image: ExperianImg, title: 'Experian' },
+    { image: OcrolusImg, title: 'Ocrolus' },
+    { image: PlaidImg, title: 'Plaid' },
+    { image: TransUnionImg, title: 'TransUnion' },
+    { image: EquifaxImg, title: 'Equifax' },
+    { image: SalesforceImg, title: 'Salesforce' },
+  ]
     
   return (
         <div className={styles.container}>

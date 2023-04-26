@@ -11,6 +11,7 @@ import TestimonialCard from '../components/homePage/testimonial/testimonialCard'
 import ExclusivelyCard from '../components/homePage/exclusively'
 import ToolsCarousel from '../components/toolsCarousel/toolsCarousel'
 import ConnectTools from '../components/toolsCarousel/connectTools'
+import DemoFormCard from '../components/demoForm/demoForm'
 
 
 const IndexPage = () => {
@@ -26,6 +27,7 @@ const IndexPage = () => {
       {/* <SpacingCard margin={'3000px'} /> */}
       {/* <ToolsCarousel /> */}
       <ConnectTools />
+      <DemoFormCard />
       {/* <SpacingCard margin={'3000px'} /> */}
     </Layout>
   )
