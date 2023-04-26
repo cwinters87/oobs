@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Logo from '../../images/demoModal/logo.png'
 
-import DemoForm from './demoForm';
+import DemoForm from '../demoForm/demoForm';
 import * as styles from './demoButtonModal.module.css'
 
 

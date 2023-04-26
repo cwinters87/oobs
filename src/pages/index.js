@@ -11,7 +11,7 @@ import TestimonialCard from '../components/homePage/testimonial/testimonialCard'
 import ExclusivelyCard from '../components/homePage/exclusively'
 import ToolsCarousel from '../components/toolsCarousel/toolsCarousel'
 import ConnectTools from '../components/toolsCarousel/connectTools'
-import DemoFormCard from '../components/demoForm/demoForm'
+import DemoFormCard from '../components/demoForm/demoFormCard'
 
 
 const IndexPage = () => {

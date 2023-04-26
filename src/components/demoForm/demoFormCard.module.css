@@ -1,0 +1,97 @@
+.container {
+    height: 70svh;
+    width: 100%;
+    padding: 0 7% 7%;
+    
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.wrapper {
+    height: 100%;
+    max-width: 100%;
+    /* margin: 7%; */
+    background-color: var(--khaki-light);
+    border-radius: 20px;
+    /* border: solid 4px red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    /* margin: 10em; */
+    border: solid 4px red;
+    height: 100%;
+    width: 50%;
+    /* height: 100%; */
+    padding: 2%;
+
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper {
+    height: 100%;
+    border: solid 4px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.title {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-weight: 600;
+    color: var(--money-green);
+    font-size: 3em;
+}
+
+.checkmarkContainer {
+    display: flex;
+    width: 100%;
+}
+
+.checkWrapper {
+    display: flex;
+    gap: .3em;
+    flex: 1;
+    align-items: center;
+}
+
+.checkWrapper p {
+    margin: 0;
+    font-family: var(--font-semi-bold);
+    color: var(--money-green);
+    font-size: .8em;
+}
+
+
+
+
+
+.imgContainer {
+    border: solid 4px red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWrapper {
+    width: auto;
+    height: 100%;
+    border: solid 4px green;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
