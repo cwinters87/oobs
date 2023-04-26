@@ -1,5 +1,7 @@
-import React from 'react';
-import { ScrollMenu } from 'react-horizontal-scrolling-menu';
+import React, { useState } from 'react';
+// import { Swipeable } from 'react-swipeable';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import SlackImg from '../../images/toolCarousel/slack.png'
 import CreditsafeImg from '../../images/toolCarousel/creditsafe.png'
@@ -9,41 +11,58 @@ import PlaidImg from '../../images/toolCarousel/plaid.png'
 import TransUnionImg from '../../images/toolCarousel/transunion.png'
 import EquifaxImg from '../../images/toolCarousel/equifax.png'
 import SalesforceImg from '../../images/toolCarousel/salesforce.png'
-
 import "./toolsCarousel.css";
 
-const cardData = [
-  { src: SlackImg, title: "Slack" },
-  { src: CreditsafeImg, title: "Creditsafe" },
-  { src: ExperianImg, title: "Experian" },
-  { src: OcrolusImg, title: "Ocrolus" },
-  { src: PlaidImg, title: "Plaid" },
-  { src: TransUnionImg, title: "TransUnion" },
-  { src: EquifaxImg, title: "Equifax" },
-  { src: SalesforceImg, title: "Salesforce" },
-];
-
-const Card = ({ image, title }) => (
-  <div className="card">
-    <img src={image} alt={title} />
-    <h3>{title}</h3>
-  </div>
-);
-
 const ToolsCarousel = () => {
-  const cards = cardData.map((card, index) => (
-    <Card key={index} image={card.src} title={card.title} />
-  ));
+
+  const data = [
+    { image: SlackImg, title: "Slack" },
+    { image: CreditsafeImg, title: "Creditsafe" },
+    { image: ExperianImg, title: "Experian" },
+    { image: OcrolusImg, title: "Ocrolus" },
+    { image: PlaidImg, title: "Plaid" },
+    { image: TransUnionImg, title: "TransUnion" },
+    { image: EquifaxImg, title: "Equifax" },
+    { image: SalesforceImg, title: "Salesforce" },
+  ];
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 8,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 5,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 3,
+      slidesToSlide: 1,
+    },
+  };
 
   return (
-    <div className="scrolling-cards-container">
-      <ScrollMenu
-        data={cards}
-        wheel={true}
-        alignCenter={false}
-        dragging={false}
-        onClick={(item, event) => event.preventDefault()}
-      />
+    <div className="carousel-container">
+      <Carousel
+        responsive={responsive}
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        infinite={true}
+        keyBoardControl={true}
+        containerClass="carousel-container"
+        itemClass="carousel-item-wrapper"
+      >
+        {data.map((item, index) => (
+          <div key={index} className="carousel-item">
+            <img src={item.image} alt={item.title} />
+            <h4>{item.title}</h4>
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

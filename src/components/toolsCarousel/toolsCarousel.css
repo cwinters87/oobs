@@ -82,34 +82,39 @@
   } */
 
 
-  .scrolling-cards-container {
-    background-color: yellow;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    margin-right: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  
-  .card h3 {
-    font-size: 14px;
-    margin: 5px 0;
-  }
+/* carousel-container */
+.carousel-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* carousel-item */
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 8);
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0;
+}
+
+/* image */
+.carousel-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+/* title */
+.carousel-item h4 {
+  font-size: 14px;
+  margin: 0;
+}
