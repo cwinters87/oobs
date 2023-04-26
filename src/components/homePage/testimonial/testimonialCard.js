@@ -32,12 +32,14 @@ const cardData = [
 const TestimonialCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <div className={styles.container}>
           <div className={styles.titleContainer}>
             <h2 className={styles.title}>Over 5,000 users across 25 partners are loving TaskSuite</h2>
           </div>
           <Carousel cards={cardData}/>
         </div> 
+    </div>
     )
 }
 

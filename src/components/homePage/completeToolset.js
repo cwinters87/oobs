@@ -6,6 +6,7 @@ import * as styles from './completeToolset.module.css'
 const CompleteToolsetCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <div className={styles.container}>
             <div className={styles.subContainer} id={styles.textContainer}>
                 <div id={styles.header}>
@@ -60,6 +61,7 @@ const CompleteToolsetCard = () => {
             </div>
            
 
+        </div>
         </div>
             
     )

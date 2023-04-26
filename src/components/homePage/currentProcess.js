@@ -6,6 +6,7 @@ import AnimatedArrow from '../buttons/animatedArrow';
 const CurrentProcessCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
     <div className={styles.container}>
         <div className={styles.subContainer} id={styles.titleContainer}>
             <h2 id={styles.title}>Are you happy with your current process?</h2>
@@ -76,6 +77,7 @@ const CurrentProcessCard = () => {
             <ArrowLink text={'For Lenders'} route={'/'}/>
             <ArrowLink text={'For Brokers'} route={'/'}/>
         </div>
+  </div>
   </div>
             
     )

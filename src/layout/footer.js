@@ -6,6 +6,7 @@ import StatusIcon from '../components/systemStatus/statusIcon'
 
 const Footer = () => {
   return (    
+    <div className={styles.sectionWrapper}>
       <footer id={styles.container}>
         <section id={styles.subContainerOne}>
 
@@ -67,6 +68,7 @@ const Footer = () => {
           </div>
         </section>
       </footer>
+      </div>
    
   )
 }

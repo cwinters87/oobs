@@ -10,6 +10,7 @@ import * as styles from './comprehensiveSolution.module.css'
 const ComprehensiveSolutionCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <div className={styles.container}>
           <div className={styles.subContainer} id={styles.titleContainer}>
             <h2 id={styles.title}>The industry's only comprehensive loan management solution</h2>
@@ -32,6 +33,7 @@ const ComprehensiveSolutionCard = () => {
           <div className={styles.subContainer} id={styles.linkContainer}>
             <ArrowLink/>
           </div>
+        </div>
         </div>
     )
 }

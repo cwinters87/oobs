@@ -1,10 +1,16 @@
+.sectionWrapper {
+  width: 100svw;
+  background: var(--khaki-light);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
 #navBar {
     width: 100%;
-    position: fixed;
-    top: 0;
-    background: var(--khaki-light);
-    padding: 1% 7% 1% 7%; 
-    z-index: 1;
+    padding: 1% 7% 1% 7%;
   }
   
 #logoWrapper {
@@ -72,12 +78,6 @@
     color: var(--cobalt-blue);
   }
   
-  
-  
-  
-  
-  
-  
   #hamburger {
       border: none;
       padding: 4px 0px;
@@ -100,75 +100,6 @@
       right: 1.5rem;
   }
   
-  /* .pageLink {
-      padding: 8px 24px 8px 0px;
-  } */
-  
-  /* .dropdownMenu {
-      padding-right: 18px;
-  } */
-  
-  /* .dropdownMenu > div {
-      padding: 0;
-      border-style: solid;
-      border-color: var(--titanium-grey);
-      border-width: 2px;
-      background-color: var(--titanium-grey); 
-      border-radius: 20px;
-  } */
-  
-  /* .dropDownProductContainer > div > a:hover {
-      background-color: var(--secondary);
-      transition: 200ms;
-  } */
-  
-  
-  
-  /* .productSubContainer {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-  } */
-  
-  /* .productSubContainer > a:hover {
-      border-radius: 20px;
-      transition: 200ms;
-  } */
-  
-  /* .productItem {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      margin: 10px;
-  } */
-  
-  /* .productItem:hover {
-      border-radius: 20px;
-      background-color: var(--tertiary);
-      transition: 200ms;
-  } */
-  
-  /* .productIcon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  } */
-  
-  /* .productTextDiv {
-      width: 250px;
-  } */
-  
-  /* .productTitle {
-      font-weight: bold;
-  } */
-  
-  /* .productDescription {
-      font-size: 12px;
-      font-family: var(--font-sub);
-  } */
-  
   .offCanvasBody {
       font-family: var(--font-light);
       color: var(--primary-font-color);
@@ -180,19 +111,10 @@
       color: var(--primary-font-color)
   }
   
-  /* @media screen and (max-width: 1199px) {
-      .productSubContainer {
-          flex-direction: column;
-      }
-      
-  } */
-  
-  /* @media screen and (max-width: 991px) {
-      .dropdownMenu > div {
-          border-width: .15rem 0 .15rem 0;
-          border-radius: 0;
-      }
-      #contactDiv {
-          margin-bottom: 15px;
-      }
-  } */
+  @media only screen and (min-width: 2560px)  {
+    #navBar {
+        max-width: 2560px;
+        padding: 26px 180px;;
+    }
+    
+}

@@ -6,6 +6,7 @@ import DemoForm from './demoForm'
 const DemoFormCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <div className={styles.formContainer}>
@@ -32,6 +33,7 @@ const DemoFormCard = () => {
                 </div>
             </div>
           
+        </div>
         </div>
             
     )

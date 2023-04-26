@@ -1,7 +1,13 @@
-#container {
+.sectionWrapper {
+    width: 100svw;
+    display: flex;
+    justify-content: center;
     background-color: var(--money-green);
+  }
+
+#container {
     color: var(--secondary-font-color);
-    padding: 3% 5% 2% 5%; 
+    padding: 3% 7% 2% 7%; 
     width: 100%;
 }
 
@@ -137,3 +143,9 @@
     
 } */
 
+@media only screen and (min-width: 2560px)  {
+    #container {
+        max-width: 2560px;
+        padding: 77px 180px 52px 180px;
+    }
+}

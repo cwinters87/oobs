@@ -1,3 +1,10 @@
+.sectionWrapper {
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+  }
+
+
 .container {
     height: 100svh;
     width: 100%;
@@ -62,9 +69,13 @@
     padding: 2% 0 0 0;
 }
 
-@media only screen and (min-width: 2000px)  {
+
+
+@media only screen and (min-width: 2560px)  {
     .container {
-        padding: 9% 20%
+        max-width: 2560px;
+        padding: 26px 180px;;
     }
 }
+
 

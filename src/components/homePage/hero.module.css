@@ -1,3 +1,10 @@
+.sectionWrapper {
+    width: 100svw;
+    background: var(--khaki-light);
+    display: flex;
+    justify-content: center;
+  }
+
 .container {
     display: flex;
     height: 100svh;
@@ -53,11 +60,20 @@
     gap: 1.2rem;
 }
 
-@media only screen and (min-width: 2000px)  {
+/* @media only screen and (min-width: 2000px)  {
     .container {
         padding: 0 20% 0 20%
     }
     #subContainerOne {
         padding: 0;
     }
+} */
+
+@media only screen and (min-width: 2560px)  {
+    .container {
+        max-width: 2560px;
+        padding: 26px 180px;;
+    }
+    
 }
+

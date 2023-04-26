@@ -13,6 +13,7 @@ const Hero = () => {
   };
     
   return (
+    <div className={styles.sectionWrapper}>
         <main className={styles.container}>
           <section className={styles.subContainer} id={styles.subContainerOne}>
             <h1>The complete loan processing and management system</h1>
@@ -28,6 +29,7 @@ const Hero = () => {
             <div id={styles.imgWrapper}><StaticImage id={styles.image} src="../../images/homePage/Hero.png" placeholder="" alt="hero" /></div>
           </section>
         </main> 
+      </div>
     )
 }
 

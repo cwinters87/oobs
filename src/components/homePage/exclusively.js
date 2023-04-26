@@ -7,6 +7,7 @@ import * as styles from './exclusively.module.css'
 const ExclusivelyCard = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <div className={styles.container}>
           <div className={styles.subContainer}>
             <div className={styles.textContainer}>
@@ -17,6 +18,7 @@ const ExclusivelyCard = () => {
             </div>
             <div className={styles.imgContainer}><StaticImage id={styles.image} src='../../images/homePage/testimonial.png'/></div>
           </div>
+        </div>
         </div>
             
     )

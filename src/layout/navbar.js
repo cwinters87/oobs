@@ -29,7 +29,7 @@ const NavigationBar = () => {
   const handleShow = () => setShow(true);
 
   return (
-    
+    <div className={styles.sectionWrapper}>
         <Navbar expand='lg' id={styles.navBar} >
         {/* <Navbar bg="transparent" expand='lg' id={styles.navBar} > */}
 
@@ -99,6 +99,7 @@ const NavigationBar = () => {
             </div>
           </div>
         </Navbar>
+        </div>
        
         
   );
