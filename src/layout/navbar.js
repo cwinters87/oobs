@@ -51,10 +51,10 @@ const NavigationBar = () => {
                 id={`offcanvasNavbar-expand-lg`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                 placement="end">
-                <Offcanvas.Header >
+                <Offcanvas.Header className={styles.offHeader} >
                   <CloseButton className={styles.close} onClick={handleClose} />
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                      <Link to="/" onClick={handleClose}><StaticImage src="../images/navbar/nav-tasksuite-logo.png" alt="tasksuite logo" /></Link>
+                      <Link className={styles.test} to="/" onClick={handleClose}><StaticImage className={styles.modalImg} src="../images/navbar/nav-tasksuite-logo.png" alt="tasksuite logo" /></Link>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body id={styles.offCanvasBody}>
