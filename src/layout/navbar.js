@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby'
+import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import CloseButton from 'react-bootstrap/CloseButton';
@@ -58,7 +59,7 @@ const NavigationBar = () => {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body id={styles.offCanvasBody}>
-
+                <Nav className="justify-content-end flex-grow-1 pe-3">
                   <div id={styles.linkContainerOne}>
 
                     <NavDropdown
@@ -69,18 +70,21 @@ const NavigationBar = () => {
                       title="Products"
                       id={`offcanvasNavbarDropdown-expand-lg`}>
                       <div className={styles.dropDownProductContainer}>
-                        <Link to="/" onClick={handleClose}>
-                          <p>Loan Management Suite</p>
-                        </Link>
-                        <Link to="/" onClick={handleClose}>
-                          <p>Loan Origination Suite</p>
-                        </Link>
-                        <Link to="/" onClick={handleClose}>
-                           <p>Loan Servicing Suite</p>
-                        </Link>
-                        <Link to="/" onClick={handleClose}>
-                          <p>Loan Credit ai</p>
-                        </Link>
+                        {/* <div> */}
+                          <Link to="/" onClick={handleClose}>
+                            <p>Management Suite</p>
+                          </Link>
+                          <Link to="/" onClick={handleClose}>
+                            <p>Origination Suite</p>
+                          </Link>
+                          <Link to="/" onClick={handleClose}>
+                            <p>Servicing Suite</p>
+                          </Link>
+                          <Link to="/" onClick={handleClose}>
+                            <p>Credit ai</p>
+                          </Link>
+                        {/* </div> */}
+                        
                       </div>
                       </NavDropdown>
                       <Link to="/" className={styles.pageLink} onClick={handleClose}>For Lenders</Link>
@@ -93,7 +97,7 @@ const NavigationBar = () => {
                     <DemoButton></DemoButton>
                     <Link to="/" className={styles.pageLink}>Login</Link>
                   </div>
-
+                </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </div>

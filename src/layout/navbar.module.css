@@ -6,7 +6,7 @@
   z-index: 1;
   position: fixed;
   top: 0;
-  overflow: hidden;
+  
 }
 
 #navBar {
@@ -58,68 +58,99 @@
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
-  }
+}
   
 #contactSales {
     border-right: 1px solid grey;
     padding-right: 1.5rem;
-  }
+}
   
 #linkContainerOne a, #linkContainerTwo a {
     color: var(--primary-font-color);
     text-decoration: none;
-  }
+}
   
 #linkContainerOne a:hover, #linkContainerTwo a:hover {
     color: var(--cobalt-blue);
     transition: 250ms;
-  }
+}
   
 #linkContainerOne a:active, #linkContainerTwo a:active {
     color: var(--cobalt-blue);
-  }
+}
   
-  #hamburger {
+#hamburger {
       border: none;
       padding: 4px 0px;
-  }
+}
   
-  #hamburger.active.focus, #hamburger.active:focus,
-  #hamburger.focus, #hamburger:active.focus, 
-  #hamburger:active:focus, #hamburger:focus {
+#hamburger.active.focus, #hamburger.active:focus,
+#hamburger.focus, #hamburger:active.focus, 
+#hamburger:active:focus, #hamburger:focus {
     box-shadow: none;
-  }
+}
   
-  #icon {
+#icon {
       height: 30px;
       width: 30px;
   }
   
-  .close {  
+.close {  
       position: absolute;
       top: 42px;
       right: 1.5rem;
 
   }
-  
-  .offCanvasBody {
+
+  /* dropdown menu */
+.dropdownMenu > div {
+    background-color: var(--khaki-light);
+    border: solid 1px var(--money-green);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.dropDownProductContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.dropDownProductContainer > a> p:hover {
+  color: var(--cobalt-blue);
+}
+
+
+.dropDownProductContainer > a > p {
+  margin: 0;
+  white-space: nowrap;
+  color: var(--money-green);
+  font-family: var(--font-regular);
+}
+
+.offCanvasBody {
       font-family: var(--font-light);
       color: var(--primary-font-color);
       background-color: var(--titanium-grey);
   }
   
-  .offCanvasBody a {
+.offCanvasBody a {
       text-decoration: none;
       color: var(--primary-font-color);
   }
 
-  .offHeader {
+.offHeader {
     width: 50%;
     height: auto;
     padding-top: 9%;
 }
   
-  @media only screen and (min-width: 2560px)  {
+@media only screen and (min-width: 2560px)  {
     #navBar {
         max-width: 2560px;
         padding: 26px 180px;
@@ -148,6 +179,15 @@
 
 }
 
+@media only screen and (max-width: 1120px)  {
+    #linkContainerOne {
+      gap: 1.5em;
+    }
+    #linkContainerTwo {
+      gap: 1.5em;
+    }
+}
+
  @media only screen and (max-width: 991px)  {
     #linkWrapper {
         display: flex;
@@ -162,19 +202,30 @@
       width:100%;
         flex-direction: column;
         align-items: flex-start;
+        gap: 3rem;
         padding-bottom: 3rem;
     }
     #linkContainerTwo {
       width: 100%;
       flex-direction: column-reverse;
       align-items: flex-start;
+      gap: 3rem;
     }
+    .dropdownMenu > div {
+      background-color: var(--titanium-grey);
+      border: none;
+      border-top: solid 2px var(--money-green);
+      border-bottom: solid 2px var(--money-green);
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+  }
 }
 
 @media only screen and (max-width: 399px)  {
   .offHeader {
     padding-top: 11%;
-}
+  }
 }
 
 @media only screen and (max-width: 222px)  {
