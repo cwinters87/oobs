@@ -1,5 +1,6 @@
-html {
+html, body, #___gatsby, #gatsby-focus-wrapper {
     box-sizing: border-box;
+    width: 100%;
   }
   
   *, *:before, *:after {

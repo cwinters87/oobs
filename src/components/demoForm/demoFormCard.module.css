@@ -3,6 +3,7 @@
     background: #ffffff;
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
 
 .container {

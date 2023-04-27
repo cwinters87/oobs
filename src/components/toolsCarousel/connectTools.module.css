@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .textContainer {
@@ -55,3 +56,8 @@
     gap: .8em; 
 }
 
+/* @media only screen and (max-width: 991px)  {
+    .card {
+        display: none;
+    }
+} */

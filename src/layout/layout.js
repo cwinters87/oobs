@@ -5,7 +5,7 @@ import * as styles from './layout.module.css'
 
 export default function Layout({ children }) {
   return (
-    <div className="site-wrapper">
+    <div className={styles.siteWrapper}>
         <NavigationBar/>
           {children}    
         <Footer/>
