@@ -1,16 +1,19 @@
 .sectionWrapper {
     width: 100svw;
+    height: 100svh;
     background: var(--khaki-light);
     display: flex;
     justify-content: center;
-  }
+    overflow: hidden;
+}
 
 .container {
     display: flex;
-    height: 100svh;
+    height: 100%;
     width: 100%;
-    background-color: var(--khaki-light);
     align-items: flex-end;
+    overflow: visible;
+    position: relative;
 }
 
 #subContainerOne {
@@ -19,27 +22,31 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.2rem;
-    padding: 0 7% 0 7%;
-    height: 68%;
-    width: 47.5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 70%;
+    width: 50%;
 }
 
 #subContainerTwo {
-    height: 68%;
-    width: 52.5%;
-    display: flex;
-    align-items: flex-end;
+    height: 70%;
+    width: 50%;
+    overflow: visible;
 }
 
 #imgWrapper {
-    width: 100%;
+    position: absolute;
+    overflow: visible;
+    width: 56%;
     height: auto;
-  }
+    bottom: -12px;
+    right: 0;
+}
 
-#image {
-    width: 100%;
+.image {
     height: auto;
-    }
+    width: 100%;
+}
 
 #subContainerOne h1 {
     font-family: var(--font-regular);
@@ -60,20 +67,54 @@
     gap: 1.2rem;
 }
 
-/* @media only screen and (min-width: 2000px)  {
-    .container {
-        padding: 0 20% 0 20%
+@media only screen and (min-width: 3800px)  {
+    #imgWrapper {
+        width: 100%;
+        right: -900px;
     }
     #subContainerOne {
-        padding: 0;
+        height: 60%;
     }
-} */
+}
 
 @media only screen and (min-width: 2560px)  {
     .container {
-        max-width: 2560px;
-        padding: 26px 180px;;
+        width: 2560px;
+        padding: 0 180px 0 180px;
     }
-    
+    #subContainerOne {
+        padding: 0;
+        padding-right: 7%;
+    }
+    #subContainerTwo {
+        padding: 0;
+    }
 }
 
+@media only screen and (max-width: 2559px)  {
+    #imgWrapper {
+        width: 1392px;
+    }
+}
+
+@media only screen and (max-width: 2235px)  {
+    #imgWrapper {
+        width: 1392px;
+        right: -200px;
+    }
+}
+
+@media only screen and (max-width: 1980px)  {
+    #imgWrapper {
+        width: 1392px;
+        right: -300px;
+    }
+}
+
+@media only screen and (max-width: 1980px)  {
+    #imgWrapper {
+        width: 1392px;
+        height: 80%;
+        right: -400px;
+    }
+}

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import DemoButton from '../buttons/demoButtonModal'
 import ScrollButton from '../buttons/scrollButton';
+import HeroImg from '../../images/homePage/Hero.png'
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './hero.module.css'
 
@@ -15,6 +16,10 @@ const Hero = () => {
   return (
     <div className={styles.sectionWrapper}>
         <main className={styles.container}>
+        <div id={styles.imgWrapper}>
+              {/* <StaticImage id={styles.image} src="../../images/homePage/Hero.png" placeholder="" alt="hero" /> */}
+                  <img className={styles.image} src={HeroImg} alt='Hero'/>
+            </div>
           <section className={styles.subContainer} id={styles.subContainerOne}>
             <h1>The complete loan processing and management system</h1>
             <h2>TaskSuite brings together loan origination and management into a single source of truth, enabling your team to save time and make better loan decisions.</h2>
@@ -26,7 +31,7 @@ const Hero = () => {
             </div>
           </section>
           <section className={styles.subContainer} id={styles.subContainerTwo}>
-            <div id={styles.imgWrapper}><StaticImage id={styles.image} src="../../images/homePage/Hero.png" placeholder="" alt="hero" /></div>
+            
           </section>
         </main> 
       </div>
