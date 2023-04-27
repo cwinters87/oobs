@@ -99,6 +99,7 @@
       position: absolute;
       top: 42px;
       right: 1.5rem;
+
   }
   
   .offCanvasBody {
@@ -117,5 +118,43 @@
         max-width: 2560px;
         padding: 26px 180px;
     }
-    
+}
+
+@media only screen and (max-width: 1614px)  {
+    #logoWrapper {
+        width: 20%;
+    }
+    #linkWrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1345px)  {
+    #contactSales {
+      display: none;
+    }
+    #linkContainerOne {
+      width: 70%;
+    }
+    #linkContainerTwo {
+      width: 30%;
+    }
+
+}
+
+ @media only screen and (max-width: 991px)  {
+    #linkWrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 222px)  {
+  #navBar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  #linkWrapper {
+    justify-content: flex-start;
+  }
 }
