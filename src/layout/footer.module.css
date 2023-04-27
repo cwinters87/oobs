@@ -1,5 +1,5 @@
 .sectionWrapper {
-    width: 100svw;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--money-green);

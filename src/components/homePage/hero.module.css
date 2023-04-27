@@ -1,10 +1,13 @@
 .sectionWrapper {
-    width: 100svw;
+    /* width: 100svw; */
+    width: 100%;
     height: 100svh;
     background: var(--khaki-light);
     display: flex;
     justify-content: center;
+    /* border: solid 2px purple; */
     overflow: hidden;
+    
 }
 
 .container {
@@ -12,8 +15,10 @@
     height: 100%;
     width: 100%;
     align-items: flex-end;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
+    /* border: solid 1px green; */
+    
 }
 
 #subContainerOne {
@@ -26,21 +31,25 @@
     padding-right: 7%;
     height: 70%;
     width: 50%;
+    /* border: solid 2px red; */
 }
 
 #subContainerTwo {
     height: 70%;
     width: 50%;
-    overflow: visible;
+    
 }
 
 #imgWrapper {
     position: absolute;
-    overflow: visible;
-    width: 56%;
+    
+    
+    width: 1483px;
     height: auto;
     bottom: -12px;
     right: 0;
+    /* border: solid 2px blue; */
+    
 }
 
 .image {
@@ -57,6 +66,7 @@
 #subContainerOne h2 {
     font-family: var(--font-regular);
     font-size: 1.5rem;
+    padding-right: 7%;
 }
 
 #buttonContainer {
@@ -99,22 +109,80 @@
 
 @media only screen and (max-width: 2235px)  {
     #imgWrapper {
-        width: 1392px;
         right: -200px;
     }
 }
 
 @media only screen and (max-width: 1980px)  {
     #imgWrapper {
-        width: 1392px;
         right: -300px;
+        bottom: -30px;
     }
 }
 
 @media only screen and (max-width: 1980px)  {
     #imgWrapper {
-        width: 1392px;
         height: 80%;
         right: -400px;
     }
 }
+
+@media only screen and (max-width: 1602px)  {
+    #imgWrapper {
+        width: 1382px;
+        right: -500px;
+    }
+}
+
+@media only screen and (max-width: 1602px)  {
+    #imgWrapper {
+        width: 1342px;
+        right: -550px;
+        bottom: -65px;
+    }
+    #subContainerOne h1 {
+        padding-top: 30px;
+        font-size: 3.8rem;    
+    }
+    #subContainerOne h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1426px)  {
+    #subContainerOne h1 {
+        padding-top: 40px;
+        font-size: 3.5rem;    
+    }
+    #subContainerOne h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1293px)  {
+    #subContainerOne h1 {
+        padding-top: 50px;
+        font-size: 2.8rem;    
+    }
+    #subContainerOne h2 {
+        font-size: .8rem;
+    }
+    #imgWrapper {
+        right: -650px;
+    }
+}
+
+@media only screen and (max-width: 991px)  {
+    #subContainerOne h1 {
+        padding-top: 50px;
+        font-size: 2.8rem;    
+    }
+    #subContainerOne h2 {
+        font-size: .8rem;
+    }
+    #imgWrapper {
+        right: -650px;
+    }
+}
+
+

@@ -1,7 +1,9 @@
 .sectionWrapper {
-    width: 100svw;
+    /* width: 100svw; */
+    width: 100%;
     display: flex;
     justify-content: center;
+    /* border: solid 1px orange; */
   }
 
 

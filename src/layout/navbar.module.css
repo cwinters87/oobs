@@ -1,5 +1,5 @@
 .sectionWrapper {
-  width: 100svw;
+  width: 100%;
   background: var(--khaki-light);
   display: flex;
   justify-content: center;
