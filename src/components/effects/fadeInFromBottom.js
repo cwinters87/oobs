@@ -1,4 +1,3 @@
-// src/components/FadeInFromBottom.js
 import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import * as styles from './fadeInFromBottom.module.css';
