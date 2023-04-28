@@ -63,9 +63,9 @@ const Footer = () => {
               <StatusIcon/>
             </div>
             <div className={styles.bottomColumn} id={styles.bottomColumnThree}>
-              <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.svg" placeholder="" alt="linkedin logo" /></a>
-              <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.svg" placeholder="" alt="facebook logo" /></a>
-              <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a>
+              <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.png" placeholder="" alt="linkedin logo" /></a>
+              <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.png" placeholder="" alt="facebook logo" /></a>
+              {/* <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a> */}
             </div>
           </div>
           

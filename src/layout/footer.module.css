@@ -135,7 +135,7 @@
 .icons {
     width: 100%;
     height: auto;
-    filter: invert(100%) sepia(71%) saturate(0%) hue-rotate(12deg) brightness(115%) contrast(101%);
+    /* filter: invert(100%) sepia(71%) saturate(0%) hue-rotate(12deg) brightness(115%) contrast(101%); */
 }
 
 .iconLink {
@@ -185,11 +185,6 @@
         flex-wrap: wrap;
         width: 100%;
     }
-    /* #linkContainer {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly; 
-} */
     .linkColumns {
         width: 50%;
         padding-bottom: 2.5%;
@@ -205,6 +200,7 @@
     }
     #bottomColumnTwo {
         justify-content: flex-start;
+        padding-top: 2%;
         padding-left: 0;
     }
     #bottomColumnOne {
