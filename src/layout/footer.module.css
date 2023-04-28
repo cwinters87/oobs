@@ -38,8 +38,9 @@
 }
 
 #subContainerTwo {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     border-top: solid 1px grey;
     margin-top: 1.5%;
@@ -49,12 +50,29 @@
 #bottomColumnOne {
     display: flex;
     align-items: center;
-    
+    width: 33.33%;
+}
+
+.mobileContainerOnly {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66.66%;
+}
+
+#bottomColumnTwo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 32px;
 }
 
 #bottomColumnThree {
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -132,6 +150,10 @@
     filter: invert(25%) sepia(84%) saturate(6632%) hue-rotate(208deg) brightness(86%) contrast(87%);
 }
 
+/* .mobileContainerOnly {
+    display: none;
+} */
+
 /* #linkedin {
     
 }
@@ -149,4 +171,66 @@
         max-width: 2560px;
         padding: 77px 180px 52px 180px;
     }
+}
+
+@media only screen and (max-width: 991px)  {
+    #subContainerOne {
+        flex-direction: column;
+    }
+    #imgContainer {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    #linkContainer {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* #linkContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly; 
+} */
+    .linkColumns {
+        width: 50%;
+        padding-bottom: 2.5%;
+    }
+    #subContainerTwo {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .mobileContainerOnly {
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 2.5%;
+    }
+    #bottomColumnTwo {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    #bottomColumnOne {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px)  {
+    .mobileContainerOnly {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #bottomColumnTwo {
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 0;
+    }
+    #bottomColumnThree {
+        justify-content: flex-start;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
 }

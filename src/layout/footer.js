@@ -58,44 +58,21 @@ const Footer = () => {
             <Link className={styles.link} id={styles.privacy} to="/">Privacy Policy</Link>
             <Link className={styles.link} id={styles.term} to="/">Terms of Use</Link>
           </div>
-          <div className={styles.bottomColumn} id={styles.bottomColumnTwo}>
-            <StatusIcon/>
+          <div className={styles.mobileContainerOnly}>
+            <div className={styles.bottomColumn} id={styles.bottomColumnTwo}>
+              <StatusIcon/>
+            </div>
+            <div className={styles.bottomColumn} id={styles.bottomColumnThree}>
+              <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.svg" placeholder="" alt="linkedin logo" /></a>
+              <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.svg" placeholder="" alt="facebook logo" /></a>
+              <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a>
+            </div>
           </div>
-          <div className={styles.bottomColumn} id={styles.bottomColumnThree}>
-            <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.svg" placeholder="" alt="linkedin logo" /></a>
-            <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.svg" placeholder="" alt="facebook logo" /></a>
-            <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a>
-          </div>
+          
         </section>
       </footer>
       </div>
-   
   )
 }
 
 export default Footer
-
-// <StaticImage src="../images/footer/f-house.svg" placeholder="" alt="house icon" />
-
-// {/* <div className={styles.socials}>
-//                     <a href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer">
-//                       {/* <img src={FacebookIcon} alt="facebook icon"/> */}
-//                       <StaticImage src="../images/footer/f-facebook.svg" placeholder="" alt="facebook icon" />
-//                     </a>
-//                     <a href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer">
-//                       {/* <img src={LinkedinIcon} alt="linkedin icon"/> */}
-//                       <StaticImage src="../images/footer/f-linkedin.svg" placeholder="" alt="linkedin icon" />
-//                     </a>
-//                     <a href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer">
-//                       {/* <img src={YoutubeIcon} alt="youtube icon"/> */}
-//                       <StaticImage src="../images/footer/f-youtube.svg" placeholder="" alt="youtube icon" />
-//                     </a>
-//                   </div> */}
-
-{/* <div className={styles.subFooter}>
-          <div>© 2023 gotech investments, llc dba tasksuite</div>
-          <div className={styles.legal}>
-            <Link to="/"><p>Privacy Policy</p></Link>
-            <Link to="/legal/terms"><p>Terms of Service</p></Link>
-          </div>
-        </div> */}
