@@ -12,6 +12,8 @@ import ExclusivelyCard from '../components/homePage/exclusively'
 import ToolsCarousel from '../components/toolsCarousel/toolsCarousel'
 import ConnectTools from '../components/toolsCarousel/connectTools'
 import DemoFormCard from '../components/demoForm/demoFormCard'
+import FadeInFromBottom from '../components/effects/fadeInFromBottom'
+import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 
 
 const IndexPage = () => {
@@ -19,15 +21,43 @@ const IndexPage = () => {
   return (
     <Layout >
       <Hero/>
-      <ComprehensiveSolutionCard/>
-      <CurrentProcessCard />
-      <CompleteToolsetCard />
-      <TestimonialCard />
-      <ExclusivelyCard />
+      <FadeInFromBottom>
+        <ComprehensiveSolutionCard/>
+      </FadeInFromBottom>
+      
+      <FadeInFromBottom>
+        <CurrentProcessCard />
+      </FadeInFromBottom>
+      
+
+      <FadeInFromBottom>
+        <CompleteToolsetCard />
+      </FadeInFromBottom>
+      
+
+      <FadeInFromBottom>
+        <TestimonialCard />
+      </FadeInFromBottom>
+      
+
+      <FadeInFromBottom>
+        <ExclusivelyCard />
+      </FadeInFromBottom>
+      
       {/* <SpacingCard margin={'3000px'} /> */}
       {/* <ToolsCarousel /> */}
-      <ConnectTools />
-      <DemoFormCard />
+
+      <FadeInFromLeft>
+        <ConnectTools />
+      </FadeInFromLeft>
+        
+      
+      
+
+      <FadeInFromBottom>
+        <DemoFormCard />
+      </FadeInFromBottom>
+      
       {/* <SpacingCard margin={'3000px'} /> */}
     </Layout>
   )
