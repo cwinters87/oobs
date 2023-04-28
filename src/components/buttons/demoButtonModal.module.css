@@ -8,7 +8,7 @@
 
 .button:hover, .button:focus-visible {
     filter: brightness(110%);
-    transform: translateY(-0.3rem);
+    transform: translateY(-.12rem);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     transition: transform 250ms;
     

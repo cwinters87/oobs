@@ -13,11 +13,11 @@ const ComprehensiveSolutionCard = () => {
     <div className={styles.sectionWrapper}>
         <div className={styles.container}>
           <div className={styles.subContainer} id={styles.titleContainer}>
-            <h2 id={styles.title}>The industry's only comprehensive loan management solution</h2>
-            <p id={styles.subTitle}>TaskSuite streamlines and automates the entire loan process, making it easy to manage and track loans from day zero to close.</p>
+            <h2 id={styles.title}>The industry's only comprehensive<br/> loan management solution</h2>
+            <p id={styles.subTitle}>TaskSuite streamlines and automates the entire loan process, making<br/> it easy to manage and track loans from day zero to close.</p>
           </div>
           <div className={styles.subContainer} id={styles.cardContainer}>
-          <div style={{backgroundImage: `url(${backgroundImgFull})`}} className={styles.card}>
+            <div style={{backgroundImage: `url(${backgroundImgFull})`}} className={styles.card}>
                 <h3 className={styles.cardTitle}>Full-Service Suite</h3>
                 <p className={styles.cardSubTitle}>Not just a tool, TaskSuite is an end-to-end loan system</p>
             </div>
