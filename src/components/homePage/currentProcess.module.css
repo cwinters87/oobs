@@ -3,12 +3,14 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    /* border: solid 2px blue; */
   }
 
 .container {
     height: 100svh;
     width: 100%;
     padding: 0% 7%;
+    /* border: solid 2px green; */
 }
 
 #titleContainer {

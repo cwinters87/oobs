@@ -1,10 +1,11 @@
 .sectionWrapper {
     width: 100%;
 
-    /* display: flex;
-    justify-content: center; */
-    /* padding-top: 10%; */
+    display: flex;
+    justify-content: center;
+    
     overflow: hidden;
+    /* border: solid 2px black; */
   }
 
 
@@ -91,16 +92,95 @@
     padding: 2.5rem 0 0 0;
 }
 
-/* @media only screen and (min-width: 2560px)  {
+@media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
         padding: 26px 180px;;
     }
-} */
+}
+
+@media only screen and (max-width: 1911px)  {
+    #title {
+        font-size: 3.4rem;
+    }
+    #subTitle {
+        font-size: 1rem;
+    }
+    .card h3  {
+        font-size: 1.2rem;
+
+    }
+    .card p {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 1218px)  {
+    #title {
+        font-size: 3rem;
+    }
+    #subTitle {
+        font-size: .85rem;
+    }
+    .card h3  {
+        font-size: 1rem;
+    }
+    .card p {
+        font-size: .55rem;
+    }
+}
 
 @media only screen and (max-width: 991px)  {
     #title {
-        font-size: .5em;
+        font-size: 2.8em;
+    }
+    #subTitle {
+        font-size: .8rem;
+    }
+    .card h3  {
+        font-size: .85rem;
+    }
+    .card p {
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width: 905px)  {
+    .breakPoint {
+        display: none;
+    }
+    .container {
+        height: 150svh;
+    }
+    #cardContainer {
+        height: 100svh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .card {
+        width: 100%;
+        height: 33.33%;
+    }
+    #title {
+        font-size: 2em;
+    }
+    #subTitle {
+        font-size: .85rem;
+    }
+    .card h3  {
+        font-size: 1.2rem;
+    }
+    .card p {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 905px)  {
+    
+    .card p {
+        font-size: .55rem;
     }
 }
 
