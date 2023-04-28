@@ -3,13 +3,15 @@
     border-radius: 4px;
     background-color: var(--cobalt-blue);
     width: fit-content;
+    transition: transform 500ms;
 }
 
-.button:hover {
-    color: var(--cobalt-blue);
-    background-color: var(--lime-green);
-    filter: brightness(90%);
-    transition: 500ms;
+.button:hover, .button:focus-visible {
+    filter: brightness(110%);
+    transform: translateY(-0.3rem);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 250ms;
+    
 }
 
 .header {

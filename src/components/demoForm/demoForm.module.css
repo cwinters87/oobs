@@ -14,13 +14,16 @@
     margin-top: 15px;
     width: 100%;
     height: 55px;
+    transition: transform 500ms;
 }
 
-.button:hover {
-    color: var(--cobalt-blue);
-    background-color: var(--lime-green);
-    filter: brightness(90%);
-    transition: 500ms;
+.button:hover, .button:focus-visible {
+    background-color: var(--cobalt-blue);
+    filter: brightness(110%);
+    transform: translateY(-0.3rem);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 250ms;
+    
 }
 
 .formInput {

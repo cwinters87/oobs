@@ -44,7 +44,7 @@
     position: absolute;
     
     
-    width: 1483px;
+    width: 1512px;
     height: auto;
     bottom: -12px;
     right: 0;
@@ -103,11 +103,11 @@
 
 @media only screen and (max-width: 2559px)  {
     #imgWrapper {
-        width: 1392px;
+        width: 1512px;
     }
 }
 
-@media only screen and (max-width: 2235px)  {
+@media only screen and (max-width: 2385px)  {
     #imgWrapper {
         right: -200px;
     }

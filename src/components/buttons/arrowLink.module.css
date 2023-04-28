@@ -1,6 +1,7 @@
 .linkContainer {
     display: flex;
     align-items: center;   
+    transition: transform 500ms;
 }
 
 .link {
@@ -9,5 +10,23 @@
     color: var(--navy-blue);
     text-decoration: none;
     padding-right: 15px;
+    transition: transform 500ms;
+}
+
+.linkContainer:hover, .linkContainer:focus-visible {
+    filter: brightness(110%);
+    transform: translateX(0.3rem);
+    
+    transition: transform 250ms;
+    
+}
+
+.link:hover, .link:focus-visible {
+    border-bottom: solid 1px var(--cobalt-blue);
+    filter: brightness(110%);
+    transform: translateX(0.3rem);
+    transform: translateY(-0.1rem);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: transform 250ms;
 }
 
