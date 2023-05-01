@@ -13,14 +13,14 @@ const cardData = [
     company: 'CONTACTWORKS',
   },
   {
-    imageUrl: 'https://picsum.photos/200',
+    imageUrl: backgroundImg,
     quote: 'Who uses faxes?',
     author: 'Chris Winters',
     position: 'FAX MANAGER',
     company: 'TASKSUITE',
   },
   {
-    imageUrl: 'https://picsum.photos/200',
+    imageUrl: backgroundImg,
     quote: 'Chris is prob the coolest guy I know.',
     author: 'Michail Myburgh',
     position: 'APPLE FANBOY',
