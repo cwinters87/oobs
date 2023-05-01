@@ -7,7 +7,7 @@
     min-width: 1140px;
     height: 45%;
     /* padding: 0 12%; */
-    border: solid 2px blue;
+    /* border: solid 2px blue; */
 }
 
 .imgContainer {
@@ -43,7 +43,7 @@
     /* justify-content: center; */
     /* align-items: center; */
     /* justify-content: space-between; */
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 
 .quoteIcon {
@@ -51,7 +51,7 @@
     font-size: 4.4rem;
     height: 15%;
     font-family: var(--font-regular);
-    border: solid 2px black;
+    /* border: solid 2px black; */
     margin: 0;
 }
 
@@ -66,7 +66,7 @@
     font-size: 1.9rem;
     color: var(--cobalt-blue);
     margin: 0;
-    border: solid 2px green;
+    /* border: solid 2px green; */
 }
 
 .cardQuote p {
@@ -79,13 +79,13 @@
     font-size: 1.2rem;
     color: var(--primary-font-color);
     margin: 0;
-    border: solid 2px purple;
+    /* border: solid 2px purple; */
 }
 
 .authorJobTitle {
     height: 6%;
     font-family: var(--font-semi-bold);
-    border: solid 2px yellow;
+    /* border: solid 2px yellow; */
 }
 
 .buttonContainer {
@@ -93,7 +93,7 @@
     display: flex;
     align-items: flex-end;
     gap: 20px;
-    border: solid 2px black;
+    /* border: solid 2px black; */
 }
 
 .button {
@@ -104,7 +104,7 @@
     align-items: center;
     padding: 5px 12px;
     border-radius: 5px;
-    border: solid 2px green;
+    /* border: solid 2px green; */
     
 }
 
@@ -214,7 +214,7 @@
 
 @media only screen and (max-width: 330px) {
     .imgContainer {
-        /* height: 10%; */
+        height: 10%;
     }
     .cardQuote {
         height: 38%;
