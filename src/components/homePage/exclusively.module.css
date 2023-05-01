@@ -134,8 +134,15 @@
     height: 100%;
     width: auto;
     object-fit: cover;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
     /* border: solid 2px yellow */
     
+}
+
+#linkContainerTwo {
+    display: none;
 }
 
 
@@ -160,7 +167,6 @@
         font-size: 2.18rem;
     }
     #subTitle {
-        
         font-size: .9rem;
     }
     #titleContainer {
@@ -172,5 +178,116 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .subContainer {
+        flex-direction: column;
+        padding:7%;
+        align-items: flex-start;
+    }
+    .square {
+        position: static;
+        width: 100%;
+        height: 46.5%;
+    }
+    .square:after {
+        padding-bottom: 0;
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+    #textContainer {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    #logoContainer {
+        height: 14%;
+    } 
+    #titleContainer {
+        align-items: center;
+        height: 43%;
+        padding-bottom: 0;
+    }
+    #title {
+        font-size: 2.5rem;
+    }
+    #subTitleContainer {
+        height: 43%;
+        padding-top: 0; 
+        align-items: flex-start;
+    }
+    #subTitle {
+        font-size: 1.1rem;
+    }
+    #linkContainer {
+        display: none;
+    }
+    #imgContainer {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+    #linkContainerTwo {
+        height: 7%;
+        display: flex;
+        align-items: flex-end;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: 2.2rem;
+    }
+    #subTitle {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #title {
+        font-size: 1.8rem;
+    }
+    #subTitle {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .subContainer {
+        align-items: flex-start;
+    }
+    #imgContainer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    
+    /* #title {
+        font-size: 1.6rem;
+    }
+    #subTitle {
+        font-size: .7rem;
+    } */
+    #logoContainer {
+        height: 50px;
+        padding-bottom: 1rem;
+    } 
+    #titleContainer {
+        padding-bottom: 1rem;
+    }
+    #subTitleContainer {
+        padding-bottom:  1rem;
+    }
+
+    #imgContainer {
+        height: 280px;
+        width: auto;
+        padding-top: 1rem;
+    }
+    #linkContainerTwo {
+        height: 30px;
+        padding-top: 1rem;
+    }
 }

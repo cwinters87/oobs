@@ -25,9 +25,13 @@ const ExclusivelyCard = () => {
             
             <div className={styles.square}>
               <div className={styles.content}>
-                <div id={styles.imgContainer}><img src={Image} alt='laptop on desk'/></div>
+                <div id={styles.imgContainer}>
+                  <img src={Image} alt='laptop on desk'/>
+                  
+                </div>
               </div>
             </div>
+            <div id={styles.linkContainerTwo}><ArrowLink text={'About the company'} route={'/'}/></div>
           </div>
         </div>
         </div>
