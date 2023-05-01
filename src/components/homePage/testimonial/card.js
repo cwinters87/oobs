@@ -11,7 +11,9 @@ const Card = ({ imageUrl, quote, author, position, company, prevCard, nextCard }
             <p>{company}</p>
         </div>
         <div className={styles.cardContent}>
-            <div className={styles.quoteIcon}>🙶</div>
+            <div className={styles.quoteIcon}>
+              <StaticImage className={styles.quoteImage} id={styles.previousArrow} src="../../../images/homePage/quote.png" placeholder="" alt="arrow" />
+            </div>
             <blockquote className={styles.cardQuote}>
                 <p>{quote}</p>
             </blockquote>

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 18px;
     color: var(--secondary-font-color);
     font-family: var(--font-semi-bold);
     font-size: 1.8rem;
@@ -24,6 +24,7 @@
     max-height:100%; 
     max-width:100%;
     border: solid 2px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .image {
@@ -51,6 +52,11 @@
     height: 15%;
     font-family: var(--font-regular);
     border: solid 2px black;
+    margin: 0;
+}
+
+.quoteImage {
+    transform: scaleX(-1);
 }
 
 .cardQuote {
@@ -118,36 +124,107 @@
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    .cardQuote {
+        font-size: 1.5rem;
+    }
+    .cardAuthor {
+        font-size: .8rem;
+    }
+    .authorJobTitle {
+        font-size: .8rem;
+    }
+}
+
 @media only screen and (max-width: 991px)  {
     .container {
-        height: 100svh;
+        height: 100%;
         flex-direction: column;
     }
     .imgContainer {
-        /* width: 40%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        color: var(--secondary-font-color);
-        font-family: var(--font-semi-bold);
-        font-size: 1.8rem;
-        object-fit: cover;
-        max-height:100%; 
-        max-width:100%;
-        border: solid 2px black; */
         width: 100%;
-        height: 40%;
+        height: 60%;
     }
     .cardContent {
-        /* width: 60%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border: solid 2px red; */
         height: 60%;
         width: 100%;
     }
-    
+    .cardQuote {
+        height: 40%;
+        width: 100%;
+        font-size: 1.9rem;
+    }
+    .cardAuthor {
+        font-size: 1.2rem;
+    }
+    .authorJobTitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .imgContainer {
+        height: 50%;
+    }
+    .cardQuote {
+        height: 35%;
+        font-size: 1.5rem;
+    }
+    .cardAuthor {
+        font-size: .8rem;
+    }
+    .authorJobTitle {
+        font-size: .8rem;
+    }
+    .buttonContainer {
+        height: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .imgContainer {
+        height: 30%;
+    }
+    .quoteIcon {
+        height: 10%;
+    }
+    .cardQuote {
+        height: 30%;
+        font-size: 1.2rem;
+    }
+    .cardAuthor {
+        font-size: .8rem;
+    }
+    .authorJobTitle {
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    .quoteIcon {
+        height: 8%;
+    }
+    .cardQuote {
+        height: 35%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .imgContainer {
+        /* height: 10%; */
+    }
+    .cardQuote {
+        height: 38%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 279px) {
+    .cardQuote {
+        
+        font-size: .9rem;
+    }
 }
