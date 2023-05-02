@@ -16,7 +16,7 @@ const DemoFormCard = () => {
                         <h2 className={styles.title}>Get a TaskSuite demo</h2>
                         <DemoForm />
                         <div className={styles.checkmarkContainer}>
-                            <div className={styles.checkWrapper}>
+                            <div className={styles.checkWrapper} id={styles.leftCheck}>
                                 <StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" />
                                 <p>No obligation demo</p>
                             </div>
