@@ -19,9 +19,7 @@
 }
 
 .titleContainer {
-    font-family: var(--font-regular);
-    font-size: 1.8rem;
-    color: var(--money-green);
+    
     margin: 0;
     height: 15%;
     width: 100%;
@@ -31,14 +29,20 @@
     padding-bottom: 2.5rem;  
 }
 
-.title {
+.titleContainer h2 {
     margin: 0;
+    font-family: var(--font-regular);
+    font-size: 2.8rem;
+    color: var(--money-green);
 }
 
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
         padding: 26px 180px;;
+    }
+    .titleContainer h2 {
+        padding-bottom: 2.5rem;
     }
 }
 
@@ -52,10 +56,13 @@
         height: 15%;
         padding-bottom: 0; 
     }
+    .titleContainer h2 {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
-    .title {
+    .titleContainer h2 {
         font-size: 1.5rem;
     }
 }

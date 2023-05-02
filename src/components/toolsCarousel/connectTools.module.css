@@ -1,7 +1,6 @@
 .container {
     height: 50svh;
     width: 100%;
-    /* margin: 0 7%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,8 +9,8 @@
 }
 
 .textContainer {
+    margin: 0 7%;
     width: 100%;
-    /* height: 50%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +22,7 @@
     font-family: var(--font-regular);
     color: var(--money-green);
     font-size: 2.8rem;
+    text-align: center;
 }
 
 .textContainer p {
@@ -30,6 +30,7 @@
     font-family: var(--font-light);
     color: var(--primary-font-color);
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .toolsContainer {
@@ -38,16 +39,14 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 1em;
-    
+    overflow: hidden;
 }
 
 .card {
     flex: 1 1 0px;
     width: 0;
     border: solid 1px var(--khaki-light);
-    border-radius: 10px;
-    font-family: var(--font-regular);
-    font-size: .8em;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,8 +55,68 @@
     gap: .8em; 
 }
 
-/* @media only screen and (max-width: 991px)  {
-    .card {
-        display: none;
+.card img {
+    height: 40px;
+    width: auto;
+    padding-top: .4em;
+}
+
+.card h4 {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 1em;
+}
+
+#firstCard {
+    border-left: 0;
+    border-radius: 0 18px 18px 0; 
+}
+
+#lastCard {
+    border-right: 0;
+    border-radius: 18px 0 0 18px; 
+}
+
+@media only screen and (max-width: 991px)  {
+    .container {
+        height: 70svh;
     }
-} */
+    .card {
+        display: flex;
+        flex: 0;
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .textContainer h2 {
+        font-size: 2.2rem;
+    }
+    .textContainer p {
+        font-size: 1rem;
+    }
+    .card {
+        height: 100px;
+        width: 100px;
+        padding: 1.5em;
+        gap: .4em;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .container {
+        padding: 3rem 0;
+    }
+    .textContainer h2 {
+        font-size: 2rem;
+    }
+    .textContainer p {
+        font-size: .85rem;
+    }
+    .card {
+        padding: 1em;
+        gap: .2em;
+    }
+}
+

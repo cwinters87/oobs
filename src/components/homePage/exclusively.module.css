@@ -263,13 +263,6 @@
 }
 
 @media only screen and (max-width: 390px) {
-    
-    /* #title {
-        font-size: 1.6rem;
-    }
-    #subTitle {
-        font-size: .7rem;
-    } */
     #logoContainer {
         height: 50px;
         padding-bottom: 1rem;

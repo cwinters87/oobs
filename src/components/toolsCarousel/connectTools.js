@@ -14,35 +14,40 @@ import * as styles from './connectTools.module.css'
 const ConnectTools = () => {
 
   const data = [
-    { image: SlackImg, title: 'Slack' },
-    { image: CreditsafeImg, title: 'Creditsafe' },
-    { image: ExperianImg, title: 'Experian' },
-    { image: OcrolusImg, title: 'Ocrolus' },
-    { image: PlaidImg, title: 'Plaid' },
-    { image: TransUnionImg, title: 'TransUnion' },
-    { image: EquifaxImg, title: 'Equifax' },
-    { image: SalesforceImg, title: 'Salesforce' },
+    { image: SlackImg, title: 'Slack'},
+    { image: CreditsafeImg, title: 'Creditsafe'},
+    { image: ExperianImg, title: 'Experian'},
+    { image: OcrolusImg, title: 'Ocrolus'},
+    { image: PlaidImg, title: 'Plaid'},
+    { image: TransUnionImg, title: 'TransUnion'},
+    { image: EquifaxImg, title: 'Equifax'},
+    { image: SalesforceImg, title: 'Salesforce'},
   ]
-    
-  return (
-        <div className={styles.container}>
-          <div className={styles.textContainer}>
-            <h2>Connect your tools with TaskSuite</h2>
-            <p>Integrate your favorite tools or use our full solution.</p>
-          </div>
 
-          <div className={styles.toolsContainer}>
-            {data.map((item, index) => (
-              <div key={index} className={styles.card}>
-                <img src={item.image} alt={item.title} />
-                <h4>{item.title}</h4>
-              </div>
-            ))}
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.textContainer}>
+        <h2>Connect your tools with TaskSuite</h2>
+        <p>Integrate your favorite tools or use our full solution.</p>
+      </div>
+
+      <div className={styles.toolsContainer}>
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className={styles.card}
+            id={index === 0 ? styles.firstCard : index === data.length - 1 ? styles.lastCard : ''}
+          >
+            <img src={item.image} alt={item.title} />
+            <h4>{item.title}</h4>
           </div>
-          
-        </div>
-            
-    )
+        ))}
+      </div>
+      
+    </div>
+        
+)
 }
 
 export default ConnectTools
