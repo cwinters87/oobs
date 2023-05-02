@@ -32,3 +32,12 @@
     border: solid 2px var(--khaki);
     background-color: var(--khaki-light);
 }
+
+@media only screen and (max-width: 1400px) {
+    .row {
+        padding-bottom: .5rem;
+    }
+    .button {
+        margin-top: 6px;
+    }
+}
