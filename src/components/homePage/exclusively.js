@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ArrowLink from '../buttons/arrowLink'
 import * as styles from './exclusively.module.css'
 import Logo from '../../images/homePage/logo-robot.png'
-import Image from '../../images/homePage/testimonial.png'
+import Image from '../../images/homePage/exclusive.png'
 
 
 const ExclusivelyCard = () => {

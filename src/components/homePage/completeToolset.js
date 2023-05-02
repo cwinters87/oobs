@@ -10,7 +10,8 @@ const CompleteToolsetCard = () => {
         <div className={styles.container}>
             <div className={styles.subContainer} id={styles.textContainer}>
                 <div id={styles.header}>
-                    <p>Meet TaskSuite</p></div>
+                    <p>Meet TaskSuite</p>
+                </div>
                 <div id={styles.title}>
                     <h2>A complete toolset - use one or use them all.</h2>
                 </div>
@@ -25,7 +26,7 @@ const CompleteToolsetCard = () => {
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Origination</h3>
                             <p className={styles.cardSubTitle}>
-                                Online applications, documents, credit checks, and more.
+                                Online applications,<br/> documents, credit checks, <br/>verification, and more.
                             </p>
                         </div>
                     </Link>
@@ -33,7 +34,7 @@ const CompleteToolsetCard = () => {
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Credit AI</h3>
                             <p className={styles.cardSubTitle}>
-                                Seamless integration with credit bureaus for scoring and fraud protection.
+                                Seamless integration with<br/> credit bureaus for scoring<br/> and fraud protection.
                             </p>
                         </div>
                     </Link>
@@ -41,7 +42,7 @@ const CompleteToolsetCard = () => {
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Servicing</h3>
                             <p className={styles.cardSubTitle}>
-                                Cloud-based loan support for reducing risk and centralinzaing your portfolio.
+                                Cloud-based loan support<br/> for reducing risk and<br/> centralinzaing your portfolio.
                             </p>
                         </div>
                     </Link>
@@ -49,7 +50,7 @@ const CompleteToolsetCard = () => {
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Management</h3>
                             <p className={styles.cardSubTitle}>
-                                Automated loan application processing, tracking and reporting.
+                                Automated loan<br/> application processing, <br/>tracking and reporting.
                             </p>
                         </div>
                     </Link>
@@ -62,7 +63,7 @@ const CompleteToolsetCard = () => {
            
 
         </div>
-        </div>
+    </div>
             
     )
 }
