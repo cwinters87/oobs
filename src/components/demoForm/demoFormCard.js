@@ -20,7 +20,7 @@ const DemoFormCard = () => {
                                 <StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" />
                                 <p>No obligation demo</p>
                             </div>
-                            <div className={styles.checkWrapper}>
+                            <div className={styles.checkWrapper} id={styles.rightCheck}>
                                 <StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" />
                                 <p>Dedicated support team</p>
                             </div>
