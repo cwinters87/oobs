@@ -126,6 +126,12 @@
         max-width: 2560px;
         padding: 26px 180px;;
     }
+    #textContainer {
+        padding: 18% 9% 18% 18%;
+    }
+    #imgContainer {
+        padding: 18% 18% 18% 9%;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
