@@ -217,6 +217,10 @@
     flex:2
 } */
 
+#cardContainerMobile {
+    display: none;
+}
+
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
@@ -335,4 +339,140 @@
         width: 100%;
     }
     
+} */
+
+@media only screen and (max-width: 991px) {
+    .container {
+        height: 120svh;
+        border: solid 2px black;
+    }
+    #titleContainer {
+        height: 15%;
+
+        border: solid 2px green;
+    }
+    #linkContainer {
+        height: 15%;
+        border: solid 2px blue;
+    }
+    #cardContainer {
+        display: none;
+    }
+    #cardContainerMobile {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        border: solid 2px black;
+
+    }
+    .firstRow {
+        height: 50%;
+        width: 100%;
+        border: solid 2px yellow;
+        padding: 5px 0 6px 0;
+
+    }
+    .secondRow {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        padding: 6px 0;
+        gap: 12px;
+        border: solid 2px purple;
+    }
+    .thirdRow {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        padding: 6px 0;
+        gap: 12px;
+        border: solid 2px orange;
+    }
+    /* height: 100%;
+    max-height: 320px;
+    border: solid 2px var(--khaki-light);
+    border-radius: 18px;
+    background-color: var(--khaki-light);
+    padding-left: 12px;
+    padding-top: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 500ms; */
+    .cardMobile {
+        border: solid 2px var(--khaki-light);
+        border-radius: 18px;
+        background-color: var(--khaki-light);
+        padding-left: 12px;
+        padding-top: 12px;
+        transition: transform 500ms;
+        position: relative;
+        overflow: hidden;
+        border: solid 2px green;
+    }
+
+    .cardOneWrapper {
+        height: 50%;
+        width: 100%;
+        border: solid 2px red;
+    }
+    #cardOneMobile {
+        height: 100%;
+        width: 100%;
+        border: solid 2px red;
+    }
+    #cardTwoMobile {
+        height: 100%;
+        width: 50%;
+        border: solid 2px blue;
+    }
+    #cardThreeMobile {
+        height: 100%;
+        width: 50%;
+        border: solid 2px yellow;
+    }
+    #cardFourMobile {
+        height: 100%;
+        width: 50%;
+        border: solid 2px purple;
+    }
+    #cardFiveMobile {
+        height: 100%;
+        width: 50%;
+        border: solid 2px orange;
+    }
+    .imgWrapperMobile {
+        width: 100%;
+        height: 100%;
+        border: solid 2px orange;
+        position: relative;
+    }
+    .imgContainerMobile {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: solid 2px green;
+    }
+    .imgMobileMobile picture {
+        width: 100%;
+        height: 100%;
+
+        border: solid 2px blue;
+    }
+    .imgMobileMobile picture img {
+        height: 100%;
+        width: 100% !important;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+}
+
+
+/* .imgWrapper {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    bottom: -3px;
+    right: -3px;
 } */
