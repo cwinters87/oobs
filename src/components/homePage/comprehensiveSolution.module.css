@@ -1,21 +1,14 @@
 .sectionWrapper {
     width: 100%;
-
     display: flex;
     justify-content: center;
-    
     overflow: hidden;
-    /* border: solid 2px black; */
-  }
-
+}
 
 .container {
     height: 100svh;
-    /* height: calc(100svh - 80px); */
     width: 100%;
-    /* padding: 9% 7%; */
     padding: 0 7%;
-    /* border: solid 2px red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +22,6 @@
     justify-content: flex-end;
     padding-bottom: 2.5rem;
     gap: 6%;
-    /* border: solid 2px green; */
 }
 
 #titleContainer h2 {
@@ -38,18 +30,14 @@
 
 #title {
     font-family: var(--font-regular);
-    
     color: var(--money-green);
     margin: 60px 0 0 0;
-    /* border: solid 2px orange; */
 }
 
 #subTitle {
     font-family: var(--font-regular);
     font-size: 1.2rem;
-    /* margin: 3% 0; */
     margin: 0;
-    /* border: solid 2px blue; */
 }
 
 #cardContainer {
@@ -99,7 +87,7 @@
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
-        padding: 26px 180px;;
+        padding: 26px 180px;
     }
 }
 
