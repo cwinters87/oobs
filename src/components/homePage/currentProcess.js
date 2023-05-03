@@ -1,7 +1,10 @@
 import * as React from 'react'
 import ArrowLink from '../buttons/arrowLink';
-import * as styles from './currentProcess.module.css'
 import AnimatedArrow from '../buttons/animatedArrow';
+import Image from '../../images/homePage/simple.png'
+import ImageMobile from '../../images/homePage/simple-mobile.png'
+import * as styles from './currentProcess.module.css'
+
 
 const CurrentProcessCard = () => {
     
@@ -12,11 +15,22 @@ const CurrentProcessCard = () => {
             <h2 id={styles.title}>Are you happy with your current process?</h2>
             <p id={styles.subTitle}>We know you aren't becasue we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
         </div>
+
         <div className={styles.subContainer} id={styles.cardContainer}>
 
 
             <div className={styles.flexWrapper} id={styles.flexWrapperTop}>
                 <div className={(styles.cardsTopRow, styles.card)} id={styles.cardOne}>
+                    <div className={styles.imgWrapper}>
+                        <div className={styles.imgContainer}>
+                            <picture>
+                                <source media="(max-width: 991px)" srcSet={ImageMobile} />
+                                <source media="(min-width: 992px)" srcSet={Image} />
+                                <img src={Image} alt="TaskSuite product" style={{width: "auto", height: "100%"}} />
+                            </picture>
+                        </div>
+                    </div>
+                    
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Simple</h3>
@@ -27,7 +41,7 @@ const CurrentProcessCard = () => {
                     </div>
                 </div>
                 <div className={(styles.cardsTopRow, styles.card)} id={styles.cardTwo}>
-                <div className={styles.textContainer}>
+                    <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Fast</h3>
                         <p className={styles.cardSubTitle}>versus today, which requires corroborating data across multiple systems and reconciling differences.</p>
