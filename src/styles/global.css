@@ -1,6 +1,7 @@
 html, body, #___gatsby, #gatsby-focus-wrapper {
     box-sizing: border-box;
     width: 100%;
+    overflow: overlay;
   }
   
   *, *:before, *:after {
@@ -131,15 +132,15 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--khaki-light);
+    background: rgba(0, 0, 0, 0);
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--money-green);
+    background: var(--khaki);
 }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--lime-green);
+    background: var(--money-green);
 }

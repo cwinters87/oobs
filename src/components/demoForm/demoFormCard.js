@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import Image from '../../images/demo/demo.png'
-import * as styles from './demoFormCard.module.css'
-import DemoForm from './demoForm'
 import ImageMobile from '../../images/demo/demo-mobile.png'
+import DemoForm from './demoForm'
+import * as styles from './demoFormCard.module.css'
+
 
 const DemoFormCard = () => {
     
