@@ -105,7 +105,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 #imgContainer img {
@@ -200,7 +200,6 @@
     #imgContainer {
         padding: 0;
         display: flex;
-        align-items: center;
         justify-content: flex-start;
         overflow: visible;
     }
@@ -208,9 +207,6 @@
         height: 7%;
         display: flex;
         align-items: flex-end;
-    }
-    .square {
-        height: auto;
     }
 }
 
