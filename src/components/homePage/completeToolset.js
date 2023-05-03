@@ -1,12 +1,40 @@
-import * as React from 'react'
+import React, { useEffect } from 'react';
+import { Helmet } from 'gatsby-plugin-react-helmet';
 import { Link } from 'gatsby'
 import Image from '../../images/homePage/completeToolset.png'
 import ImageMobile from '../../images/homePage/completeToolsetMobile.png'
 import * as styles from './completeToolset.module.css'
 
 const CompleteToolsetCard = () => {
+
+
+    // not working yet
+    useEffect(() => {
+        const links = document.querySelectorAll('#cardWrapper > a');
+    
+        links.forEach(link => {
+          link.addEventListener('click', event => {
+            event.preventDefault();
+    
+            const activeLink = document.querySelector(`.${styles.active}`);
+            activeLink.classList.remove(styles.active);
+    
+            link.classList.add(styles.active);
+          });
+        });
+    
+        return () => {
+          links.forEach(link => {
+            link.removeEventListener('click');
+          });
+        };
+      }, []);
     
   return (
+    <>
+    {/* <Helmet>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      </Helmet> */}
     <div className={styles.sectionWrapper}>
         <div className={styles.container}>
             <div className={styles.subContainer} id={styles.textContainer}>
@@ -21,9 +49,10 @@ const CompleteToolsetCard = () => {
                 </div>
             </div>
             <div id={styles.cardContainer}>
+                
                 <div className={styles.subContainer} id={styles.cardWrapper}>
                     
-                    <Link className={styles.card} to='/'>
+                    <Link className={styles.card}  id={styles.active} to='/'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Origination</h3>
                             <p className={styles.cardSubTitle}>
@@ -71,7 +100,7 @@ const CompleteToolsetCard = () => {
 
         </div>
     </div>
-            
+    </>       
     )
 }
 
