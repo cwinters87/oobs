@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+import Image from '../../images/homePage/completeToolset.png'
+import ImageMobile from '../../images/homePage/completeToolsetMobile.png'
 import * as styles from './completeToolset.module.css'
 
 const CompleteToolsetCard = () => {
@@ -58,7 +59,13 @@ const CompleteToolsetCard = () => {
             </div>
 
             <div className={styles.subContainer} id={styles.imgContainer}>
-                <div id={styles.imgWrapper}><StaticImage className={styles.containedImage} src="../../images/homePage/completeToolset.png" placeholder="" alt="tasksuite product" /></div>
+                <div id={styles.imgWrapper}>
+                    <picture>
+                        <source media="(max-width: 991px)" srcSet={ImageMobile} />
+                        <source media="(min-width: 992px)" srcSet={Image} />
+                        <img src={Image} alt="TaskSuite product" style={{width: "auto", height: "auto"}} />
+                    </picture>
+                </div>
             </div>
            
 

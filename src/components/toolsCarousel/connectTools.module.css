@@ -55,6 +55,12 @@
     gap: .8em; 
 }
 
+.card:hover, .card:hover img, .card:hover h4 {
+    transition: 250ms;
+    filter: brightness(90%);
+}
+
+
 .card img {
     height: 40px;
     width: auto;
