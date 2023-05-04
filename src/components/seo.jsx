@@ -36,7 +36,7 @@ export const Seo = ({ title, description, pathname, children, robots, noIndex,  
       <meta name="title" content=" Loan Management, Origination, Servicing, and Credit Software"></meta>
       {/* <script>{googleScript}</script> */}
       <meta name="description" content={seo.description} />
-      <link rel="image_src" href="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+      <link rel="image_src" href="https://i.ibb.co/N1jbm4q/Untitled-design-1.png" />
 
      
       <meta name={seo.robots} content={seo.noIndex} />
@@ -45,13 +45,13 @@ export const Seo = ({ title, description, pathname, children, robots, noIndex,  
       <meta property="og:title" content="TaskSuite" />
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={seo.url}/>
-      <meta property="og:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png" />
+      <meta property="og:image" content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png" />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="945" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content="https://i.ibb.co/HFcHY6K/tasksuite.png"/>
+      <meta name="twitter:image" content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"/>
 
       {/* <meta name="image" content={seo.image} /> */}
 
