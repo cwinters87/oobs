@@ -3,7 +3,7 @@ import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
 import ComingSoonCard from '../components/comingSoon'
 
-const AboutPage = () => {
+const FaqsPage = () => {
   return (
     <Layout>
       <ComingSoonCard/>
@@ -12,7 +12,7 @@ const AboutPage = () => {
 }
 
 export const Head = () => (
-  <Seo  title="TaskSuite - About"/>
+  <Seo  title="TaskSuite - FAQs"/>
 )
 
-export default AboutPage
+export default FaqsPage

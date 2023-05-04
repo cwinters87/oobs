@@ -217,8 +217,8 @@ const CurrentProcessCard = () => {
 
 
         <div className={styles.subContainer} id={styles.linkContainer}>
-            <ArrowLink text={'For Lenders'} route={'/'}/>
-            <ArrowLink text={'For Brokers'} route={'/'}/>
+            <ArrowLink text={'For Lenders'} route={'/lenders'}/>
+            <ArrowLink text={'For Brokers'} route={'/brokers'}/>
         </div>
   </div>
   </div>

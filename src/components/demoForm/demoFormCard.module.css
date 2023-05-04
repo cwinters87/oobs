@@ -255,4 +255,10 @@
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 75svh;
+    }
+}
+
 

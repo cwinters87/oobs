@@ -31,7 +31,7 @@ const ExclusivelyCard = () => {
                 </div>
               </div>
             </div>
-            <div id={styles.linkContainerTwo}><ArrowLink text={'About the company'} route={'/'}/></div>
+            <div id={styles.linkContainerTwo}><ArrowLink text={'About the company'} route={'/about'}/></div>
           </div>
         </div>
         </div>

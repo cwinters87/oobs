@@ -4,13 +4,12 @@ import TermsCondition from '../../components/legal/termsCondition'
 
 
 import SpacingCard from '../../layout/spacingCard'
+import ComingSoonCard from '../../components/comingSoon'
 
 const TermsPage = () => {
   return (
     <Layout>
-      <SpacingCard margin={'120px'}/>
-      <TermsCondition/>
-      <SpacingCard margin={'120px'}/>
+      <ComingSoonCard/>
     </Layout>
   )
 }

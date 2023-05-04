@@ -23,7 +23,7 @@ const CareersPage = () => {
 }
 
 export const Head = () => (
-  <Seo  title="TaskSuite - Careers" robots="robots" noIndex="noindex"/>
+  <Seo  title="TaskSuite - Careers"/>
 )
 
 export default CareersPage

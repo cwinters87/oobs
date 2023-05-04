@@ -531,3 +531,60 @@
         /* color: blue; */
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 165svh;
+    }
+    #subTitle {
+        font-size: .85rem;
+    }
+    .cardSubTitle {
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 391px) {
+    .container {
+        /* height: 140svh; */
+    }
+    #titleContainer {
+        height: 250px;
+        /* gap: .5rem;
+        padding-bottom: 20px; */
+    }
+    .cardContentMobile {
+        /* gap: 6px; */
+        height: 200px;
+    }
+    #linkContainer {
+        height: 200px;
+    }
+    .firstRow {
+        /* height: 38%; */
+    }
+    .secondRow {
+        /* height: 31%; */
+    }
+    .thirdRow {
+        /* height: 31%; */
+    }
+    #title {
+        /* font-size: 1.8rem; */
+    }
+    #subTitle {
+        /* font-size: .7rem;
+        padding-bottom: 10px; */
+    }
+    .cardHeader {
+        /* font-size: .4rem; */
+        /* color: red; */
+    }
+    .cardTitle {
+        font-size: 1.2rem;
+        /* color: red; */
+    }
+    .cardSubTitle {
+        font-size: .75rem;
+    }
+}

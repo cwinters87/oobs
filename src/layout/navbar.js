@@ -71,31 +71,35 @@ const NavigationBar = () => {
                       id={`offcanvasNavbarDropdown-expand-lg`}>
                       <div className={styles.dropDownProductContainer}>
                         {/* <div> */}
-                          <Link to="/" onClick={handleClose}>
-                            <p>Management Suite</p>
+                          <Link to="/loansuite" onClick={handleClose}>
+                            <p>Loan Suite</p>
                           </Link>
-                          <Link to="/" onClick={handleClose}>
-                            <p>Origination Suite</p>
+                          <Link to="/loanorigination" onClick={handleClose}>
+                            <p>Loan Origination Suite</p>
                           </Link>
-                          <Link to="/" onClick={handleClose}>
-                            <p>Servicing Suite</p>
+                          <Link to="/loanmanagement" onClick={handleClose}>
+                            
+                            <p>Loan Management Suite</p>
                           </Link>
-                          <Link to="/" onClick={handleClose}>
-                            <p>Credit ai</p>
+                          <Link to="/loanservicing" onClick={handleClose}>
+                            <p>Loan Servicing Suite</p>
+                          </Link>
+                          <Link to="/loancreditai" onClick={handleClose}>
+                            <p>Loan Credit ai</p>
                           </Link>
                         {/* </div> */}
                         
                       </div>
                       </NavDropdown>
-                      <Link to="/" className={styles.pageLink} onClick={handleClose}>For Lenders</Link>
-                      <Link to="/" className={styles.pageLink} onClick={handleClose}>For Brokers</Link>
-                      <Link to="/" className={styles.pageLink} onClick={handleClose}>Resources</Link>
+                      <Link to="/lenders" className={styles.pageLink} onClick={handleClose}>For Lenders</Link>
+                      <Link to="/brokers" className={styles.pageLink} onClick={handleClose}>For Brokers</Link>
+                      <Link to="/faqs" className={styles.pageLink} onClick={handleClose}>Resources</Link>
                   </div>
 
                   <div id={styles.linkContainerTwo}>
-                    <Link to="/" className={styles.pageLink} id={styles.contactSales} onClick={handleClose}>Contact Sales</Link>
+                    <Link to="/contact" className={styles.pageLink} id={styles.contactSales} onClick={handleClose}>Contact Sales</Link>
                     <DemoButton></DemoButton>
-                    <Link to="/" className={styles.pageLink}>Login</Link>
+                    <Link to="/login" className={styles.pageLink}>Login</Link>
                   </div>
                 </Nav>
                 </Offcanvas.Body>

@@ -31,7 +31,7 @@ const ComprehensiveSolutionCard = () => {
             </div>
           </div>
           <div className={styles.subContainer} id={styles.linkContainer}>
-            <ArrowLink/>
+            <ArrowLink route={'/loansuite'}/>
           </div>
         </div>
         </div>

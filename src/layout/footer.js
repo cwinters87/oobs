@@ -20,33 +20,33 @@ const Footer = () => {
             <div className={styles.linkColumns}  id={styles.linkColumnOne}>
               <h5>Products</h5>
               <ul className={styles.list}>
-                <li><Link className={styles.link} to="/">Loan Suite</Link></li>
-                <li><Link className={styles.link} to="/">Loan Origination</Link></li>
-                <li><Link className={styles.link} to="/">Loan Credit AI</Link></li>
-                <li><Link className={styles.link} to="/">Loan Servicing</Link></li>
-                <li><Link className={styles.link} to="/">Loan Management</Link></li>
+                <li><Link className={styles.link} to="/loansuite">Loan Suite</Link></li>
+                <li><Link className={styles.link} to="/loanorigination">Loan Origination</Link></li>
+                <li><Link className={styles.link} to="/loancreditai">Loan Credit AI</Link></li>
+                <li><Link className={styles.link} to="/loanservicing">Loan Servicing</Link></li>
+                <li><Link className={styles.link} to="/loanmanagement">Loan Management</Link></li>
               </ul>
             </div>
             <div className={styles.linkColumns} id={styles.linkColumnTwo}>
               <h5>Use Cases</h5>
               <ul className={styles.list}>
-                <li><Link className={styles.link} to="/">For Lenders</Link></li>
-                <li><Link className={styles.link} to="/">For Brokers</Link></li>
+                <li><Link className={styles.link} to="/lenders">For Lenders</Link></li>
+                <li><Link className={styles.link} to="/brokers">For Brokers</Link></li>
               </ul>
             </div>
             <div className={styles.linkColumns} id={styles.linkColumnThree}>
               <h5>Company</h5>
               <ul className={styles.list}>
-                <li><Link className={styles.link} to="/">About</Link></li>
-                <li><Link className={styles.link} to="/">Careers</Link></li>
+                <li><Link className={styles.link} to="/about">About</Link></li>
+                <li><Link className={styles.link} to="/careers">Careers</Link></li>
               </ul>
             </div>
             <div className={styles.linkColumns} id={styles.linkColumnFour}>
               <h5>Resources</h5>
               <ul className={styles.list}>
-                <li><Link className={styles.link} to="/">FAQs</Link></li>
-                <li><Link className={styles.link} to="/">Blog</Link></li>
-                <li><Link className={styles.link}to="/">Support</Link></li>
+                <li><Link className={styles.link} to="/faqs">FAQs</Link></li>
+                <li><Link className={styles.link} to="/blog">Blog</Link></li>
+                <li><Link className={styles.link}to="/support">Support</Link></li>
               </ul>
             </div>
           </div>
@@ -55,8 +55,8 @@ const Footer = () => {
         <section id={styles.subContainerTwo}>
           <div className={styles.bottomColumn} id={styles.bottomColumnOne}>
             <h5 id={styles.rights}>© 2023 gotech investments. All rights reserved</h5>
-            <Link className={styles.link} id={styles.privacy} to="/">Privacy Policy</Link>
-            <Link className={styles.link} id={styles.term} to="/">Terms of Use</Link>
+            <Link className={styles.link} id={styles.privacy} to="/legal/privacy">Privacy Policy</Link>
+            <Link className={styles.link} id={styles.term} to="/legal/terms">Terms of Use</Link>
           </div>
           <div className={styles.mobileContainerOnly}>
             <div className={styles.bottomColumn} id={styles.bottomColumnTwo}>

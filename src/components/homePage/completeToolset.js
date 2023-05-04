@@ -36,7 +36,7 @@ const CompleteToolsetCard = () => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       </Helmet> */}
     <div className={styles.sectionWrapper}>
-        <div className={styles.container}>
+        <div className={styles.container} id='start'>
             <div className={styles.subContainer} id={styles.textContainer}>
                 <div id={styles.header}>
                     <p>Meet TaskSuite</p>
@@ -52,7 +52,7 @@ const CompleteToolsetCard = () => {
                 
                 <div className={styles.subContainer} id={styles.cardWrapper}>
                     
-                    <Link className={styles.card}  id={styles.active} to='/'>
+                    <Link className={styles.card}  id={styles.active} to='/loanorigination'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Origination</h3>
                             <p className={styles.cardSubTitle}>
@@ -60,7 +60,7 @@ const CompleteToolsetCard = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link className={styles.card} to='/'>
+                    <Link className={styles.card} to='/loancreditai'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Credit AI</h3>
                             <p className={styles.cardSubTitle}>
@@ -68,7 +68,7 @@ const CompleteToolsetCard = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link className={styles.card} to='/'>
+                    <Link className={styles.card} to='/loanservicing'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Servicing</h3>
                             <p className={styles.cardSubTitle}>
@@ -76,7 +76,7 @@ const CompleteToolsetCard = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link className={styles.card} to='/'>
+                    <Link className={styles.card} to='/loanmanagement'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Management</h3>
                             <p className={styles.cardSubTitle}>

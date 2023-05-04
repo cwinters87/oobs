@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from '../layout/layout'
+import ComingSoonCard from '../components/comingSoon'
 // import { Link } from 'gatsby'
 
 const LoanManagement = () => {
   return (
     <Layout>
-      <h1>Loan Management Suite</h1>
+      <ComingSoonCard/>
     </Layout>
   )
 }

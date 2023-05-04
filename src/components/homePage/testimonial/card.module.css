@@ -169,11 +169,16 @@
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
     .imgContainer {
         height: 250px;
     }
     .buttonContainer {
+        
+        padding-top: 1.5rem;
         padding-bottom: 2rem;
+    }
+    .cardAuthor {
+        height: 30px;
     }
 }

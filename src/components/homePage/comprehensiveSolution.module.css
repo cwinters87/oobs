@@ -188,7 +188,14 @@
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width:400px) {
+    .container {
+        height: 190svh;
+
+    }
+}
+
+@media only screen and (max-width: 391px) {
     .container {
         justify-content: space-between;
         height: 185svh;
@@ -197,7 +204,7 @@
         padding-bottom: 1.2rem;
         gap: 10px;
         padding-top: 0;
-        height: 275px;
+        height: 350px;
     }
     #cardContainer {
         height: 640px;

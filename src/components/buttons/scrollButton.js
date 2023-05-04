@@ -21,7 +21,7 @@ const ScrollButton = ({propScrollButtonStyle, text}) => {
           } else {
             window.scroll(0, window.pageYOffset + scrollStep);
           }
-        }, 15); // adjust interval time as desired
+        }, 25); // adjust interval time as desired
     
         const removeEventListeners = () => {
           window.removeEventListener("wheel", stopScroll);

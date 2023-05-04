@@ -329,11 +329,41 @@
     }    
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
     .container {
-        padding-top: 25PX;
+        height: 140svh;
+    }
+    #textContainer {
+        height: 33%;
+        padding-bottom: .1rem;
+    }
+    #cardContainer {
+        height: 47%;
+    }
+    #imgContainer {
+        height: 20%;
+    }   
+    
+}
+
+@media only screen and (max-width: 391px) {
+    .container {
+        padding-top: 50px;
     }
     #textContainer {
         padding-top: 2rem;
     }
+    #title h2 {
+        font-size: 1.8rem;
+    }
+    #textContainer {
+        height: 30%;
+        padding-bottom: .1rem;
+    }
+    #cardContainer {
+        height: 50%;
+    }
+    #imgContainer {
+        height: 20%;
+    }  
 }
