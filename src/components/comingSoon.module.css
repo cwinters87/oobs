@@ -19,14 +19,14 @@
     overflow: hidden;
 }
 
-h1 {
+.container h1 {
     font-family: var(--font-regular);
     color: var(--money-green);
     font-size: 3rem;
     /* margin-bottom: 1rem; */
 }
 
-p {
+.container p {
     font-family: var(--font-light);
     text-align: center;
     font-size: 1.1rem;
@@ -35,7 +35,7 @@ p {
     margin: 0 auto;
 }
 
-a {
+.container a {
     color: var(--cobalt-blue);
 }
 
@@ -47,7 +47,7 @@ a {
 }
 
 @media only screen and (max-width: 600px)  {
-    p {
+    .container p {
         font-size: 1rem;
     }
 }
