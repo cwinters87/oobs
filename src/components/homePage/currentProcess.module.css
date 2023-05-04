@@ -344,16 +344,16 @@
 @media only screen and (max-width: 991px) {
     .container {
         height: 120svh;
-        border: solid 2px black;
+        /* border: solid 2px black; */
     }
     #titleContainer {
         height: 15%;
 
-        border: solid 2px green;
+        /* border: solid 2px green; */
     }
     #linkContainer {
         height: 15%;
-        border: solid 2px blue;
+        /* border: solid 2px blue; */
     }
     #cardContainer {
         display: none;
@@ -362,15 +362,22 @@
         height: 70%;
         display: flex;
         flex-direction: column;
-        border: solid 2px black;
-
+        /* border: solid 2px black; */
+    }
+    .cardContentMobile {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        /* border: solid 2px green; */
+    }
+    .cardContentMobile p, .cardContentMobile h3 {
+        margin: 0;
     }
     .firstRow {
         height: 50%;
         width: 100%;
-        border: solid 2px yellow;
+        /* border: solid 2px yellow; */
         padding: 5px 0 6px 0;
-
     }
     .secondRow {
         height: 25%;
@@ -378,7 +385,7 @@
         display: flex;
         padding: 6px 0;
         gap: 12px;
-        border: solid 2px purple;
+        /* border: solid 2px purple; */
     }
     .thirdRow {
         height: 25%;
@@ -386,18 +393,8 @@
         display: flex;
         padding: 6px 0;
         gap: 12px;
-        border: solid 2px orange;
+        /* border: solid 2px orange; */
     }
-    /* height: 100%;
-    max-height: 320px;
-    border: solid 2px var(--khaki-light);
-    border-radius: 18px;
-    background-color: var(--khaki-light);
-    padding-left: 12px;
-    padding-top: 12px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 500ms; */
     .cardMobile {
         border: solid 2px var(--khaki-light);
         border-radius: 18px;
@@ -405,74 +402,132 @@
         padding-left: 12px;
         padding-top: 12px;
         transition: transform 500ms;
-        position: relative;
         overflow: hidden;
-        border: solid 2px green;
-    }
-
-    .cardOneWrapper {
-        height: 50%;
-        width: 100%;
-        border: solid 2px red;
     }
     #cardOneMobile {
+        border: solid 2px var(--khaki);
         height: 100%;
         width: 100%;
-        border: solid 2px red;
+        /* border: solid 2px red; */
+        position: relative;
     }
     #cardTwoMobile {
         height: 100%;
         width: 50%;
-        border: solid 2px blue;
+        /* border: solid 2px blue; */
     }
     #cardThreeMobile {
         height: 100%;
         width: 50%;
-        border: solid 2px yellow;
+        /* border: solid 2px yellow; */
     }
     #cardFourMobile {
         height: 100%;
         width: 50%;
-        border: solid 2px purple;
+        /* border: solid 2px purple; */
     }
     #cardFiveMobile {
         height: 100%;
         width: 50%;
-        border: solid 2px orange;
+        /* border: solid 2px orange; */
     }
+
+    /* adjust image size here */
     .imgWrapperMobile {
-        width: 100%;
-        height: 100%;
-        border: solid 2px orange;
-        position: relative;
+        position: absolute;
+        width: 98.1%;
+        height: 50%;
+        bottom: 0;
+        right: 0;
+        /* border: solid 2px orange; */
     }
     .imgContainerMobile {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: solid 2px green;
-    }
-    .imgMobileMobile picture {
-        width: 100%;
+        width:100%;
         height: 100%;
-
-        border: solid 2px blue;
+        /* display: flex;
+        align-items: flex-start;
+        justify-content: center; */
     }
-    .imgMobileMobile picture img {
+    .imgContainerMobile picture {
+        height: 100%;
+        width: 100%;
+        /* display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; */
+    }
+    .imgContainerMobile picture img {
         height: 100%;
         width: 100% !important;
         object-fit: cover;
         object-position: 0% 0%;
+        /* border: solid 2px black; */
+    }
+    .cardHeader {
+        font-size: .55rem;
+    }
+    .cardTitle {
+        font-size: 2.2rem;
+    }
+    .cardSubTitle {
+        font-size: .8rem;
     }
 }
 
+@media only screen and (max-width: 786px) {
+    .container {
+        height: 100svh;
+    }
+    .cardContentMobile {
+        gap: 6px;
+    }
+    .cardHeader {
+        font-size: .55rem;
+    }
+    .cardTitle {
+        font-size: 2rem;
+    }
+    .cardSubTitle {
+        font-size: .7rem;
+    }
+}
 
-/* .imgWrapper {
-    position: absolute;
-    width: 60%;
-    height: 90%;
-    bottom: -3px;
-    right: -3px;
-} */
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 140svh;
+    }
+    #titleContainer {
+        gap: .5rem;
+        padding-bottom: 20px;
+    }
+    .cardContentMobile {
+        gap: 6px;
+    }
+    .firstRow {
+        height: 38%;
+    }
+    .secondRow {
+        height: 31%;
+    }
+    .thirdRow {
+        height: 31%;
+    }
+    #title {
+        font-size: 1.8rem;
+    }
+    #subTitle {
+        font-size: .7rem;
+        padding-bottom: 10px;
+    }
+    .cardHeader {
+        font-size: .4rem;
+        /* color: red; */
+    }
+    .cardTitle {
+        font-size: 1.1rem;
+        /* color: red; */
+    }
+    .cardSubTitle {
+        font-size: .7rem;
+        /* color: blue; */
+    }
+}
