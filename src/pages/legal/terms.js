@@ -9,7 +9,7 @@ import ComingSoonCard from '../../components/comingSoon'
 const TermsPage = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
+      <TermsCondition />
     </Layout>
   )
 }

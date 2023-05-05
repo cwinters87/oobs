@@ -1,19 +1,20 @@
 .container {
-    font-family: var(--font-sub);
+    padding: 7%;
+    font-family: var(--font-light);
 }
 
 .container h1 {
-    font-family: var(--font);
+    font-family: var(--font-semi-bold);
     text-align: center;
 }
 
 .container h2 {
-    font-family: var(--font);
+    font-family: var(--font-regular);
     text-align: center;
 }
 
 .container h3 {
-    font-family: var(--font);
+    font-family: var(--font-regular);
     text-align: center;
 }
 
@@ -43,14 +44,14 @@
 }
 
 .noticeAddressContainer {
-    font-family: var(--font);
+    font-family: var(--font-light);
     margin: auto;
     width: 75%;
     text-decoration: underline;
 }
 
 .noticeAddress {
-    font-family: var(--font);
+    font-family: var(--font-light);
     margin: auto;
     width: 50%;
     text-decoration: underline;
@@ -64,18 +65,26 @@
 }
 
 .table td, .table th {
-  border: 1px solid white;
+  border: 1px solid lightgrey;
   padding: 5px 5px 5px 2px;
 }
 
 .tableHeader {
-    background-color: var(--tertiary);
-    font-family: var(--font);
+    background-color: var(--money-green);
+    color: var(--secondary-font-color);
+    font-family: var(--font-regular);
+}
+
+@media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+        padding: 7% 180px;
+    }
 }
 
 @media screen and (max-width: 572px) {
     .container {
-        padding: 0 2%;
+        padding: 7%;
     }
     .upperRoman {
         padding: 0 8%;

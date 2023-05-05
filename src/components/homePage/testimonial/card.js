@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './card.module.css'
 
-
 const Card = ({ imageUrl, quote, author, position, company, prevCard, nextCard }) => {
   console.log(imageUrl)
   return (

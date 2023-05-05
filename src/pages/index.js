@@ -51,9 +51,6 @@ const IndexPage = () => {
         <ConnectTools />
       </FadeInFromLeft>
         
-      
-      
-
       <FadeInFromBottom>
         <DemoFormCard />
       </FadeInFromBottom>

@@ -21,11 +21,11 @@ const SuccessPage = () => {
       };
 
     const mainStyle = {
-        backgroundColor: 'black',
-        color: 'white',
-        // fontFamily: 'var(--font)',
+        backgroundColor: 'var(--khaki-light)',
+        color: 'black',
+        fontFamily: 'var(--font-regular)',
         width: '100%',
-        height: '500px',
+        height: '100svh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -38,12 +38,17 @@ const SuccessPage = () => {
     }
 
     const linkStyle = {
-        color: 'var(--primary)'
+        color: 'var(--cobalt-blue)'
+    }
+
+    const header = {
+        fontFamily: 'var(--font-regular)',
+        color: 'var(--money-green)'
     }
 
     return (
         <main style={mainStyle}>
-            <h1>Look forward to connecting!</h1>
+            <h1 style={header}>Look forward to connecting!</h1>
             <h2>We will have one of our awesome team members reach out soon!</h2>
             <p style={textAlign}>
                 Page will be redirected back to the home page in <Countdown date={Date.now() + 5000} renderer={renderer}></Countdown> seconds...<br/>
