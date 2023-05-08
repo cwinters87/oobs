@@ -35,7 +35,7 @@ const NavigationBar = () => {
         {/* <Navbar bg="transparent" expand='lg' id={styles.navBar} > */}
 
           <div id={styles.logoWrapper}>
-            <Link id={styles.linkImgContainer} to="/"><div id={styles.imgContainer}><StaticImage id={styles.image} src="../images/navbar/nav-tasksuite-logo.png" placeholder="blurred" alt="tasksuite logo" /></div></Link>
+            <Link id={styles.linkImgContainer} to="/"><div id={styles.imgContainer}><StaticImage id={styles.image} src="../images/footer/TaskSuite_Logo_Full_Equal_LimeWhite.png" placeholder="blurred" alt="tasksuite logo" /></div></Link>
           </div>
 
           <div id={styles.linkWrapper}>
