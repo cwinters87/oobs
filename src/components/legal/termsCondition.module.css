@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 572px) {
     .container {
-        padding: 7%;
+        padding: 75px 15px;
     }
     .upperRoman {
         padding: 0 8%;
@@ -92,6 +92,7 @@
     .tableSection {
         font-size: .8rem;
     }
+
 }
 
 @media screen and (max-width: 418px) {
