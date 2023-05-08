@@ -5,6 +5,9 @@ import LoanSuiteHero from '../components/loanSuite/hero'
 import BenefitsCard from '../components/loanSuite/benefits'
 import ConnectTools from '../components/toolsCarousel/connectTools'
 import DemoFormCard from '../components/demoForm/demoFormCard'
+import FadeInFromBottom from '../components/effects/fadeInFromBottom'
+import FadeInFromLeft from '../components/effects/fadeInFromLeft'
+
 
 // import { Link } from 'gatsby'
 
@@ -12,9 +15,18 @@ const LoanSuite = () => {
   return (
     <Layout>
       <LoanSuiteHero/>
+      
+      <FadeInFromBottom>
       <BenefitsCard />
-      <ConnectTools />
-      <DemoFormCard />
+      </FadeInFromBottom>
+
+      <FadeInFromLeft>
+        <ConnectTools />
+      </FadeInFromLeft>
+        
+      <FadeInFromBottom>
+        <DemoFormCard />
+      </FadeInFromBottom>
     </Layout>
   )
 }
