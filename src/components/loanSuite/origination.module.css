@@ -6,9 +6,9 @@
 }
 
 .container {
-    height: 75svh;
+    height: 100svh;
     width: 100%;
-    padding: 0 7%;
+    padding: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
 
 .textContainer {
     width: 38%;
-    height: 60%;
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.8rem;
     /* border: 2px solid red; */
 }
 
@@ -36,7 +36,7 @@
 .headerTitle {
     font-family: var(--font-regular);
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0;
 }
 
@@ -89,7 +89,7 @@
 
 .imgContainer {
     width: 62%;
-    height: 60%;
+    height: 65%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
