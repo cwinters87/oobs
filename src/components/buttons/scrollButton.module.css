@@ -2,6 +2,7 @@
     border: solid 1px grey;
     border-radius: 4px;
     color: var(--primary-font-color);
+    font-family: var(--font-light);
     background-color: transparent;
     width: fit-content;
     transition: transform 500ms;
