@@ -11,6 +11,7 @@ import CreditAi from '../components/loanSuite/creditAi'
 import Origination from '../components/loanSuite/origination'
 import Servicing from '../components/loanSuite/servicing'
 import Management from '../components/loanSuite/management'
+import FeaturesCard from '../components/loanSuite/featuresCard'
 
 const LoanSuite = () => {
   return (
@@ -25,6 +26,8 @@ const LoanSuite = () => {
       <CreditAi/>
       <Servicing/>
       <Management/>
+
+      <FeaturesCard/>
 
       <FadeInFromLeft>
         <ConnectTools />

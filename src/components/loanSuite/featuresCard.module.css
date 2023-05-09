@@ -1,0 +1,144 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.container {
+    height: 100svh;
+    width: 100%;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    background-color: var(--money-green);
+    color: var(--secondary-font-color);
+}
+
+.titleContainer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.cardContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttonContainer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin: 0;
+    font-size: .8rem;
+    font-family: var(--font-light);
+    color: var(--khaki);
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: var(--font-regular);
+    color: var(--secondary-font-color);
+    text-align: center;
+}
+
+.subTitle {
+    margin: 0;
+    font-size: 1rem;
+    font-family: var(--font-light);
+    color: var(--secondary-font-color);
+    filter: brightness(90%);
+    text-align: center;
+}
+
+.card {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px yellow; */
+}
+
+.cardText {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    /* border: solid 1px red; */
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: var(--font-regular);
+    color: var(--lime-green);
+    text-align: center;
+    
+}
+
+.cardSubTitle {
+    margin: 0;
+    font-size: .9rem;
+    font-family: var(--font-light);
+    color: var(--secondary-font-color);
+    filter: brightness(90%);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+        padding: 26px 180px;;
+    }
+}
