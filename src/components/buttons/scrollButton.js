@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Button from 'react-bootstrap/Button'
 import * as styles from './scrollButton.module.css'
 
-const ScrollButton = ({propScrollButtonStyle, text}) => {
+const ScrollButton = ({propScrollButtonStyle, text, route}) => {
     
     // const handleClick = () => {
     //     const scrollStep = window.innerHeight / 20 // adjust scroll step as desired
@@ -43,23 +44,34 @@ const ScrollButton = ({propScrollButtonStyle, text}) => {
     //     }
     //   };
     
+    // let buttonText = 'See how it works'
+
+    // if (typeof text === 'string') {
+    //     buttonText = text
+    //   }
+
+    // const scroll = () => {
+    //   const section = document.querySelector( '#start' )
+    //   section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      
+    // }
+
     let buttonText = 'See how it works'
+    let buttonRoute = '/#start'
 
     if (typeof text === 'string') {
         buttonText = text
       }
 
-    const scroll = () => {
-      const section = document.querySelector( '#start' )
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      
-    }
+    if (typeof route === 'string') {
+        buttonRoute = route
+      }
 
 
     return (
-        <Button className={styles.button} style={propScrollButtonStyle} onClick={scroll}>
-            <span>{buttonText}</span>
-        </Button>
+          <Link to={buttonRoute}>
+            <Button className={styles.button} style={propScrollButtonStyle}>{buttonText}</Button>
+          </Link>
     )
     }
 

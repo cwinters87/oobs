@@ -7,9 +7,10 @@ import ConnectTools from '../components/toolsCarousel/connectTools'
 import DemoFormCard from '../components/demoForm/demoFormCard'
 import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
-
-
-// import { Link } from 'gatsby'
+import CreditAi from '../components/loanSuite/creditAi'
+import Origination from '../components/loanSuite/origination'
+import Servicing from '../components/loanSuite/servicing'
+import Management from '../components/loanSuite/management'
 
 const LoanSuite = () => {
   return (
@@ -19,6 +20,11 @@ const LoanSuite = () => {
       <FadeInFromBottom>
       <BenefitsCard />
       </FadeInFromBottom>
+
+      <Origination/>
+      <CreditAi/>
+      <Servicing/>
+      <Management/>
 
       <FadeInFromLeft>
         <ConnectTools />
