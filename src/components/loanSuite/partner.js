@@ -10,6 +10,7 @@ const PartnerCard = () => {
         backgroundColor: 'var(--cobalt-blue)',
         color: 'var(--secondary-font-color)',
         border: 'solid 1px var(--cobalt-blue)',
+        fontFamily: 'var(--font-regular)',
     }
     
   return (

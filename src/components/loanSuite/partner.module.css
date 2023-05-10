@@ -72,6 +72,7 @@
     /* border: solid 2px black; */
     text-align: center;
     font-family: var(--font-semi-bold);
+    font-size: 2.2rem;
 }
 
 .imgContainer {
@@ -96,5 +97,11 @@
     .container {
         max-width: 2560px;
         padding: 26px 180px;;
+    }
+}
+
+@media only screen and (max-width: 991px)  {
+    .cardContainer {
+        flex-direction: column;
     }
 }
