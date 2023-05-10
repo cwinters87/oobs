@@ -1,6 +1,6 @@
 .sectionWrapper {
     width: 100%;
-    background: var(--khaki-light);
+    background: #ffff;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -10,7 +10,7 @@
     height: 100svh;
     width: 100%;
     padding: 7%;
-    background-color: var(--khaki-light);
+    background-color: #ffff;
     display: flex;
     gap: 2rem;
     flex-direction: column;
