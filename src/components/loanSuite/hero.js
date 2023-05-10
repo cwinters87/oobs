@@ -23,7 +23,7 @@ const LoanSuiteHero = () => {
               </picture>
             </div>
           </div>
-          
+      
         </main> 
       </div>
     )

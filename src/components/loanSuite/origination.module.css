@@ -96,10 +96,9 @@
     /* border: 2px solid green; */
 }
 
-.imgWrapper {
+/* .imgWrapper {
     height: 100%;
     width: 100%;
-    /* border: 2px solid red; */
 }
 
 .imgWrapper img {
@@ -107,7 +106,7 @@
     width: 100% !important;
     object-fit: cover;
     object-position: 0% 0%;
-}
+} */
 
 
 

@@ -3,6 +3,7 @@ import ScrollButton from '../buttons/scrollButton'
 import Icon from '../../images/components/icon-products-creditai.png'
 import Checkmark from '../../images/components/icon-products-check-creditai.png'
 import Image from '../../images/loanSuite/products-creditai1.png'
+import ImageMobile from '../../images/loanSuite/products-creditai-mobile.png'
 import * as styles from './origination.module.css'
 
 const CreditAi = () => {
@@ -41,9 +42,11 @@ const CreditAi = () => {
                 <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>
-                <div className={styles.imgWrapper}>
-                    <img src={Image} alt='credit product'/>
-                </div>
+              <picture>
+                <source media="(max-width: 991px)" srcSet={ImageMobile} />
+                <source media="(min-width: 992px)" srcSet={Image} />
+                <img src={Image} alt="TaskSuite hero product" style={{width: "auto", height: "100%"}} />
+              </picture>
             </div>
           </div>
         </div>

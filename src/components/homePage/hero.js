@@ -3,7 +3,6 @@ import DemoButton from '../buttons/demoButtonModal'
 import ScrollButton from '../buttons/scrollButton'
 import Image from '../../images/homePage/Hero.png'
 import ImageMobile from '../../images/homePage/Hero-Mobile.png'
-import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './hero.module.css'
 
 const Hero = () => {
