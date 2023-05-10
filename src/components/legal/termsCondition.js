@@ -4,6 +4,7 @@ import * as styles from './termsCondition.module.css'
 const TermsCondition = () => {
     
   return (
+    <div className={styles.sectionWrapper}>
         <main className={styles.container}>
             <section>
                 <h1>
@@ -805,6 +806,7 @@ const TermsCondition = () => {
                 </table>         
             </section>            
         </main>
+    </div>
     )
 }
 

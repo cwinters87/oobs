@@ -1,4 +1,12 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .container {
+    width: 100%;
     padding: 7%;
     font-family: var(--font-light);
 }
@@ -92,7 +100,6 @@
     .tableSection {
         font-size: .8rem;
     }
-
 }
 
 @media screen and (max-width: 418px) {
