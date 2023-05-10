@@ -1,8 +1,8 @@
 import * as React from 'react'
 import ScrollButton from '../buttons/scrollButton'
-import Icon from '../../images/loanSuite/header-temp.png'
-import Checkmark from '../../images/loanSuite/check-temp.png'
-import Image from '../../images/loanSuite/creditai-temp.png'
+import Icon from '../../images/components/icon-products-creditai.png'
+import Checkmark from '../../images/components/icon-products-check-creditai.png'
+import Image from '../../images/loanSuite/products-creditai1.png'
 import * as styles from './origination.module.css'
 
 const CreditAi = () => {

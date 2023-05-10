@@ -1,8 +1,8 @@
 import * as React from 'react'
 import ScrollButton from '../buttons/scrollButton'
-import Icon from '../../images/loanSuite/header-temp.png'
-import Checkmark from '../../images/loanSuite/check-temp.png'
-import Image from '../../images/loanSuite/management-temp.png'
+import Icon from '../../images/components/icon-products-management.png'
+import Checkmark from '../../images/components/icon-products-check-management.png'
+import Image from '../../images/loanSuite/products-management1.png'
 import * as styles from './origination.module.css'
 
 const Management = () => {
