@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Image from '../../images/loanSuite/hero.png'
-import ImageMobile from '../../images/loanSuite/hero-mobile.png'
+import ImageMobile from '../../images/loanSuite/hero-mobile-2.png'
 import * as styles from './hero.module.css'
 
 const LoanSuiteHero = () => {

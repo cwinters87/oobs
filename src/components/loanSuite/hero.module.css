@@ -44,8 +44,6 @@
     text-align: center;
 }
 
-
-
 /* adjust size of hero image */
 .imgWrapper {
     width: 100%;
@@ -103,7 +101,7 @@
         padding-bottom: .5rem;
     }
     #subContainerOne h2 {
-    font-size: 1.1rem;
+        font-size: 1.1rem;
     }   
 }
 
@@ -114,45 +112,103 @@
     .imgWrapper {
         height: 50%;
     }
-}
-
-@media only screen and (max-width: 1350px)  {
-    #subContainerOne h1 {
-          
-    }
     .breakPointTop {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1025px)  {
+@media only screen and (max-width: 1080px)  {
     #subContainerOne h1 {
-        font-size: 3rem;    
+        font-size: 2.5rem;    
     }
     #subContainerOne h2 {
-        font-size: .85rem;
+        font-size: .8rem;
+    }
+    .breakPoint {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .container {
-    }   
+        padding: 0 7%;
+    }
+    #subContainerOne {
+        height: 40%;
+        gap: 1.2rem;
+    }
+    #subContainerOne h1 {
+        color: var(--money-green);   
+    }
+    .imgWrapper {
+        height: 60%;
+    }    
+    .imgContainer {
+        width:100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .imgContainer picture {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .imgContainer picture img {
+        height: 100% !important;
+        width: auto;
+        object-fit: fill;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+    #subContainerOne {
+        height: 45%;
+        gap: .85rem;
+        padding: 0 7%;
+    }
+    .imgWrapper {
+        height: 55%;
+        padding: 10% 0 0 7%;
+    }
+    #subContainerOne h1 {
+        font-size: 2rem;    
+    }
+    #subContainerOne h2 {
+        font-size: .85rem;
+    }
+    .imgContainer picture img {
+        height: 100% !important;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sectionWrapper {
+        height: 100vh;
+    }
+}
+
+/* @media only screen and (max-width: 991px) {  
     #subContainerOne h1 {
         font-size: 3rem;    
     }
     #subContainerOne h2 {
         font-size: 1rem;
     }
- 
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        
-    }
     #subContainerOne h1 {
         font-size: 2.4rem;    
-    }
+    }7896jbniokl,0gyuhm   
     #subContainerOne h2 {
         font-size: .8rem;
     }
@@ -166,4 +222,4 @@
     #subContainerOne h2 {
         font-size: .7rem;
     }
-}
+} */
