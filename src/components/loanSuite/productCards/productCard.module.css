@@ -72,7 +72,7 @@
 }
 
 .subTitle {
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
     font-size: 1.2rem;
     margin: 0;
     padding-bottom: 1.8rem;
@@ -207,14 +207,14 @@
         /* height: 70%;
         padding: 1% 0; */
         height: 85%;
-        width: 42%;
+        width: 43%;
         padding: 0;
         gap: .5rem;
     }
     .imgContainer {
         /* height: 70%; */
         height: 85%;
-        width: 58%;
+        width: 57%;
     }
     /* .middleWrapper {
         gap: 1.2rem;

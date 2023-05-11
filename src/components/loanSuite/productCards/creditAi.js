@@ -1,40 +1,40 @@
 import * as React from 'react'
-import ScrollButton from '../buttons/scrollButton'
-import Icon from '../../images/components/icon-products-servicing.png'
-import Checkmark from '../../images/components/icon-products-check-servicing.png'
-import Image from '../../images/loanSuite/products-servicing1.png'
-import ImageMobile from '../../images/loanSuite/products-servicing-mobile.png'
+import ScrollButton from '../../buttons/scrollButton'
+import Icon from '../../../images/components/icon-products-creditai.png'
+import Checkmark from '../../../images/components/icon-products-check-creditai.png'
+import Image from '../../../images/loanSuite/products-creditai1.png'
+import ImageMobile from '../../../images/loanSuite/products-creditai-mobile.png'
 import * as styles from './productCard.module.css'
 
-const Servicing = () => {
+const CreditAi = () => {
     
   return (
         <div className={styles.sectionWrapper}>
           <div className={styles.container}>
             <div className={styles.textContainer}>
                 <div className={styles.header}>
-                    <div className={styles.iconWrapper}><img src={Icon} alt='servicing icon'/></div>
-                    <p className={styles.headerTitle}>Servicing</p>
+                    <div className={styles.iconWrapper}><img src={Icon} alt='credit icon'/></div>
+                    <p className={styles.headerTitle}>Credit AI</p>
                 </div>
                 <div className={styles.middleWrapper}>
-                    <h2 className={styles.title}>Report and support<br className={styles.topBreakPoint}/> your loan portfolios</h2>
-                    <p className={styles.subTitle}>TaskSuite's Loan Servicing Suite is a cloud-based digital platform <br className={styles.bottomBreakPoint}/>designed to imporve loan portfolio management. The most <br className={styles.bottomBreakPoint}/>comprehensive solution on the market, the Loan Servicing Suite helps to <br className={styles.bottomBreakPoint}/>reduce risk, provide better tracking, and improve customer service.</p>
+                    <h2 className={styles.title}>Enhance your loan<br className={styles.topBreakPoint}/> underwriting process</h2>
+                    <p className={styles.subTitle}>TaskSuite's cloud-based Credit AI Platform simplifies and automates loan <br className={styles.bottomBreakPoint}/>applications, offering robust fraud protection and seamless integration <br className={styles.bottomBreakPoint}/>with credit bureaus for credit scoring.</p>
                     <div className={styles.featureContainer}>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Loan Stats</p>
+                            <p className={styles.featureTitle}>Credit Scoring Integrations</p>
                         </div>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Customizable Dashboards</p>
+                            <p className={styles.featureTitle}>Automated Decision Making</p>
                         </div>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Automated Workflows</p>
+                            <p className={styles.featureTitle}>Document Scanning</p>
                         </div>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Online Borrower Portal</p>
+                            <p className={styles.featureTitle}>Customizable Rules Engine</p>
                         </div>
                     </div>
                 </div>
@@ -53,4 +53,4 @@ const Servicing = () => {
     )
 }
 
-export default Servicing
+export default CreditAi

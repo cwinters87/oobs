@@ -1,40 +1,40 @@
 import * as React from 'react'
-import ScrollButton from '../buttons/scrollButton'
-import Icon from '../../images/components/icon-products-management.png'
-import Checkmark from '../../images/components/icon-products-check-management.png'
-import Image from '../../images/loanSuite/products-management1.png'
-import ImageMobile from '../../images/loanSuite/products-management-mobile.png'
+import ScrollButton from '../../buttons/scrollButton'
+import Icon from '../../../images/components/icon-products-servicing.png'
+import Checkmark from '../../../images/components/icon-products-check-servicing.png'
+import Image from '../../../images/loanSuite/products-servicing1.png'
+import ImageMobile from '../../../images/loanSuite/products-servicing-mobile.png'
 import * as styles from './productCard.module.css'
 
-const Management = () => {
+const Servicing = () => {
     
   return (
         <div className={styles.sectionWrapper}>
           <div className={styles.container}>
             <div className={styles.textContainer}>
                 <div className={styles.header}>
-                    <div className={styles.iconWrapper}><img src={Icon} alt='management icon'/></div>
-                    <p className={styles.headerTitle}>Management</p>
+                    <div className={styles.iconWrapper}><img src={Icon} alt='servicing icon'/></div>
+                    <p className={styles.headerTitle}>Servicing</p>
                 </div>
                 <div className={styles.middleWrapper}>
-                    <h2 className={styles.title}>Easily manage and track your <br className={styles.topBreakPoint}/>loans from beginning to end</h2>
-                    <p className={styles.subTitle}>TaskSuite's LMS streamlines and automates the financial loan process, <br className={styles.bottomBreakPoint}/>from application to approval and repayment, enabling you to easily <br className={styles.bottomBreakPoint}/>manage and track loans from beginning to end.</p>
+                    <h2 className={styles.title}>Report and support<br className={styles.topBreakPoint}/> your loan portfolios</h2>
+                    <p className={styles.subTitle}>TaskSuite's Loan Servicing Suite is a cloud-based digital platform <br className={styles.bottomBreakPoint}/>designed to imporve loan portfolio management. The most <br className={styles.bottomBreakPoint}/>comprehensive solution on the market, the Loan Servicing Suite helps to <br className={styles.bottomBreakPoint}/>reduce risk, provide better tracking, and improve customer service.</p>
                     <div className={styles.featureContainer}>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
+                            <p className={styles.featureTitle}>Loan Stats</p>
+                        </div>
+                        <div className={styles.feature}>
+                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
+                            <p className={styles.featureTitle}>Customizable Dashboards</p>
+                        </div>
+                        <div className={styles.feature}>
+                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
+                            <p className={styles.featureTitle}>Automated Workflows</p>
+                        </div>
+                        <div className={styles.feature}>
+                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
                             <p className={styles.featureTitle}>Online Borrower Portal</p>
-                        </div>
-                        <div className={styles.feature}>
-                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Intelligent Reporting</p>
-                        </div>
-                        <div className={styles.feature}>
-                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Data Security</p>
-                        </div>
-                        <div className={styles.feature}>
-                            <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>Robust Integrations</p>
                         </div>
                     </div>
                 </div>
@@ -53,4 +53,4 @@ const Management = () => {
     )
 }
 
-export default Management
+export default Servicing

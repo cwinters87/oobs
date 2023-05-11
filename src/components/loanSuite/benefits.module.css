@@ -6,12 +6,12 @@
   }
 
 .container {
-    
-    padding: 7%;
-    height: 60svh;
+    /* border: 2px solid red; */
+    padding: 0;
+    height: 35svh;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 15rem;
 }
@@ -69,7 +69,23 @@
 
 @media only screen and (min-width: 2561px)  {
     .container {
+        height: 48svh;
         max-width: 2560px;
-        padding: 26px 180px;;
+        padding: 26px 180px;
     }
 }
+
+@media only screen and (max-width: 1921px)  {
+    .container {
+        height: 53svh;
+        gap: 12rem;
+    }
+}
+
+@media only screen and (max-width: 1600px)  {
+    .container {
+        height: 60svh;
+        gap: 10rem;
+    }
+}
+
