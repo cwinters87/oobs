@@ -4,7 +4,7 @@ import Icon from '../../images/components/icon-products-management.png'
 import Checkmark from '../../images/components/icon-products-check-management.png'
 import Image from '../../images/loanSuite/products-management1.png'
 import ImageMobile from '../../images/loanSuite/products-management-mobile.png'
-import * as styles from './origination.module.css'
+import * as styles from './productCard.module.css'
 
 const Management = () => {
     
@@ -38,7 +38,6 @@ const Management = () => {
                         </div>
                     </div>
                 </div>
-
                 <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>

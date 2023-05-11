@@ -4,7 +4,7 @@ import Icon from '../../images/components/icon-products-creditai.png'
 import Checkmark from '../../images/components/icon-products-check-creditai.png'
 import Image from '../../images/loanSuite/products-creditai1.png'
 import ImageMobile from '../../images/loanSuite/products-creditai-mobile.png'
-import * as styles from './origination.module.css'
+import * as styles from './productCard.module.css'
 
 const CreditAi = () => {
     
@@ -38,7 +38,6 @@ const CreditAi = () => {
                         </div>
                     </div>
                 </div>
-
                 <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>

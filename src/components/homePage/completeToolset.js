@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'gatsby-plugin-react-helmet';
+// import { Helmet } from 'gatsby-plugin-react-helmet';
 import { Link } from 'gatsby'
 import Image from '../../images/homePage/completeToolset.png'
 import ImageMobile from '../../images/homePage/completeToolsetMobile.png'
