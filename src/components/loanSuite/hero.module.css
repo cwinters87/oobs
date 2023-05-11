@@ -195,31 +195,3 @@
         height: 100vh;
     }
 }
-
-/* @media only screen and (max-width: 991px) {  
-    #subContainerOne h1 {
-        font-size: 3rem;    
-    }
-    #subContainerOne h2 {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #subContainerOne h1 {
-        font-size: 2.4rem;    
-    }7896jbniokl,0gyuhm   
-    #subContainerOne h2 {
-        font-size: .8rem;
-    }
-
-}
-
-@media only screen and (max-width: 391px) {
-    #subContainerOne h1 {
-        font-size: 2.2rem;    
-    }
-    #subContainerOne h2 {
-        font-size: .7rem;
-    }
-} */

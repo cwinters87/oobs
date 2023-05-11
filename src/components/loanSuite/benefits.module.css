@@ -89,3 +89,75 @@
     }
 }
 
+@media only screen and (max-width: 1080px)  {
+    .container {
+        height: 70svh;
+        gap: 1rem;
+        /* padding: 0 7%; */
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+    .subTitle p {
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width: 991px)  {
+    .container {
+        flex-direction: column;
+        height: 85svh;
+        align-items: center;
+        gap: 0; 
+        padding: 7% 7% 0 7%; 
+    }
+    .topBreakPoint {
+        display: none;
+    }
+    .bottomBreakPoint {
+        display: none;
+    }
+    .card {
+        /* border: solid 1px red; */
+        height: 200px;
+        width: 80%;
+        padding: 0%;
+    }
+    .image {
+        height: 75px;
+        /* border: solid 1px red; */
+    }
+    .title {
+        height: 60px;
+        /* border: solid 1px royalblue; */
+    }
+    .title h3 {
+        font-size: 1.5rem;
+        /* border: solid 1px green; */
+    }
+    .subTitle {
+        height: 75px;
+        /* border: solid 1px green; */
+    }
+    .subTitle p {
+        font-size: .8rem;
+        /* border: solid 1px black; */
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 100svh;
+    }
+    .title h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 100vh;
+    }
+}
+
