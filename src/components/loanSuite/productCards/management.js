@@ -14,11 +14,14 @@ const Management = () => {
             <div className={styles.textContainer}>
                 <div className={styles.header}>
                     <div className={styles.iconWrapper}><img src={Icon} alt='management icon'/></div>
-                    <p className={styles.headerTitle}>Management</p>
+                    <p className={styles.headerTitle}>MANAGEMENT</p>
                 </div>
                 <div className={styles.middleWrapper}>
                     <h2 className={styles.title}>Easily manage and track your <br className={styles.topBreakPoint}/>loans from beginning to end</h2>
                     <p className={styles.subTitle}>TaskSuite's LMS streamlines and automates the financial loan process, <br className={styles.bottomBreakPoint}/>from application to approval and repayment, enabling you to easily <br className={styles.bottomBreakPoint}/>manage and track loans from beginning to end.</p>
+                    <div className={styles.imgContainerMobile}>
+                      <img src={ImageMobile} alt='TaskSuite Management Product' />
+                    </div>
                     <div className={styles.featureContainer}>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>

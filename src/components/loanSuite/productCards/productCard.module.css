@@ -135,6 +135,10 @@
     border-radius: 18px;
 }
 
+.imgContainerMobile {
+    display: none;
+}
+
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
@@ -237,4 +241,58 @@
     .featureTitle {
         font-size: .85rem;
     }
+}
+
+@media only screen and (max-width: 1600px) {
+    .imgContainer {
+        display: none;
+    }
+    .imgContainerMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .topBreakPoint {
+        display: none;
+    }
+    .bottomBreakPoint {
+        display: none;
+    }
+    .textContainer {
+        width: 100%;
+        height: 100%;
+        gap: 1.2rem;
+        justify-content: center;
+        /* border: solid 2px red; */
+    }
+    .header {
+        /* border: solid 2px green; */
+    }
+    .middleWrapper {
+        gap: .85rem;
+        /* border: solid 2px blue; */
+    }
+    .featureContainer {
+        gap: .8rem;
+        /* border: solid 2px purple; */
+    }
+    .header {
+        height: 2.5rem;
+    }
+    .headerTitle {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .subTitle {
+        font-size: .85rem;
+        padding-bottom: 0;
+    }
+    .textContainer button {
+        font-size: .8rem;
+    }
+
 }
