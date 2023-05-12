@@ -83,8 +83,8 @@
 }
 
 .imgContainer img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     
 }
 
@@ -126,10 +126,31 @@
 }
 
 @media only screen and (max-width: 991px)  {
+    .container {
+        height: 130svh;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
     .cardContainer {
         flex-direction: column;
     }
     .card {
         width: 100%;
+        gap: 1rem;
+        padding: 5%;
+    }
+    .cardTitle {
+        font-size: 1.2rem;
+    }
+    .breakPoint {
+        display: none;
     }
 }
+
+/* @media only screen and (max-width: 400px) {
+    .container {
+        height: 100%;
+    }
+    
+} */
