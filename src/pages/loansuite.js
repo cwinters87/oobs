@@ -20,17 +20,34 @@ const LoanSuite = () => {
       <LoanSuiteHero/>
       
       <FadeInFromBottom>
-      <BenefitsCard />
+        <BenefitsCard />
       </FadeInFromBottom>
 
-      <Origination/>
-      <CreditAi/>
-      <Servicing/>
-      <Management/>
+      <FadeInFromLeft >
+        <Origination/>
+      </FadeInFromLeft>
 
-      <FeaturesCard/>
+      <FadeInFromLeft>
+        <CreditAi/>
+      </FadeInFromLeft>
+      
+      <FadeInFromLeft>
+        <Servicing/>
+      </FadeInFromLeft>
+      
+      <FadeInFromLeft>
+        <Management/>
+      </FadeInFromLeft>
+      
+      <FadeInFromBottom>
+        <FeaturesCard/>
+      </FadeInFromBottom>
 
-      <PartnerCard/>
+      <FadeInFromBottom>
+        <PartnerCard/>
+      </FadeInFromBottom>
+
+      
 
       <FadeInFromLeft>
         <ConnectTools />

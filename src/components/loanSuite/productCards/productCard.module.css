@@ -243,7 +243,10 @@
     }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 991px) {
+    .container {
+        height: 100vh;
+    }
     .imgContainer {
         display: none;
     }
@@ -294,5 +297,4 @@
     .textContainer button {
         font-size: .8rem;
     }
-
 }
