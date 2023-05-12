@@ -45,7 +45,7 @@ const Origination = () => {
                         </div>
                     </div>
                 </div>
-                <ScrollButton route={'/loansuite'}/>
+                <ScrollButton route={'/loanorigination'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

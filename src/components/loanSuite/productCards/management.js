@@ -41,7 +41,7 @@ const Management = () => {
                         </div>
                     </div>
                 </div>
-                <ScrollButton route={'/loansuite'}/>
+                <ScrollButton route={'/loanmanagement'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

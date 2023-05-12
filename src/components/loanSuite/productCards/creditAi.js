@@ -41,7 +41,7 @@ const CreditAi = () => {
                         </div>
                     </div>
                 </div>
-                <ScrollButton route={'/loansuite'}/>
+                <ScrollButton route={'/loancreditai'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

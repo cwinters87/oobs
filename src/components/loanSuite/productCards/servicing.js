@@ -41,7 +41,7 @@ const Servicing = () => {
                         </div>
                     </div>
                 </div>
-                <ScrollButton route={'/loansuite'}/>
+                <ScrollButton route={'/loanservicing'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>
