@@ -5,6 +5,13 @@
     width: 100%;
 }
 
+#redTestID {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #redTestID h3 {
     color: red;
     font-size: 1rem;
