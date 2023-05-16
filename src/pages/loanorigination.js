@@ -1,14 +1,24 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from '../layout/layout'
-import ComingSoonCard from '../components/comingSoon'
+import ProductNav from '../components/loanProducts/productNav'
+import OriginationHero from '../components/loanProducts/hero/heroOrigination'
+import DemoFormCard from '../components/demoForm/demoFormCard'
+import FadeInFromBottom from '../components/effects/fadeInFromBottom'
+import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 // import { Link } from 'gatsby'
 
 const LoanOrigination = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
-      
+      <ProductNav />
+      <OriginationHero />  
+
+
+
+      <FadeInFromBottom>
+        <DemoFormCard />
+      </FadeInFromBottom>   
     </Layout>
   )
 }
