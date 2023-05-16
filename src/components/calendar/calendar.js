@@ -14,6 +14,7 @@ const Calendar = () => {
 
 
             <h3>Calendar goes here Calendar element replaces this</h3>
+            <p><a href="https://outlook.office.com/bookwithme/user/bcbbef8724bc4439a5700619135c328c%40tasksuite.com/meetingtype/2DbWGyEG4UCTKTCJX5on9w2?anonymous" target="_blank" rel="noreferrer">click to schedule (do not want click)</a></p>
 
 
 
