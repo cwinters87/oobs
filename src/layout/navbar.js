@@ -97,7 +97,7 @@ const NavigationBar = () => {
                   </div>
 
                   <div id={styles.linkContainerTwo}>
-                    <Link to="/faqs" className={styles.pageLink} id={styles.contactSales} onClick={handleClose}>Contact Sales</Link>
+                    <Link to="/contact" className={styles.pageLink} id={styles.contactSales} onClick={handleClose}>Contact Sales</Link>
                     <DemoButton></DemoButton>
                     <Link to="/login" className={styles.pageLink}>Login</Link>
                   </div>
