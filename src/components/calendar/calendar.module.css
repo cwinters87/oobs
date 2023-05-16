@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#redTestID h3 {
+    color: red;
+    font-size: 1rem;
+    align-self: center;
+}
+
+/* Style below:  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px)  {
+    .container ~ h1 {
+        font-size: 1.5rem;
+    }
+}
