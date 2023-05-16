@@ -6,6 +6,7 @@ import ServicingHero from '../components/loanProducts/hero/heroServicing'
 import DemoFormCard from '../components/demoForm/demoFormCard'
 import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
+import BenefitsServicingCard from '../components/loanProducts/benefits/benefitsServicing'
 // import { Link } from 'gatsby'
 
 const LoanServicing = () => {
@@ -13,7 +14,7 @@ const LoanServicing = () => {
     <Layout>
       <ProductNav />   
       <ServicingHero/> 
-
+      <BenefitsServicingCard/>
 
 
 

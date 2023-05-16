@@ -6,6 +6,7 @@ import CreditHero from '../components/loanProducts/hero/heroCredit'
 import DemoFormCard from '../components/demoForm/demoFormCard'
 import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
+import BenefitsCreditCard from '../components/loanProducts/benefits/benefitsCredit'
 
 // import { Link } from 'gatsby'
 
@@ -14,6 +15,7 @@ const LoanCreditAi = () => {
     <Layout>
       <ProductNav />
       <CreditHero/>
+      <BenefitsCreditCard/>
 
 
       <FadeInFromBottom>
