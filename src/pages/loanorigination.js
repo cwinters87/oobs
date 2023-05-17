@@ -7,6 +7,8 @@ import DemoFormCard from '../components/demoForm/demoFormCard'
 import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 import BenefitsOriginationCard from '../components/loanProducts/benefits/benefitsOrigination'
+import DynamicProductCard from '../components/loanProducts/productCard'
+import IntegrationsImg from '../images/loanProducts/origination/image-origination-integrations.png'
 // import { Link } from 'gatsby'
 
 const LoanOrigination = () => {
@@ -16,6 +18,12 @@ const LoanOrigination = () => {
       <OriginationHero />  
       <BenefitsOriginationCard/>
 
+      <DynamicProductCard 
+        headerTitle={'Powerful Integrations'} 
+        cardTitle={'Integration with OCR document scanning tools, credit bureaus, and many more'} 
+        cardSubTitle={'Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations'} 
+        Img={IntegrationsImg}
+        />
 
       <FadeInFromBottom>
         <DemoFormCard />
