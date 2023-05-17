@@ -212,7 +212,7 @@
         height: 100%;
         gap: 1.2rem;
         justify-content: center;
-        /* padding: 0px; */
+        padding: 0px;
         /* border: solid 2px red; */
     }
     .middleWrapper {
