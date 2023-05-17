@@ -14,6 +14,7 @@ import ReportingImg from '../images/loanProducts/management/image-management-rep
 import SecurityImg from '../images/loanProducts/management/image-management-security.png'
 import IntegrationsImg from '../images/loanProducts/management/image-management-integrations.png'
 import TogetherCard from '../components/loanProducts/togetherCard'
+import ManagementFeaturesCard from '../components/loanProducts/features/managementFeatures'
 
 const LoanManagement = () => {
   return (
@@ -51,7 +52,7 @@ const LoanManagement = () => {
         cardSubTitle={'Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations.'} 
         Img={IntegrationsImg}
       />
-
+      <ManagementFeaturesCard/>
       <TogetherCard pageName={'Management'}/>
       <FadeInFromBottom>
         <DemoFormCard />

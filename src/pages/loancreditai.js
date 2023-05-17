@@ -14,6 +14,7 @@ import AutoImg from '../images/loanProducts/creditAi/image-creditai-auto.png'
 import ScanningImg from '../images/loanProducts/creditAi/image-creditai-scanning.png'
 import RulesImg from '../images/loanProducts/creditAi/image-creditai-rules.png'
 import TogetherCard from '../components/loanProducts/togetherCard'
+import CreditFeaturesCard from '../components/loanProducts/features/creditFeatures'
 
 const LoanCreditAi = () => {
   return (
@@ -49,7 +50,7 @@ const LoanCreditAi = () => {
         cardSubTitle={"Tailor your underwriting experience with our Customizable Rules Engine, designed to adapt to your business's unique requirements and standards"} 
         Img={RulesImg}
       />
-
+      <CreditFeaturesCard/>
       <TogetherCard pageName={'Credit AI'}/>
 
       <FadeInFromBottom>

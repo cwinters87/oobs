@@ -14,6 +14,7 @@ import DashoardsImg from '../images/loanProducts/servicing/image-servicing-dashb
 import WorkflowsImg from '../images/loanProducts/servicing/image-servicing-workflows.png'
 import PortalImg from '../images/loanProducts/servicing/image-servicing-portal.png'
 import TogetherCard from '../components/loanProducts/togetherCard'
+import ServicingFeaturesCard from '../components/loanProducts/features/servicingFeatures'
 
 const LoanServicing = () => {
   return (
@@ -49,6 +50,7 @@ const LoanServicing = () => {
         cardSubTitle={'Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all with in a seamless branded experience.'} 
         Img={PortalImg}
       />
+      <ServicingFeaturesCard/>
       <TogetherCard pageName={'Servicing'}/>
       <FadeInFromBottom>
         <DemoFormCard />
