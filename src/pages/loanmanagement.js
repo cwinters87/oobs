@@ -13,6 +13,7 @@ import ManagementImg from '../images/loanProducts/management/image-management-po
 import ReportingImg from '../images/loanProducts/management/image-management-reporting.png'
 import SecurityImg from '../images/loanProducts/management/image-management-security.png'
 import IntegrationsImg from '../images/loanProducts/management/image-management-integrations.png'
+import TogetherCard from '../components/loanProducts/togetherCard'
 
 const LoanManagement = () => {
   return (
@@ -51,7 +52,7 @@ const LoanManagement = () => {
         Img={IntegrationsImg}
       />
 
-
+      <TogetherCard pageName={'Management'}/>
       <FadeInFromBottom>
         <DemoFormCard />
       </FadeInFromBottom>

@@ -13,6 +13,7 @@ import IntegrationsImg from '../images/loanProducts/origination/image-originatio
 import VerificationImg from '../images/loanProducts/origination/image-origination-verification.png'
 import CRMImg from '../images/loanProducts/origination/image-origination-crm.png'
 import PortalImg from '../images/loanProducts/origination/image-origination-portal.png'
+import TogetherCard from '../components/loanProducts/togetherCard'
 
 const LoanOrigination = () => {
   return (
@@ -48,7 +49,7 @@ const LoanOrigination = () => {
         cardSubTitle={'Streamline loan applications with a tailored, branded portal, elevating customer experiences and accelerationg procedures.'} 
         Img={PortalImg}
       />
-
+      <TogetherCard pageName={'Origination'}/>
       <FadeInFromBottom>
         <DemoFormCard />
       </FadeInFromBottom>   
