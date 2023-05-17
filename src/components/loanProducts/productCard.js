@@ -1,26 +1,33 @@
 import * as React from 'react'
 import DemoButton from '../buttons/demoButtonModal'
-import Icon from '../../images/components/icon-products-origination.png'
-import Checkmark from '../../images/components/icon-products-check-origination.png'
-import Image from '../../images/loanSuite/products-origination1.png'
-import ImageMobile from '../../images/loanSuite/products-origination-mobile.png'
 import * as styles from './productCard.module.css'
 
-const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
+const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img, reverse }) => {
 
-  // const buttonStyle = {
-  //   fontSize: '1.5rem',
-  // }
-    
+    let flex = 'row'
+    let paddingText = '0 10% 0 0'
+    if (reverse) {
+        flex = 'row-reverse'
+        paddingText = '0 0 0 10%'
+    }
+    const Container = {
+    flexDirection: flex,
+    }
+    const TextContainer = {
+    padding: paddingText,
+    }
+  
   return (
         <div className={styles.sectionWrapper}>
-          <div className={styles.container}>
-            <div className={styles.textContainer}>
+          <div className={styles.container} style={Container}>
+            <div className={styles.textContainer} style={TextContainer} >
                 <div className={styles.header}>
                     <p className={styles.headerTitle}>{headerTitle}</p>
                 </div>
                 <div className={styles.imgContainerMobile}>
-                      <img src={Img} alt='TaskSuite Product' />
+                    <div className={styles.imgWrapperMobile}>
+                        <img src={Img} alt='TaskSuite Product' />
+                    </div>
                     </div>
                 <div className={styles.middleWrapper}>
                     <h2 className={styles.title}>{cardTitle}</h2>
@@ -29,11 +36,9 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
                 <DemoButton text={'Get started'}/>
             </div>
             <div className={styles.imgContainer}>
-              
-                {/* <source media="(max-width: 991px)" srcSet={Img} />
-                <source media="(min-width: 992px)" srcSet={Img} /> */}
-                <img src={Img} alt="TaskSuite hero product" style={{width: "auto", height: "100%"}} />
-              
+                <div className={styles.imgWrapper}>
+                    <img src={Img} alt="TaskSuite product icons" style={{width: "auto", height: "100%"}} />
+                </div>
             </div>
           </div>
         </div>
