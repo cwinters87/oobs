@@ -8,6 +8,7 @@ import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 import BenefitsCreditCard from '../components/loanProducts/benefits/benefitsCredit'
 import DynamicProductCard from '../components/loanProducts/productCard'
+import DynamicProductCardReverse from '../components/loanProducts/productCardReverse'
 import IntegrationImg from '../images/loanProducts/creditAi/image-creditai-integration.png'
 import AutoImg from '../images/loanProducts/creditAi/image-creditai-auto.png'
 import ScanningImg from '../images/loanProducts/creditAi/image-creditai-scanning.png'
@@ -27,12 +28,11 @@ const LoanCreditAi = () => {
         Img={IntegrationImg}
         />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'Automatic Decision Making'} 
         cardTitle={'Automatically make loan decisions based on predefined criteria and risk assessments'} 
         cardSubTitle={'Enhance decision accuracy and efficient risk assessment through our rapid, tailored underwriting solution.'} 
         Img={AutoImg}
-        reverse={true}
       />
 
       <DynamicProductCard 
@@ -42,12 +42,11 @@ const LoanCreditAi = () => {
         Img={ScanningImg}
       />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'Cutomizable Rules Engine'} 
         cardTitle={'Set custom underwriting rules and criteria to meet your businesses specific needs'} 
         cardSubTitle={"Tailor your underwriting experience with our Customizable Rules Engine, designed to adapt to your business's unique requirements and standards"} 
         Img={RulesImg}
-        reverse={true}
       />
 
       <FadeInFromBottom>

@@ -8,6 +8,7 @@ import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 import BenefitsOriginationCard from '../components/loanProducts/benefits/benefitsOrigination'
 import DynamicProductCard from '../components/loanProducts/productCard'
+import DynamicProductCardReverse from '../components/loanProducts/productCardReverse'
 import IntegrationsImg from '../images/loanProducts/origination/image-origination-integrations.png'
 import VerificationImg from '../images/loanProducts/origination/image-origination-verification.png'
 import CRMImg from '../images/loanProducts/origination/image-origination-crm.png'
@@ -27,12 +28,11 @@ const LoanOrigination = () => {
         Img={IntegrationsImg}
         />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'Credit Check & Verification'} 
         cardTitle={'Efficiently streamline applicant credit assessments and identity validation with built-in Instant Approvals'} 
         cardSubTitle={'Increase revenue and transaction volumes with buy-now-pay-later and embedded finance solutions, giving you the competitive advantage.'} 
         Img={VerificationImg}
-        reverse={true}
       />
 
       <DynamicProductCard 
@@ -42,12 +42,11 @@ const LoanOrigination = () => {
         Img={CRMImg}
       />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'White-Labeled Application Portal'} 
         cardTitle={'Enable applicants to apply for loans and submit required documents online'} 
         cardSubTitle={'Streamline loan applications with a tailored, branded portal, elevating customer experiences and accelerationg procedures.'} 
         Img={PortalImg}
-        reverse={true}
       />
 
       <FadeInFromBottom>

@@ -8,6 +8,7 @@ import FadeInFromBottom from '../components/effects/fadeInFromBottom'
 import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 import BenefitsManagementCard from '../components/loanProducts/benefits/benefitsManagement'
 import DynamicProductCard from '../components/loanProducts/productCard'
+import DynamicProductCardReverse from '../components/loanProducts/productCardReverse'
 import ManagementImg from '../images/loanProducts/management/image-management-portal.png'
 import ReportingImg from '../images/loanProducts/management/image-management-reporting.png'
 import SecurityImg from '../images/loanProducts/management/image-management-security.png'
@@ -29,12 +30,11 @@ const LoanManagement = () => {
         Img={ManagementImg}
         />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'Intelligent Reporting'} 
         cardTitle={'Real-time loan tracking and reporting that surfaces the data you need'} 
         cardSubTitle={'Unlock powerful insights with Intelligent Reporting, delivering essential data for informed decision-making.'} 
         Img={ReportingImg}
-        reverse={true}
       />
 
       <DynamicProductCard 
@@ -44,12 +44,11 @@ const LoanManagement = () => {
         Img={SecurityImg}
       />
 
-      <DynamicProductCard 
+      <DynamicProductCardReverse 
         headerTitle={'Robust Integrations'} 
         cardTitle={'Integration with credit reporting, document scanning, and other tools'} 
         cardSubTitle={'Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations.'} 
         Img={IntegrationsImg}
-        reverse={true}
       />
 
 

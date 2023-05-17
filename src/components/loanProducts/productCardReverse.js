@@ -1,8 +1,8 @@
 import * as React from 'react'
 import DemoButton from '../buttons/demoButtonModal'
-import * as styles from './productCard.module.css'
+import * as styles from './productCardReverse.module.css'
 
-const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img,  }) => {
+const DynamicProductCardReverse = ({ headerTitle, cardTitle, cardSubTitle, Img,  }) => {
   
   return (
         <div className={styles.sectionWrapper}>
@@ -32,4 +32,4 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img,  }) => 
     )
 }
 
-export default DynamicProductCard
+export default DynamicProductCardReverse
