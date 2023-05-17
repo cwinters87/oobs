@@ -3,18 +3,32 @@ import DemoButton from '../buttons/demoButtonModal'
 import * as styles from './productCard.module.css'
 
 const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img, reverse }) => {
+    const [windowWidth, setWindowWidth] = React.useState(
+        typeof window !== 'undefined' ? window.innerWidth : 1000
+    )
+
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const handleResize = () => setWindowWidth(window.innerWidth)
+            window.addEventListener('resize', handleResize)
+            return () => window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     let flex = 'row'
-    let paddingText = '0 10% 0 0'
+    let paddingText = windowWidth <= 991 ? '0' : '0 10% 0 0'
+    
     if (reverse) {
         flex = 'row-reverse'
-        paddingText = '0 0 0 10%'
+        paddingText = windowWidth <= 991 ? '0' : '0 0 0 10%'
     }
+    
     const Container = {
-    flexDirection: flex,
+        flexDirection: flex,
     }
+    
     const TextContainer = {
-    padding: paddingText,
+        padding: paddingText,
     }
   
   return (

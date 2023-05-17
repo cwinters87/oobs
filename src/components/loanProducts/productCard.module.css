@@ -183,6 +183,7 @@
 @media only screen and (max-width: 991px) {
     .container {
         height: 100vh;
+        flex-direction: row;
     }
     .imgContainer {
         display: none;
@@ -210,7 +211,7 @@
         height: 100%;
         gap: 1.2rem;
         justify-content: center;
-        padding: 0;
+        /* padding: 0px; */
         /* border: solid 2px red; */
     }
     .middleWrapper {
