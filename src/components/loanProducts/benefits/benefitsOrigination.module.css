@@ -16,6 +16,10 @@
     gap: 8rem;
 }
 
+.breakPointCardFive {
+    display: none;
+}
+
 .card {
     /* border: solid 1px red; */
     color: var(--primary-font-color);
@@ -196,5 +200,12 @@
     .subTitle p {
         font-size: .8rem;
         /* border: solid 1px black; */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 110vh;
+        padding-top: 15%;
     }
 }

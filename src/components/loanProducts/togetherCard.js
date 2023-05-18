@@ -26,7 +26,7 @@ const TogetherCard = ({pageName}) => {
                     <h2>Stronger, together.</h2>
                 </div>
                 <div id={styles.subTitle}>
-                    <p>TaskSuite's Loan {pageName} tool is even more powerful when utilized alongside our <br/>full suite. Our all-in-one platform puts the control at your fingertips.</p>
+                    <p>TaskSuite's Loan {pageName} tool is even more powerful when utilized alongside our <br className={styles.breakPoint}/>full suite. Our all-in-one platform puts the control at your fingertips.</p>
                 </div>
             </div>
             <div id={styles.cardContainer}>

@@ -16,6 +16,10 @@
     gap: 8rem;
 }
 
+.breakPointCardFive {
+    display: none;
+}
+
 .card {
     /* border: solid 1px red; */
     color: var(--primary-font-color);
@@ -203,7 +207,7 @@
 
 @media only screen and (max-width: 400px) {
     .container {
-        height: 70vh;
-        padding-top: 15%;
+        height: 75vh;
+        padding-top: 18%;
     }
 }

@@ -188,7 +188,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 100vh;
+        height: 75vh;
         flex-direction: row;
     }
     .imgContainer {
@@ -209,7 +209,7 @@
         align-items: center;
         border-radius: 18px;
         padding: 7%;
-        background-color: var(--titanium-grey);
+        background-color: var(--grey);
         
     }
     .textContainer {
