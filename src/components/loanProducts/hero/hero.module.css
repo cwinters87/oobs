@@ -152,17 +152,18 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 100vh;
+        height: 85vh;
     }
     .imgContainer {
         display: none;
     }
     .imgContainerMobile {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
         height: auto;
+        /* border: solid 2px red; */
     }
     .topBreakPoint {
         display: none;
@@ -173,28 +174,66 @@
     .textContainer {
         width: 100%;
         height: 100%;
-        gap: 1.2rem;
-        justify-content: center;
+        gap: 2rem;
+        justify-content: flex-start;
+        padding-top: 10%;
+        /* align-items: flex-start; */
         /* border: solid 2px red; */
     }
     .middleWrapper {
-        gap: .85rem;
+        gap: 1.2rem;
         /* border: solid 2px blue; */
     }
-    .header {
-        height: 2.5rem;
-    }
-    .headerTitle {
-        font-size: 1rem;
-    }
     .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .subTitle {
-        font-size: .85rem;
+        font-size: 1rem;
         padding-bottom: 0;
     }
     .textContainer button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 80vh;
+    }
+    .textContainer {
+        padding-top: 6%;
+    }
+    .title {
+        font-size: 1.9rem;
+    }
+    .subTitle {
+        font-size: .85rem;
+    }
+    .textContainer button {
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 80vh;
+    }
+    .textContainer {
+        padding-top: 6%;
+        
+        gap: 1.2rem;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .subTitle {
         font-size: .8rem;
+    }
+    .textContainer button {
+        font-size: .8rem;
+    }
+    .middleWrapper {
+        gap: 1rem;
+        /* border: solid 2px blue; */
     }
 }
