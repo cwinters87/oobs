@@ -50,7 +50,7 @@ module.exports = {
         // background_color: '#1D1B1B',
         // theme_color: '#a2466c',
         // display: 'standalone',
-        icon: 'src/images/favicon/favicon.svg',
+        icon: 'src/images/favicon/favicon2.svg',
       },
     },
     
