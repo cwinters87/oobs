@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import Calendar from '../components/calendar/calendar'
+// import Calendar from '../components/calendar/calendar'
+import ComingSoonCard from '../components/comingSoon'
 
 const ContactPage = () => {
 
@@ -51,16 +52,17 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <main style={mainStyle}>
+      <ComingSoonCard/>
+      {/* <main style={mainStyle}>
         <h1 style={titleStyle}>Welcome to the landing page</h1>
         <h3 style={subTitleStyle}>Please select a time on the calendar to connect with Omar (phone call, 30 min call)</h3>
         <div style={calendarWrapperStyle}>
           <div style={calendarStyle}>
-            {/* calendar componet goes in here, it's aligned to the center vertically and horizaontally, got edit ../components/calendar dir*/}            
+                 
             <Calendar />    
         </div>
         </div>
-      </main>
+      </main> */}
       
     </Layout>
   )
