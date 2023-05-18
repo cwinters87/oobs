@@ -149,6 +149,12 @@
         max-width: 2560px;
         padding: 0 180px;;
     }
+    #title h2 {
+        font-size: 3.2rem;
+    }
+    #subTitle p {
+        font-size: 1.2rem;
+    }
     .card {
         width: 375px;
         height: 375px;
@@ -159,6 +165,9 @@
     
     .cardSubTitle {
         font-size: 1rem;
+    }
+    .buttonContainer button {
+        font-size: 1.2rem;
     }
 }
 

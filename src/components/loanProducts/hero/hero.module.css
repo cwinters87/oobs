@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     color: var(--primary-font-color);
 }
 
@@ -25,7 +25,7 @@
     align-items: flex-start;
     padding: 2% 0;
     gap: 1.8rem;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .middleWrapper {
@@ -68,7 +68,7 @@
 }
 
 .imgContainer picture img {
-    /* border: solid 2px blue; */
+    border: solid 2px blue;
     height: auto;
     width: 100% !important;
     object-fit: cover;
@@ -83,7 +83,7 @@
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
-        padding: 26px 180px;
+        padding: 4% 180px 26px 180px;
     }
     .textContainer {
         height: 70%;
