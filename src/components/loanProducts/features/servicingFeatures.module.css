@@ -139,6 +139,12 @@
     }    
 }
 
+@media only screen and (max-width: 1600px) {
+    .cardSubTitle {
+        font-size: .8rem;
+    }  
+}
+
 @media only screen and (max-width: 991px) {
     .container {
         height: 105vh;

@@ -11,8 +11,7 @@
     padding: 4% 7%;
     display: flex;
     justify-content: center;
-    /* align-items: flex-start; */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     color: var(--primary-font-color);
 }
 
@@ -25,7 +24,7 @@
     align-items: flex-start;
     padding: 2% 0;
     gap: 1.8rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .middleWrapper {
@@ -68,7 +67,7 @@
 }
 
 .imgContainer picture img {
-    border: solid 2px blue;
+    /* border: solid 2px blue; */
     height: auto;
     width: 100% !important;
     object-fit: cover;
@@ -109,6 +108,7 @@
         height: 85%;
         width: 44%;
         padding: 0;
+        /* border: solid 2px blue; */
     }
     .imgContainer {
         /* height: 70%; */
@@ -133,6 +133,7 @@
         width: 43%;
         padding: 0;
         gap: .5rem;
+        /* border: solid 2px red; */
     }
     .imgContainer {
         /* height: 70%; */

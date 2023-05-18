@@ -43,7 +43,7 @@
 }
 
 .image {
-    height: 75px;
+    height: 65px;
     width: auto;
     display: flex;
     align-items: center;
@@ -81,16 +81,30 @@
 
 @media only screen and (max-width: 1921px)  {
     .container {
-        height: 53svh;
-        gap: 12rem;
+        height: 40svh;
+        gap: 5rem;
     }
+    .image {
+        height: 45px;
+    }
+    
 }
 
 @media only screen and (max-width: 1600px)  {
     .container {
-        height: 60svh;
-        gap: 10rem;
+        height: 50svh;
+        gap: 4rem;
     }
+    .image {
+        height: 40px;
+    }
+    .title h3 {
+        font-size: 1.3rem;
+    }
+    .subTitle p {
+        font-size: .9rem;
+    }
+
 }
 
 @media only screen and (max-width: 1080px)  {
