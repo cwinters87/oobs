@@ -6,13 +6,14 @@
   }
 
 .container {
-    height: 18svh;
+    height: 15svh;
     width: 100%;
-    padding: 5% 7% 0% 7%;
+    padding: 4% 7% .25% 7%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: flex-end;
     gap: 4rem;
+    /* border: solid 2px red; */
 }
 
 .link {
@@ -22,7 +23,16 @@
     gap: .8rem;
     text-decoration: none;
     color: lightgrey;
+    transition: transform 500ms;
     
+}
+
+.link:hover {
+    color: var(--grey);
+    filter: brightness(110%);
+    transform: translateY(-.12rem);
+    
+    transition: transform 250ms;
 }
 
 .imgContainer {
@@ -42,6 +52,10 @@
     font-size: 1rem;
     filter: brightness(62%);
 }
+
+/* .linkTitle:hover {
+    color: var(--cobalt-blue);
+} */
 
 
 

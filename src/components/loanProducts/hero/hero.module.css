@@ -6,24 +6,24 @@
 }
 
 .container {
-    height: 100svh;
+    height: 90svh;
     width: 100%;
-    padding: 7%;
+    padding: 4% 7%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* border: 1px solid blue; */
     color: var(--primary-font-color);
 }
 
 .textContainer {
     width: 40%;
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: flex-start;
-    padding: .25% 0;
+    padding: 2% 0;
     gap: 1.8rem;
     /* border: 2px solid red; */
 }
@@ -39,7 +39,7 @@
     color: var(--money-green);
     font-family: var(--font-regular);
     /* font-weight: 600; */
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     margin: 0;
     /* border: 2px solid purple; */
 }

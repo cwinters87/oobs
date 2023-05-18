@@ -6,7 +6,7 @@
   }
 
 .container {
-    height: 100svh;
+    height: 95svh;
     width: 100%;
     padding: 0 7%;
     display: flex;
@@ -74,17 +74,22 @@
     height: 350px;
     text-decoration: none;
     color: var(--money-green);
-    border: solid 1px var(--khaki);
+    border: solid 2px var(--grey);
     border-radius: 18px;
+    transition: transform 500ms;
 }
 
 .card:hover {
     transition: 250ms;
-    border: solid 1px var(--lime-green);
+    border: solid 1px var(--cobalt-blue);
     border-radius: 18px;
     cursor: pointer;
     color: var(--money-green);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    filter: brightness(110%);
+    transform: translateY(-.12rem);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 250ms;
+
 }
 
 .cardContent {
@@ -99,7 +104,7 @@
 
 .cardContent:hover h3 {
     transition: 250ms;
-    color: var(--lime-green);
+    color: var(--cobalt-blue);
 }
 
 .cardContent:hover p {
