@@ -24,7 +24,7 @@ const BenefitsManagementCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageThree} alt="customizable icon"/></div>
                     <div className={styles.title}><h3>Customized & Flexible Features</h3></div>
-                    <div className={styles.subTitle}><p>With powerful API integrations and fully customizable features, our Loan Management Suite is designed to fit the specific needs of your business</p></div>
+                    <div className={styles.subTitle}><p>With powerful API integrations<br className={styles.breakPointCardFive}/> and fully customizable features, our <br className={styles.breakPointCardFive}/>Loan Management Suite is designed<br className={styles.breakPointCardFive}/> to fit the specific needs of your business</p></div>
                 </div>
 
             </div>

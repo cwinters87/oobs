@@ -132,11 +132,18 @@
 
 @media only screen and (max-width: 991px)  {
     .container {
-        flex-direction: column;
-        height: 85svh;
-        align-items: center;
+        /* border: solid 1px red; */
         gap: 0; 
-        padding: 7% 7% 0 7%; 
+        padding: 10% 0 0 0; 
+        height: 55vh;
+        align-items: flex-start;
+        flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .breakPointCardFive {
+        display: block;
     }
     .topBreakPoint {
         display: none;
@@ -145,25 +152,22 @@
         display: none;
     }
     .card {
-        /* border: solid 1px red; */
+        /* border: solid 1px blue; */
         height: 200px;
-        width: 80%;
-        padding: 0%;
+        width: 300px;
+        padding: 0 5%;
+        flex: 1;
+        flex-basis: 50%;
     }
     .image {
-        height: 75px;
+        height: 40px;
         /* border: solid 1px red; */
-    }
-    .title {
-        height: 60px;
-        /* border: solid 1px royalblue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .title h3 {
-        font-size: 1.5rem;
-        /* border: solid 1px green; */
-    }
-    .subTitle {
-        height: 75px;
+        font-size: 1.2rem;
         /* border: solid 1px green; */
     }
     .subTitle p {
@@ -173,17 +177,33 @@
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px)  {
     .container {
-        height: 100svh;
+        /* border: solid 1px red; */
+        gap: 0; 
+        padding: 10% 7% 0 7%; 
+        height: 60vh;
     }
+    .card {
+        /* border: solid 1px blue; */
+        padding: 0 3%;
+        flex: 1;
+        flex-basis: 50%;
+        gap: .5rem;
+    }   
     .title h3 {
         font-size: 1rem;
+        /* border: solid 1px green; */
+    }
+    .subTitle p {
+        font-size: .8rem;
+        /* border: solid 1px black; */
     }
 }
 
 @media only screen and (max-width: 400px) {
     .container {
-        height: 100vh;
+        height: 70vh;
+        padding-top: 15%;
     }
 }

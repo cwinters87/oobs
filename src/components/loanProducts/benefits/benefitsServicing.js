@@ -13,7 +13,7 @@ const BenefitsServicingCard = () => {
         <div className={styles.sectionWrapper}>
             <div className={styles.container}>
 
-            <div className={styles.card}>
+                <div className={styles.card}>
                     <div className={styles.image}><img src={imageOne} alt="efficient icon"/></div>
                     <div className={styles.title}><h3>Increase Team Efficiency</h3></div>
                     <div className={styles.subTitle}><p>Automated processes, streamlined workflows, and real-time reporting improves the efficiency and accuracy of business.</p></div>
@@ -36,7 +36,7 @@ const BenefitsServicingCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageFive} alt="productivity icon"/></div>
                     <div className={styles.title}><h3>Boost Productivity & Reduce Costs</h3></div>
-                    <div className={styles.subTitle}><p>Automated loan servicing processes can free up staff time, allowing focus on higher-value tasks and leading to cost savings.</p></div>
+                    <div className={styles.subTitle}><p>Automated loan servicing<br className={styles.breakPointCardFive}/> processes can free up staff time, <br className={styles.breakPointCardFive}/>allowing focus on higher-value<br className={styles.breakPointCardFive}/> tasks and leading to cost savings.</p></div>
                 </div>
 
             </div>

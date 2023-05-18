@@ -36,7 +36,7 @@ const BenefitsOriginationCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageFive} alt="experience icon"/></div>
                     <div className={styles.title}><h3>Enhanced Customer Experience</h3></div>
-                    <div className={styles.subTitle}><p>Faster loan approvals and disbursals enables lenders provide better customer experience, increasing customer satisfaction and loyalty.</p></div>
+                    <div className={styles.subTitle}><p>Faster loan approvals and disbursals enables<br className={styles.breakPointCardFive}/> lenders provide better customer experience, <br className={styles.breakPointCardFive}/>increasing customer satisfaction and loyalty.</p></div>
                 </div>
 
             </div>
