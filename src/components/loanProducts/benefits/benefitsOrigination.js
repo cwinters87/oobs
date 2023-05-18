@@ -26,7 +26,7 @@ const BenefitsOriginationCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageThree} alt="application accuracy icon"/></div>
                     <div className={styles.title}><h3>Greater Application Data Accuracy</h3></div>
-                    <div className={styles.subTitle}><p>Eliminate errors and inconsistencies, resulting inmore accurate data, which means fewer loan defaults and better loan performance.</p></div>
+                    <div className={styles.subTitle}><p>Eliminate errors and inconsistencies, resulting in more accurate data, which means fewer loan defaults and better loan performance.</p></div>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageFour} alt="risk management icon"/></div>

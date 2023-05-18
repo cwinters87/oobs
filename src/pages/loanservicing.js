@@ -46,7 +46,7 @@ const LoanServicing = () => {
 
       <DynamicProductCardReverse 
         headerTitle={'Online Borrower Portal'} 
-        cardTitle={'Secure white-labled platform for borrowers to access loan information'} 
+        cardTitle={'Secure white-labeled platform for borrowers to access loan information'} 
         cardSubTitle={'Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all with in a seamless branded experience.'} 
         Img={PortalImg}
       />

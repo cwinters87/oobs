@@ -47,15 +47,6 @@
     /* border: solid 2px red; */
 }
 
-.buttonContainer {
-    height: 27%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid 2px orange; */
-}
-
 .header {
     margin: 0;
     font-size: 1rem;

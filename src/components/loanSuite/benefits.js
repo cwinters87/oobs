@@ -14,7 +14,7 @@ const BenefitsCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageOne} alt="workflow icon"/></div>
                     <div className={styles.title}><h3>Simpler & faster<br className={styles.topBreakPoint}/> workflows</h3></div>
-                    <div className={styles.subTitle}><p>Ditch the manual labor and <br className={styles.bottomBreakPoint}/>data loss coordinationg info <br className={styles.bottomBreakPoint}/>across multiple systems</p></div>
+                    <div className={styles.subTitle}><p>Ditch the manual labor and <br className={styles.bottomBreakPoint}/>data loss coordinating info <br className={styles.bottomBreakPoint}/>across multiple systems</p></div>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageTwo} alt="efficient icon"/></div>

@@ -41,7 +41,7 @@ const Origination = () => {
                         </div>
                         <div className={styles.feature}>
                             <div className={styles.checkmarkWrapper}><img src={Checkmark} alt='checkmark'/></div>
-                            <p className={styles.featureTitle}>White-Label Application & Portal</p>
+                            <p className={styles.featureTitle}>White-Labeled Application & Portal</p>
                         </div>
                     </div>
                 </div>

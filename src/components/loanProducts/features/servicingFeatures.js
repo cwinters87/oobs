@@ -31,7 +31,7 @@ const ServicingFeaturesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.cardContainer}>
+                <div className={styles.cardContainer} id={styles.mobileContainer}>
                     <div className={styles.card}>
                         <div className={styles.cardText}>
                             <h3 className={styles.cardTitle}>Fraud Detection</h3>

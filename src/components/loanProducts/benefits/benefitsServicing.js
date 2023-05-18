@@ -21,7 +21,7 @@ const BenefitsServicingCard = () => {
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageTwo} alt="experience icon"/></div>
                     <div className={styles.title}><h3>Better Customer Experience</h3></div>
-                    <div className={styles.subTitle}><p>White-labled Online Borrower Portal and omni-channel communication enhances the borrower experience.</p></div>
+                    <div className={styles.subTitle}><p>White-labeled Online Borrower Portal and omni-channel communication enhances the borrower experience.</p></div>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageThree} alt="fraud protection icon"/></div>
