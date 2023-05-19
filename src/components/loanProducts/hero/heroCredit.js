@@ -17,7 +17,7 @@ const CreditHero = () => {
                       <img src={ImageMobile} alt='TaskSuite Credit Product' />
                     </div>
                 </div>
-                <ScrollButton route={'/loancreditai'}/>
+                <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

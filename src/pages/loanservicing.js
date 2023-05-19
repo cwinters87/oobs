@@ -40,7 +40,7 @@ const LoanServicing = () => {
       <DynamicProductCard 
         headerTitle={'Automated Workflows'} 
         cardTitle={'Automated processes for tasks such as payment processing and late fee calculation'} 
-        cardSubTitle={'Modernize operations with Automated Workflows, bossing productivity and accuracy.'} 
+        cardSubTitle={'Modernize operations with Automated Workflows, boosting productivity and accuracy.'} 
         Img={WorkflowsImg}
       />
 

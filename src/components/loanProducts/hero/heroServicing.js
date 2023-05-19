@@ -17,7 +17,7 @@ const ServicingHero = () => {
                       <img src={ImageMobile} alt='TaskSuite Servicing Product' />
                     </div>
                 </div>
-                <ScrollButton route={'/loanservicing'}/>
+                <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

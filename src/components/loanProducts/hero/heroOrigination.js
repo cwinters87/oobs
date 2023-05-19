@@ -21,7 +21,7 @@ const OriginationHero = () => {
                       <img src={ImageMobile} alt='TaskSuite Origination Product' />
                     </div>
                 </div>
-                <ScrollButton route={'/loanorigination'}/>
+                <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

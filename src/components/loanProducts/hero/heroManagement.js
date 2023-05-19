@@ -17,7 +17,7 @@ const ManagementHero = () => {
                       <img src={ImageMobile} alt='TaskSuite Management Product' />
                     </div>
                 </div>
-                <ScrollButton route={'/loanmanagement'}/>
+                <ScrollButton route={'/loansuite'}/>
             </div>
             <div className={styles.imgContainer}>
               <picture>

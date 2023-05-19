@@ -35,8 +35,8 @@ const BenefitsCreditCard = () => {
                 </div>
                 <div className={styles.card}>
                     <div className={styles.image}><img src={imageFive} alt="risk management icon"/></div>
-                    <div className={styles.title}><h3>Improved Risk Managaement</h3></div>
-                    <div className={styles.subTitle}><p>Credit AI analuzes vast amounts of data<br className={styles.breakPointCardFive}/> to determine the risk level of each<br className={styles.breakPointCardFive}/> loan application, allowing lenders to make<br className={styles.breakPointCardFive}/> more informed decisions.</p></div>
+                    <div className={styles.title}><h3>Improved Risk Management</h3></div>
+                    <div className={styles.subTitle}><p>Credit AI analyzes vast amounts of data<br className={styles.breakPointCardFive}/> to determine the risk level of each<br className={styles.breakPointCardFive}/> loan application, allowing lenders to make<br className={styles.breakPointCardFive}/> more informed decisions.</p></div>
                 </div>
 
             </div>
