@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './card.module.css'
 
 const Card = ({ imageUrl, quote, author, position, company, prevCard, nextCard }) => {
-  console.log(imageUrl)
+  
   return (
     <div className={styles.container}>
         <div style={{backgroundImage: `url(${imageUrl})`, backgroundRepeat  : 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}} className={styles.imgContainer}>

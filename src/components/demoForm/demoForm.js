@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
+import { useLocation } from "@reach/router";
+import queryString from "query-string";
 import { navigate } from "gatsby"
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
@@ -7,8 +9,23 @@ import Row from 'react-bootstrap/Row'
 import * as styles from './demoForm.module.css'
 
 function DemoForm({closeForm}) {
+
+  const location = useLocation();
+  const [utmSource, setUtmSource] = useState("");
+
+  useEffect(() => {
+    const parsedQuery = queryString.parse(location.search);
+
+    // If there's a new utm_source, store it in session storage
+    if (parsedQuery.utm_source) {
+      sessionStorage.setItem("utm_source", parsedQuery.utm_source);
+    }
+
+    // Use the utm_source from session storage (which might have been stored on a previous page)
+    setUtmSource(sessionStorage.getItem("utm_source") || "");
+  }, [location]);
   
-  // Need to have validation on render from server- Better validation for inputs like phone, email, and website
+  // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
   const [validated, setValidated] = useState(false);
 
@@ -41,6 +58,7 @@ function DemoForm({closeForm}) {
           }
           else {
             event.preventDefault();
+            console.log(utmSource)
             fetch('https://crm.tasksuite.com/create_lead', {
               method: 'POST',
               headers:{
@@ -55,8 +73,11 @@ function DemoForm({closeForm}) {
 					      'phone' : phoneValue,
 					      'employeecount' : '0000',
 					      'notes' : 'source- website- Schedule a Demo Form Submission',
+                'leadsource' : 'website',
+                'utm_source' : utmSource,
               })
             })
+            // .then(res => console.log(res))
             .then(res => res.json())
             .then((result) => {
               console.log(result)
