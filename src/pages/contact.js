@@ -3,6 +3,8 @@ import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
 // import Calendar from '../components/calendar/calendar'
 import ComingSoonCard from '../components/comingSoon'
+import DemoFormFullPageCard from '../components/demoForm/demoFormFullPage'
+
 
 const ContactPage = () => {
 
@@ -52,17 +54,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <ComingSoonCard/>
-      {/* <main style={mainStyle}>
-        <h1 style={titleStyle}>Welcome to the landing page</h1>
-        <h3 style={subTitleStyle}>Please select a time on the calendar to connect with Omar (phone call, 30 min call)</h3>
-        <div style={calendarWrapperStyle}>
-          <div style={calendarStyle}>
-                 
-            <Calendar />    
-        </div>
-        </div>
-      </main> */}
+      <DemoFormFullPageCard/>
       
     </Layout>
   )
