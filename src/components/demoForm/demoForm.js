@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "@reach/router";
-import queryString from "query-string";
+import React, { useState, useEffect } from "react"
+import { useLocation } from "@reach/router"
+import queryString from "query-string"
 import { navigate } from "gatsby"
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
@@ -10,37 +10,37 @@ import * as styles from './demoForm.module.css'
 
 function DemoForm({closeForm}) {
 
-  const location = useLocation();
-  const [utmSource, setUtmSource] = useState("");
-  const [utmMedium, setUtmMedium] = useState("");
-  const [utmCampaign, setUtmCampaign] = useState("");
+  const location = useLocation()
+  const [utmSource, setUtmSource] = useState("")
+  const [utmMedium, setUtmMedium] = useState("")
+  const [utmCampaign, setUtmCampaign] = useState("")
   
 
   useEffect(() => {
-    const parsedQuery = queryString.parse(location.search);
+    const parsedQuery = queryString.parse(location.search)
 
     // If there's a new utm_source, utm_medium, or utm_campaign, store them in session storage
     if (parsedQuery.utm_source) {
-      sessionStorage.setItem("utm_source", parsedQuery.utm_source);
+      sessionStorage.setItem("utm_source", parsedQuery.utm_source)
     }
 
     if (parsedQuery.utm_medium) {
-      sessionStorage.setItem("utm_medium", parsedQuery.utm_medium);
+      sessionStorage.setItem("utm_medium", parsedQuery.utm_medium)
     }
 
     if (parsedQuery.utm_campaign) {
-      sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign);
+      sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign)
     }
 
     // Use the utm parameters from session storage (which might have been stored on a previous page)
-    setUtmSource(sessionStorage.getItem("utm_source") || "");
-    setUtmMedium(sessionStorage.getItem("utm_medium") || "");
-    setUtmCampaign(sessionStorage.getItem("utm_campaign") || "");
+    setUtmSource(sessionStorage.getItem("utm_source") || "")
+    setUtmMedium(sessionStorage.getItem("utm_medium") || "")
+    setUtmCampaign(sessionStorage.getItem("utm_campaign") || "")
   }, [location]);
   
   // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
-  const [validated, setValidated] = useState(false);
+  const [validated, setValidated] = useState(false)
 
   // Form Data with onChange data for future improvement
   const [firstNameValue, setFirstNameValue] = useState(),
@@ -66,8 +66,8 @@ function DemoForm({closeForm}) {
   const handleSubmit = event => {
           const form = event.currentTarget
           if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
+            event.preventDefault()
+            event.stopPropagation()
           }
           else {
             event.preventDefault();
