@@ -12,17 +12,30 @@ function DemoForm({closeForm}) {
 
   const location = useLocation();
   const [utmSource, setUtmSource] = useState("");
+  const [utmMedium, setUtmMedium] = useState("");
+  const [utmCampaign, setUtmCampaign] = useState("");
+  
 
   useEffect(() => {
     const parsedQuery = queryString.parse(location.search);
 
-    // If there's a new utm_source, store it in session storage
+    // If there's a new utm_source, utm_medium, or utm_campaign, store them in session storage
     if (parsedQuery.utm_source) {
       sessionStorage.setItem("utm_source", parsedQuery.utm_source);
     }
 
-    // Use the utm_source from session storage (which might have been stored on a previous page)
+    if (parsedQuery.utm_medium) {
+      sessionStorage.setItem("utm_medium", parsedQuery.utm_medium);
+    }
+
+    if (parsedQuery.utm_campaign) {
+      sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign);
+    }
+
+    // Use the utm parameters from session storage (which might have been stored on a previous page)
     setUtmSource(sessionStorage.getItem("utm_source") || "");
+    setUtmMedium(sessionStorage.getItem("utm_medium") || "");
+    setUtmCampaign(sessionStorage.getItem("utm_campaign") || "");
   }, [location]);
   
   // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
@@ -59,6 +72,8 @@ function DemoForm({closeForm}) {
           else {
             event.preventDefault();
             console.log(utmSource)
+            console.log(utmMedium)
+            console.log(utmCampaign)
             fetch('https://crm.tasksuite.com/create_lead', {
               method: 'POST',
               headers:{
@@ -67,17 +82,17 @@ function DemoForm({closeForm}) {
               body:JSON.stringify({
                 'type': 'demo',
                 'firstname': firstNameValue,
-                'lastname' :  'change to last name',
+                'lastname': 'will have last name',
 					      'email' : emailValue,
-					      'companyname' : 'from website',
-					      'phone' : phoneValue,
-					      'employeecount' : '0000',
-					      'notes' : 'source- website- Schedule a Demo Form Submission',
-                'leadsource' : 'website',
+					      'phone' : phoneValue,	
+                'company' : 'will have company',				      
                 'utm_source' : utmSource,
+                'utm_medium' : utmMedium,
+                'utm_campaign' : utmCampaign,
+                'notes' : 'will have notes'
               })
             })
-            // .then(res => console.log(res))
+            .then(res => console.log(res))
             .then(res => res.json())
             .then((result) => {
               console.log(result)
