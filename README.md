@@ -85,7 +85,7 @@
 
     all other text: var(--font-light)
 
-    If needes, add a font-weight of 600 if needing bold.
+    If needed, add a font-weight of 600 if needing bold.
 
 10. **Use <componentName>.module.css file for the styling of component.**
 
