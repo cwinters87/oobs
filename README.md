@@ -37,7 +37,16 @@
     npm install
     ```
 
-5.  **Start developing.**
+5. **Create branch from dev**
+
+    ```shell
+    git checkout dev
+    git checkout -b <branch-name>
+    ```
+
+    name branch as follows: <dev-feature-name> or <dev-bugfix-name>
+
+6.  **Start developing.**
 
     Start it up.
 
@@ -45,13 +54,48 @@
     gatsby develop
     ```
 
-6.  **Open the code and start developing!**
+7.  **Open the code and start developing!**
 
     Your site is now running at http://localhost:8000
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+8. **If a new page, add <Layout/> component and style**
 
-7.  **Learn more**
+    Import Layout from './src/components/layout/layout.js'
+
+    You should also wrap your component with padding of 7% on the sides and 100% viewport height
+
+    Add a media query for ultra-wide support as follows:
+
+    ```
+    @media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+        padding: 26px 180px;
+        }
+    }
+    ```
+
+    Place all components and elements inside the <Layout/>
+
+9. **Use global.css variables for color and fonts**
+
+    Refer to global.css in the syles folder for variable names. Fonts should mainly follow this order:
+
+    Titles and headers: var(--font-regular)
+
+    all other text: var(--font-light)
+
+    If needes, add a font-weight of 600 if needing bold.
+
+10. **Use <componentName>.module.css file for the styling of component.**
+
+    Place CSS Module files in the same folder as the js component. 
+
+
+
+
+
+  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
