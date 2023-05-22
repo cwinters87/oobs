@@ -242,9 +242,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* .container {
-        height: 72svh;
-    } */
+    .container {
+        padding: 12% 7% 8% 7%;
+    }
     .formContainer {
         height: 100%;
         padding: 0 3%;
