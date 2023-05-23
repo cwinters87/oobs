@@ -74,33 +74,35 @@ function DemoForm({closeForm}) {
             console.log(utmSource)
             console.log(utmMedium)
             console.log(utmCampaign)
-            fetch('https://crm.tasksuite.com/create_lead', {
+            fetch('https://tasksuitebackend.herokuapp.com/create_lead', {
               method: 'POST',
               headers:{
                 'Content-Type': 'application/json'
               },
               body:JSON.stringify({
-                'type': 'demo',
-                'firstname': firstNameValue,
-                'lastname': 'will have last name',
-					      'email' : emailValue,
-					      'phone' : phoneValue,	
-                'company' : 'will have company',				      
-                'utm_source' : utmSource,
-                'utm_medium' : utmMedium,
-                'utm_campaign' : utmCampaign,
-                'notes' : 'will have notes'
+                "type": "demo",
+                "firstname": firstNameValue,
+                "lastname": "lastname",
+					      "email" : emailValue,
+					      "phone" : phoneValue,	
+                "company" : "company",				      
+                "utm_source" : utmSource,
+                "utm_medium" : utmMedium,
+                "utm_campaign" : utmCampaign,
+                "notes" : "pre fill notes"
               })
             })
-            .then(res => console.log(res))
-            .then(res => res.json())
-            .then((result) => {
-              console.log(result)
-            },
-            (error) => {
-              console.log(error)
-            }
-            )
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+            })
+            .catch(error => {
+              console.error('There has been a problem with your fetch operation:', error);
+            });
             navigate("/success")
           }
           setValidated(true)
