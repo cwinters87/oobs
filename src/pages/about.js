@@ -1,12 +1,15 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ComingSoonCard from '../components/comingSoon'
+import AboutPageHero from '../components/aboutPage/hero'
+import CreatedExclusivelyCard from '../components/aboutPage/createdExclusivelyCard'
+
 
 const AboutPage = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
+      <AboutPageHero />
+      <CreatedExclusivelyCard />
     </Layout>
   )
 }

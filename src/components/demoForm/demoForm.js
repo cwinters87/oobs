@@ -14,12 +14,13 @@ function DemoForm({closeForm}) {
   const [utmSource, setUtmSource] = useState("");
   const [utmMedium, setUtmMedium] = useState("");
   const [utmCampaign, setUtmCampaign] = useState("");
+  const [utmTerm, setUtmTerm] = useState("");
   
 
   useEffect(() => {
     const parsedQuery = queryString.parse(location.search);
 
-    // If there's a new utm_source, utm_medium, or utm_campaign, store them in session storage
+    // If there's a new utm_source, utm_medium, utm_campaign, or utm term, store them in session storage
     if (parsedQuery.utm_source) {
       sessionStorage.setItem("utm_source", parsedQuery.utm_source);
     }
@@ -32,10 +33,15 @@ function DemoForm({closeForm}) {
       sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign);
     }
 
+    if (parsedQuery.utm_term) {
+      sessionStorage.setItem("utm_term", parsedQuery.utm_term);
+    }
+
     // Use the utm parameters from session storage (which might have been stored on a previous page)
     setUtmSource(sessionStorage.getItem("utm_source") || "");
     setUtmMedium(sessionStorage.getItem("utm_medium") || "");
     setUtmCampaign(sessionStorage.getItem("utm_campaign") || "");
+    setUtmTerm(sessionStorage.getItem("utm_term") || "");
   }, [location]);
   
   // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
@@ -89,6 +95,7 @@ function DemoForm({closeForm}) {
                 "utm_source" : utmSource,
                 "utm_medium" : utmMedium,
                 "utm_campaign" : utmCampaign,
+                "utm_term" : utmTerm,
                 "notes" : "pre fill notes"
               })
             })
