@@ -4,6 +4,7 @@ import Layout from "../layout/layout"
 import AboutPageHero from '../components/aboutPage/hero'
 import CreatedExclusivelyCard from '../components/aboutPage/createdExclusivelyCard'
 import DiverseTeamCard from '../components/aboutPage/diverseTeam'
+import ValuesCard from '../components/aboutPage/values'
 
 
 const AboutPage = () => {
@@ -12,6 +13,7 @@ const AboutPage = () => {
       <AboutPageHero />
       <CreatedExclusivelyCard />
       <DiverseTeamCard />
+      <ValuesCard />
     </Layout>
   )
 }
