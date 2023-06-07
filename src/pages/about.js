@@ -3,6 +3,7 @@ import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
 import AboutPageHero from '../components/aboutPage/hero'
 import CreatedExclusivelyCard from '../components/aboutPage/createdExclusivelyCard'
+import DiverseTeamCard from '../components/aboutPage/diverseTeam'
 
 
 const AboutPage = () => {
@@ -10,6 +11,7 @@ const AboutPage = () => {
     <Layout>
       <AboutPageHero />
       <CreatedExclusivelyCard />
+      <DiverseTeamCard />
     </Layout>
   )
 }
