@@ -5,6 +5,7 @@ import AboutPageHero from '../components/aboutPage/hero'
 import CreatedExclusivelyCard from '../components/aboutPage/createdExclusivelyCard'
 import DiverseTeamCard from '../components/aboutPage/diverseTeam'
 import ValuesCard from '../components/aboutPage/values'
+import CareersCard from '../components/aboutPage/careers'
 
 
 const AboutPage = () => {
@@ -14,6 +15,7 @@ const AboutPage = () => {
       <CreatedExclusivelyCard />
       <DiverseTeamCard />
       <ValuesCard />
+      <CareersCard />
     </Layout>
   )
 }
