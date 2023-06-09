@@ -21,6 +21,7 @@
 
 #title {
     font-family: var(--font-regular);
+    font-weight: 600;
     font-size: 2.8rem;
     color: var(--money-green);
     margin: 0;
