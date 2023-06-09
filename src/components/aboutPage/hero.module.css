@@ -159,11 +159,21 @@
     .bottomBreakPoint {
         display: none;
     }
+    /* .container {
+        border: 2px solid black;
+    } */
+    .title {
+        font-size: 1.8rem;
+    }
+    .subTitle {
+        font-size: .85rem;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 100vh;
+        height: 90dvh;
+        /* border: 2px solid black; */
     }
     .textContainer {
         width: 100%;
@@ -188,5 +198,12 @@
     .subTitle {
         font-size: 1rem;
         padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 90vh;
+        /* border: 2px solid black; */
     }
 }

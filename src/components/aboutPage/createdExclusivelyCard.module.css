@@ -176,10 +176,18 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 100vh;
+        height: 65dvh;
+        
+        
+        /* border: 2px solid black; */
+       
     }
     .textContainer {
         width: 100%;
+        padding-top: 8%;
+        /* border: 2px solid black; */
+        justify-content: flex-start;
+
     }
     .imgContainer {
         display: none;
@@ -192,7 +200,7 @@
         height: auto;
     }
     .middleWrapper {
-        gap: .85rem;
+        gap: 1.2rem;
         
     }
     .title {
@@ -201,5 +209,15 @@
     .subTitle {
         font-size: 1rem;
         padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 65vh;
+        /* border: 2px solid black; */
+    }
+    .title {
+        font-size: 1.8rem;
     }
 }

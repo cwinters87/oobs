@@ -112,7 +112,20 @@
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
-        padding: 26px 180px 180px;
+        padding: 5% 180px 180px;
+        
+    }
+    .imgContainer {
+        position: relative;
+    }
+    .imgWrapper {
+        position: absolute;
+        bottom: -12px;
+        right: -350px;
+        width: 135%;
+        height: auto;
+        max-height: 92%;
+        /* border: solid 2px black; */
     }
 }
 
@@ -123,10 +136,11 @@
     .imgWrapper {
         position: absolute;
         bottom: -12px;
-        right: -250px;
-        width: 130%;
+        right: -350px;
+        width: 135%;
         height: auto;
         max-height: 92%;
+        
     }
 }
 
