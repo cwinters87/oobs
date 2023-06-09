@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "@reach/router";
-import queryString from "query-string";
+import React, { useState, useEffect } from "react"
+import { useLocation } from "@reach/router"
+import queryString from "query-string"
 import { navigate } from "gatsby"
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
@@ -18,19 +18,19 @@ function DemoForm({closeForm}) {
   
 
   useEffect(() => {
-    const parsedQuery = queryString.parse(location.search);
+    const parsedQuery = queryString.parse(location.search)
 
     // If there's a new utm_source, utm_medium, utm_campaign, or utm term, store them in session storage
     if (parsedQuery.utm_source) {
-      sessionStorage.setItem("utm_source", parsedQuery.utm_source);
+      sessionStorage.setItem("utm_source", parsedQuery.utm_source)
     }
 
     if (parsedQuery.utm_medium) {
-      sessionStorage.setItem("utm_medium", parsedQuery.utm_medium);
+      sessionStorage.setItem("utm_medium", parsedQuery.utm_medium)
     }
 
     if (parsedQuery.utm_campaign) {
-      sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign);
+      sessionStorage.setItem("utm_campaign", parsedQuery.utm_campaign)
     }
 
     if (parsedQuery.utm_term) {
@@ -46,7 +46,7 @@ function DemoForm({closeForm}) {
   
   // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
-  const [validated, setValidated] = useState(false);
+  const [validated, setValidated] = useState(false)
 
   // Form Data with onChange data for future improvement
   const [firstNameValue, setFirstNameValue] = useState(),
@@ -72,8 +72,8 @@ function DemoForm({closeForm}) {
   const handleSubmit = event => {
           const form = event.currentTarget
           if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
+            event.preventDefault()
+            event.stopPropagation()
           }
           else {
             event.preventDefault();
