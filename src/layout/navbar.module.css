@@ -151,6 +151,18 @@
     height: auto;
     padding-top: 9%;
 }
+
+#lenders {
+  display: none;
+}
+
+#brokers {
+  display: none;
+}
+
+#about {
+  display: none;
+}
   
 @media only screen and (min-width: 2560px)  {
     #navBar {
@@ -169,9 +181,9 @@
 }
 
 @media only screen and (max-width: 1345px)  {
-    #contactSales {
+    /* #contactSales {
       display: none;
-    }
+    } */
     #linkContainerOne {
       width: 70%;
     }
@@ -222,6 +234,21 @@
       margin: 0;
       padding: 0;
   }
+  #contactSales {
+    border-right: none;
+    padding-right: 1.5rem;
+    order: 1;
+  }
+  #demoButton {
+    order: 3;
+  }
+  #login {
+    order: 2;
+  }
+  #about {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 399px)  {

@@ -6,16 +6,32 @@ import CreatedExclusivelyCard from '../components/aboutPage/createdExclusivelyCa
 import DiverseTeamCard from '../components/aboutPage/diverseTeam'
 import ValuesCard from '../components/aboutPage/values'
 import CareersCard from '../components/aboutPage/careers'
+import FadeInFromBottom from '../components/effects/fadeInFromBottom'
+import FadeInFromLeft from '../components/effects/fadeInFromLeft'
 
 
 const AboutPage = () => {
   return (
     <Layout>
       <AboutPageHero />
-      <CreatedExclusivelyCard />
-      <DiverseTeamCard />
-      <ValuesCard />
-      <CareersCard />
+
+      <FadeInFromBottom>
+        <CreatedExclusivelyCard />
+      </FadeInFromBottom>
+      
+
+      <FadeInFromLeft>
+        <DiverseTeamCard />
+      </FadeInFromLeft>
+
+      <FadeInFromBottom>
+        <ValuesCard />
+      </FadeInFromBottom>
+
+      <FadeInFromLeft>
+        <CareersCard />
+      </FadeInFromLeft>
+
     </Layout>
   )
 }

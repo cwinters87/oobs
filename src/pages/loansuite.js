@@ -47,8 +47,6 @@ const LoanSuite = () => {
         <PartnerCard/>
       </FadeInFromBottom>
 
-      
-
       <FadeInFromLeft>
         <ConnectTools />
       </FadeInFromLeft>

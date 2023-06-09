@@ -21,37 +21,55 @@ const LoanServicing = () => {
     <Layout>
       <ProductNav />   
       <ServicingHero/> 
-      <BenefitsServicingCard/>
 
-      <DynamicProductCard
-        headerTitle={'Loan Stats'} 
-        cardTitle={'Ability to manage and track loan payments, balances, and default status'} 
-        cardSubTitle={'Easily track and manage your loans ensuring streamlined oversight and optimized portfolios.'} 
-        Img={LoanStatsImg}
+      <FadeInFromBottom>
+        <BenefitsServicingCard/>
+      </FadeInFromBottom>
+
+      <FadeInFromLeft>
+        <DynamicProductCard
+          headerTitle={'Loan Stats'} 
+          cardTitle={'Ability to manage and track loan payments, balances, and default status'} 
+          cardSubTitle={'Easily track and manage your loans ensuring streamlined oversight and optimized portfolios.'} 
+          Img={LoanStatsImg}
+          />
+      </FadeInFromLeft>
+
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+          headerTitle={'Customizable Dashboards'} 
+          cardTitle={'View loan portfolio information and track performance'} 
+          cardSubTitle={'Create personalized dashboards to visualize loan portfolio data and monitor performance, improving your lending strategy with ease.'} 
+          Img={DashoardsImg}
         />
+      </FadeInFromBottom>
 
-      <DynamicProductCardReverse 
-        headerTitle={'Customizable Dashboards'} 
-        cardTitle={'View loan portfolio information and track performance'} 
-        cardSubTitle={'Create personalized dashboards to visualize loan portfolio data and monitor performance, improving your lending strategy with ease.'} 
-        Img={DashoardsImg}
-      />
+      <FadeInFromLeft>
+        <DynamicProductCard 
+          headerTitle={'Automated Workflows'} 
+          cardTitle={'Automated processes for tasks such as payment processing and late fee calculation'} 
+          cardSubTitle={'Modernize operations with Automated Workflows, boosting productivity and accuracy.'} 
+          Img={WorkflowsImg}
+        />
+      </FadeInFromLeft>
 
-      <DynamicProductCard 
-        headerTitle={'Automated Workflows'} 
-        cardTitle={'Automated processes for tasks such as payment processing and late fee calculation'} 
-        cardSubTitle={'Modernize operations with Automated Workflows, boosting productivity and accuracy.'} 
-        Img={WorkflowsImg}
-      />
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+          headerTitle={'Online Borrower Portal'} 
+          cardTitle={'Secure white-labeled platform for borrowers to access loan information'} 
+          cardSubTitle={'Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all with in a seamless branded experience.'} 
+          Img={PortalImg}
+        />
+      </FadeInFromBottom>
 
-      <DynamicProductCardReverse 
-        headerTitle={'Online Borrower Portal'} 
-        cardTitle={'Secure white-labeled platform for borrowers to access loan information'} 
-        cardSubTitle={'Empower your clients to effortlessly access loan details, make payments, and apply for new loans, all with in a seamless branded experience.'} 
-        Img={PortalImg}
-      />
-      <ServicingFeaturesCard/>
-      <TogetherCard pageName={'Servicing'}/>
+      <FadeInFromBottom>
+        <ServicingFeaturesCard/>
+      </FadeInFromBottom>
+
+      <FadeInFromLeft>
+        <TogetherCard pageName={'Servicing'}/>
+      </FadeInFromLeft>
+
       <FadeInFromBottom>
         <DemoFormCard />
       </FadeInFromBottom> 

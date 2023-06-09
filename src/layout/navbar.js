@@ -91,15 +91,15 @@ const NavigationBar = () => {
                         
                       </div>
                       </NavDropdown>
-                      <Link to="/lenders" className={styles.pageLink} onClick={handleClose}>For Lenders</Link>
-                      <Link to="/brokers" className={styles.pageLink} onClick={handleClose}>For Brokers</Link>
-                      <Link to="/faqs" className={styles.pageLink} onClick={handleClose}>Resources</Link>
+                      <Link to="/lenders" className={styles.pageLink} id={styles.lenders} onClick={handleClose}>For Lenders</Link>
+                      <Link to="/brokers" className={styles.pageLink} id={styles.brokers} onClick={handleClose}>For Brokers</Link>
+                      <Link to="/about" className={styles.pageLink} id={styles.about} onClick={handleClose}>About</Link>
                   </div>
 
                   <div id={styles.linkContainerTwo}>
                     <Link to="/contact" className={styles.pageLink} id={styles.contactSales} onClick={handleClose}>Contact Sales</Link>
-                    <DemoButton></DemoButton>
-                    <Link to="/login" className={styles.pageLink}>Login</Link>
+                    <DemoButton id={styles.demoButton}></DemoButton>
+                    <Link to="/login" className={styles.pageLink} id={styles.login}>Login</Link>
                   </div>
                 </Nav>
                 </Offcanvas.Body>

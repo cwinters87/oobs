@@ -21,37 +21,54 @@ const LoanCreditAi = () => {
     <Layout>
       <ProductNav />
       <CreditHero/>
-      <BenefitsCreditCard/>
 
-      <DynamicProductCard
-        headerTitle={'Credit Scoring Integration'} 
-        cardTitle={'Integration with credit bureaus for quick and accurate credit scoring'} 
-        cardSubTitle={'Seamlessly integrate for rapid, precise credit scoring, empowering informed decisions and streamlined loan processing.'} 
-        Img={IntegrationImg}
+      <FadeInFromBottom>
+        <BenefitsCreditCard/>
+      </FadeInFromBottom>
+      
+      <FadeInFromLeft>
+        <DynamicProductCard
+          headerTitle={'Credit Scoring Integration'} 
+          cardTitle={'Integration with credit bureaus for quick and accurate credit scoring'} 
+          cardSubTitle={'Seamlessly integrate for rapid, precise credit scoring, empowering informed decisions and streamlined loan processing.'} 
+          Img={IntegrationImg}
+          />
+        </FadeInFromLeft>
+
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+          headerTitle={'Automatic Decision Making'} 
+          cardTitle={'Automatically make loan decisions based on predefined criteria and risk assessments'} 
+          cardSubTitle={'Enhance decision accuracy and efficient risk assessment through our rapid, tailored underwriting solution.'} 
+          Img={AutoImg}
         />
+      </FadeInFromBottom>
 
-      <DynamicProductCardReverse 
-        headerTitle={'Automatic Decision Making'} 
-        cardTitle={'Automatically make loan decisions based on predefined criteria and risk assessments'} 
-        cardSubTitle={'Enhance decision accuracy and efficient risk assessment through our rapid, tailored underwriting solution.'} 
-        Img={AutoImg}
-      />
+      <FadeInFromLeft>
+        <DynamicProductCard 
+          headerTitle={'Document Scanning'} 
+          cardTitle={'Scan and verify important loan application documents, such as income or bank statements'} 
+          cardSubTitle={'Automatically scan and authenticate crucial laon documents for a reliable and expedited application process.'} 
+          Img={ScanningImg}
+        />
+      </FadeInFromLeft>
 
-      <DynamicProductCard 
-        headerTitle={'Document Scanning'} 
-        cardTitle={'Scan and verify important loan application documents, such as income or bank statements'} 
-        cardSubTitle={'Automatically scan and authenticate crucial laon documents for a reliable and expedited application process.'} 
-        Img={ScanningImg}
-      />
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+          headerTitle={'Cutomizable Rules Engine'} 
+          cardTitle={'Set custom underwriting rules and criteria to meet your businesses specific needs'} 
+          cardSubTitle={"Tailor your underwriting experience with our Customizable Rules Engine, designed to adapt to your business's unique requirements and standards"} 
+          Img={RulesImg}
+        />
+      </FadeInFromBottom>
 
-      <DynamicProductCardReverse 
-        headerTitle={'Cutomizable Rules Engine'} 
-        cardTitle={'Set custom underwriting rules and criteria to meet your businesses specific needs'} 
-        cardSubTitle={"Tailor your underwriting experience with our Customizable Rules Engine, designed to adapt to your business's unique requirements and standards"} 
-        Img={RulesImg}
-      />
-      <CreditFeaturesCard/>
-      <TogetherCard pageName={'Credit AI'}/>
+      <FadeInFromBottom>
+        <CreditFeaturesCard/>
+      </FadeInFromBottom>
+      
+      <FadeInFromLeft>
+        <TogetherCard pageName={'Credit AI'}/>
+      </FadeInFromLeft>
 
       <FadeInFromBottom>
         <DemoFormCard />

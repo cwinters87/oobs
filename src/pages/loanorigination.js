@@ -20,39 +20,55 @@ const LoanOrigination = () => {
     <Layout>
       <ProductNav />
       <OriginationHero />  
-      <BenefitsOriginationCard/>
 
-      <DynamicProductCard 
-        headerTitle={'Powerful Integrations'} 
-        cardTitle={'Integration with OCR document scanning tools, credit bureaus, and many more'} 
-        cardSubTitle={'Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations.'} 
-        Img={IntegrationsImg}
-        />
+      <FadeInFromBottom>
+        <BenefitsOriginationCard/>
+      </FadeInFromBottom>
+      
+      <FadeInFromLeft>
+        <DynamicProductCard 
+                headerTitle={'Powerful Integrations'} 
+                cardTitle={'Integration with OCR document scanning tools, credit bureaus, and many more'} 
+                cardSubTitle={'Enhance your workflow by effortlessly connecting to vital tools for streamlined loan operations.'} 
+                Img={IntegrationsImg}
+                />
+      </FadeInFromLeft>
 
-      <DynamicProductCardReverse 
-        headerTitle={'Credit Check & Verification'} 
-        cardTitle={'Efficiently streamline applicant credit assessments and identity validation with built-in Instant Approvals'} 
-        cardSubTitle={'Increase revenue and transaction volumes with buy-now-pay-later and embedded finance solutions, giving you the competitive advantage.'} 
-        Img={VerificationImg}
-      />
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+                headerTitle={'Credit Check & Verification'} 
+                cardTitle={'Efficiently streamline applicant credit assessments and identity validation with built-in Instant Approvals'} 
+                cardSubTitle={'Increase revenue and transaction volumes with buy-now-pay-later and embedded finance solutions, giving you the competitive advantage.'} 
+                Img={VerificationImg}
+              />
+      </FadeInFromBottom>
 
-      <DynamicProductCard 
-        headerTitle={'Built-In CRM'} 
-        cardTitle={'Optimize client interactions through an integrated CRM'} 
-        cardSubTitle={'Seamless email, calling, and texting capabilities for comprehensive communication and superior outreach in the loan process.'} 
-        Img={CRMImg}
-      />
+      <FadeInFromLeft>
+        <DynamicProductCard 
+                headerTitle={'Built-In CRM'} 
+                cardTitle={'Optimize client interactions through an integrated CRM'} 
+                cardSubTitle={'Seamless email, calling, and texting capabilities for comprehensive communication and superior outreach in the loan process.'} 
+                Img={CRMImg}
+              />
+      </FadeInFromLeft>
 
-      <DynamicProductCardReverse 
-        headerTitle={'White-Labeled Application Portal'} 
-        cardTitle={'Enable applicants to apply for loans and submit required documents online'} 
-        cardSubTitle={'Streamline loan applications with a tailored, branded portal, elevating customer experiences and accelerationg procedures.'} 
-        Img={PortalImg}
-      />
-      <TogetherCard pageName={'Origination'}/>
+      <FadeInFromBottom>
+        <DynamicProductCardReverse 
+                headerTitle={'White-Labeled Application Portal'} 
+                cardTitle={'Enable applicants to apply for loans and submit required documents online'} 
+                cardSubTitle={'Streamline loan applications with a tailored, branded portal, elevating customer experiences and accelerationg procedures.'} 
+                Img={PortalImg}
+              />
+      </FadeInFromBottom>
+
+      <FadeInFromLeft>
+        <TogetherCard pageName={'Origination'}/>
+      </FadeInFromLeft>
+
       <FadeInFromBottom>
         <DemoFormCard />
       </FadeInFromBottom>   
+      
     </Layout>
   )
 }

@@ -9,7 +9,6 @@ const ContactPage = () => {
   return (
     <Layout>
       <DemoFormFullPageCard/>
-      
     </Layout>
   )
 }
