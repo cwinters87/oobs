@@ -6,9 +6,9 @@
 }
 
 .container {
-    height: 55svh;
+    height: 40dvh;
     width: 100%;
-    padding: 7%;
+    padding: 0% 7% 2% 7%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -91,6 +91,7 @@
 
 @media only screen and (min-width: 2561px)  {
     .container {
+        height: 50dvh;
         max-width: 2560px;
         padding: 26px 180px;
     }
@@ -108,6 +109,9 @@
     }
     .subTitle {
         padding-bottom: 3rem;
+    }
+    .topBreakPoint {
+        display: none;
     }
 }
 
