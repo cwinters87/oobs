@@ -4,12 +4,14 @@ import Layout from "../layout/layout"
 import BrokerHero from '../components/brokers/brokerHero'
 import BeforeTaskSuiteCard from '../components/brokers/beforeTaskSuite'
 import DemoFormCard from '../components/demoForm/demoFormCard'
+import FitForPurposeCard from '../components/brokers/fitForPurpose'
 
 const BrokersPage = () => {
   return (
     <Layout>
       <BrokerHero/>
       <BeforeTaskSuiteCard/>
+      <FitForPurposeCard/>
       <DemoFormCard/>
     </Layout>
   )
