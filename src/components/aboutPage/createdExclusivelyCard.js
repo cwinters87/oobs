@@ -26,7 +26,6 @@ const CreatedExclusivelyCard = () => {
             </div>
           </div>
         </div>
-            
     )
 }
 
