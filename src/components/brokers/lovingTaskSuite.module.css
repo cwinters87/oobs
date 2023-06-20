@@ -1,0 +1,133 @@
+.container {
+    height: 60svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 2.8rem;
+    /* border: solid 2px black; */
+}
+
+.textContainer {
+    margin: 0 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainTitle {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-weight: 600;
+    color: var(--money-green);
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.toolsContainer {
+    padding: 0 1%;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.card {
+    flex: 1 1 0px;
+    width: 0;
+    border: solid 1px var(--khaki-light);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2em;
+    gap: .8em; 
+}
+
+.company {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-weight: 600;
+
+}
+
+.quoteBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    /* border: solid 2px red; */
+}
+
+.quote {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-light);
+    font-weight: 600;
+    color: var(--money-green);
+}
+
+.author {
+    margin: 0;
+    font-family: var(--font-light);
+    font-weight: 600;
+}
+
+.position {
+    margin: 0;
+    font-family: var(--font-regular);
+    font-weight: 600;
+}
+
+.card:hover, .card:hover h4 {
+    transition: 250ms;
+    filter: brightness(90%);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px)  {
+    .container {
+        height: 70svh;
+    }
+    .card {
+        display: flex;
+        flex: 0;
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .mainTitle {
+        font-size: 2.2rem;
+    }
+    .card {
+       
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 3rem 0;
+    }
+    .mainTitle {
+        font-size: 2rem;
+    }
+    .card {
+        padding: 1em;
+        gap: .2em;
+    }
+}

@@ -7,6 +7,7 @@ import DemoFormCard from '../components/demoForm/demoFormCard'
 import FitForPurposeCard from '../components/brokers/fitForPurpose'
 import IntroducingLoanConnect from '../components/brokers/introducingLoanConnect'
 import SeamlessConnectivityCard from '../components/brokers/seamlessConnectivity'
+import LovingTaskSuiteCard from '../components/brokers/lovingTaskSuite'
 
 const BrokersPage = () => {
   return (
@@ -16,6 +17,7 @@ const BrokersPage = () => {
       <FitForPurposeCard/>
       <IntroducingLoanConnect/>
       <SeamlessConnectivityCard/>
+      <LovingTaskSuiteCard/>
       <DemoFormCard/>
     </Layout>
   )
