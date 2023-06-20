@@ -35,10 +35,8 @@ const FitForPurposeCard = () => {
                         <div className={styles.text}>unified platform <br className={styles.bottomBreakPoint}/>for all your data</div>
                     </div>
                 </div>
-                
             </div>
         </div>
-            
     )
 }
 

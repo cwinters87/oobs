@@ -5,6 +5,7 @@ import BrokerHero from '../components/brokers/brokerHero'
 import BeforeTaskSuiteCard from '../components/brokers/beforeTaskSuite'
 import DemoFormCard from '../components/demoForm/demoFormCard'
 import FitForPurposeCard from '../components/brokers/fitForPurpose'
+import IntroducingLoanConnect from '../components/brokers/introducingLoanConnect'
 
 const BrokersPage = () => {
   return (
@@ -12,6 +13,7 @@ const BrokersPage = () => {
       <BrokerHero/>
       <BeforeTaskSuiteCard/>
       <FitForPurposeCard/>
+      <IntroducingLoanConnect/>
       <DemoFormCard/>
     </Layout>
   )
