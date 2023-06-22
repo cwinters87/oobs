@@ -8,36 +8,10 @@ import * as styles from './introducingLoanConnect.module.css'
 
 const IntroducingLoanConnect = () => {
 
-
-    // not working yet
-    useEffect(() => {
-        const links = document.querySelectorAll('#cardWrapper > a');
-    
-        links.forEach(link => {
-          link.addEventListener('click', event => {
-            event.preventDefault();
-    
-            const activeLink = document.querySelector(`.${styles.active}`);
-            activeLink.classList.remove(styles.active);
-    
-            link.classList.add(styles.active);
-          });
-        });
-    
-        return () => {
-          links.forEach(link => {
-            link.removeEventListener('click');
-          });
-        };
-      }, []);
     
   return (
-    <>
-    {/* <Helmet>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      </Helmet> */}
     <div className={styles.sectionWrapper}>
-        <div className={styles.container} id='start'>
+        <div className={styles.container}>
             <div className={styles.subContainer} id={styles.textContainer}>
                 <div id={styles.header}>
                     <p>Introducing Loan Connect</p>
@@ -64,8 +38,7 @@ const IntroducingLoanConnect = () => {
            
 
         </div>
-    </div>
-    </>       
+    </div>     
     )
 }
 
