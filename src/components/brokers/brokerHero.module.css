@@ -9,7 +9,6 @@
     height: 42dvh;
     width: 100%;
     padding: 10% 7%  7% 7%;
-    /* border: solid 2px red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,42 +22,98 @@
     font-size: 3.2rem;
 }
 
-.dynamicTitle {
-    color: green;
-    padding-bottom: .5rem;
-    border-bottom: solid 2px green;
-}
-
 .subTitle {
     margin: 0;
     margin-top: 1.8rem;
     font-family: var(--font-light);
     font-weight: 600;
     font-size: 1.2rem;
-    /* border: solid 2px blue; */
 }
 
+.animatedContainer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.border {
+    height: 1rem;
+    width: 440px;
+    border-top: solid 3px green;
+}
 
+.animatedText {
+    margin: 0;
+    font-size: 3.2rem;
+    font-family: var(--font-regular);
+    font-weight: 600;
+    min-width: 280px;    
+}
 
+.animatedText span {
+    margin: 0;
+    position: relative;
+}
 
+.animatedText span::before {
+    content: 'higher profits.';
+    color: green;
+    animation: words 20s infinite;
+}
 
+.animatedText span::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid green;
+    right: -8px;
+    animation: cursor .6s infinite,typing 20s steps(14) infinite;
+}
 
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ffffff;
+    }
+}
 
+@keyframes words {
+    0%,20%{
+        content: 'higher profits.';
+    }
+    21%,40%{
+        content: 'faster closings.';
+    }
+    41%,60%{
+        content: 'higher volume.';
+    }
+    61%,80%{
+        content: 'smarter insights.';
+    }
+    81%,100%{
+        content: 'greater scalability.';
+    }
+}
 
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
 
-
-
-
-
-
-
-
-
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
 
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
-        padding: 26px 180px;
+        padding: 10% 180px 7% 180px;
     }
+    /* .container {
+        padding: 10% 7%  7% 7%;
+    } */
 }

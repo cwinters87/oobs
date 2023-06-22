@@ -2,12 +2,15 @@ import * as React from 'react'
 import * as styles from './brokerHero.module.css'
 
 const BrokerHero = () => {
-    
-  return (
+
+return (
     <div className={styles.sectionWrapper}>
         <div className={styles.container}>
             <h1 className={styles.title}>Better broker solutions that lead to</h1>
-            <h1 className={styles.title}><span className={styles.dynamicTitle}>higher profits</span>.</h1>
+            <div className={styles.animatedContainer}>
+                <h1 className={styles.animatedText}><span></span></h1>
+            </div>
+            <div className={styles.border}></div>
 
             <p className={styles.subTitle}>Revolutionize Your Brokerage Business with TaskSuite's LoanConnect</p>
         </div>

@@ -1,9 +1,11 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import imageOne from '../../images/loanProducts/servicing/icon-data-management.png'
-import imageTwo from '../../images/loanProducts/origination/icon-data-accuracy.png'
-import imageThree from '../../images/loanProducts/servicing/icon-customer-experience.png'
-import imageFour from '../../images/loanProducts/servicing/icon-productivity.png'
+import imageOne from '../../images/loanProducts/servicing/icon-productivity.png'
+import imageTwo from '../../images/loanProducts/servicing/icon-customer-experience.png'
+import imageThree from '../../images/loanProducts/servicing/icon-efficiency.png'
+import imageFour from '../../images/loanProducts/management/icon-flexible-features.png'
+
+
 
 import * as styles from './seamlessConnectivity.module.css'
 
