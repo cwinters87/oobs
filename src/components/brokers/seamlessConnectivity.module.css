@@ -14,7 +14,6 @@
     align-items: center;
     justify-content: flex-start;
     gap: 4rem;
-    /* border: solid 2px black; */
 }
 
 .textContainer {
@@ -22,8 +21,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid 2px red; */
-    /* margin-bottom: 1rem; */
     gap: 1.2rem;
 }
 
@@ -39,7 +36,6 @@
 
 .mainSubTitle {
     text-align: center;
-    /* border: solid 2px red; */
     width: 100%;
     margin: 0;
     font-family: var(--font-regular);
@@ -47,11 +43,9 @@
 }
 
 .buttonContainer {
-    
     display: flex;
     align-items: center;
     gap: 20px;
-    /* border: solid 2px red; */
 }
 
 .button {
@@ -62,7 +56,6 @@
     align-items: center;
     padding: 5px 12px;
     border-radius: 5px;
-    
 }
 
 .arrowImage {
@@ -80,13 +73,9 @@
 
 .cardContainer {
     display: flex;
-    /* align-items: center; */
     gap: 8rem;
-    /* border: solid 2px red; */
-
 }
 .card {
-    /* border: solid 1px red; */
     color: var(--primary-font-color);
     height: 300px;
     width: 400px;
@@ -118,7 +107,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: solid 1px yellow; */
 }
 
 .image img {
@@ -127,32 +115,25 @@
 }
 
 .title {
-    /* height: 120px; */
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    /* border: solid 1px green; */
 }
 
 .subTitle {
-    /* height: 110px; */
     width: 100%;
-    /* border: solid 1px blue; */
 }
 
 @media only screen and (min-width: 2561px)  {
     .container {
-        /* height: 48svh; */
         max-width: 2560px;
-        /* padding: 26px 180px; */
     }
 }
 
 @media only screen and (max-width: 1921px)  {
     .container {
-        height: 68svh;
-        /* gap: 5rem; */
+        height: 68dvh;
     }
     .mainTitle {
         font-size: 2.8rem;
@@ -161,13 +142,11 @@
         font-size: 1.1rem;
     }
     .cardContainer {
-        
         gap: 4rem;
     }
     .image {
         height: 45px;
     }
-    
 }
 
 @media only screen and (max-width: 1600px)  {
@@ -177,10 +156,7 @@
     .container {
         height: 115dvh;
         gap: 3rem;
-        /* border: solid 1px red; */
-        
     }
-    
     .mainTitle {
         font-size: 2.2rem;
     }
@@ -197,7 +173,6 @@
         font-size: .85rem;
     }
     .cardContainer {
-        /* border: solid 1px red; */
         gap: 2rem;
         flex-wrap: wrap;
         justify-content: center;
@@ -206,33 +181,18 @@
         width: 300px;
         height: 215px;
     }
-
 }
-
-/* @media only screen and (max-width: 1080px)  {
-    .container {
-        height: 100svh;
-        gap: 1rem;
-    }
-    .title h3 {
-        font-size: 1.2rem;
-    }
-    .subTitle p {
-        font-size: .85rem;
-    }
-} */
 
 @media only screen and (max-width: 991px)  {
     .container {
-        /* border: solid 1px red; */
-        gap: 0; 
-        padding: 10% 0 0 0; 
-        height: 100vh;
-        align-items: flex-start;
-        flex: 1;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
+        gap: 2rem; 
+        padding: 10% 7% 0 7%; 
+        height: 95dvh;
+        align-items: center;
+        justify-content: flex-start;        
+    }
+    .textContainer {
+        gap: .5rem;
     }
     .mainTitle {
         font-size: 2.2rem;
@@ -247,73 +207,58 @@
     .bottomBreakPoint {
         display: none;
     }
+    .cardContainer {
+        gap: 1.5rem;
+    }
     .card {
-        /* border: solid 1px blue; */
-        height: 200px;
-        width: 300px;
+        height: auto;
+        width: 100px;
         padding: 0 5%;
         flex: 1;
         flex-basis: 50%;
     }
     .image {
-        height: 40px;
-        /* border: solid 1px red; */
+        height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .title h3 {
         font-size: 1.2rem;
-        /* border: solid 1px green; */
     }
     .subTitle p {
         font-size: .8rem;
-        /* border: solid 1px black; */
     }
     
 }
 
-@media only screen and (max-width: 768px)  {
-    .container {
-        /* border: solid 1px red; */
-        gap: 0; 
-        padding: 10% 7% 0 7%; 
-        height: 100vh;
-    }
-    .card {
-        /* border: solid 1px blue; */
-        height: 200px;
-        width: 300px;
-        padding: 0 3%;
-        flex: 1;
-        flex-basis: 50%;
-        gap: .5rem;
-    }   
-    .title h3 {
-        font-size: 1rem;
-        /* border: solid 1px green; */
-    }
-    .subTitle p {
-        font-size: .8rem;
-        /* border: solid 1px black; */
-    }
-}
-
 @media only screen and (max-width: 600px) {
+    .container {
+        height: 135vh;
+        padding-top: 15%;
+    }
     .mainTitle {
         font-size: 1.5rem;
     }
     .mainSubTitle {
         font-size: .8rem;
     }
+    .card {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .container {
-        height: 110vh;
-        padding-top: 15%;
+        height: 150vh;
     }
     .mainTitle {
         font-size: 1.3rem;
+    }
+    .cardContainer {
+        gap: 2rem;
+    }
+    .card {
+        height: auto;
     }
 }

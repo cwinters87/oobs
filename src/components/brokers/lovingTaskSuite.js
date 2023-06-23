@@ -15,33 +15,38 @@ const LovingTaskSuiteCard = () => {
 
 
   return (
-    <div className={styles.container}>
-      <div className={styles.textContainer}>
-        <h2 className={styles.mainTitle}>Over 5,000 users across 25 partners are loving TaskSuite</h2>
-      </div>
+    <div className={styles.sectionWrapper}>
+      <div className={styles.container}>
+        <div className={styles.textContainer}>
+          <h2 className={styles.mainTitle}>Over 5,000 users across 25 partners are loving TaskSuite</h2>
+        </div>
 
-      <div className={styles.toolsContainer}>
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className={styles.card}
-            id={index === 0 ? styles.firstCard : index === data.length - 1 ? styles.lastCard : ''}
-          >
-            <div className={styles.icon}>
-                <StaticImage className={styles.iconImg} src="../../images/homePage/quote.png" placeholder="" alt="quote" />
+        <div className={styles.toolsContainer}>
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className={styles.card}
+              id={index === 0 ? styles.firstCard : index === data.length - 1 ? styles.lastCard : ''}
+            >
+              <div className={styles.icon}>
+                  <StaticImage className={styles.iconImg} src="../../images/homePage/quote.png" placeholder="" alt="quote" />
+              </div>
+              <h4  className={styles.company}>{item.company}</h4>
+              <div className={styles.quoteBox}>
+                  <p  className={styles.quote}>{item.quote}</p>
+              </div>
+              <div className={styles.nameContainer}>
+                <p  className={styles.author}>{item.author}</p>
+                <p  className={styles.position}>{item.position}</p>
+              </div>
+              
             </div>
-            <h4  className={styles.company}>{item.company}</h4>
-            <div className={styles.quoteBox}>
-                <p  className={styles.quote}>{item.quote}</p>
-            </div>
-            
-            <p  className={styles.author}>{item.author}</p>
-            <p  className={styles.position}>{item.position}</p>
-          </div>
-        ))}
-      </div>
-      
+          ))}
+        </div>
+        
     </div>
+    </div>
+
         
 )
 }

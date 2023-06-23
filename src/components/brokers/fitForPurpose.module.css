@@ -154,11 +154,24 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 75dvh;
+        height: 50dvh;
+        gap: 1rem;
         /* border: 2px solid black; */
     }
+    .textContainer {
+        gap: .2rem;
+    }
     .title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+    .topBreakPoint {
+        display: none;
+    }
+    .middleBreakPoint {
+        display: none;
+    }
+    .bottomBreakPoint {
+        display: none;
     }
     .subTitle {
         font-size: .85rem;
@@ -174,31 +187,47 @@
         /* border: solid 2px blue; */
     }
     .image {
-        height: 75px;
+        height: 50px;
         
     }
     .count {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .text {
-        font-size: .8rem;
+        font-size: .85rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .container {
+        height: 62dvh;
+        margin-top: 1rem;
+    }
     .title {
         font-size: 1.5rem;
     }
     .subTitle {
         font-size: .8rem;
     }
+    .image {
+        height: 35px;
+    }
+    .count {
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: .8rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .container {
-        height: 75vh;
+        height: 62vh;
     }
     .title {
         font-size: 1.3rem;
+    }
+    .text {
+        font-size: .7rem;
     }
 }

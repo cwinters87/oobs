@@ -1,12 +1,20 @@
-.container {
-    height: 60svh;
+.sectionWrapper {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.container {
+    height: 65svh;
+    width: 100%;
+    padding: 0 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    gap: 2.8rem;
+    gap: 4rem;
     /* border: solid 2px black; */
 }
 
@@ -24,7 +32,7 @@
     font-family: var(--font-regular);
     font-weight: 600;
     color: var(--money-green);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     text-align: center;
 }
 
@@ -34,7 +42,7 @@
     width: 100%;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 1em;
+    gap: 4rem;
     overflow: hidden;
 }
 
@@ -45,16 +53,21 @@
     border-radius: 18px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    padding: 2em;
-    gap: .8em; 
+    padding: 3rem;
+    gap: .5em; 
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
 }
 
 .company {
     margin: 0;
     font-family: var(--font-regular);
     font-weight: 600;
+    font-size: 1.8rem;
 
 }
 
@@ -63,7 +76,6 @@
     flex-direction: column;
     align-items: center;
     height: 100px;
-    /* border: solid 2px red; */
 }
 
 .quote {
@@ -71,13 +83,23 @@
     text-align: center;
     font-family: var(--font-light);
     font-weight: 600;
+    font-size: 1rem;
     color: var(--money-green);
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: .25rem; */
 }
 
 .author {
     margin: 0;
     font-family: var(--font-light);
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .position {
@@ -91,12 +113,48 @@
     filter: brightness(90%);
 }
 
+@media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+    }
+}
 
-
-
-
-
-
+@media only screen and (max-width: 1080px) {
+    .container {
+        border: solid 2px red;
+        height: 72dvh;
+        gap: 2.5rem;
+    }
+    .mainTitle {
+        font-size: 1.6rem;
+    }
+    .toolsContainer {
+        gap: 1rem;
+    }
+    .card {
+        padding: 1em;
+        gap: 1em;
+    }
+    .icon {
+        height: 20px;
+        width: 20px;
+    }
+    .company {
+        font-size: 1rem;
+    }
+    .quoteBox {
+        height: 120px;
+    }
+    .quote {
+        font-size: .8rem;
+    }
+    .author {
+        font-size: 1rem;
+    }
+    .position {
+        font-size: .85rem;
+    }
+}
 
 @media only screen and (max-width: 991px)  {
     .container {
@@ -113,9 +171,6 @@
 @media only screen and (max-width: 600px)  {
     .mainTitle {
         font-size: 2.2rem;
-    }
-    .card {
-       
     }
 }
 

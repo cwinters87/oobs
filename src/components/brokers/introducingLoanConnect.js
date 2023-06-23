@@ -17,10 +17,10 @@ const IntroducingLoanConnect = () => {
                     <p>Introducing Loan Connect</p>
                 </div>
                 <div id={styles.title}>
-                    <h2>Connect to an Online Marketplace of Lenders and <br/>Secure the Best Deals for Your Clients in Seconds</h2>
+                    <h2>Connect to an Online Marketplace of Lenders and <br className={styles.breakPoint}/>Secure the Best Deals for Your Clients in Seconds</h2>
                 </div>
                 <div id={styles.subTitle}>
-                    <p>Our innovative online marketplace, accessible via API or our user-friendly software, <br/>is here to revolutionize your brokerage business.</p>
+                    <p>Our innovative online marketplace, accessible via API or our user-friendly software, <br className={styles.breakPoint}/>is here to revolutionize your brokerage business.</p>
                 </div>
             </div>
             <div className={styles.buttonContainer}>

@@ -135,15 +135,19 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 120svh;
+        height: 65dvh;
         padding: 0;
+        gap: 1.5rem;
+    }
+    .breakPoint {
+        display: none;
     }
     #textContainer {
         padding: 0 7% .5rem 7%;
-        height: 25%;
+        height: auto;
     }
     #imgContainer {
-        height: 38%;
+        height: auto;
         padding: 0 0 0 7%;
         align-items: flex-start;
     }
@@ -161,8 +165,19 @@
         object-fit: cover;
         object-position: 0% 0%;
     }
+    #title {
+        margin: .85rem 0;
+        /* padding: 0; */
+    }
+    #header p {
+        font-size: .8rem;
+    }
     #title h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+    #subTitle {
+        width: 80%;
+        /* border: solid 2px red; */
     }
     #subTitle p {
         font-size: .8rem;
@@ -170,39 +185,30 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 125svh;
-    }
+
     #title h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     #subTitle p {
-        font-size: .8rem;
+        padding-top: 0;
     }
-    #textContainer {
-        height: 30%;
-        padding-bottom: .1rem;
-    }
-    #imgContainer {
-        height: 20%;
-    }    
 }
 
 @media only screen and (max-width: 400px) {
     .container {
-        height: 140svh;
+        height: 70vh;
     }
-    #textContainer {
+    /* #textContainer {
         height: 33%;
         padding-bottom: .1rem;
     }
     #imgContainer {
         height: 20%;
-    }   
+    }    */
     
 }
 
-@media only screen and (max-width: 391px) {
+/* @media only screen and (max-width: 391px) {
     .container {
         padding-top: 50px;
     }
@@ -219,4 +225,4 @@
     #imgContainer {
         height: 20%;
     }  
-}
+} */
