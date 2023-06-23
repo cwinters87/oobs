@@ -1,0 +1,264 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.container {
+    padding: 7% 7% 0 7%;
+    height: 60dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.mainTitle {
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: var(--money-green);
+    margin-bottom: .5rem;
+}
+
+.mainSubTitle {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    all: unset;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.arrowImage {
+    width: auto;
+    height : 100%;
+    max-height:100%; 
+    max-width:100%;
+    object-fit: cover;
+}
+
+#previousArrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.cardContainer {
+    display: flex;
+    gap: 8rem;
+}
+.card {
+    color: var(--primary-font-color);
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+.title h3 {
+    margin: 0;
+    color: var(--money-green);
+    font-family: var(--font-regular);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.subTitle p {
+    margin: 0;
+    font-family: var(--font-light);
+    text-align: center;
+}
+
+.image {
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    height: 100%;
+    width: auto;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.subTitle {
+    width: 100%;
+}
+
+@media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+    }
+}
+
+@media only screen and (max-width: 1921px)  {
+    .container {
+        height: 68dvh;
+    }
+    .mainTitle {
+        font-size: 2.8rem;
+    }
+    .mainSubTitle {
+        font-size: 1.1rem;
+    }
+    .cardContainer {
+        gap: 4rem;
+    }
+    .image {
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 1600px)  {
+    .breakPoint {
+        display: none;
+    }
+    .container {
+        height: 115dvh;
+        gap: 3rem;
+    }
+    .mainTitle {
+        font-size: 2.2rem;
+    }
+    .mainSubTitle {
+        font-size: 1rem;
+    }
+    .image {
+        height: 40px;
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+    .subTitle p {
+        font-size: .85rem;
+    }
+    .cardContainer {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 300px;
+        height: 215px;
+    }
+}
+
+@media only screen and (max-width: 991px)  {
+    .container {
+        gap: 2rem; 
+        padding: 10% 7% 0 7%; 
+        height: 95dvh;
+        align-items: center;
+        justify-content: flex-start;        
+    }
+    .textContainer {
+        gap: .5rem;
+    }
+    .mainTitle {
+        font-size: 2.2rem;
+    }
+    .mainSubTitle {
+        font-size: .85rem;
+        width: 100%;
+    }
+    .topBreakPoint {
+        display: none;
+    }
+    .bottomBreakPoint {
+        display: none;
+    }
+    .cardContainer {
+        gap: 1.5rem;
+    }
+    .card {
+        height: auto;
+        width: 100px;
+        padding: 0 5%;
+        flex: 1;
+        flex-basis: 50%;
+    }
+    .image {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title h3 {
+        font-size: 1.2rem;
+    }
+    .subTitle p {
+        font-size: .8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 135vh;
+        padding-top: 15%;
+    }
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+    .mainSubTitle {
+        font-size: .8rem;
+    }
+    .card {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 150vh;
+    }
+    .mainTitle {
+        font-size: 1.3rem;
+    }
+    .cardContainer {
+        gap: 2rem;
+    }
+    .card {
+        height: auto;
+    }
+}

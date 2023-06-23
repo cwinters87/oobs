@@ -40,7 +40,7 @@
 
 .border {
     height: 1rem;
-    width: 440px;
+    width: 520px;
     border-top: solid 3px green;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .animatedText span::before {
-    content: 'higher profits.';
+    content: 'increased volume.';
     color: green;
     animation: words 20s infinite;
 }
@@ -82,19 +82,19 @@
 
 @keyframes words {
     0%,20%{
-        content: 'higher profits.';
+        content: 'increased volume.';
     }
     21%,40%{
-        content: 'faster closings.';
+        content: 'accurate underwriting.';
     }
     41%,60%{
-        content: 'higher volume.';
+        content: 'borrower retention.';
     }
     61%,80%{
-        content: 'smarter insights.';
+        content: 'strategic insights.';
     }
     81%,100%{
-        content: 'greater scalability.';
+        content: 'operational savings.';
     }
 }
 
@@ -153,7 +153,7 @@
         height: 42dvh;
     }
     .border {
-        width: 320px;
+        width: 380px;
     }
     .title {
         font-size: 2rem;
@@ -177,7 +177,7 @@
         height: 40dvh;
     }
     .border {
-        width: 170px;
+        width: 220px;
     }
     .title {
         font-size: 1.3rem;
@@ -204,7 +204,7 @@
         height: 40vh;
     }
     .border {
-        width: 160px;
+        width: 250px;
     }
     .title {
         font-size: 1.1rem;

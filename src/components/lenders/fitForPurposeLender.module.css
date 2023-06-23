@@ -1,0 +1,233 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.container {
+    height: 60dvh;
+    width: 100%;
+    padding: 0% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    /* border: solid 2px red; */
+    padding-top: 5%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px red; */
+    margin-bottom: 1rem;
+    gap: .8rem;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--money-green);
+    margin-bottom: .5rem;
+}
+
+.subTitle {
+    text-align: center;
+    /* border: solid 2px red; */
+    width: 100%;
+    margin: 0;
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+}
+
+.numberContainer {
+    /* border: solid 2px red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px blue; */
+    gap: .5rem;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px blue; */
+    
+}
+
+.image img {
+    height: 100%;
+    width: auto;
+}
+
+.count {
+    font-family: var(--font-regular);
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: green;
+    margin: 0;
+}
+
+.text {
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 2561px)  {
+    .container {
+        max-width: 2560px;
+        padding: 26px 180px;
+        padding-top: 5%;
+        height: 65dvh;
+    }
+}
+
+@media only screen and (max-width: 1921px) {
+    .container {
+        height: 68dvh;
+        gap: 3rem;
+    }
+    .textContainer {
+        gap: 1rem;
+    }
+    .title {
+        font-size: 2.4rem;
+    }
+    .subTitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .container {
+        height: 85dvh;
+        gap: 2rem;
+        padding-top: 8%;
+        /* border: solid 2px blue; */
+    }
+    .textContainer {
+        gap: .5rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .subTitle {
+        font-size: 1rem;
+    }
+    .numberContainer {
+        width: 80%;
+        font-size: .85rem;
+        /* justify-content: center; */
+    }
+    .item {
+        gap: .6rem;
+    }
+    .count {
+        font-size: 2.5rem;
+    }
+    .text {
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        height: 50dvh;
+        gap: 1rem;
+        /* border: 2px solid black; */
+    }
+    .textContainer {
+        gap: .2rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .topBreakPoint {
+        display: none;
+    }
+    .middleBreakPoint {
+        display: none;
+    }
+    .bottomBreakPoint {
+        display: none;
+    }
+    .subTitle {
+        font-size: .85rem;
+        width: 100%;
+    }
+    .numberContainer {
+        width: 100%;
+        font-size: .85rem;
+        /* justify-content: center; */
+    }
+    .item {
+        width: 150px;
+        /* border: solid 2px blue; */
+    }
+    .image {
+        height: 50px;
+        
+    }
+    .count {
+        font-size: 1.8rem;
+    }
+    .text {
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 62dvh;
+        margin-top: 1rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .subTitle {
+        font-size: .8rem;
+    }
+    .image {
+        height: 35px;
+    }
+    .count {
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 62vh;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .text {
+        font-size: .7rem;
+    }
+}

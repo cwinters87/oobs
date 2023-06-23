@@ -2,9 +2,9 @@ import React from 'react';
 import DemoButton from '../buttons/demoButtonModal'
 import Image from '../../images/homePage/completeToolset.png'
 import ImageMobile from '../../images/homePage/completeToolsetMobile.png'
-import * as styles from './introducingLoanConnect.module.css'
+import * as styles from './introducingLoanConnectLender.module.css'
 
-const IntroducingLoanConnect = () => {
+const IntroducingLoanConnectLender = () => {
 
     
   return (
@@ -15,10 +15,10 @@ const IntroducingLoanConnect = () => {
                     <p>Introducing LoanConnect</p>
                 </div>
                 <div id={styles.title}>
-                    <h2>Connect to an Online Marketplace of Lenders and <br className={styles.breakPoint}/>Secure the Best Deals for Your Clients in Seconds</h2>
+                    <h2>Expand Your Reach and Drive Growth with Seamless <br className={styles.breakPoint}/>Access to High-Quality Deals from Brokers</h2>
                 </div>
                 <div id={styles.subTitle}>
-                    <p>Our innovative online marketplace, accessible via API or our user-friendly software, <br className={styles.breakPoint}/>is here to revolutionize your brokerage business.</p>
+                    <p>Our innovative online marketplace, accessible via API or our user-friendly software, <br className={styles.breakPoint}/>is designed to expand your reach and drive growth by effortlessly connecting you with <br className={styles.breakPoint}/>brokers and loan deals tailored to your business.</p>
                 </div>
             </div>
             <div className={styles.buttonContainer}>
@@ -40,4 +40,4 @@ const IntroducingLoanConnect = () => {
     )
 }
 
-export default IntroducingLoanConnect
+export default IntroducingLoanConnectLender

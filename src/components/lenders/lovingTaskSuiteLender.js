@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from './lovingTaskSuite.module.css'
+import * as styles from './lovingTaskSuiteLender.module.css'
 
-const LovingTaskSuiteCard = () => {
+const LovingTaskSuiteLenderCard = () => {
 
   const data = [
     { company: "BackD Business Funding", quote: "We've worked with TaskSuite to develop a customized product that is tailored to our exact business needs. They've done this seamlessly", author: "Tucker S.", position: "COO" },
@@ -15,7 +15,7 @@ const LovingTaskSuiteCard = () => {
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
-          <h2 className={styles.mainTitle}>Over 5,000 users across 25 partners are loving TaskSuite</h2>
+          <h2 className={styles.mainTitle}>Over 5,000 happy users and growing</h2>
         </div>
 
         <div className={styles.toolsContainer}>
@@ -48,4 +48,4 @@ const LovingTaskSuiteCard = () => {
 )
 }
 
-export default LovingTaskSuiteCard
+export default LovingTaskSuiteLenderCard
