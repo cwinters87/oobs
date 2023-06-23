@@ -19,7 +19,7 @@ const SeamlessConnectivityCard = () => {
                         Seamless Connectivity to Lenders
                     </h2>
                     <p className={styles.mainSubTitle}>
-                        We understand the importance of efficiency in the lending process. Our online marketplace connects you to a vast network of <br className={styles.middleBreakPoint}/>lenders, allowing you to automatically send deals to multiple lenders and receive multiple offers back in mere seconds. <br className={styles.middleBreakPoint}/>This steamlined process ensures that you can quickly assess the best options and deliver a superior experience to your clients.
+                        We understand the importance of efficiency in the lending process. Our online marketplace connects you to a vast network of <br className={styles.breakPoint}/>lenders, allowing you to automatically send deals to multiple lenders and receive multiple offers back in mere seconds. <br className={styles.breakPoint}/>This steamlined process ensures that you can quickly assess the best options and deliver a superior experience to your clients.
                     </p>
                 </div>
 
