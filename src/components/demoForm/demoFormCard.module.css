@@ -48,25 +48,61 @@
     font-size: 2.8em;
 }
 
-.checkmarkContainer {
+/* .checkmarkContainer {
     display: flex;
     width: 100%;
+} */
+
+.featureContainer {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    width: 100%;
+    gap: .75rem;
+    
+    
 }
 
-.checkWrapper {
+.feature {
+    display: flex;
+    gap: .55rem;
+    /* flex: 1; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.feature p {
+    margin: 0;
+    font-family: var(--font-semi-bold);
+    color: var(--money-green);
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.checkmarkWrapper {
+    /* border: solid 2px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .checkWrapper {
     display: flex;
     gap: .3em;
     flex: 1;
     align-items: center;
-}
+} */
 
-.checkWrapper p {
+/* .checkWrapper p {
     margin: 0;
     font-family: var(--font-semi-bold);
     color: var(--money-green);
     font-size: 1em;
     white-space: nowrap;
-}
+} */
 
 .imgContainer {
     width: 55%;
@@ -112,8 +148,11 @@
     .title {
         font-size: 1.8rem;
     }
-    .checkWrapper p {
+    /* .checkWrapper p {
         font-size: .6em;
+    } */
+    .feature p {
+        font-size: .9rem;
     }
 }
 
@@ -142,6 +181,9 @@
 @media only screen and (max-width: 1100px) {
     .title {
         font-size: 1.6rem;
+    }
+    .feature p {
+        font-size: .8rem;
     }
 }
 
@@ -176,10 +218,10 @@
         font-size: 1.8rem;
         text-align: center;
     }
-    .checkmarkContainer {
+    /* .checkmarkContainer {
         padding-bottom: 1em;
         justify-content: space-between;
-    }
+    } */
     .imgWrapper {
         position: static;
         width:100%;
@@ -204,12 +246,18 @@
         object-fit: cover;
         object-position: 0% 0%;
     }
-    .checkmarkContainer {
+    /* .checkmarkContainer {
         gap: 3em;
-    }
-    #leftCheck {
+    } */
+    /* #leftCheck {
         display: flex;
         justify-content: flex-end;
+    } */
+    .featureContainer {
+        /* padding-bottom: 1em;
+        justify-content: space-between; */
+        /* border: solid 2px red; */
+        gap: .5rem;
     }
 }
 
@@ -239,17 +287,17 @@
         height: 35%;
         padding: 0 7%;
     }
-    .checkmarkContainer {
+    /* .checkmarkContainer {
         gap: 0;
-    }
+    } */
     #rightCheck {
         display: flex;
         justify-content: flex-end;
     }
-    #leftCheck {
+    /* #leftCheck {
         display: flex;
         justify-content: flex-start;
-    }
+    } */
     .title {
         font-size: 1.5rem;
     }

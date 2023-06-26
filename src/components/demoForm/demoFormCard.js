@@ -4,6 +4,7 @@ import Image from '../../images/demo/demo.png'
 import ImageMobile from '../../images/demo/demo-mobile.png'
 import DemoForm from './demoForm'
 import * as styles from './demoFormCard.module.css'
+import DemoButton from '../buttons/demoButtonModal'
 
 
 const DemoFormCard = () => {
@@ -15,8 +16,24 @@ const DemoFormCard = () => {
                 <div className={styles.formContainer}>
                     <div className={styles.formWrapper}>
                         <h2 className={styles.title}>Get a TaskSuite demo</h2>
-                        <DemoForm />
-                        <div className={styles.checkmarkContainer}>
+                        <div className={styles.featureContainer}>
+                            <div className={styles.feature}>
+                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p className={styles.featureTitle}>Discover simpler & faster workflows</p>
+                            </div>
+                            <div className={styles.feature}>
+                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p className={styles.featureTitle}>Experience revolutionary technology firsthand</p>
+                            </div>
+                            <div className={styles.feature}>
+                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p className={styles.featureTitle}>Discover customizable & adaptable solutions</p>
+                            </div>
+                        
+                        </div>
+                        <DemoButton/>
+                        {/* <DemoForm /> */}
+                        {/* <div className={styles.checkmarkContainer}>
                             <div className={styles.checkWrapper} id={styles.leftCheck}>
                                 <StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" />
                                 <p>No obligation demo</p>
@@ -25,7 +42,7 @@ const DemoFormCard = () => {
                                 <StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" />
                                 <p>Dedicated support team</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={styles.imgContainer}>

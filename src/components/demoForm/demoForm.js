@@ -67,6 +67,9 @@ function DemoForm({closeForm}) {
   const [websiteValue, setWebsiteValue] = useState(),
         onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
 
+  const [notesValue, setNotesValue] = useState(),
+        onNotesInput = ({target:{value}}) => setNotesValue(value)
+
   // On Submit
   // Need to trigger a success page for better Google Ad tracking
   const handleSubmit = event => {
@@ -96,7 +99,7 @@ function DemoForm({closeForm}) {
                 "utm_medium" : utmMedium,
                 "utm_campaign" : utmCampaign,
                 "utm_term" : utmTerm,
-                "notes" : "pre fill notes"
+                "notes" : notesValue
               })
             })
             .then(response => {
@@ -126,7 +129,7 @@ function DemoForm({closeForm}) {
             type="text"
             onChange={onFirstNameInput}
             value={firstNameValue}
-            placeholder="Name"
+            placeholder="*First name"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
@@ -137,11 +140,12 @@ function DemoForm({closeForm}) {
       <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationLastName">
           <Form.Control
+            className={styles.formInput}
             required
             type="text"
             onChange={onLastNameInput}
             value={lastNameValue}
-            placeholder="Last name"
+            placeholder="*Last name"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
@@ -157,7 +161,7 @@ function DemoForm({closeForm}) {
               type="tel" 
               onChange={onPhoneInput}
               value={phoneValue}
-              placeholder="Phone" 
+              placeholder="*Phone" 
               required 
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -166,14 +170,15 @@ function DemoForm({closeForm}) {
             </Form.Control.Feedback>
           </Form.Group>
       </Row>
-        <Row>
+        <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationCompany">
           
           <Form.Control 
+            className={styles.formInput}
             type="text" 
             onChange={onCompanyInput}
             value={companyValue}
-            placeholder="Company name" 
+            placeholder="*Company name" 
             required 
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -190,7 +195,7 @@ function DemoForm({closeForm}) {
                 type="email"
                 onChange={onEmailInput}
                 value={emailValue}
-                placeholder="Business email"
+                placeholder="*Business email"
                 required
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -198,14 +203,28 @@ function DemoForm({closeForm}) {
                 Please enter an email address.
               </Form.Control.Feedback>
           </Form.Group>
-        {/* <Form.Group as={Col} controlId="validationWebsite">
+          </Row>
+          <Row className={styles.row}>
+        <Form.Group as={Col} controlId="validationWebsite">
           <Form.Control 
+            className={styles.formInput}
             type="text" 
             onChange={onWebsiteInput}
             value={websiteValue}
-            placeholder="Website" 
+            placeholder="Company website" 
           />
-        </Form.Group> */}
+        </Form.Group>
+      </Row>
+      <Row className={styles.row}>
+      <Form.Group as={Col} controlId="validationNotes">
+          <Form.Control 
+            className={styles.formInput}
+            type="text" 
+            onChange={onNotesInput}
+            value={notesValue}
+            placeholder="Comments" 
+          />
+        </Form.Group>
       </Row>
       <Button className={styles.button} type="submit">Submit request for demo</Button>
     </Form>
