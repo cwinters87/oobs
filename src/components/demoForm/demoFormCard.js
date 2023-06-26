@@ -31,7 +31,10 @@ const DemoFormCard = () => {
                             </div>
                         
                         </div>
-                        <DemoButton/>
+                        <div className={styles.buttonWrapper}>
+                            <DemoButton/>
+                        </div>
+                        
                         {/* <DemoForm /> */}
                         {/* <div className={styles.checkmarkContainer}>
                             <div className={styles.checkWrapper} id={styles.leftCheck}>

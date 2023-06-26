@@ -89,6 +89,14 @@
 
 }
 
+.buttonWrapper {
+    padding: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
 /* .checkWrapper {
     display: flex;
     gap: .3em;
@@ -222,6 +230,11 @@
         padding-bottom: 1em;
         justify-content: space-between;
     } */
+        .buttonWrapper {
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 4%;
+    }
     .imgWrapper {
         position: static;
         width:100%;
