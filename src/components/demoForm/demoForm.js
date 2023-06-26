@@ -52,20 +52,20 @@ function DemoForm({closeForm}) {
   const [firstNameValue, setFirstNameValue] = useState(),
         onFirstNameInput = ({target:{value}}) => setFirstNameValue(value)
 
-  // const [lastNameValue, setLastNameValue] = useState(),
-  //       onLastNameInput = ({target:{value}}) => setLastNameValue(value)
+  const [lastNameValue, setLastNameValue] = useState(),
+        onLastNameInput = ({target:{value}}) => setLastNameValue(value)
 
   const [emailValue, setEmailValue] = useState(),
         onEmailInput = ({target:{value}}) => setEmailValue(value)
 
-  // const [companyValue, setCompanyValue] = useState(),
-  //       onCompanyInput = ({target:{value}}) => setCompanyValue(value)
+  const [companyValue, setCompanyValue] = useState(),
+        onCompanyInput = ({target:{value}}) => setCompanyValue(value)
 
   const [phoneValue, setPhoneValue] = useState(),
         onPhoneInput = ({target:{value}}) => setPhoneValue(value)
 
-  // const [websiteValue, setWebsiteValue] = useState(),
-  //       onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
+  const [websiteValue, setWebsiteValue] = useState(),
+        onWebsiteInput = ({target:{value}}) => setWebsiteValue(value)
 
   // On Submit
   // Need to trigger a success page for better Google Ad tracking
@@ -88,10 +88,10 @@ function DemoForm({closeForm}) {
               body:JSON.stringify({
                 "type": "demo",
                 "firstname": firstNameValue,
-                "lastname": "lastname",
+                "lastname": lastNameValue,
 					      "email" : emailValue,
 					      "phone" : phoneValue,	
-                "company" : "company",				      
+                "company" : companyValue,				      
                 "utm_source" : utmSource,
                 "utm_medium" : utmMedium,
                 "utm_campaign" : utmCampaign,
@@ -134,7 +134,7 @@ function DemoForm({closeForm}) {
           </Form.Control.Feedback>
         </Form.Group>
       </Row>
-      {/* <Row className={styles.row}>
+      <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationLastName">
           <Form.Control
             required
@@ -148,7 +148,7 @@ function DemoForm({closeForm}) {
             Please provide a last name.
           </Form.Control.Feedback>
         </Form.Group>
-      </Row> */}
+      </Row>
       <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationPhone">
             {/* <Form.Label>Phone Number:</Form.Label> */}
@@ -165,8 +165,9 @@ function DemoForm({closeForm}) {
               Please provide a phone number.
             </Form.Control.Feedback>
           </Form.Group>
-        
-        {/* <Form.Group as={Col} controlId="validationCompany">
+      </Row>
+        <Row>
+        <Form.Group as={Col} controlId="validationCompany">
           
           <Form.Control 
             type="text" 
@@ -179,7 +180,7 @@ function DemoForm({closeForm}) {
           <Form.Control.Feedback type="invalid">
             Please provide a company name.
           </Form.Control.Feedback>
-        </Form.Group> */}
+        </Form.Group>
       </Row>
       <Row className={styles.row}>
         <Form.Group as={Col} controlId="validationEmail">
