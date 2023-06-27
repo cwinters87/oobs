@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
-// import { Helmet } from 'gatsby-plugin-react-helmet';
 import { Link } from 'gatsby'
 import Image from '../../images/homePage/completeToolset.png'
 import ImageMobile from '../../images/homePage/completeToolsetMobile.png'
 import * as styles from './completeToolset.module.css'
 
 const CompleteToolsetCard = () => {
-
 
     // not working yet
     useEffect(() => {
@@ -32,9 +30,6 @@ const CompleteToolsetCard = () => {
     
   return (
     <>
-    {/* <Helmet>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      </Helmet> */}
     <div className={styles.sectionWrapper}>
         <div className={styles.container} id='start'>
             <div className={styles.subContainer} id={styles.textContainer}>
@@ -49,9 +44,7 @@ const CompleteToolsetCard = () => {
                 </div>
             </div>
             <div id={styles.cardContainer}>
-                
                 <div className={styles.subContainer} id={styles.cardWrapper}>
-                    
                     <Link className={styles.card}  id={styles.active} to='/loanorigination'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Origination</h3>
@@ -86,7 +79,6 @@ const CompleteToolsetCard = () => {
                     </Link>
                 </div>
             </div>
-
             <div className={styles.subContainer} id={styles.imgContainer}>
                 <div id={styles.imgWrapper}>
                     <picture>
@@ -96,8 +88,6 @@ const CompleteToolsetCard = () => {
                     </picture>
                 </div>
             </div>
-           
-
         </div>
     </div>
     </>       

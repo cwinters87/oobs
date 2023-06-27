@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import imageOne from '../../images/loanProducts/servicing/icon-productivity.png'
 import imageTwo from '../../images/loanProducts/servicing/icon-efficiency.png'
 import imageThree from '../../images/loanProducts/servicing/icon-customer-experience.png'
@@ -19,16 +18,6 @@ const EffortlessDealSourcingCard = () => {
                         Our online marketplace is designed to bring the best loan deals right to your <br className={styles.breakPoint}/>fingertips. By seamlessly connecting you with brokers, you'll have access to a vast <br className={styles.breakPoint}/>pool of loan applications, increasing your oppportunities to fund deals that align with <br className={styles.breakPoint}/>your lending critieria. Our platforms advanced filtering and matching system <br className={styles.breakPoint}/>ensures that you'll only receive relevant and high-quality deals, minimizing time <br className={styles.breakPoint}/>wasted on applications that don't suit your business.
                     </p>
                 </div>
-
-                {/* <div className={styles.buttonContainer}>
-                    <button className={styles.button} >
-                        <StaticImage className={styles.arrowImage} id={styles.previousArrow} src="../../images/components/arrow.png" placeholder="" alt="arrow" />
-                    </button>
-                    <button className={styles.button} >
-                        <StaticImage className={styles.arrowImage} src="../../images/components/arrow.png" placeholder="" alt="arrow" />
-                    </button>
-                </div> */}
-
                 <div className={styles.cardContainer}>
                     <div className={styles.card}>
                         <div className={styles.image}><img src={imageOne} alt="volume icon"/></div>
@@ -51,9 +40,6 @@ const EffortlessDealSourcingCard = () => {
                         <div className={styles.subTitle}><p>Our marketplace platform is designed to be tailored to your specific needs, ensuring seamless integration into your existing processes and systems.</p></div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     )

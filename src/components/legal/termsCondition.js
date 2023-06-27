@@ -10,7 +10,6 @@ const TermsCondition = () => {
                 <h1>
                     GOTECH INVESTMENTS, LLC D/B/A TASKSUITE<br/>
                     SOFTWARE AS A SERVICE<br/>
-                    
                 </h1>
                 <h2>
                     Terms of Service<br/>

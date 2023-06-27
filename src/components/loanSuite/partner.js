@@ -28,7 +28,6 @@ const PartnerCard = () => {
                     <div className={styles.buttonContainer}>
                         <ScrollButton text={'Read more'} route={'/lenders'} propScrollButtonStyle={styleButton}/>
                     </div>
-                    
                 </div>
                 <div className={styles.card}>
                     <h3 className={styles.cardTitle}>For Brokers</h3>
@@ -41,7 +40,6 @@ const PartnerCard = () => {
             </div>
           </div>
         </div>
-            
     )
 }
 

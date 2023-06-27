@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import imageOne from '../../images/loanSuite/benefit-icon-1.png'
 import imageTwo from '../../images/loanSuite/benefit-icon-2.png'
 import imageThree from '../../images/loanSuite/benefit-icon-3.png'

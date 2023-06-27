@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as styles from './carousel.module.css'
 import Card from './card';
 
 const Carousel = ({ cards }) => {

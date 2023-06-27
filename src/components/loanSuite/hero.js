@@ -8,12 +8,10 @@ const LoanSuiteHero = () => {
   return (
     <div className={styles.sectionWrapper}>
         <main className={styles.container}>
-          
           <section className={styles.subContainer} id={styles.subContainerOne}>
             <h1>A complete solution to automate and <br className={styles.breakPointTop}/>simplify your loan process</h1>
             <h2>TaskSuite brings together loan origination and management into a single source of <br className={styles.breakPoint}/>truth, enabling your team to save time and make better loan decisions.</h2>
           </section>
-
           <div className={styles.imgWrapper}>
             <div className={styles.imgContainer}>
               <picture>
@@ -23,7 +21,6 @@ const LoanSuiteHero = () => {
               </picture>
             </div>
           </div>
-      
         </main> 
       </div>
     )

@@ -3,7 +3,6 @@ import Carousel from './carousel'
 import backgroundImg from '../../../images/homePage/testimonial.png'
 import * as styles from './testimonialCard.module.css'
 
-
 const cardData = [
   {
     imageUrl: backgroundImg,
@@ -26,8 +25,6 @@ const cardData = [
     position: 'FOUNDER',
     company: 'CONTACTWORKS',
   },
-  
-  
   // Add more card data objects as needed
 ];
 

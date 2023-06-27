@@ -10,14 +10,12 @@ const LovingTaskSuiteCard = () => {
     { company: "CONTACTWORKS", quote: "We've been working with the TaskSuite team for over three years. They provide our business with the best tools in the industry. I am impressed with their product and their capabilities.", author: "Tom Sultenfuss", position: "Founder" },
   ]
 
-
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <h2 className={styles.mainTitle}>Over 5,000 users across 25 partners are loving TaskSuite</h2>
         </div>
-
         <div className={styles.toolsContainer}>
           {data.map((item, index) => (
             <div
@@ -36,15 +34,11 @@ const LovingTaskSuiteCard = () => {
                 <p  className={styles.author}>{item.author}</p>
                 <p  className={styles.position}>{item.position}</p>
               </div>
-              
             </div>
           ))}
         </div>
-        
+      </div>
     </div>
-    </div>
-
-        
 )
 }
 

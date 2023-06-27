@@ -1,10 +1,9 @@
 import * as React from 'react'
 import ArrowLink from '../buttons/arrowLink';
-import AnimatedArrow from '../buttons/animatedArrow';
+// import AnimatedArrow from '../buttons/animatedArrow';
 import Image from '../../images/homePage/simple.png'
 import ImageMobile from '../../images/homePage/simple-mobile.png'
 import * as styles from './currentProcess.module.css'
-
 
 const CurrentProcessCard = () => {
     
@@ -15,25 +14,8 @@ const CurrentProcessCard = () => {
             <h2 id={styles.title}>Are you happy with your current process?</h2>
             <p id={styles.subTitle}>We know you aren't becasue we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* destop view render */}
         <div className={styles.subContainer} id={styles.cardContainer}>
-
-
             <div className={styles.flexWrapper} id={styles.flexWrapperTop}>
                 <div className={(styles.cardsTopRow, styles.card)} id={styles.cardOne}>
                     <div className={styles.imgWrapper}>
@@ -45,7 +27,6 @@ const CurrentProcessCard = () => {
                             </picture>
                         </div>
                     </div>
-                    
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Simple</h3>
@@ -66,7 +47,6 @@ const CurrentProcessCard = () => {
                     </div>
                 </div>
             </div>
-
             <div className={styles.flexWrapper} id={styles.flexWrapperBottom}>
                 <div className={(styles.cardsBottomRow, styles.card)} id={styles.cardThree}>
                     <div className={styles.textContainer}>
@@ -99,28 +79,17 @@ const CurrentProcessCard = () => {
                     </div>
                 </div>
             </div>
-            
-
         </div>
-
-
-
-
 
         {/* mobile view render */}
         <div className={styles.subContainer} id={styles.cardContainerMobile}>
-
-
             <div className={styles.firstRow}>
                 <div className={styles.cardMobile} id={styles.cardOneMobile}>
-
                             <div className={styles.cardContentMobile}>
                                 <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                                 <h3 className={styles.cardTitle}>Simple</h3>
                                 <p className={styles.cardSubTitle}>versus today's normal, which relies on numerous people using multiple tools, often leading to complex and fragile workflows.</p>
-                                
                             </div>
-                            
                             <div className={styles.imgWrapperMobile}>
                                         <div className={styles.imgContainerMobile}>
                                             <picture>
@@ -130,16 +99,11 @@ const CurrentProcessCard = () => {
                                             </picture>
                                         </div>
                                 </div>
-
                             <div className={styles.buttonContainer}>
                                 {/* <AnimatedArrow/> */}
                             </div>
                     </div>
             </div>
-
-
-
-
             <div className={styles.secondRow}>
                 <div className={styles.cardMobile} id={styles.cardTwoMobile}>
                         <div className={styles.cardContentMobile}>
@@ -151,7 +115,6 @@ const CurrentProcessCard = () => {
                             {/* <AnimatedArrow/> */}
                         </div>
                     </div>
-                
                     <div className={styles.cardMobile} id={styles.cardThreeMobile}>
                         <div className={styles.cardContentMobile}>
                             <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
@@ -163,11 +126,6 @@ const CurrentProcessCard = () => {
                         </div>
                     </div>
             </div>
-
-
-
-
-
             <div className={styles.thirdRow}>
                 <div className={styles.cardMobile} id={styles.cardFourMobile}>
                         <div className={styles.cardContentMobile}>
@@ -179,7 +137,6 @@ const CurrentProcessCard = () => {
                             {/* <AnimatedArrow/> */}
                         </div>
                     </div>
-
                     <div className={styles.cardMobile} id={styles.cardFiveMobile}>
                         <div className={styles.cardContentMobile}>
                             <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
@@ -191,38 +148,14 @@ const CurrentProcessCard = () => {
                         </div>
                     </div>
             </div>
-
-            
-            
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div className={styles.subContainer} id={styles.linkContainer}>
             <ArrowLink text={'For Lenders'} route={'/lenders'}/>
             <ArrowLink text={'For Brokers'} route={'/brokers'}/>
         </div>
-  </div>
-  </div>
-            
+    </div>
+  </div>     
     )
 }
 

@@ -6,7 +6,6 @@ import * as styles from './introducingLoanConnectLender.module.css'
 
 const IntroducingLoanConnectLender = () => {
 
-    
   return (
     <div className={styles.sectionWrapper}>
         <div className={styles.container}>
@@ -33,8 +32,6 @@ const IntroducingLoanConnectLender = () => {
                     </picture>
                 </div>
             </div>
-           
-
         </div>
     </div>     
     )

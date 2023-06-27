@@ -5,7 +5,6 @@ import ImageMobile from '../../images/demo/contact-page-hero-mobile.png'
 import DemoForm from './demoForm'
 import * as styles from './demoFormFullPage.module.css'
 
-
 const DemoFormFullPageCard = () => {
     
   return (
@@ -14,9 +13,7 @@ const DemoFormFullPageCard = () => {
             <div className={styles.wrapper}>
                 <div className={styles.formContainer}>
                     <div className={styles.formWrapper}>
-                        
                         <h2 className={styles.title}>Get a TaskSuite demo</h2>
-
                         <div className={styles.featureContainer}>
                             <div className={styles.feature}>
                                 <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
@@ -30,30 +27,22 @@ const DemoFormFullPageCard = () => {
                                 <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
                                 <p className={styles.featureTitle}>Customizable & adaptable solution</p>
                             </div>
-                        
                         </div>
-
                         <DemoForm />
-                        
                     </div>
                 </div>
                 <div className={styles.imgContainer}>
                     <div className={styles.imgWrapper}>
-                        {/* <StaticImage id={styles.image} src="../../images/homePage/Hero.png" placeholder="" alt="hero" /> */}
-                        {/* <img className={styles.image} src={Image} alt='tasksuite product'/> */}
-
                         <picture>
                             <source media="(max-width: 1400px)" srcSet={ImageMobile} />
                             <source media="(min-width: 1401px)" srcSet={Image} />
                             <img src={Image} alt="TaskSuite product" style={{width: "auto", height: "100%"}} />
                         </picture>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-            
+    </div>   
     )
 }
 

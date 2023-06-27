@@ -45,7 +45,6 @@
   justify-content: space-between;
   height: 35%;
   width: 100%;
-  /* border: solid 2px red; */
 }
 
 .card {
@@ -60,7 +59,6 @@
   color: var(--secondary-font-color);
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  /* border: solid 2px black; */
 }
 
 #cardFit {
@@ -79,7 +77,6 @@
 }
 
 #linkContainer {
-    /* border: solid 2px purple; */
     height: 10%;
     padding: 2.5rem 0 0 0;
 }
@@ -191,7 +188,6 @@
 @media only screen and (max-width:400px) {
     .container {
         height: 190svh;
-
     }
 }
 
@@ -220,4 +216,3 @@
         font-size: 2rem;
     }
 }
-

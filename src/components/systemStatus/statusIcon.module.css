@@ -16,7 +16,6 @@
   color: var(--cobalt-blue);
 }
 
-
 .statusWrapper {
   color: var(--secondary-font-color);
   opacity: .8;
@@ -39,4 +38,3 @@
     font-size: 10px;
   }
 }
-

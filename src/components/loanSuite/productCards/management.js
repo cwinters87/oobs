@@ -52,7 +52,6 @@ const Management = () => {
             </div>
           </div>
         </div>
-            
     )
 }
 

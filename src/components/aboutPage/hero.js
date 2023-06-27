@@ -15,7 +15,6 @@ const AboutPageHero = () => {
                       <img src={Image} alt='TaskSuite Credit Product' />
                     </div>
                 </div>
-                
             </div>
             <div className={styles.imgContainer}>
               <picture>
@@ -25,8 +24,7 @@ const AboutPageHero = () => {
               </picture>
             </div>
           </div>
-        </div>
-            
+        </div>  
     )
 }
 

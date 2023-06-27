@@ -34,17 +34,15 @@ const DiverseTeamCard = () => {
                 </div>
                 <div className={styles.imgContainer}>
                     <div className={styles.imgWrapperOne}>
-                        <img className={styles.imgLeft} src={ImgOne}/>
+                        <img className={styles.imgLeft} src={ImgOne} alt='People working and laughing'/>
                     </div>
                     <div className={styles.imgWrapperTwo}>
-                        <img className={styles.imgRight} src={ImgTwo}/>
-                        <img className={styles.imgRight} src={ImgThree}/>
+                        <img className={styles.imgRight} src={ImgTwo} alt='Guy on Phone'/>
+                        <img className={styles.imgRight} src={ImgThree} alt='People working'/>
                     </div>
                 </div>
-                
             </div>
         </div>
-            
     )
 }
 

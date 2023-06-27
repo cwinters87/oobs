@@ -11,7 +11,6 @@ const BeforeTaskSuiteCard = () => {
                     <h2 className={styles.title}>
                         Before TaskSuite, brokers didn't have the tools to meet <br className={styles.breakPoint}/> the demands of modern loan management.
                     </h2>
-                    
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.item}>
@@ -27,10 +26,8 @@ const BeforeTaskSuiteCard = () => {
                         <div className={styles.text}>of brokers could reduce <br className={styles.bottomBreakPoint}/> cost and increase profits <br className={styles.bottomBreakPoint}/> with TaskSuite</div>
                     </div>
                 </div>
-                
             </div>
         </div>
-            
     )
 }
 

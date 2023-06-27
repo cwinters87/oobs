@@ -15,7 +15,6 @@ const CreatedExclusivelyCard = () => {
                       <img src={Image} alt='TaskSuite Credit Product' />
                     </div>
                 </div>
-                
             </div>
             <div className={styles.imgContainer}>
               <picture>

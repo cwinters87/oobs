@@ -1,14 +1,11 @@
 .sectionWrapper {
   width: 100%;
-  /* background: var(--khaki-light); */
   background: #ffff;
   display: flex;
   justify-content: center;
   z-index: 1;
   position: fixed;
   top: 0;
-  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
-  
 }
 
 #navBar {
@@ -151,18 +148,6 @@
     height: auto;
     padding-top: 9%;
 }
-
-/* #lenders {
-  display: none;
-}
-
-#brokers {
-  display: none;
-}
-
-#about {
-  display: none;
-} */
   
 @media only screen and (min-width: 2560px)  {
     #navBar {
@@ -181,9 +166,6 @@
 }
 
 @media only screen and (max-width: 1345px)  {
-    /* #contactSales {
-      display: none;
-    } */
     #linkContainerOne {
       width: 70%;
     }
@@ -266,14 +248,3 @@
     justify-content: flex-start;
   }
 }
-
-
-
-
-
-
-
-/* .offHeader:has(img) {
-  
-} */
-

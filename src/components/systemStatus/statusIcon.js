@@ -7,7 +7,7 @@ const StatusIcon = () => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  const [time, setTime] = useState(0)
+  // const [time, setTime] = useState(0)
   
   useEffect(() => {
     const fetchData = async () => {
@@ -26,9 +26,6 @@ const StatusIcon = () => {
     }
     fetchData()
   }, [])
-
-  
-  
   if (loading) return <p className={styles.text}>Loading...</p>
   if (error) return <p className={styles.text}>Error: {error.message}</p>
   if (!data) return null

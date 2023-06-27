@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
     color: var(--primary-font-color);
 }
 
@@ -25,23 +24,19 @@
     align-items: flex-start;
     padding: .25% 0;
     gap: 1.8rem;
-    /* border: 2px solid red; */
 }
 
 .middleWrapper {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    /* border: 4px solid green; */
 }
 
 .title {
     color: var(--money-green);
     font-family: var(--font-regular);
-    /* font-weight: 600; */
     font-size: 3.8rem;
     margin: 0;
-    /* border: 2px solid purple; */
 }
 
 .subTitle {
@@ -49,7 +44,6 @@
     font-size: 1.2rem;
     margin: 0;
     padding-bottom: 1.8rem;
-    /* border: 2px solid black; */
 }
 
 .imgContainer {
@@ -58,17 +52,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* border: 2px solid green; */
 }
 
 .imgContainer picture {
-    /* border: solid 2px orange; */
     height: 100%;
     width: 100%;
 }
 
 .imgContainer picture img {
-    /* border: solid 2px blue; */
     height: auto;
     width: 100% !important;
     object-fit: cover;
@@ -94,7 +85,6 @@
     }
     .title {
         font-size: 3.5rem;
-        /* padding-bottom: .5rem; */
     }
     .subTitle {
         padding-bottom: 3rem;
@@ -102,22 +92,17 @@
 }
 
 @media only screen and (max-width: 1921px)  {
-
     .textContainer {
-        /* height: 70%;
-        padding: 1% 0; */
         height: 85%;
         width: 44%;
         padding: 0;
     }
     .imgContainer {
-        /* height: 70%; */
         height: 85%;
         width: 56%;
     }
     .title {
         font-size: 3em;
-        
     }
     .subTitle {
         font-size: 1.2rem;
@@ -127,15 +112,12 @@
 
 @media only screen and (max-width: 1600px) {
     .textContainer {
-        /* height: 70%;
-        padding: 1% 0; */
         height: 85%;
         width: 43%;
         padding: 0;
         gap: .5rem;
     }
     .imgContainer {
-        /* height: 70%; */
         height: 85%;
         width: 57%;
     }
@@ -144,7 +126,6 @@
     }
     .title {
         font-size: 2.8rem;
-        
     }
     .subTitle {
         font-size: 1rem;
@@ -159,9 +140,6 @@
     .bottomBreakPoint {
         display: none;
     }
-    /* .container {
-        border: 2px solid black;
-    } */
     .title {
         font-size: 1.8rem;
     }
@@ -173,7 +151,6 @@
 @media only screen and (max-width: 991px) {
     .container {
         height: 90dvh;
-        /* border: 2px solid black; */
     }
     .textContainer {
         width: 100%;
@@ -190,7 +167,6 @@
     }
     .middleWrapper {
         gap: .85rem;
-        
     }
     .title {
         font-size: 2.2rem;
@@ -204,6 +180,5 @@
 @media only screen and (max-width: 400px) {
     .container {
         height: 90vh;
-        /* border: 2px solid black; */
     }
 }

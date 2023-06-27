@@ -40,11 +40,8 @@ const LovingTaskSuiteLenderCard = () => {
             </div>
           ))}
         </div>
-        
+      </div>
     </div>
-    </div>
-
-        
 )
 }
 

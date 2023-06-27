@@ -52,7 +52,6 @@ const CreditAi = () => {
             </div>
           </div>
         </div>
-            
     )
 }
 

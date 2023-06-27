@@ -48,29 +48,19 @@
     font-size: 2.8em;
 }
 
-/* .checkmarkContainer {
-    display: flex;
-    width: 100%;
-} */
-
 .featureContainer {
     display: flex;
     flex-direction: column;
-    
     align-items: flex-start;
     width: 100%;
     gap: .75rem;
-    
-    
 }
 
 .feature {
     display: flex;
     gap: .55rem;
-    /* flex: 1; */
     align-items: center;
     justify-content: center;
-    
 }
 
 .feature p {
@@ -82,7 +72,6 @@
 }
 
 .checkmarkWrapper {
-    /* border: solid 2px red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,21 +85,6 @@
     align-items: center;
     width: 100%;
 }
-
-/* .checkWrapper {
-    display: flex;
-    gap: .3em;
-    flex: 1;
-    align-items: center;
-} */
-
-/* .checkWrapper p {
-    margin: 0;
-    font-family: var(--font-semi-bold);
-    color: var(--money-green);
-    font-size: 1em;
-    white-space: nowrap;
-} */
 
 .imgContainer {
     width: 55%;
@@ -156,9 +130,6 @@
     .title {
         font-size: 1.8rem;
     }
-    /* .checkWrapper p {
-        font-size: .6em;
-    } */
     .feature p {
         font-size: .9rem;
     }
@@ -207,7 +178,6 @@
         width: 100%;
         height: 60%;
         padding: 0 20%;
-        
     }
     .imgContainer {
         width: 100%;
@@ -215,7 +185,6 @@
         position: static;
         justify-content: center;
         padding: 0 20%;
-        
     }
     .formWrapper {
         height: 100%;
@@ -226,10 +195,6 @@
         font-size: 1.8rem;
         text-align: center;
     }
-    /* .checkmarkContainer {
-        padding-bottom: 1em;
-        justify-content: space-between;
-    } */
         .buttonWrapper {
         justify-content: center;
         padding-top: 0;
@@ -259,17 +224,7 @@
         object-fit: cover;
         object-position: 0% 0%;
     }
-    /* .checkmarkContainer {
-        gap: 3em;
-    } */
-    /* #leftCheck {
-        display: flex;
-        justify-content: flex-end;
-    } */
     .featureContainer {
-        /* padding-bottom: 1em;
-        justify-content: space-between; */
-        /* border: solid 2px red; */
         gap: .5rem;
     }
 }
@@ -300,17 +255,10 @@
         height: 35%;
         padding: 0 7%;
     }
-    /* .checkmarkContainer {
-        gap: 0;
-    } */
     #rightCheck {
         display: flex;
         justify-content: flex-end;
     }
-    /* #leftCheck {
-        display: flex;
-        justify-content: flex-start;
-    } */
     .title {
         font-size: 1.5rem;
     }
@@ -321,5 +269,3 @@
         height: 75svh;
     }
 }
-
-

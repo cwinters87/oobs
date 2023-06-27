@@ -25,7 +25,7 @@ const Hero = () => {
               </picture>
             </div>
           </div>
-          <section className={styles.subContainer} id={styles.subContainerOne}>
+          <section id={styles.subContainerOne}>
             <h1>The complete loan<br className={styles.breakPointTop}/> processing and<br className={styles.breakPointTop}/> management system</h1>
             <h2>TaskSuite brings together loan origination and <br className={styles.breakPoint}/>management into a single source of truth, enabling your <br className={styles.breakPoint}/>team to save time and make better loan decisions.</h2>
             <div id={styles.buttonContainer}>
@@ -35,7 +35,7 @@ const Hero = () => {
               <ScrollButton propScrollButtonStyle={scrollButtonStyle} route={'/loansuite'}/>
             </div>
           </section>
-          <section className={styles.subContainer} id={styles.subContainerTwo}>
+          <section id={styles.subContainerTwo}>
             
           </section>
         </main> 

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Layout from "../../layout/layout"
-import SpacingCard from '../../layout/spacingCard'
 import ComingSoonCard from '../../components/comingSoon'
 
 const PrivacyPage = () => {

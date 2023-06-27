@@ -1,12 +1,8 @@
 import * as React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import imageOne from '../../images/loanProducts/servicing/icon-productivity.png'
 import imageTwo from '../../images/loanProducts/servicing/icon-customer-experience.png'
 import imageThree from '../../images/loanProducts/servicing/icon-efficiency.png'
 import imageFour from '../../images/loanProducts/management/icon-flexible-features.png'
-
-
-
 import * as styles from './seamlessConnectivity.module.css'
 
 const SeamlessConnectivityCard = () => {
@@ -22,16 +18,6 @@ const SeamlessConnectivityCard = () => {
                         We understand the importance of efficiency in the lending process. Our online marketplace connects you to a vast network of <br className={styles.breakPoint}/>lenders, allowing you to automatically send deals to multiple lenders and receive multiple offers back in mere seconds. <br className={styles.breakPoint}/>This steamlined process ensures that you can quickly assess the best options and deliver a superior experience to your clients.
                     </p>
                 </div>
-
-                {/* <div className={styles.buttonContainer}>
-                    <button className={styles.button} >
-                        <StaticImage className={styles.arrowImage} id={styles.previousArrow} src="../../images/components/arrow.png" placeholder="" alt="arrow" />
-                    </button>
-                    <button className={styles.button} >
-                        <StaticImage className={styles.arrowImage} src="../../images/components/arrow.png" placeholder="" alt="arrow" />
-                    </button>
-                </div> */}
-
                 <div className={styles.cardContainer}>
                     <div className={styles.card}>
                         <div className={styles.image}><img src={imageOne} alt="volume icon"/></div>
@@ -54,9 +40,6 @@ const SeamlessConnectivityCard = () => {
                         <div className={styles.subTitle}><p>TaskSuite LoanConnect can be tailored to suite your specific needs, ensureing a seamless integration into your exisiting business processes.</p></div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     )

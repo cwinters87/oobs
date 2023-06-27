@@ -108,7 +108,6 @@
     width: 100% !important;
     object-fit: cover;
     object-position: 0% 0%;
-    
 }
 
 .textContainer {
@@ -185,38 +184,6 @@
 #cardOne div p {
     max-width: 40%;
 }
-
-
-
-/* hover effect */
-
-/* #cardOne:hover {
-
-}
-
-#cardTwo:hover {
-    flex: 4;
-}
-
-#cardFour:hover {
-    flex: 2;
-}
-
-#cardFour:hover + #cardFive {
-    flex: 1;
-}
-
-#cardThree:hover {
-    flex: 2;
-}
-
-#cardThree:hover ~ #cardFive {
-    flex: 1;
-}
-
-#cardFive:hover {
-    flex:2
-} */
 
 #cardContainerMobile {
     display: none;
@@ -306,55 +273,15 @@
     }
 }
 
-/* @media only screen and (max-width: 991px) {
-    .container {
-        height: 150%svh;
-    }
-
-    #cardContainer {
-        height: 100%;
-    }
-    .imgWrapper {
-        display: none;
-    }
-    #cardOne {
-        flex: 1;
-    }
-    
-    #cardTwo {
-        flex: 1;
-    }
-    
-    #cardThree {
-        flex: 2;
-        width: 50%;
-    }
-    
-    #cardFour {
-        flex: 2;
-        width: 50%;
-    }
-    
-    #cardFive {
-        flex: 3;
-        width: 100%;
-    }
-    
-} */
-
 @media only screen and (max-width: 991px) {
     .container {
         height: 120svh;
-        /* border: solid 2px black; */
     }
     #titleContainer {
         height: 15%;
-
-        /* border: solid 2px green; */
     }
     #linkContainer {
         height: 15%;
-        /* border: solid 2px blue; */
     }
     #cardContainer {
         display: none;
@@ -363,13 +290,11 @@
         height: 70%;
         display: flex;
         flex-direction: column;
-        /* border: solid 2px black; */
     }
     .cardContentMobile {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        /* border: solid 2px green; */
     }
     .cardContentMobile p, .cardContentMobile h3 {
         margin: 0;
@@ -377,7 +302,6 @@
     .firstRow {
         height: 50%;
         width: 100%;
-        /* border: solid 2px yellow; */
         padding: 5px 0 6px 0;
     }
     .secondRow {
@@ -386,7 +310,6 @@
         display: flex;
         padding: 6px 0;
         gap: 12px;
-        /* border: solid 2px purple; */
     }
     .thirdRow {
         height: 25%;
@@ -394,7 +317,6 @@
         display: flex;
         padding: 6px 0;
         gap: 12px;
-        /* border: solid 2px orange; */
     }
     .cardMobile {
         border: solid 2px var(--khaki-light);
@@ -409,28 +331,23 @@
         border: solid 2px var(--khaki);
         height: 100%;
         width: 100%;
-        /* border: solid 2px red; */
         position: relative;
     }
     #cardTwoMobile {
         height: 100%;
         width: 50%;
-        /* border: solid 2px blue; */
     }
     #cardThreeMobile {
         height: 100%;
         width: 50%;
-        /* border: solid 2px yellow; */
     }
     #cardFourMobile {
         height: 100%;
         width: 50%;
-        /* border: solid 2px purple; */
     }
     #cardFiveMobile {
         height: 100%;
         width: 50%;
-        /* border: solid 2px orange; */
     }
 
     /* adjust image size here */
@@ -440,28 +357,20 @@
         height: 50%;
         bottom: 0;
         right: 0;
-        /* border: solid 2px orange; */
     }
     .imgContainerMobile {
         width:100%;
         height: 100%;
-        /* display: flex;
-        align-items: flex-start;
-        justify-content: center; */
     }
     .imgContainerMobile picture {
         height: 100%;
         width: 100%;
-        /* display: flex;
-        align-items: flex-start;
-        justify-content: flex-start; */
     }
     .imgContainerMobile picture img {
         height: 100%;
         width: 100% !important;
         object-fit: cover;
         object-position: 0% 0%;
-        /* border: solid 2px black; */
     }
     .cardHeader {
         font-size: .55rem;
@@ -521,15 +430,12 @@
     }
     .cardHeader {
         font-size: .4rem;
-        /* color: red; */
     }
     .cardTitle {
         font-size: 1.1rem;
-        /* color: red; */
     }
     .cardSubTitle {
         font-size: .7rem;
-        /* color: blue; */
     }
 }
 
@@ -546,44 +452,17 @@
 }
 
 @media only screen and (max-width: 391px) {
-    .container {
-        /* height: 140svh; */
-    }
     #titleContainer {
         height: 250px;
-        /* gap: .5rem;
-        padding-bottom: 20px; */
     }
     .cardContentMobile {
-        /* gap: 6px; */
         height: 200px;
     }
     #linkContainer {
         height: 200px;
     }
-    .firstRow {
-        /* height: 38%; */
-    }
-    .secondRow {
-        /* height: 31%; */
-    }
-    .thirdRow {
-        /* height: 31%; */
-    }
-    #title {
-        /* font-size: 1.8rem; */
-    }
-    #subTitle {
-        /* font-size: .7rem;
-        padding-bottom: 10px; */
-    }
-    .cardHeader {
-        /* font-size: .4rem; */
-        /* color: red; */
-    }
     .cardTitle {
         font-size: 1.2rem;
-        /* color: red; */
     }
     .cardSubTitle {
         font-size: .75rem;

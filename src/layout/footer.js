@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
 
           <div id={styles.linkContainer}>
-            <div className={styles.linkColumns}  id={styles.linkColumnOne}>
+            <div className={styles.linkColumns}>
               <h5>Products</h5>
               <ul className={styles.list}>
                 <li><Link className={styles.link} to="/loansuite">Loan Suite</Link></li>
@@ -27,21 +27,21 @@ const Footer = () => {
                 <li><Link className={styles.link} to="/loanmanagement">Loan Management</Link></li>
               </ul>
             </div>
-            <div className={styles.linkColumns} id={styles.linkColumnTwo}>
+            <div className={styles.linkColumns}>
               <h5>Use Cases</h5>
               <ul className={styles.list}>
                 <li><Link className={styles.link} to="/lenders">For Lenders</Link></li>
                 <li><Link className={styles.link} to="/brokers">For Brokers</Link></li>
               </ul>
             </div>
-            <div className={styles.linkColumns} id={styles.linkColumnThree}>
+            <div className={styles.linkColumns}>
               <h5>Company</h5>
               <ul className={styles.list}>
                 <li><Link className={styles.link} to="/about">About</Link></li>
                 <li><Link className={styles.link} to="/careers">Careers</Link></li>
               </ul>
             </div>
-            <div className={styles.linkColumns} id={styles.linkColumnFour}>
+            <div className={styles.linkColumns}>
               <h5>Resources</h5>
               <ul className={styles.list}>
                 <li><Link className={styles.link} to="/faqs">FAQs</Link></li>
@@ -53,19 +53,18 @@ const Footer = () => {
         </section>
 
         <section id={styles.subContainerTwo}>
-          <div className={styles.bottomColumn} id={styles.bottomColumnOne}>
+          <div id={styles.bottomColumnOne}>
             <h5 id={styles.rights}>© 2023 gotech investments. All rights reserved</h5>
             <Link className={styles.link} id={styles.privacy} to="/legal/privacy">Privacy Policy</Link>
             <Link className={styles.link} id={styles.term} to="/legal/terms">Terms of Use</Link>
           </div>
           <div className={styles.mobileContainerOnly}>
-            <div className={styles.bottomColumn} id={styles.bottomColumnTwo}>
+            <div id={styles.bottomColumnTwo}>
               <StatusIcon/>
             </div>
-            <div className={styles.bottomColumn} id={styles.bottomColumnThree}>
-              <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.linkedin} src="../images/footer/linkedin.png" placeholder="" alt="linkedin logo" /></a>
-              <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.facebook}  src="../images/footer/facebook.png" placeholder="" alt="facebook logo" /></a>
-              {/* <a className={(styles.link, styles.iconLink)} href="https://www.youtube.com/channel/UCh5AqWUakEofWn7Y20dasNg" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} id={styles.youtube}  src="../images/footer/youtube.svg" placeholder="" alt="youtube logo" /></a> */}
+            <div id={styles.bottomColumnThree}>
+              <a className={(styles.link, styles.iconLink)} href="https://www.linkedin.com/company/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} src="../images/footer/linkedin.png" placeholder="" alt="linkedin logo" /></a>
+              <a className={(styles.link, styles.iconLink)} href="https://www.facebook.com/tasksuite" target="_blank" rel="noreferrer"><StaticImage className={styles.icons} src="../images/footer/facebook.png" placeholder="" alt="facebook logo" /></a>
             </div>
           </div>
           

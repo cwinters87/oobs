@@ -13,27 +13,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /* border: solid 2px red; */
 }
 
-/* .wrapper {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    background-color: var(--money-green);
-    color: var(--secondary-font-color);
-} */
-
 .titleContainer {
-    /* height: 35%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    /* border: solid 2px yellowgreen; */
 }
 
 .cardContainer {
@@ -43,7 +30,6 @@
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    /* border: solid 2px red; */
 }
 
 .title {
@@ -62,7 +48,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid 2px blue; */
 }
 
 .square {
@@ -76,15 +61,12 @@
     margin-bottom: 1.2rem;
 }
 
-
 .cardText {
-    /* height: 60%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
-    /* border: solid 1px red; */
 }
 
 .cardTitle {
@@ -95,7 +77,6 @@
     color: var(--money-green);
     text-align: center;
     padding-top: .75rem;
-    /* border: solid 2px black; */
 }
 
 .cardSubTitle {
@@ -104,7 +85,6 @@
     font-family: var(--font-regular);
     color: var(--primary-font-color);
     text-align: center;
-    /* border: solid 2px white; */
 }
 
 .buttonContainer button {
@@ -142,7 +122,6 @@
 @media only screen and (max-width: 991px) {
     .container {
         height: 75dvh;
-        /* border: solid 2px red; */
         justify-content: flex-start;
         padding-top: 2%;
     }
@@ -156,13 +135,11 @@
         height: auto;
         flex-direction: column;
         gap: 2rem;
-        /* border: solid 2px red; */
         justify-content: space-around;
     }
     .card {
         height: auto;
         width: 100%;
-        /* border: solid 2px yellow; */
     }
     .square {
         height: 40px;
@@ -178,13 +155,11 @@
     .cardSubTitle {
         font-size: .8rem;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
     .container {
         height: 95dvh;
-
     }
     .titleContainer {
         padding-top: 7%;
@@ -196,6 +171,5 @@
 @media only screen and (max-width: 400px) {
     .container {
         height: 100vh;
-
     }
 }

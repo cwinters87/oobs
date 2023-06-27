@@ -176,7 +176,6 @@
     .cardTitle {
         font-size: 1.5rem;
     }
-    
     .cardSubTitle {
         font-size: .8rem;
     }
@@ -342,8 +341,7 @@
     }
     #imgContainer {
         height: 20%;
-    }   
-    
+    }
 }
 
 @media only screen and (max-width: 391px) {

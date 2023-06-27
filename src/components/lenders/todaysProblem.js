@@ -11,7 +11,6 @@ const TodaysProblemCard = () => {
                     <h2 className={styles.title}>
                         Lenders don't have the tools to meet the demands of modern loan <br className={styles.breakPoint}/> management, but TaskSuite is here to change that.
                     </h2>
-                    
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.item}>
@@ -27,10 +26,8 @@ const TodaysProblemCard = () => {
                         <div className={styles.text}>of lenders could reduce <br className={styles.bottomBreakPoint}/> cost and increase profits <br className={styles.bottomBreakPoint}/> with TaskSuite</div>
                     </div>
                 </div>
-                
             </div>
         </div>
-            
     )
 }
 

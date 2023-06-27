@@ -9,7 +9,6 @@ const AnimatedArrow = ({route}) => {
     if (typeof route === 'string') {
         buttonRoute = route
       }
-
     
     return (
         <Link className={styles.icon} to={buttonRoute}>

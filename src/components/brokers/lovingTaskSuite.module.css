@@ -164,7 +164,6 @@
     }
     .card {
         display: flex;
-        /* flex: 0; */
         height: auto;
         width: 325px;
     }

@@ -56,7 +56,6 @@ const Origination = () => {
             </div>
           </div>
         </div>
-            
     )
 }
 

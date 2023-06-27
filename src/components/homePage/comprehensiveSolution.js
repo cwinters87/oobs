@@ -1,11 +1,9 @@
 import * as React from 'react'
-// import { StaticImage } from "gatsby-plugin-image"
 import backgroundImgFull from '../../../static/full.png';
 import backgroundImgFit from '../../../static/fit.png';
 import backgroundImgUnified from '../../../static/unified.png'
 import ArrowLink from '../buttons/arrowLink';
 import * as styles from './comprehensiveSolution.module.css'
-
 
 const ComprehensiveSolutionCard = () => {
     
@@ -34,7 +32,7 @@ const ComprehensiveSolutionCard = () => {
             <ArrowLink route={'/loansuite'}/>
           </div>
         </div>
-        </div>
+    </div>
     )
 }
 
