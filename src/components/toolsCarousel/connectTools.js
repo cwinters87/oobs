@@ -8,7 +8,6 @@ import UsioImg from '../../images/toolCarousel/usio.png'
 import PlaidImg from '../../images/toolCarousel/plaid.png'
 import TransUnionImg from '../../images/toolCarousel/transunion.png'
 import EquifaxImg from '../../images/toolCarousel/equifax.png'
-import SalesforceImg from '../../images/toolCarousel/salesforce.png'
 
 import * as styles from './connectTools.module.css'
 
