@@ -74,8 +74,6 @@ const PrivacyPolicy = () => {
 
             <h2>12. Designated Data Protection Officer or Contact</h2>
 
-            <p>If applicable, provide the contact details of your designated Data Protection Officer or the person responsible for handling privacy-related inquiries.</p>
-
             <p>If you have any questions about this Privacy Policy, please contact us at info@tasksuite.com.</p>
 
             </div>
