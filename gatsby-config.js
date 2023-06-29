@@ -14,30 +14,28 @@ module.exports = {
   plugins: [
     {
       resolve: "gatsby-plugin-google-tagmanager",
-        options: {
+      options: {
+        //production gtm-tag below
+        id: "GTM-WXTCT9W",
 
-          //production gtm-tag below
-          id: "GTM-WXTCT9W", 
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
 
-          // Include GTM in development.
-          //
-          // Defaults to false meaning GTM will only be loaded in production.
-          includeInDevelopment: false,
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
 
-          // datalayer to be set before GTM is loaded
-          // should be an object or a function that is executed in the browser
-          //
-          // Defaults to null
-          defaultDataLayer: { platform: "gatsby" },
-
-          
-          // Defaults to gatsby-route-change
-          // routeChangeEventName: "gatsby-route-change",
-          // Defaults to false
-          enableWebVitalsTracking: true,
-          // Defaults to https://www.googletagmanager.com
-          // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
-        },
+        // Defaults to gatsby-route-change
+        // routeChangeEventName: "gatsby-route-change",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+      },
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
@@ -50,22 +48,22 @@ module.exports = {
         // background_color: '#1D1B1B',
         // theme_color: '#a2466c',
         // display: 'standalone',
-        icon: 'src/images/favicon/favicon2.svg',
+        icon: "src/images/favicon/favicon2.svg",
       },
     },
-    
+
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
           quality: 100,
-        }
-      }
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     // Plug in tracking ID for google analytics below...
-    
+
     // {
     //   resolve: `gatsby-plugin-google-fonts`,
     //   options: {
@@ -98,6 +96,6 @@ module.exports = {
     //   },
     // },
     // Favicon change below
-    
   ],
+  trailingSlash: "never",
 };
