@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
 
             <p>Inform users of their rights under the GDPR (for EU users) and the California Consumer Privacy Act (CCPA, for California residents). These rights may include the right to access, rectify, or delete their personal data, the right to data portability, the right to object to or restrict processing, and the right to withdraw consent.</p>
 
-            <h2>12. Designated Data Protection Officer or Contact</h2>
+            <h2>12. Contact</h2>
 
             <p>If you have any questions about this Privacy Policy, please contact us at info@tasksuite.com.</p>
 
