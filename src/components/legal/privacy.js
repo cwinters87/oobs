@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     
   return (
         <div className={styles.sectionWrapper}>
-            <div className={styles.PrivacyContainer}>
+            <main className={styles.PrivacyContainer}>
             <h1>TaskSuite Privacy Policy</h1>
             <p>Last updated: 06/29/2023</p>
 
@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
 
             <p>If you have any questions about this Privacy Policy, please contact us at info@tasksuite.com.</p>
 
-            </div>
+            </main>
         </div>
             
     )
