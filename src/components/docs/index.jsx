@@ -23,7 +23,7 @@ const Docs = () => {
         show-header={false}
         info-description-headings-in-navbar={true}
         heading-text="TaskSuite Documentation"
-        regular-font="Gibson Light" // Change Text to match website Matterlight
+        regular-font="MatterLight"
         font-size="largest"
         header-color="#004535"
         text-color="#004535"
