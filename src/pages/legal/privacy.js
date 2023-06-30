@@ -1,11 +1,11 @@
 import * as React from 'react'
 import Layout from "../../layout/layout"
-import ComingSoonCard from '../../components/comingSoon'
+import PrivacyPolicy from '../../components/legal/privacy'
 
 const PrivacyPage = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
+      <PrivacyPolicy/>
     </Layout>
   )
 }
