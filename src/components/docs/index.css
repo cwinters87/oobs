@@ -1,5 +1,6 @@
 .rapid-wrapper {
-    margin-top: 72px;
+    padding: 0 0 0 2%;
+    background-color: var(--khaki-light);
 }
 
 .doc-info {
@@ -194,4 +195,10 @@ input.cbx-darkmode:checked+.slider:before {
 
 .u-link {
     cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    .rapid-wrapper {
+        padding: 0;
+    }
 }

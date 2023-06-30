@@ -5,7 +5,6 @@ import {
   faExclamationCircle,
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../layout/footer";
 
 let Rapidoc;
 if (typeof window !== 'undefined') {
@@ -22,7 +21,7 @@ const Docs = () => {
         spec-url={`https://crm.tasksuite.com/web/content/19777?access_token=974cd285-7a0c-4467-bd2f-7eb0dbd3849a`}
         render-style="read"
         style={{
-          height: "calc(100vh - 72px)",
+          height: "100vh",
           width: "100%",
         }}
         fill-request-fields-with-example={true}
@@ -94,12 +93,6 @@ const Docs = () => {
               Only to be used for testing. No real transactions are processed.
             </span>
           </p>
-        </div>
-        <div
-          slot="footer"
-          className={`tasksuite-footer tasksuite-footer-light`}
-        >
-          <Footer />
         </div>
       </rapi-doc>
     </div>
