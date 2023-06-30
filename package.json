@@ -17,7 +17,6 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@loadable/component": "^5.15.3",
     "babel-plugin-lodash": "^3.3.4",
     "bootstrap": "^5.2.2",
     "gatsby": "^5.9.0",
