@@ -1,5 +1,4 @@
 import React from "react";
-// import "rapidoc";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,11 +12,9 @@ if (typeof window !== 'undefined') {
   Rapidoc = require('rapidoc');
 }
 
-
 const Docs = () => {
 
   if (typeof Rapidoc !== 'undefined') {
-
   
   return (
     <div className="rapid-wrapper">
