@@ -8,10 +8,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas'
 import DemoButton from '../components/buttons/demoButtonModal'
 import * as styles from "./navbar.module.css"
 import { StaticImage } from "gatsby-plugin-image"
-
 import hamburger from '../images/navbar/hamburger.png'
 
-const NavigationBar = () => {
+const NavigationBar = ({navBarStyle, LinkContainerStyle}) => {
 
   const [showDropDown, setShowDropDown] = useState(false);
   const handleCloseDropDown = () => setShowDropDown(false);
@@ -31,7 +30,7 @@ const NavigationBar = () => {
 
   return (
     <div className={styles.sectionWrapper}>
-        <Navbar expand='lg' id={styles.navBar} >
+        <Navbar expand='lg' className={styles.navBar} style={navBarStyle}>
 
           <div id={styles.logoWrapper}>
             <Link id={styles.linkImgContainer} to="/"><div id={styles.imgContainer}><StaticImage id={styles.image} src="../images/navbar/nav-tasksuite-logo.png" placeholder="blurred" alt="tasksuite logo" /></div></Link>
@@ -59,7 +58,7 @@ const NavigationBar = () => {
                 </Offcanvas.Header>
                 <Offcanvas.Body id={styles.offCanvasBody}>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <div id={styles.linkContainerOne}>
+                  <div id={styles.linkContainerOne} style={LinkContainerStyle}>
 
                     <NavDropdown
                       show={showDropDown}
