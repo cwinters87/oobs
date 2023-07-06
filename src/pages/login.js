@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ComingSoonCard from '../components/comingSoon'
+import LoginPageCard from '../components/users/login/loginPageCard'
 
 const LoginPage = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
+      <LoginPageCard/>
     </Layout>
   )
 }
