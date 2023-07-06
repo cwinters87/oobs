@@ -38,11 +38,11 @@
     justify-content: center;
 }
 
-.border {
+/* .border {
     height: 1rem;
     width: 520px;
     border-top: solid 3px green;
-}
+} */
 
 .animatedText {
     margin: 0;
@@ -61,6 +61,8 @@
     content: 'increased volume.';
     color: green;
     animation: words 20s infinite;
+    text-decoration: underline 3px;
+    text-underline-offset: 25px;
 }
 
 .animatedText span::after {
