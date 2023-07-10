@@ -13,7 +13,7 @@ const theme = createTheme({
             boxShadow: "0 20px 30px -10px #26394d",
             filter: "brightness(110%)",
             transform: "translateY(-0.12rem)",
-            transition: "transform .25s",
+            transition: "transform .5s",
           },
         },
       },
