@@ -78,7 +78,9 @@ const Container = styled.button`
 `;
 
 ArrowButton.propTypes = {
+  onClick: PropTypes.func,
   label: PropTypes.string,
+  className: PropTypes.string,
 };
 
 ArrowButton.defaultProps = {
