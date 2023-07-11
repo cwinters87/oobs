@@ -1,45 +1,55 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import { navigate } from "gatsby";
+import { AuthContext } from "../context/AuthContext";
 
 const withAuthentication = (Component) => {
+
+  const loadingStyle = {
+    padding: "10% 7%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    fontSize: "2rem"
+  };
+  
   return (props) => {
-    const [isLoading, setIsLoading] = useState(true);
+    const { isLoggedIn, logIn, logOut } = useContext(AuthContext);
 
     useEffect(() => {
       const verifyToken = async () => {
         const token = sessionStorage.getItem('token');
         
         if (!token) {
-          // If no token is found, redirect to login
+          logOut();
           navigate("/login");
           return;
         }
         
         try {
-          const response = await fetch('http://localhost:3000/api/users/verify', {
+          const response = await fetch(process.env.API_URL, {
             headers: {
               Authorization: `Bearer ${token}`
             }
           });
 
           if (!response.ok) {
-            // If the token verification fails, log the user out
-            sessionStorage.removeItem('token');
+            logOut();
             navigate("/login");
+          } else {
+            logIn();
           }
         } catch (error) {
           console.log(error);
-        } finally {
-          setIsLoading(false);
         }
       }
 
       verifyToken();
-    }, []);
+    }, [logIn, logOut]);
 
-    if (isLoading) {
+    if (!isLoggedIn) {
       // You can render a loading screen here if you want
-      return <div>Loading...</div>;
+      return <div style={loadingStyle}>Loading...</div>;
     }
 
     return <Component {...props} />;

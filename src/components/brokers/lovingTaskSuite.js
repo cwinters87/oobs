@@ -21,10 +21,9 @@ const LovingTaskSuiteCard = () => {
             <div
               key={index}
               className={styles.card}
-              id={index === 0 ? styles.firstCard : index === data.length - 1 ? styles.lastCard : ''}
             >
               <div className={styles.icon}>
-                  <StaticImage className={styles.iconImg} src="../../images/homePage/quote.png" placeholder="" alt="quote" />
+                  <StaticImage src="../../images/homePage/quote.png" placeholder="" alt="quote" />
               </div>
               <h4  className={styles.company}>{item.company}</h4>
               <div className={styles.quoteBox}>

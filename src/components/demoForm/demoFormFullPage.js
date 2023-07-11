@@ -16,16 +16,16 @@ const DemoFormFullPageCard = () => {
                         <h2 className={styles.title}>Get a TaskSuite demo</h2>
                         <div className={styles.featureContainer}>
                             <div className={styles.feature}>
-                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
-                                <p className={styles.featureTitle}>Simpler & Faster Workflows</p>
+                                <div className={styles.checkmarkWrapper}><StaticImage src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p>Simpler & Faster Workflows</p>
                             </div>
                             <div className={styles.feature}>
-                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
-                                <p className={styles.featureTitle}>More efficient & trackable teams</p>
+                                <div className={styles.checkmarkWrapper}><StaticImage src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p>More efficient & trackable teams</p>
                             </div>
                             <div className={styles.feature}>
-                                <div className={styles.checkmarkWrapper}><StaticImage className={styles.check} src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
-                                <p className={styles.featureTitle}>Customizable & adaptable solution</p>
+                                <div className={styles.checkmarkWrapper}><StaticImage src="../../images/components/check.png" placeholder="" alt="checkmark" /></div>
+                                <p>Customizable & adaptable solution</p>
                             </div>
                         </div>
                         <DemoForm />

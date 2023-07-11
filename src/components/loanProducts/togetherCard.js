@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby'
-import * as styles from './togetherCard.module.css'
 import ScrollButton from '../buttons/scrollButton';
 import OrginationIcon from '../../images/components/image-products-icon-origination.png'
 import CreditIcon from '../../images/components/image-products-icon-creditai.png'
 import ServiceIcon from '../../images/components/image-products-icon-servicing.png'
 import ManagementIcon from '../../images/components/image-products-icon-management.png'
+import * as styles from './togetherCard.module.css'
 
 const TogetherCard = ({pageName}) => {
 
@@ -20,7 +20,7 @@ const TogetherCard = ({pageName}) => {
     
     <div className={styles.sectionWrapper}>
         <div className={styles.container} id='start'>
-            <div className={styles.subContainer} id={styles.textContainer}>
+            <div id={styles.textContainer}>
                 
                 <div id={styles.title}>
                     <h2>Stronger, together.</h2>
@@ -30,9 +30,9 @@ const TogetherCard = ({pageName}) => {
                 </div>
             </div>
             <div id={styles.cardContainer}>
-                <div className={styles.subContainer} id={styles.cardWrapper}>
+                <div id={styles.cardWrapper}>
                     
-                    <Link className={styles.card}  id={styles.active} to='/loanorigination'>
+                    <Link className={styles.card} to='/loanorigination'>
                         <div className={styles.cardContent}>
                             <div className={styles.iconContainer}>
                                 <img className={styles.icon} src={OrginationIcon} alt='Origination Icon'/>

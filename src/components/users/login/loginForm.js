@@ -1,17 +1,23 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext } from 'react'
+import { AuthContext } from "../../../utils/context/AuthContext"  // Import AuthContext
+import { Link } from 'gatsby'
 import { navigate } from "gatsby"
 import * as styles from './loginForm.module.css'
+
+const apiLogin = process.env.API_LOGIN;
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const { logIn } = useContext(AuthContext);  // Use AuthContext
+
   const handleSubmit = async event => {
     event.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:3000/api/users/login', {
+      const response = await fetch(apiLogin, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -25,7 +31,7 @@ const LoginForm = () => {
         const errorData = await response.json();
         console.log('Error data:', errorData);
         throw new Error(`${errorData.message}`);
-    }
+      }
   
       if (response.ok) {
         console.log('Login successful!');
@@ -34,6 +40,7 @@ const LoginForm = () => {
         sessionStorage.setItem('token', token);
         console.log('Token:', token);
         setError(''); // Clear any previous error
+        logIn();  // Update authentication state
         navigate("/dashboard")
       } else {
         // Set error message based on status code
@@ -64,39 +71,11 @@ const LoginForm = () => {
         {error && <p className={styles.error}>{error}</p>}
         <input type='submit' value='Login'></input>
         <div className={styles.links}>
-            <a href='#'>Forgot Password?</a>
-            <a href='#'>Join TaskSuite</a>
+            <Link to='/login'>Forgot Password?</Link>
+            <Link to='/contact'>Join TaskSuite</Link>
         </div>
     </form>
   );
 };
 
 export default LoginForm;
-
-
-
-
-
-
-{/* <label>
-Email:
-<input 
-  type="email" 
-  value={email} 
-  onChange={e => setEmail(e.target.value)} 
-  required 
-  pattern="\S+@\S+\.\S+" // Simple regex for email validation
-/>
-</label>
-<label>
-Password:
-<input 
-  type="password" 
-  value={password} 
-  onChange={e => setPassword(e.target.value)} 
-  required 
-  minLength="8" // Require at least 8 characters
-/>
-</label>
-<button type="submit">Log in</button>
-{error && <p>{error}</p>} */}

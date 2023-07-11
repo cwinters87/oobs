@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import * as styles from './footer.module.css'
 import { StaticImage } from "gatsby-plugin-image"
 import StatusIcon from '../components/systemStatus/statusIcon'
+import * as styles from './footer.module.css'
 
 const Footer = () => {
   return (    

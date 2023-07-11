@@ -1,9 +1,9 @@
 import * as React from 'react'
 import CountUp from 'react-countup'
-import * as styles from './diverseTeam.module.css'
 import ImgOne from '../../images/aboutPage/image-about-team1.png'
 import ImgTwo from '../../images/aboutPage/image-about-team2.png'
 import ImgThree from '../../images/aboutPage/image-about-team3.png'
+import * as styles from './diverseTeam.module.css'
 
 const DiverseTeamCard = () => {
     

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Checkmark from '../../images/loanSuite/icon-check-features.png'
-import * as styles from './featuresCard.module.css'
 import DemoButton from '../buttons/demoButtonModal'
+import * as styles from './featuresCard.module.css'
 
 const FeaturesCard = () => {
     

@@ -32,7 +32,7 @@ const CompleteToolsetCard = () => {
     <>
     <div className={styles.sectionWrapper}>
         <div className={styles.container} id='start'>
-            <div className={styles.subContainer} id={styles.textContainer}>
+            <div id={styles.textContainer}>
                 <div id={styles.header}>
                     <p>Meet TaskSuite</p>
                 </div>
@@ -44,7 +44,7 @@ const CompleteToolsetCard = () => {
                 </div>
             </div>
             <div id={styles.cardContainer}>
-                <div className={styles.subContainer} id={styles.cardWrapper}>
+                <div id={styles.cardWrapper}>
                     <Link className={styles.card}  id={styles.active} to='/loanorigination'>
                         <div className={styles.cardContent}>
                             <h3 className={styles.cardTitle}>Loan<br/>Origination</h3>
@@ -79,7 +79,7 @@ const CompleteToolsetCard = () => {
                     </Link>
                 </div>
             </div>
-            <div className={styles.subContainer} id={styles.imgContainer}>
+            <div id={styles.imgContainer}>
                 <div id={styles.imgWrapper}>
                     <picture>
                         <source media="(max-width: 991px)" srcSet={ImageMobile} />

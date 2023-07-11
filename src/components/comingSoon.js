@@ -1,6 +1,6 @@
 import * as React from 'react'
-import * as styles from './comingSoon.module.css'
 import { Link } from 'gatsby'
+import * as styles from './comingSoon.module.css'
 
 const ComingSoonCard = () => {
     

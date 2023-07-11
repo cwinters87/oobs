@@ -10,14 +10,14 @@ const CurrentProcessCard = () => {
   return (
     <div className={styles.sectionWrapper}>
     <div className={styles.container}>
-        <div className={styles.subContainer} id={styles.titleContainer}>
+        <div id={styles.titleContainer}>
             <h2 id={styles.title}>Are you happy with your current process?</h2>
             <p id={styles.subTitle}>We know you aren't becasue we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
         </div>
         {/* destop view render */}
-        <div className={styles.subContainer} id={styles.cardContainer}>
+        <div id={styles.cardContainer}>
             <div className={styles.flexWrapper} id={styles.flexWrapperTop}>
-                <div className={(styles.cardsTopRow, styles.card)} id={styles.cardOne}>
+                <div className={styles.card} id={styles.cardOne}>
                     <div className={styles.imgWrapper}>
                         <div className={styles.imgContainer}>
                             <picture>
@@ -36,7 +36,7 @@ const CurrentProcessCard = () => {
                         {/* <AnimatedArrow/> */}
                     </div>
                 </div>
-                <div className={(styles.cardsTopRow, styles.card)} id={styles.cardTwo}>
+                <div className={styles.card} id={styles.cardTwo}>
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Fast</h3>
@@ -48,7 +48,7 @@ const CurrentProcessCard = () => {
                 </div>
             </div>
             <div className={styles.flexWrapper} id={styles.flexWrapperBottom}>
-                <div className={(styles.cardsBottomRow, styles.card)} id={styles.cardThree}>
+                <div className={styles.card} id={styles.cardThree}>
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Trackable</h3>
@@ -58,7 +58,7 @@ const CurrentProcessCard = () => {
                         {/* <AnimatedArrow/> */}
                     </div>
                 </div>
-                <div className={(styles.cardsBottomRow, styles.card)} id={styles.cardFour}>
+                <div className={styles.card} id={styles.cardFour}>
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Efficient</h3>
@@ -68,7 +68,7 @@ const CurrentProcessCard = () => {
                         {/* <AnimatedArrow/> */}
                     </div>
                 </div>
-                <div className={(styles.cardsBottomRow, styles.card)} id={styles.cardFive}>
+                <div className={styles.card} id={styles.cardFive}>
                     <div className={styles.textContainer}>
                         <p><span className={styles.cardHeader}>WITH TASKSUITE</span></p>
                         <h3 className={styles.cardTitle}>Customizable</h3>
@@ -82,7 +82,7 @@ const CurrentProcessCard = () => {
         </div>
 
         {/* mobile view render */}
-        <div className={styles.subContainer} id={styles.cardContainerMobile}>
+        <div id={styles.cardContainerMobile}>
             <div className={styles.firstRow}>
                 <div className={styles.cardMobile} id={styles.cardOneMobile}>
                             <div className={styles.cardContentMobile}>
@@ -150,7 +150,7 @@ const CurrentProcessCard = () => {
             </div>
         </div>
 
-        <div className={styles.subContainer} id={styles.linkContainer}>
+        <div id={styles.linkContainer}>
             <ArrowLink text={'For Lenders'} route={'/lenders'}/>
             <ArrowLink text={'For Brokers'} route={'/brokers'}/>
         </div>

@@ -1,8 +1,8 @@
 import * as React from 'react'
 import ArrowLink from '../buttons/arrowLink'
-import * as styles from './exclusively.module.css'
 import Logo from '../../images/homePage/logo-robot.png'
 import Image from '../../images/homePage/exclusive.png'
+import * as styles from './exclusively.module.css'
 
 
 const ExclusivelyCard = () => {

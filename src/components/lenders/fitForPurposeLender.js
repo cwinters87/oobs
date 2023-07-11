@@ -1,9 +1,9 @@
 import * as React from 'react'
 import CountUp from 'react-countup'
-import * as styles from './fitForPurposeLender.module.css'
 import imageOne from '../../images/loanProducts/servicing/icon-data-management.png'
 import imageTwo from '../../images/loanConnect/icon-2.png'
 import imageThree from '../../images/loanSuite/benefit-icon-3.png'
+import * as styles from './fitForPurposeLender.module.css'
 
 const FitForPurposeLenderCard = () => {
     

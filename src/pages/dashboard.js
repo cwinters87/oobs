@@ -1,5 +1,5 @@
 import React from "react"
-import withAuthentication from "../hocs/withAuthentication"
+import withAuthentication from "../utils/hocs/withAuthentication"
 import { Seo } from "../components/seo";
 import Layout from "../layout/layout";
 import DashboardMenu from "../components/dashboard/menu";

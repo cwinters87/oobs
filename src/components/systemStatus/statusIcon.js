@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import * as styles from './statusIcon.module.css'
 import { Link } from 'gatsby'
+import * as styles from './statusIcon.module.css'
 
 
 const StatusIcon = () => {
@@ -14,7 +14,7 @@ const StatusIcon = () => {
       setLoading(true)
       try {
         // const devEnv = 'http://localhost:3000/data'
-        const prodEnv = 'https://tasksuitebackend.herokuapp.com/data'
+        const prodEnv = process.env.API_STATUS
         const response = await fetch(prodEnv)
         const json = await response.json()
         setData(json)
