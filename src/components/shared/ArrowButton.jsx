@@ -24,6 +24,8 @@ const Container = styled.button`
   border: none;
   background-color: #fff;
   p {
+    font-family: var(--font-bold);
+    font-size: 16px;
     margin: 0px;
     transition: all 0.5s ease;
     border-bottom: 2px solid white;

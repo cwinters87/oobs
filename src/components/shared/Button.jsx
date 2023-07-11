@@ -77,6 +77,8 @@ const ButtonWrapper = styled(LoadingButton)`
   text-transform: none;
   p {
     margin: 0;
+    font-family: var(--font-light);
+    font-size: 16px;
   }
 `
 
