@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Image from "../../../images/loanSuite/products-servicing1.png";
-import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png";
-import * as styles from "./hero.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Image from "../../../images/loanSuite/products-servicing1.png"
+import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png"
+import * as styles from "./hero.module.css"
 
 const ServicingHero = () => {
   return (
@@ -33,7 +33,7 @@ const ServicingHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             variant="outlined"
           >
@@ -53,7 +53,7 @@ const ServicingHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ServicingHero;
+export default ServicingHero

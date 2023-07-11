@@ -1,10 +1,10 @@
-import * as React from "react";
-import backgroundImgFull from "../../../static/full.png";
-import backgroundImgFit from "../../../static/fit.png";
-import backgroundImgUnified from "../../../static/unified.png";
-import * as styles from "./comprehensiveSolution.module.css";
-import { ArrowButton } from "../shared/ArrowButton";
-import { navigate } from "gatsby";
+import * as React from "react"
+import backgroundImgFull from "../../../static/full.png"
+import backgroundImgFit from "../../../static/fit.png"
+import backgroundImgUnified from "../../../static/unified.png"
+import * as styles from "./comprehensiveSolution.module.css"
+import { ArrowButton } from "../shared/ArrowButton"
+import { navigate } from "gatsby"
 
 const ComprehensiveSolutionCard = () => {
   return (
@@ -53,14 +53,14 @@ const ComprehensiveSolutionCard = () => {
         <div className={styles.subContainer} id={styles.linkContainer}>
           <ArrowButton
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             label="Discover the Solution"
           />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ComprehensiveSolutionCard;
+export default ComprehensiveSolutionCard

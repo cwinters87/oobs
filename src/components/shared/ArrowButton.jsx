@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "@emotion/styled";
-import PropTypes from "prop-types";
+import React from "react"
+import styled from "@emotion/styled"
+import PropTypes from "prop-types"
 
 export const ArrowButton = ({ label, className, onClick }) => {
   return (
@@ -12,14 +12,14 @@ export const ArrowButton = ({ label, className, onClick }) => {
         <span />
       </div>
     </Container>
-  );
-};
+  )
+}
 
 const Container = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   border: none;
   background-color: #fff;
@@ -39,8 +39,8 @@ const Container = styled.button`
     cursor: pointer;
     span {
       display: block;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       border-bottom: 2px solid grey;
       border-right: 2px solid grey;
       transform: rotate(-45deg);
@@ -75,14 +75,14 @@ const Container = styled.button`
       transform: rotate(-45deg) translate(40px, 40px);
     }
   }
-`;
+`
 
 ArrowButton.propTypes = {
   onClick: PropTypes.func,
   label: PropTypes.string,
   className: PropTypes.string,
-};
+}
 
 ArrowButton.defaultProps = {
   label: "",
-};
+}

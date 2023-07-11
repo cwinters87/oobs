@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "gatsby";
-import * as styles from "./togetherCard.module.css";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
-import OrginationIcon from "../../images/components/image-products-icon-origination.png";
-import CreditIcon from "../../images/components/image-products-icon-creditai.png";
-import ServiceIcon from "../../images/components/image-products-icon-servicing.png";
-import ManagementIcon from "../../images/components/image-products-icon-management.png";
+import React from "react"
+import { Link } from "gatsby"
+import * as styles from "./togetherCard.module.css"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
+import OrginationIcon from "../../images/components/image-products-icon-origination.png"
+import CreditIcon from "../../images/components/image-products-icon-creditai.png"
+import ServiceIcon from "../../images/components/image-products-icon-servicing.png"
+import ManagementIcon from "../../images/components/image-products-icon-management.png"
 
 const TogetherCard = ({ pageName }) => {
   return (
@@ -104,7 +104,7 @@ const TogetherCard = ({ pageName }) => {
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             variant="outlined"
           >
@@ -113,7 +113,7 @@ const TogetherCard = ({ pageName }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TogetherCard;
+export default TogetherCard

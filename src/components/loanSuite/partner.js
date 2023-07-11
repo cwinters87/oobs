@@ -1,9 +1,9 @@
-import * as React from "react";
-import LenderImg from "../../images/loanSuite/lender.png";
-import BrokerImg from "../../images/loanSuite/broker.png";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
-import * as styles from "./partner.module.css";
+import * as React from "react"
+import LenderImg from "../../images/loanSuite/lender.png"
+import BrokerImg from "../../images/loanSuite/broker.png"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
+import * as styles from "./partner.module.css"
 
 const PartnerCard = () => {
   return (
@@ -29,7 +29,7 @@ const PartnerCard = () => {
             <div className={styles.buttonContainer}>
               <Button
                 onClick={() => {
-                  navigate("/lenders");
+                  navigate("/lenders")
                 }}
                 variant="outlined"
               >
@@ -49,7 +49,7 @@ const PartnerCard = () => {
             <div className={styles.buttonContainer}>
               <Button
                 onClick={() => {
-                  navigate("/brokers");
+                  navigate("/brokers")
                 }}
                 variant="outlined"
               >
@@ -60,7 +60,7 @@ const PartnerCard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PartnerCard;
+export default PartnerCard

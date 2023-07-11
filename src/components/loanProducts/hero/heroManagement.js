@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Image from "../../../images/loanSuite/products-management1.png";
-import ImageMobile from "../../../images/loanSuite/products-management-mobile.png";
-import * as styles from "./hero.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Image from "../../../images/loanSuite/products-management1.png"
+import ImageMobile from "../../../images/loanSuite/products-management-mobile.png"
+import * as styles from "./hero.module.css"
 
 const ManagementHero = () => {
   return (
@@ -30,7 +30,7 @@ const ManagementHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             variant="outlined"
           >
@@ -50,7 +50,7 @@ const ManagementHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ManagementHero;
+export default ManagementHero

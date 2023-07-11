@@ -1,11 +1,11 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Icon from "../../../images/components/icon-products-creditai.png";
-import Checkmark from "../../../images/components/icon-products-check-creditai.png";
-import Image from "../../../images/loanSuite/products-creditai1.png";
-import ImageMobile from "../../../images/loanSuite/products-creditai-mobile.png";
-import * as styles from "./productCard.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Icon from "../../../images/components/icon-products-creditai.png"
+import Checkmark from "../../../images/components/icon-products-check-creditai.png"
+import Image from "../../../images/loanSuite/products-creditai1.png"
+import ImageMobile from "../../../images/loanSuite/products-creditai-mobile.png"
+import * as styles from "./productCard.module.css"
 
 const CreditAi = () => {
   return (
@@ -64,7 +64,7 @@ const CreditAi = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loancreditai");
+              navigate("/loancreditai")
             }}
             variant="outlined"
           >
@@ -84,7 +84,7 @@ const CreditAi = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CreditAi;
+export default CreditAi

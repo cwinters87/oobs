@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
-import * as styles from "./productCardReverse.module.css";
+import * as React from "react"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
+import * as styles from "./productCardReverse.module.css"
 
 const DynamicProductCardReverse = ({
   headerTitle,
@@ -27,7 +27,7 @@ const DynamicProductCardReverse = ({
           </div>
           <Button
             onClick={() => {
-              navigate("/contact");
+              navigate("/contact")
             }}
           >
             <p>Get started</p>
@@ -44,7 +44,7 @@ const DynamicProductCardReverse = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DynamicProductCardReverse;
+export default DynamicProductCardReverse

@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Image from "../../../images/loanSuite/products-origination1.png";
-import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png";
-import * as styles from "./hero.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Image from "../../../images/loanSuite/products-origination1.png"
+import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png"
+import * as styles from "./hero.module.css"
 
 const OriginationHero = () => {
   // const buttonStyle = {
@@ -34,7 +34,7 @@ const OriginationHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             variant="outlined"
           >
@@ -54,7 +54,7 @@ const OriginationHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OriginationHero;
+export default OriginationHero

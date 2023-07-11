@@ -1,9 +1,9 @@
-import * as React from "react";
-import Image from "../../images/loanSuite/products-origination1.png";
-import ImageMobile from "../../images/loanSuite/products-origination-mobile.png";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
-import * as styles from "./careers.module.css";
+import * as React from "react"
+import Image from "../../images/loanSuite/products-origination1.png"
+import ImageMobile from "../../images/loanSuite/products-origination-mobile.png"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
+import * as styles from "./careers.module.css"
 
 const CareersCard = () => {
   return (
@@ -31,7 +31,7 @@ const CareersCard = () => {
             </div>
             <Button
               onClick={() => {
-                navigate("/careers");
+                navigate("/careers")
               }}
               variant="outlined"
             >
@@ -54,7 +54,7 @@ const CareersCard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CareersCard;
+export default CareersCard

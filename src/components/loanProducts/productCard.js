@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
-import * as styles from "./productCard.module.css";
+import * as React from "react"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
+import * as styles from "./productCard.module.css"
 
 const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
   return (
@@ -22,7 +22,7 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
           </div>
           <Button
             onClick={() => {
-              navigate("/contact");
+              navigate("/contact")
             }}
           >
             <p>Get started</p>
@@ -39,7 +39,7 @@ const DynamicProductCard = ({ headerTitle, cardTitle, cardSubTitle, Img }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DynamicProductCard;
+export default DynamicProductCard

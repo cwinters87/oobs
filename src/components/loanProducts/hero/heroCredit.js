@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Image from "../../../images/loanSuite/products-creditai1.png";
-import ImageMobile from "../../../images/loanSuite/products-creditai-mobile.png";
-import * as styles from "./hero.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Image from "../../../images/loanSuite/products-creditai1.png"
+import ImageMobile from "../../../images/loanSuite/products-creditai-mobile.png"
+import * as styles from "./hero.module.css"
 
 const CreditHero = () => {
   return (
@@ -30,7 +30,7 @@ const CreditHero = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loansuite");
+              navigate("/loansuite")
             }}
             variant="outlined"
           >
@@ -50,7 +50,7 @@ const CreditHero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CreditHero;
+export default CreditHero

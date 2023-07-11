@@ -1,10 +1,10 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import Image from "../../images/demo/demo.png";
-import ImageMobile from "../../images/demo/demo-mobile.png";
-import * as styles from "./demoFormCard.module.css";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
+import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
+import Image from "../../images/demo/demo.png"
+import ImageMobile from "../../images/demo/demo-mobile.png"
+import * as styles from "./demoFormCard.module.css"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
 
 const DemoFormCard = () => {
   return (
@@ -58,7 +58,7 @@ const DemoFormCard = () => {
               <div className={styles.buttonWrapper}>
                 <Button
                   onClick={() => {
-                    navigate("/contact");
+                    navigate("/contact")
                   }}
                 >
                   <p>Request a demo</p>
@@ -82,7 +82,7 @@ const DemoFormCard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DemoFormCard;
+export default DemoFormCard

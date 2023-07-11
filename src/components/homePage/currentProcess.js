@@ -1,10 +1,10 @@
-import * as React from "react";
-import { ArrowButton } from "../shared";
-import { navigate } from "gatsby";
+import * as React from "react"
+import { ArrowButton } from "../shared"
+import { navigate } from "gatsby"
 // import AnimatedArrow from '../buttons/animatedArrow';
-import Image from "../../images/homePage/simple.png";
-import ImageMobile from "../../images/homePage/simple-mobile.png";
-import * as styles from "./currentProcess.module.css";
+import Image from "../../images/homePage/simple.png"
+import ImageMobile from "../../images/homePage/simple-mobile.png"
+import * as styles from "./currentProcess.module.css"
 
 const CurrentProcessCard = () => {
   return (
@@ -232,20 +232,20 @@ const CurrentProcessCard = () => {
         <div className={styles.subContainer} id={styles.linkContainer}>
           <ArrowButton
             onClick={() => {
-              navigate("/lenders");
+              navigate("/lenders")
             }}
             label="For Lenders"
           />
           <ArrowButton
             onClick={() => {
-              navigate("/lenders");
+              navigate("/lenders")
             }}
             label="For Brokers"
           />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CurrentProcessCard;
+export default CurrentProcessCard

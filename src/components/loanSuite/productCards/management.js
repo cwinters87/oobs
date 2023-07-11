@@ -1,11 +1,11 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Icon from "../../../images/components/icon-products-management.png";
-import Checkmark from "../../../images/components/icon-products-check-management.png";
-import Image from "../../../images/loanSuite/products-management1.png";
-import ImageMobile from "../../../images/loanSuite/products-management-mobile.png";
-import * as styles from "./productCard.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Icon from "../../../images/components/icon-products-management.png"
+import Checkmark from "../../../images/components/icon-products-check-management.png"
+import Image from "../../../images/loanSuite/products-management1.png"
+import ImageMobile from "../../../images/loanSuite/products-management-mobile.png"
+import * as styles from "./productCard.module.css"
 
 const Management = () => {
   return (
@@ -63,7 +63,7 @@ const Management = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loanmanagement");
+              navigate("/loanmanagement")
             }}
             variant="outlined"
           >
@@ -83,7 +83,7 @@ const Management = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Management;
+export default Management

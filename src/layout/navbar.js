@@ -1,31 +1,31 @@
-import React, { useState } from "react";
-import { Link, navigate } from "gatsby";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import CloseButton from "react-bootstrap/CloseButton";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import * as styles from "./navbar.module.css";
-import { StaticImage } from "gatsby-plugin-image";
-import hamburger from "../images/navbar/hamburger.png";
-import { Button } from "../components/shared";
+import React, { useState } from "react"
+import { Link, navigate } from "gatsby"
+import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar"
+import NavDropdown from "react-bootstrap/NavDropdown"
+import CloseButton from "react-bootstrap/CloseButton"
+import Offcanvas from "react-bootstrap/Offcanvas"
+import * as styles from "./navbar.module.css"
+import { StaticImage } from "gatsby-plugin-image"
+import hamburger from "../images/navbar/hamburger.png"
+import { Button } from "../components/shared"
 
 const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
-  const [showDropDown, setShowDropDown] = useState(false);
-  const handleCloseDropDown = () => setShowDropDown(false);
-  const handleShowDropDown = () => setShowDropDown(true);
+  const [showDropDown, setShowDropDown] = useState(false)
+  const handleCloseDropDown = () => setShowDropDown(false)
+  const handleShowDropDown = () => setShowDropDown(true)
 
   const dropDownToggle = () => {
     if (showDropDown === false) {
-      handleShowDropDown();
+      handleShowDropDown()
     } else {
-      handleCloseDropDown();
+      handleCloseDropDown()
     }
-  };
+  }
 
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   return (
     <div className={styles.sectionWrapper}>
@@ -59,7 +59,7 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
             onClick={handleClose}
             onKeyDown={(e) => {
               if (e.key === "Enter" || e.key === " ") {
-                handleClose();
+                handleClose()
               }
             }}
           >
@@ -133,7 +133,7 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
                     </Link>
                     <Button
                       onClick={() => {
-                        navigate("/contact");
+                        navigate("/contact")
                       }}
                     >
                       <p>Request a demo</p>
@@ -149,7 +149,7 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
         </div>
       </Navbar>
     </div>
-  );
-};
+  )
+}
 
-export default NavigationBar;
+export default NavigationBar

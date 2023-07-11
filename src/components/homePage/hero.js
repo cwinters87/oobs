@@ -1,9 +1,9 @@
-import * as React from "react";
-import Image from "../../images/homePage/Hero.png";
-import ImageMobile from "../../images/homePage/Hero-Mobile.png";
-import * as styles from "./hero.module.css";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
+import * as React from "react"
+import Image from "../../images/homePage/Hero.png"
+import ImageMobile from "../../images/homePage/Hero-Mobile.png"
+import * as styles from "./hero.module.css"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
 
 const Hero = () => {
   return (
@@ -38,14 +38,14 @@ const Hero = () => {
           <div id={styles.buttonContainer}>
             <Button
               onClick={() => {
-                navigate("/contact");
+                navigate("/contact")
               }}
             >
               <p>Get started</p>
             </Button>
             <Button
               onClick={() => {
-                navigate("/loansuite");
+                navigate("/loansuite")
               }}
               variant="outlined"
             >
@@ -56,7 +56,7 @@ const Hero = () => {
         <section id={styles.subContainerTwo}></section>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

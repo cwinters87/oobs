@@ -1,8 +1,8 @@
-import * as React from "react";
-import Checkmark from "../../images/loanSuite/icon-check-features.png";
-import * as styles from "./featuresCard.module.css";
-import { Button } from "../shared";
-import { navigate } from "gatsby";
+import * as React from "react"
+import Checkmark from "../../images/loanSuite/icon-check-features.png"
+import * as styles from "./featuresCard.module.css"
+import { Button } from "../shared"
+import { navigate } from "gatsby"
 
 const FeaturesCard = () => {
   return (
@@ -64,7 +64,7 @@ const FeaturesCard = () => {
           <div className={styles.buttonContainer}>
             <Button
               onClick={() => {
-                navigate("/contact");
+                navigate("/contact")
               }}
             >
               <p>Request a demo</p>
@@ -73,7 +73,7 @@ const FeaturesCard = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FeaturesCard;
+export default FeaturesCard

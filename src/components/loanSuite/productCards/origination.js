@@ -1,11 +1,11 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Icon from "../../../images/components/icon-products-origination.png";
-import Checkmark from "../../../images/components/icon-products-check-origination.png";
-import Image from "../../../images/loanSuite/products-origination1.png";
-import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png";
-import * as styles from "./productCard.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Icon from "../../../images/components/icon-products-origination.png"
+import Checkmark from "../../../images/components/icon-products-check-origination.png"
+import Image from "../../../images/loanSuite/products-origination1.png"
+import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png"
+import * as styles from "./productCard.module.css"
 
 const Origination = () => {
   return (
@@ -66,7 +66,7 @@ const Origination = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loanorigination");
+              navigate("/loanorigination")
             }}
             variant="outlined"
           >
@@ -86,7 +86,7 @@ const Origination = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Origination;
+export default Origination

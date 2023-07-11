@@ -1,11 +1,11 @@
-import * as React from "react";
-import { Button } from "../../shared";
-import { navigate } from "gatsby";
-import Icon from "../../../images/components/icon-products-servicing.png";
-import Checkmark from "../../../images/components/icon-products-check-servicing.png";
-import Image from "../../../images/loanSuite/products-servicing1.png";
-import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png";
-import * as styles from "./productCard.module.css";
+import * as React from "react"
+import { Button } from "../../shared"
+import { navigate } from "gatsby"
+import Icon from "../../../images/components/icon-products-servicing.png"
+import Checkmark from "../../../images/components/icon-products-check-servicing.png"
+import Image from "../../../images/loanSuite/products-servicing1.png"
+import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png"
+import * as styles from "./productCard.module.css"
 
 const Servicing = () => {
   return (
@@ -65,7 +65,7 @@ const Servicing = () => {
           </div>
           <Button
             onClick={() => {
-              navigate("/loanservicing");
+              navigate("/loanservicing")
             }}
             variant="outlined"
           >
@@ -85,7 +85,7 @@ const Servicing = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Servicing;
+export default Servicing

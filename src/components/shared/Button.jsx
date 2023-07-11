@@ -1,8 +1,8 @@
-import React from "react";
-import LoadingButton from "@mui/lab/LoadingButton";
-import styled from "@emotion/styled";
-import PropTypes from "prop-types";
-import { createTheme, ThemeProvider } from "@mui/material";
+import React from "react"
+import LoadingButton from "@mui/lab/LoadingButton"
+import styled from "@emotion/styled"
+import PropTypes from "prop-types"
+import { createTheme, ThemeProvider } from "@mui/material"
 
 const theme = createTheme({
   components: {
@@ -45,7 +45,7 @@ const theme = createTheme({
       ],
     },
   },
-});
+})
 
 export const Button = ({
   onClick,
@@ -67,8 +67,8 @@ export const Button = ({
         {children}
       </ButtonWrapper>
     </ThemeProvider>
-  );
-};
+  )
+}
 
 const ButtonWrapper = styled(LoadingButton)`
   display: flex;
@@ -78,18 +78,18 @@ const ButtonWrapper = styled(LoadingButton)`
   p {
     margin: 0;
   }
-`;
+`
 
 Button.propTypes = {
   loading: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.any,
   onClick: PropTypes.func,
-};
+}
 
 Button.defaultProps = {
   loading: false,
   disabled: false,
   className: "",
   variant: "contained",
-};
+}

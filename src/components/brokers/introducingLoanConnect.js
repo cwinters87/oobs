@@ -1,9 +1,9 @@
-import React from "react";
-import { navigate } from "gatsby";
-import Image from "../../images/homePage/completeToolset.png";
-import ImageMobile from "../../images/homePage/completeToolsetMobile.png";
-import * as styles from "./introducingLoanConnect.module.css";
-import { Button } from "../shared/Button";
+import React from "react"
+import { navigate } from "gatsby"
+import Image from "../../images/homePage/completeToolset.png"
+import ImageMobile from "../../images/homePage/completeToolsetMobile.png"
+import * as styles from "./introducingLoanConnect.module.css"
+import { Button } from "../shared/Button"
 
 const IntroducingLoanConnect = () => {
   return (
@@ -31,7 +31,7 @@ const IntroducingLoanConnect = () => {
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => {
-              navigate("/contact");
+              navigate("/contact")
             }}
           >
             <p>Get a Product Demo</p>
@@ -52,7 +52,7 @@ const IntroducingLoanConnect = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default IntroducingLoanConnect;
+export default IntroducingLoanConnect
