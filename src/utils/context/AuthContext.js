@@ -3,7 +3,13 @@ import React, { createContext, useState } from "react";
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-    const [isLoggedIn, setIsLoggedIn] = useState(!!sessionStorage.getItem('token'));
+  let initialIsLoggedIn = false;
+
+  if (typeof window !== 'undefined') {
+    initialIsLoggedIn = !!sessionStorage.getItem('token');
+  }
+
+  const [isLoggedIn, setIsLoggedIn] = useState(initialIsLoggedIn);
 
   const logIn = () => {
     setIsLoggedIn(true);
@@ -11,7 +17,9 @@ const AuthProvider = ({ children }) => {
 
   const logOut = () => {
     setIsLoggedIn(false);
-    sessionStorage.removeItem('token');
+    if (typeof window !== 'undefined') {
+      sessionStorage.removeItem('token');
+    }
   };
 
   return (

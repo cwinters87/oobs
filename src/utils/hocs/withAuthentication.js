@@ -17,34 +17,36 @@ const withAuthentication = (Component) => {
     const { isLoggedIn, logIn, logOut } = useContext(AuthContext);
 
     useEffect(() => {
-      const verifyToken = async () => {
-        const token = sessionStorage.getItem('token');
+      if (typeof window !== 'undefined') {
+        const verifyToken = async () => {
+          const token = sessionStorage.getItem('token');
         
-        if (!token) {
-          logOut();
-          navigate("/login");
-          return;
-        }
-        
-        try {
-          const response = await fetch(process.env.API_URL, {
-            headers: {
-              Authorization: `Bearer ${token}`
-            }
-          });
-
-          if (!response.ok) {
+          if (!token) {
             logOut();
             navigate("/login");
-          } else {
-            logIn();
+            return;
           }
-        } catch (error) {
-          console.log(error);
-        }
-      }
+        
+          try {
+            const response = await fetch(process.env.API_URL, {
+              headers: {
+                Authorization: `Bearer ${token}`
+              }
+            });
 
-      verifyToken();
+            if (!response.ok) {
+              logOut();
+              navigate("/login");
+            } else {
+              logIn();
+            }
+          } catch (error) {
+            console.log(error);
+          }
+        }
+
+        verifyToken();
+      }
     }, [logIn, logOut]);
 
     if (!isLoggedIn) {

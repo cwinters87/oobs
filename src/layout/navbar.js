@@ -13,13 +13,16 @@ import * as styles from "./navbar.module.css"
 
 const NavigationBar = ({navBarStyle, LinkContainerStyle}) => {
 
-  const { logOut } = useContext(AuthContext);
-  const handleLogout = () => {
-    logOut();
-    window.location.reload();
-  }
+  const authContext = useContext(AuthContext);
+  const logOut = authContext?.logOut;
+  const isLoggedIn = authContext?.isLoggedIn;
 
-  const { isLoggedIn } = useContext(AuthContext);
+  const handleLogout = () => {
+    if (typeof logOut === 'function') {
+      logOut();
+      typeof window !== 'undefined' && window.location.reload();
+    }
+  }
 
   const [showDropDown, setShowDropDown] = useState(false);
   const handleCloseDropDown = () => setShowDropDown(false);
@@ -105,7 +108,7 @@ const NavigationBar = ({navBarStyle, LinkContainerStyle}) => {
                     <DemoButton id={styles.demoButton}></DemoButton>
                     {isLoggedIn ? (
                       <Link onClick={handleLogout} to="/" id={styles.login}>Logout</Link>
-                    ) : (
+                      ) : (
                       <Link to="/login" id={styles.login}>Login</Link>
                     )}
                   </div>
