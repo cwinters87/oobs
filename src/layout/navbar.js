@@ -122,5 +122,4 @@ const NavigationBar = ({navBarStyle, LinkContainerStyle}) => {
   );
 }
 
-
 export default NavigationBar
