@@ -7,14 +7,12 @@ const StatusIcon = () => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  // const [time, setTime] = useState(0)
   
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
       try {
-        // const devEnv = 'http://localhost:3000/data'
-        const prodEnv = process.env.API_STATUS
+        const prodEnv = process.env.GATSBY_API_STATUS
         const response = await fetch(prodEnv)
         const json = await response.json()
         setData(json)
