@@ -7,10 +7,14 @@ const DashboardMenu = () => {
   return (
         <div className={styles.sectionWrapper}>
             <div className={styles.container}>
-                <Link to='/development/docs'>Documentation</Link>
+                <h2 className={styles.title}>Docs</h2>
+                <ul className={styles.list}>
+                    <li className={styles.listItem}>
+                        <Link className={styles.link} to='/development/docs'>TaskSuite API Reference</Link>
+                    </li>
+                </ul>
             </div>
         </div>
-            
     )
 }
 
