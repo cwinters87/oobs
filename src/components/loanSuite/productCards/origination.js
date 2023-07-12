@@ -5,6 +5,7 @@ import Icon from "../../../images/components/icon-products-origination.png"
 import Checkmark from "../../../images/components/icon-products-check-origination.png"
 import Image from "../../../images/loanSuite/products-origination1.png"
 import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png"
+import imgPop from "../../../images/loanSuite/pop-origination.png"
 import * as styles from "./productCard.module.css"
 
 const Origination = () => {
@@ -74,6 +75,7 @@ const Origination = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
+          <img className={styles.popOrigination} src={imgPop}/>
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />
