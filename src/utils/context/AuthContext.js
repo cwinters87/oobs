@@ -11,8 +11,9 @@ const AuthProvider = ({ children }) => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(initialIsLoggedIn);
 
-  const logIn = () => {
+  const logIn = (callback) => {
     setIsLoggedIn(true);
+    callback && callback(); // Run callback function after login
   };
 
   const logOut = () => {

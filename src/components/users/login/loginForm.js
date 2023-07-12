@@ -13,6 +13,16 @@ const LoginForm = () => {
 
   const { logIn } = useContext(AuthContext);  // Use AuthContext
 
+  const preloadRapidoc = () => {
+    if (document) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.href = "phttps://crm.tasksuite.com/web/content/19777?access_token=974cd285-7a0c-4467-bd2f-7eb0dbd3849a"; // Replace with the actual path to the rapidoc library.
+      link.as = "script";
+      document.head.appendChild(link);
+    }
+  }
+
   const handleSubmit = async event => {
     event.preventDefault();
   
@@ -40,8 +50,8 @@ const LoginForm = () => {
         sessionStorage.setItem('token', token);
         console.log('Token:', token);
         setError(''); // Clear any previous error
-        logIn();  // Update authentication state
-        navigate("/dashboard")
+        logIn(preloadRapidoc);  // Update authentication state
+        await navigate("/dashboard")
       } else {
         // Set error message based on status code
         if (response.status === 401) {
