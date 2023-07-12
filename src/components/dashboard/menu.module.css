@@ -22,12 +22,12 @@
 }
 
 .list {
-    padding: .5%;
-
+    padding-left: 2%;
 }
 
 .listItem {
     padding-top: 1rem;
+    list-style-type: circle;
 }
 
 .link {
@@ -38,9 +38,6 @@
 .link:hover {
     filter: brightness(110%);
 }
-
-
-
 
 @media only screen and (min-width: 2561px)  {
     .container {
