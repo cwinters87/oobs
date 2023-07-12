@@ -11,21 +11,21 @@ const CareersCard = () => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.formContainer}>
-            <div className={styles.header}>
+            <div>
               <p className={styles.headerTitle}>Careers</p>
             </div>
             <div className={styles.middleWrapper}>
               <h2 className={styles.title}>
                 Want to help build the future
-                <br className={styles.topBreakPoint} /> of the loan industry?
+                <br/> of the loan industry?
               </h2>
               <p className={styles.subTitle}>
                 We're always looking for talented people who{" "}
-                <br className={styles.bottomBreakPoint} />
+                <br/>
                 are aligned with our core values. If this sounds{" "}
-                <br className={styles.bottomBreakPoint} />
+                <br/>
                 like you, we'd love to hear from you, even if we{" "}
-                <br className={styles.bottomBreakPoint} />
+                <br/>
                 aren't actively hiring for your ideal role.
               </p>
             </div>
