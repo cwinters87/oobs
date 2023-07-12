@@ -12,7 +12,7 @@ const CurrentProcessCard = () => {
     <div className={styles.container}>
         <div id={styles.titleContainer}>
             <h2 id={styles.title}>Are you happy with your current process?</h2>
-            <p id={styles.subTitle}>We know you aren't becasue we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
+            <p id={styles.subTitle}>We know you aren't because we've been there too. TaskSuite was built for and by loan management veterans to be the platform that simply didn't exist.</p>
         </div>
         {/* destop view render */}
         <div id={styles.cardContainer}>
