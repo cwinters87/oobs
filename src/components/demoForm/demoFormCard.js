@@ -18,39 +18,36 @@ const DemoFormCard = () => {
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>
                     <StaticImage
-                      className={styles.check}
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
                     />
                   </div>
-                  <p className={styles.featureTitle}>
+                  <p>
                     Discover simpler & faster workflows
                   </p>
                 </div>
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>
                     <StaticImage
-                      className={styles.check}
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
                     />
                   </div>
-                  <p className={styles.featureTitle}>
+                  <p>
                     Experience revolutionary technology firsthand
                   </p>
                 </div>
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>
                     <StaticImage
-                      className={styles.check}
                       src="../../images/components/check.png"
                       placeholder=""
                       alt="checkmark"
                     />
                   </div>
-                  <p className={styles.featureTitle}>
+                  <p>
                     Discover customizable & adaptable solutions
                   </p>
                 </div>

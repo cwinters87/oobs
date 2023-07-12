@@ -72,6 +72,8 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
                 handleClose()
               }
             }}
+            role="button"
+            tabIndex={0}
           >
             <Navbar.Offcanvas
               onClick={(e) => e.stopPropagation()}
