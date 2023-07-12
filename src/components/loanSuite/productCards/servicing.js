@@ -5,6 +5,7 @@ import Icon from "../../../images/components/icon-products-servicing.png"
 import Checkmark from "../../../images/components/icon-products-check-servicing.png"
 import Image from "../../../images/loanSuite/products-servicing1.png"
 import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png"
+import imgPop from "../../../images/loanSuite/pop-servicing.png"
 import * as styles from "./productCard.module.css"
 
 const Servicing = () => {
@@ -73,6 +74,7 @@ const Servicing = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
+          <img className={styles.popOrigination} src={imgPop}/>
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />
