@@ -30,6 +30,7 @@ const CareersCard = () => {
               </p>
             </div>
             <Button
+              className={styles.button}
               onClick={() => {
                 navigate("/careers")
               }}

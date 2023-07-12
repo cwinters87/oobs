@@ -1,16 +1,28 @@
-import React, { useState } from "react"
-import { Link, navigate } from "gatsby"
+import React, { useState, useContext } from 'react';
+import { AuthContext } from '../utils/context/AuthContext';
+import { Link } from 'gatsby'
+import { navigate } from 'gatsby'
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import CloseButton from "react-bootstrap/CloseButton"
 import Offcanvas from "react-bootstrap/Offcanvas"
-import * as styles from "./navbar.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import hamburger from "../images/navbar/hamburger.png"
 import { Button } from "../components/shared"
+import * as styles from "./navbar.module.css"
 
 const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
+  const authContext = useContext(AuthContext);
+  const logOut = authContext?.logOut;
+  const isLoggedIn = authContext?.isLoggedIn;
+
+  const handleLogout = () => {
+    if (typeof logOut === 'function') {
+      logOut();
+      typeof window !== 'undefined' && window.location.reload();
+    }
+  }
   const [showDropDown, setShowDropDown] = useState(false)
   const handleCloseDropDown = () => setShowDropDown(false)
   const handleShowDropDown = () => setShowDropDown(true)
@@ -42,7 +54,6 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
             </div>
           </Link>
         </div>
-
         <div id={styles.linkWrapper}>
           <Navbar.Toggle
             id={styles.hamburger}
@@ -53,7 +64,6 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
               <img id={styles.icon} src={hamburger} alt="menu" />
             </span>
           </Navbar.Toggle>
-
           <div
             id="hanleclose"
             onClick={handleClose}
@@ -138,9 +148,11 @@ const NavigationBar = ({ navBarStyle, LinkContainerStyle }) => {
                     >
                       <p>Request a demo</p>
                     </Button>
-                    <Link to="/login" id={styles.login}>
-                      Login
-                    </Link>
+                    {isLoggedIn ? (
+                      <Link onClick={handleLogout} to="/" id={styles.login}>Logout</Link>
+                      ) : (
+                      <Link to="/login" id={styles.login}>Login</Link>
+                    )}
                   </div>
                 </Nav>
               </Offcanvas.Body>

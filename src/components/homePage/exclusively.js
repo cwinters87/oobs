@@ -1,9 +1,9 @@
 import * as React from "react"
 import { ArrowButton } from "../shared"
 import { navigate } from "gatsby"
-import * as styles from "./exclusively.module.css"
 import Logo from "../../images/homePage/logo-robot.png"
 import Image from "../../images/homePage/exclusive.png"
+import * as styles from "./exclusively.module.css"
 
 const ExclusivelyCard = () => {
   return (

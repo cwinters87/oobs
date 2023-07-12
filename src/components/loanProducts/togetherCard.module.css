@@ -135,6 +135,12 @@
     align-items: center;
 }
 
+.button {
+    color: var(--secondary-font-color);
+    background-color: var(--cobalt-blue);
+    border-color: var(--cobalt-blue);
+}
+
 .iconContainer {
     height: auto;
     width: auto;

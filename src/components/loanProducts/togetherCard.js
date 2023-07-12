@@ -103,6 +103,7 @@ const TogetherCard = ({ pageName }) => {
         </div>
         <div className={styles.buttonContainer}>
           <Button
+          className={styles.button}
             onClick={() => {
               navigate("/loansuite")
             }}
