@@ -12,7 +12,7 @@ const TogetherCard = ({ pageName }) => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container} id="start">
-        <div className={styles.subContainer} id={styles.textContainer}>
+        <div id={styles.textContainer}>
           <div id={styles.title}>
             <h2>Stronger, together.</h2>
           </div>
@@ -26,10 +26,9 @@ const TogetherCard = ({ pageName }) => {
           </div>
         </div>
         <div id={styles.cardContainer}>
-          <div className={styles.subContainer} id={styles.cardWrapper}>
+          <div id={styles.cardWrapper}>
             <Link
               className={styles.card}
-              id={styles.active}
               to="/loanorigination"
             >
               <div className={styles.cardContent}>

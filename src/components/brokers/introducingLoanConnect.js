@@ -9,7 +9,7 @@ const IntroducingLoanConnect = () => {
   return (
     <div className={styles.sectionWrapper}>
       <div className={styles.container}>
-        <div className={styles.subContainer} id={styles.textContainer}>
+        <div id={styles.textContainer}>
           <div id={styles.header}>
             <p>Introducing LoanConnect</p>
           </div>
@@ -37,7 +37,7 @@ const IntroducingLoanConnect = () => {
             <p>Get a Product Demo</p>
           </Button>
         </div>
-        <div className={styles.subContainer} id={styles.imgContainer}>
+        <div id={styles.imgContainer}>
           <div id={styles.imgWrapper}>
             <picture>
               <source media="(max-width: 991px)" srcSet={ImageMobile} />
