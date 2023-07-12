@@ -48,7 +48,6 @@ const LoginForm = () => {
         console.log(response);
         const { token } = await response.json();
         sessionStorage.setItem('token', token);
-        console.log('Token:', token);
         setError(''); // Clear any previous error
         logIn(preloadRapidoc);  // Update authentication state
         await navigate("/dashboard")
