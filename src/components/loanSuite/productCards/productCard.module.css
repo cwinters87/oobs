@@ -112,22 +112,6 @@
     position: relative;
 }
 
-.popOrigination {
-    position: absolute;
-    top: 65%;
-    left: -120px;
-    height: 100px;
-    width: auto;
-}
-
-.popCredit {
-    position: absolute;
-    bottom: -50px;
-    right: 20%;
-    height: 100px;
-    width: auto;
-}
-
 .imgContainer picture {
     height: 100%;
     width: 100%;
