@@ -54,7 +54,6 @@ module.exports = {
         icon: "src/images/favicon/favicon2.svg",
       },
     },
-
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -64,6 +63,7 @@ module.exports = {
         },
       },
     },
+    `@emotion/babel-plugin`,
     `gatsby-transformer-sharp`,
     // Plug in tracking ID for google analytics below...
 
