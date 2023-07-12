@@ -10,8 +10,7 @@ const WebsiteStatus = () => {
     const fetchData = async () => {
       setLoading(true)
       try {
-        // const devEnv = 'http://localhost:3000/data'
-        const prodEnv = 'https://tasksuitebackend.herokuapp.com/data'
+        const prodEnv = process.env.GATSBY_API_STATUS
         const response = await fetch(prodEnv)
         const json = await response.json()
         setData(json)

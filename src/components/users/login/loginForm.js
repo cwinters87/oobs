@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { navigate } from "gatsby"
 import * as styles from './loginForm.module.css'
 
-const apiLogin = process.env.API_LOGIN;
+const apiLogin = process.env.GATSBY_API_LOGIN;
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');

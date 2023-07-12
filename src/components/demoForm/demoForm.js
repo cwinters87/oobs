@@ -83,7 +83,7 @@ function DemoForm({closeForm}) {
             console.log(utmSource)
             console.log(utmMedium)
             console.log(utmCampaign)
-            fetch(process.env.API_CREATE_LEAD, {
+            fetch(process.env.GATSBY_API_CREATE_LEAD, {
               method: 'POST',
               headers:{
                 'Content-Type': 'application/json'
