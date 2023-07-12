@@ -3,7 +3,7 @@
   background: #ffff;
   display: flex;
   justify-content: center;
-  z-index: 1;
+  z-index: 11;
   position: fixed;
   top: 0;
 }
