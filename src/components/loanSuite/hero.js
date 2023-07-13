@@ -1,9 +1,16 @@
 import * as React from 'react'
-import Image from '../../images/loanSuite/hero.png'
+import { useMediaQuery } from 'react-responsive';
+import ScrollFadeInImage from '../effects/popOutImg'
+import imgPopOne from "../../images/loanSuite/pop-hero-1.png"
+import imgPopTwo from "../../images/loanSuite/pop-hero-2.png"
+import Image from '../../images/loanSuite/loansuite-hero.png'
+
 import ImageMobile from '../../images/loanSuite/hero-mobile-2.png'
 import * as styles from './hero.module.css'
 
 const LoanSuiteHero = () => {
+
+  const mobileMediaQuery = useMediaQuery({ query: '(min-width: 992px)' });
     
   return (
     <div className={styles.sectionWrapper}>
@@ -14,10 +21,27 @@ const LoanSuiteHero = () => {
           </section>
           <div className={styles.imgWrapper}>
             <div className={styles.imgContainer}>
+
               <picture>
+              { mobileMediaQuery && <ScrollFadeInImage className={styles.popOut} src={imgPopOne} alt="pop-out" style={{
+              position: "absolute",
+              top: "72%",
+              left: "-120px",
+              height: "100px",
+              width: "auto",
+              }}/>}
+              { mobileMediaQuery && <ScrollFadeInImage className={styles.popOut} src={imgPopTwo} alt="pop-out" style={{
+              position: "absolute",
+              top: "50%",
+              right: "-120px",
+              height: "100px",
+              width: "auto",
+              }}/>}
                 <source media="(max-width: 991px)" srcSet={ImageMobile} />
                 <source media="(min-width: 992px)" srcSet={Image} />
                 <img src={Image} alt="TaskSuite hero product" style={{width: "auto", height: "100%"}} />
+
+             
               </picture>
             </div>
           </div>

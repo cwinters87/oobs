@@ -28,6 +28,7 @@ const PartnerCard = () => {
             </p>
             <div className={styles.buttonContainer}>
               <Button
+                className={styles.button}
                 onClick={() => {
                   navigate("/lenders")
                 }}
@@ -48,6 +49,7 @@ const PartnerCard = () => {
             </p>
             <div className={styles.buttonContainer}>
               <Button
+                className={styles.button}
                 onClick={() => {
                   navigate("/brokers")
                 }}

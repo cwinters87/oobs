@@ -12,7 +12,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 0 14%;
+    padding: 0 12%;
 }
 
 #subContainerOne {
@@ -21,25 +21,25 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    height: 48%;
+    height: 45%;
     width: 100%;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 #subContainerOne h1 {
     margin: 0;
     padding-bottom: 1.2rem;
     font-family: var(--font-regular);
-    font-weight: 600;
-    color: var(--primary-font-color);
-    font-size: 4rem;
+    /* font-weight: 600; */
+    color: var(--money-green);
+    font-size: 4.2rem;
     text-align: center;
 }
 
 #subContainerOne h2 {
     margin: 0;
-    font-family: var(--font-light);
-    font-weight: 600;
+    font-family: var(--font-regular);
+    /* font-weight: 600; */
     font-size: 1.3rem;
     text-align: center;
 }
@@ -47,34 +47,36 @@
 /* adjust size of hero image */
 .imgWrapper {
     width: 100%;
-    height: 52%;
+    height: 55%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    align-items: flex-end;
+    justify-content: center; 
 }
 
 .imgContainer {
     width:100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 .imgContainer picture {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    position: relative;
 }
 
 .imgContainer picture img {
-    height: 100%;
-    width: 100% !important;
-    object-fit: cover;
-    object-position: 0% 0%;
+    /* height: auto; */
+    /* width: 100% !important; */
+    /* border: solid 3px orange; */
+    object-fit: contain;
+    object-position: 50% bottom;
+    bottom: 0;
 }
 
 @media only screen and (min-width: 2561px)  {
@@ -93,15 +95,15 @@
 
 @media only screen and (max-width: 1921px)  {
     #subContainerOne {
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
         gap: .5rem;
     }
     #subContainerOne h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         padding-bottom: .5rem;
     }
     #subContainerOne h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }   
 }
 
@@ -119,10 +121,10 @@
 
 @media only screen and (max-width: 1080px)  {
     #subContainerOne h1 {
-        font-size: 2.5rem;    
+        font-size: 3rem;    
     }
     #subContainerOne h2 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .breakPoint {
         display: none;
@@ -142,6 +144,7 @@
     }
     .imgWrapper {
         height: 60%;
+        align-items: center;
     }    
     .imgContainer {
         width:100%;
@@ -161,6 +164,7 @@
         height: 100% !important;
         width: auto;
         object-fit: fill;
+        object-position: 0% 0%;
     }
 }
 

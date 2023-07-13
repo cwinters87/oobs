@@ -9,10 +9,10 @@ const ScrollFadeInImage = ({ src, alt, style }) => {
     
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        // set timout at .5 seconds
+        // set timout at .4 seconds
         setTimeout(() => {
           setIsVisible(true);
-        }, 500);
+        }, 400);
       } else {
         setIsVisible(false);
       }

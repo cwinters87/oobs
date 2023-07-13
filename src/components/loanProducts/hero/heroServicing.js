@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Button } from "../../shared"
 import { navigate } from "gatsby"
+import ScrollFadeInImage from '../../effects/popOutImg'
+import imgPop from "../../../images/loanSuite/pop-servicing.png"
 import Image from "../../../images/loanSuite/products-servicing1.png"
 import ImageMobile from "../../../images/loanSuite/products-servicing-mobile.png"
 import * as styles from "./hero.module.css"
@@ -41,6 +43,13 @@ const ServicingHero = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
+        <ScrollFadeInImage src={imgPop} alt="pop-out" style={{
+            position: "absolute",
+            top: "70%",
+            left: "-120px",
+            height: "100px",
+            width: "auto",
+          }}/>
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />
