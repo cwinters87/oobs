@@ -30,11 +30,18 @@ const CareersCard = () => {
               </p>
             </div>
             <Button
+              style={{ 
+                width: "150px",
+                padding: "6px 12px",
+                color: "#ffffff",
+                borderColor: "#105ABC",
+                backgroundColor: "#105ABC",
+              }}
               className={styles.button}
               onClick={() => {
                 navigate("/careers")
               }}
-              variant="outlined"
+              variant="blue"
             >
               <p>View open roles</p>
             </Button>
