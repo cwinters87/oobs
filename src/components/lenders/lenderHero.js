@@ -10,7 +10,6 @@ return (
             <div className={styles.animatedContainer}>
                 <h1 className={styles.animatedText}><span></span></h1>
             </div>
-            <div className={styles.border}></div>
             <p className={styles.subTitle}>Maximize Your Lending Potential with Our Innovative Marketplace Platform</p>
         </div>
     </div>

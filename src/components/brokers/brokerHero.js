@@ -10,7 +10,6 @@ return (
             <div className={styles.animatedContainer}>
                 <h1 className={styles.animatedText}><span></span></h1>
             </div>
-            <div className={styles.border}></div>
             <p className={styles.subTitle}>Revolutionize Your Brokerage Business with TaskSuite's LoanConnect</p>
         </div>
     </div>

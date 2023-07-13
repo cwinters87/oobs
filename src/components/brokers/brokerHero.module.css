@@ -38,12 +38,6 @@
     justify-content: center;
 }
 
-/* .border {
-    height: 1rem;
-    width: 440px;
-    border-top: solid 3px green;
-} */
-
 .animatedText {
     margin: 0;
     font-size: 3.2rem;
@@ -140,10 +134,6 @@
     .animatedText span::after {
         height: 110%;
     }
-    .border {
-        height: .8rem;
-        border-top: solid 2px green;
-    }
     .animatedContainer {
         padding-bottom: .2rem;
     }
@@ -152,9 +142,6 @@
 @media only screen and (max-width: 991px) {
     .container {
         height: 42dvh;
-    }
-    .border {
-        width: 320px;
     }
     .title {
         font-size: 2rem;
@@ -176,9 +163,6 @@
     .container {
         padding-bottom: 0%;
         height: 40dvh;
-    }
-    .border {
-        width: 170px;
     }
     .title {
         font-size: 1.3rem;
@@ -203,9 +187,6 @@
     .container {
         padding-bottom: 0%;
         height: 40vh;
-    }
-    .border {
-        width: 160px;
     }
     .title {
         font-size: 1.1rem;
