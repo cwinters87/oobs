@@ -157,6 +157,10 @@
         padding-top: .5rem;
         padding-bottom: .2rem;
     }
+    .animatedText span::before {
+        text-decoration: underline 1px;
+        text-underline-offset: 7px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
