@@ -135,6 +135,9 @@
         font-size: 1rem;
         padding-bottom: 1rem;
     }
+    .topBreakPoint {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -163,9 +166,6 @@
         align-items: center;
         width: 100%;
         height: auto;
-    }
-    .topBreakPoint {
-        display: none;
     }
     .bottomBreakPoint {
         display: none;

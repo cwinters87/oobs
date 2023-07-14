@@ -32,7 +32,7 @@ const PartnerCard = () => {
                 onClick={() => {
                   navigate("/lenders")
                 }}
-                variant="outlined"
+                variant="blueSmall"
               >
                 <p>Read more</p>
               </Button>
@@ -53,7 +53,7 @@ const PartnerCard = () => {
                 onClick={() => {
                   navigate("/brokers")
                 }}
-                variant="outlined"
+                variant="blueSmall"
               >
                 <p>Read more</p>
               </Button>

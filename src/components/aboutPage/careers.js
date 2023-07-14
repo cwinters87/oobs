@@ -37,7 +37,6 @@ const CareersCard = () => {
                 borderColor: "#105ABC",
                 backgroundColor: "#105ABC",
               }}
-              className={styles.button}
               onClick={() => {
                 navigate("/careers")
               }}

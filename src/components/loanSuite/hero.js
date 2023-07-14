@@ -23,14 +23,14 @@ const LoanSuiteHero = () => {
             <div className={styles.imgContainer}>
 
               <picture>
-              { mobileMediaQuery && <ScrollFadeInImage className={styles.popOut} src={imgPopOne} alt="pop-out" style={{
+              { mobileMediaQuery && <ScrollFadeInImage src={imgPopOne} alt="pop-out" style={{
               position: "absolute",
               top: "72%",
               left: "-120px",
               height: "100px",
               width: "auto",
               }}/>}
-              { mobileMediaQuery && <ScrollFadeInImage className={styles.popOut} src={imgPopTwo} alt="pop-out" style={{
+              { mobileMediaQuery && <ScrollFadeInImage src={imgPopTwo} alt="pop-out" style={{
               position: "absolute",
               top: "50%",
               right: "-120px",

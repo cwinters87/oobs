@@ -31,10 +31,25 @@ const theme = createTheme({
             },
           },
         },
-                {
+        {
           props: { variant: "blue" },
           style: {
             width: "160px",
+            paddding: "6px 12px",
+            color: "var(--secondary-font-color)",
+            backgroundColor: "var(--cobalt-blue)",
+            borderColor: "var(--cobalt-blue)",
+            "&:hover": {
+              color: "var(--secondary-font-color)",
+              backgroundColor: "var(--cobalt-blue)",
+              borderColor: "var(--cobalt-blue)",
+            },
+          },
+        },
+        {
+          props: { variant: "blueSmall" },
+          style: {
+            width: "120px",
             paddding: "6px 12px",
             color: "var(--secondary-font-color)",
             backgroundColor: "var(--cobalt-blue)",
