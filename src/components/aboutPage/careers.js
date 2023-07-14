@@ -48,9 +48,10 @@ const CareersCard = () => {
           <div className={styles.imgContainer}>
             <div className={styles.imgWrapper}>
               <picture>
-                <source media="(max-width: 1400px)" srcSet={ImageMobile} />
-                <source media="(min-width: 1401px)" srcSet={Image} />
+                <source media="(max-width: 991px)" srcSet={ImageMobile} />
+                <source media="(min-width: 992px)" srcSet={Image} />
                 <img
+                  className={styles.img}
                   src={Image}
                   alt="TaskSuite product"
                   style={{ width: "auto", height: "100%" }}

@@ -7,7 +7,7 @@
   }
 
 .container {
-    height: 80dvh;
+    height: 80svh;
     width: 100%;
     padding: 0 7%;
     background-color: var(--money-green);
@@ -115,6 +115,12 @@
     }
 }
 
+@media only screen and (max-width: 1500px)  {
+    .container {
+        height: 100svh;
+    }
+}
+
 @media only screen and (max-width: 1080px) {
 
     #header p {
@@ -131,7 +137,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 65dvh;
+        height: 65svh;
         padding: 0;
         gap: 1.5rem;
     }

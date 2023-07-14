@@ -1,15 +1,19 @@
 import * as React from 'react'
 import { Seo } from "../components/seo"
 import Layout from '../layout/layout'
-import SpacingCard from '../layout/spacingCard'
 
 
 const CareersPage = () => {
   return (
     <Layout>
-        <main>
-        <SpacingCard margin={'55px'}/>
-        <SpacingCard margin={'55px'}/>
+        <main style={{
+          height: "100svh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          padding: "7%",
+          }}>
         <h4>Jobs Postings: <br/><br/>Please check back later for open roles</h4>
         <ul>
         </ul>

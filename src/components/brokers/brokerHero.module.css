@@ -6,7 +6,7 @@
   }
 
 .container {
-    height: 42dvh;
+    height: 42svh;
     width: 100%;
     padding: 10% 7%  7% 7%;
     display: flex;
@@ -113,13 +113,13 @@
 
 @media only screen and (max-width: 1921px) {
     .container {
-        height: 50dvh;
+        height: 50svh;
     }
 }
 
 @media only screen and (max-width: 1600px) {
     .container {
-        height: 52dvh;
+        height: 52svh;
         padding: 12% 7% 5% 7%;
     }
     .title {
@@ -141,7 +141,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 42dvh;
+        height: 42svh;
     }
     .title {
         font-size: 2rem;
@@ -166,7 +166,7 @@
 @media only screen and (max-width: 600px) {
     .container {
         padding-bottom: 0%;
-        height: 40dvh;
+        height: 40svh;
     }
     .title {
         font-size: 1.3rem;

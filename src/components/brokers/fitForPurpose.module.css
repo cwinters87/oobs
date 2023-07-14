@@ -6,7 +6,7 @@
   }
 
 .container {
-    height: 60dvh;
+    height: 60svh;
     width: 100%;
     padding: 0% 7%;
     display: flex;
@@ -93,13 +93,13 @@
         max-width: 2560px;
         padding: 26px 180px;
         padding-top: 5%;
-        height: 65dvh;
+        height: 65svh;
     }
 }
 
 @media only screen and (max-width: 1921px) {
     .container {
-        height: 68dvh;
+        height: 68svh;
         gap: 3rem;
     }
     .textContainer {
@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container {
-        height: 85dvh;
+        height: 85svh;
         gap: 2rem;
         padding-top: 8%;
     }
@@ -145,7 +145,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 50dvh;
+        height: 50svh;
         gap: 1rem;
     }
     .textContainer {
@@ -187,7 +187,7 @@
 
 @media only screen and (max-width: 600px) {
     .container {
-        height: 62dvh;
+        height: 62svh;
         margin-top: 1rem;
     }
     .title {

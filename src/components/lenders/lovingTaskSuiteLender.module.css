@@ -116,6 +116,44 @@
     }
 }
 
+@media only screen and (max-width: 1500px)  {
+    .container {
+        height: 60svh;
+        padding-top: 1%;
+        justify-content: flex-start;   
+    }
+    .toolsContainer {
+        gap: 2rem;
+    }   
+    .icon {
+        height: 30px;
+        width: 30px;
+    }
+    .company {
+        font-size: 1.2rem;
+    }
+    .quote {
+        font-size: .8rem;
+    }
+    .author {
+        font-size: 1rem;
+    }
+    .position {
+        font-size: .85rem;
+    }
+    .card {
+        flex: 1 1 0px;
+        width: 0;
+        border: solid 1px var(--khaki-light);
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: .5em; 
+    }
+}
+
 @media only screen and (max-width: 1080px) {
     .container {
         height: 72dvh;

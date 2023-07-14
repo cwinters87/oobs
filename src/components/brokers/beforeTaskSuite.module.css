@@ -7,7 +7,7 @@
   }
 
 .container {
-    height: 42dvh;
+    height: 42svh;
     width: 100%;
     padding: 5% 7%;
     display: flex;
@@ -76,7 +76,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container {
-        height: 45dvh;
+        height: 45svh;
     }
     .numberContainer {
         width: 100%;
@@ -94,7 +94,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 45dvh;
+        height: 45svh;
         justify-content: center;
     }
     .title {

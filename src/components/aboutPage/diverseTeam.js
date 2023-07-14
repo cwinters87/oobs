@@ -20,7 +20,7 @@ const DiverseTeamCard = () => {
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.item}>
-                        <div className={styles.count}><CountUp duration={1} delay={.5} end={23} enableScrollSpy/></div>
+                        <div className={styles.count}><CountUp duration={1} delay={.5} end={30} enableScrollSpy/>+</div>
                         <div className={styles.text}>employees</div>
                     </div>
                     <div className={styles.item}>

@@ -62,6 +62,21 @@ const theme = createTheme({
           },
         },
         {
+          props: { variant: "blueLarge" },
+          style: {
+            width: "180px",
+            paddding: "6px 12px",
+            color: "var(--secondary-font-color)",
+            backgroundColor: "var(--cobalt-blue)",
+            borderColor: "var(--cobalt-blue)",
+            "&:hover": {
+              color: "var(--secondary-font-color)",
+              backgroundColor: "var(--cobalt-blue)",
+              borderColor: "var(--cobalt-blue)",
+            },
+          },
+        },
+        {
           props: { variant: "contained" },
           style: {
             color: "#fff",

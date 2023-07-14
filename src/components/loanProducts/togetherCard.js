@@ -106,7 +106,7 @@ const TogetherCard = ({ pageName }) => {
             onClick={() => {
               navigate("/loansuite")
             }}
-            variant="outlined"
+            variant="blueLarge"
           >
             <p>Explore the Suite</p>
           </Button>
