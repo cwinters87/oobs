@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive'
 import { StaticImage } from "gatsby-plugin-image"
 import ScrollFadeInImage from '../effects/popOutImg'
 import Image from "../../images/demo/demo.png"
@@ -79,9 +79,8 @@ const DemoFormCard = () => {
               width: "auto",
               }}/>}
               <picture>
-
-                <source media="(max-width: 1400px)" srcSet={ImageMobile} />
-                <source media="(min-width: 1401px)" srcSet={Image} />
+                <source media="(max-width: 991px)" srcSet={ImageMobile} />
+                <source media="(min-width: 992px)" srcSet={Image} />
                 <img
                   className={styles.img}
                   src={Image}
