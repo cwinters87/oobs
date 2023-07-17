@@ -197,7 +197,6 @@ function NavBar() {
                   Loan Credit ai
                 </DropdownItem>
               </Dropdown>
-
               <MenuLink onClick={() => navigate("/lenders")}>
                 For Lenders
               </MenuLink>
@@ -206,12 +205,7 @@ function NavBar() {
               </MenuLink>
               <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
             </MenuGroup>
-
-            <MenuGroup>
-              <MenuLink onClick={() => navigate("/brokers")}>
-                Contact Sales
-              </MenuLink>
-              <Divider />
+            <MenuGroup>              
               <Button
                 onClick={() => {
                   navigate("/contact")
@@ -219,7 +213,12 @@ function NavBar() {
               >
                 <p>Request a demo</p>
               </Button>
-              <MenuLink onClick={() => navigate("/login")}>Login</MenuLink>
+              <Divider />
+              <MenuLink
+              onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
+            >
+              {isLoggedIn ? "Logout" : "Login"}
+            </MenuLink>
             </MenuGroup>
           </ToolBox>
         </Toolbar>
@@ -291,9 +290,6 @@ function NavBar() {
               onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
             >
               {isLoggedIn ? "Logout" : "Login"}
-            </MenuLink>
-            <MenuLink onClick={() => navigate("/brokers")}>
-              Contact Sales
             </MenuLink>
             <Button
               onClick={() => {
