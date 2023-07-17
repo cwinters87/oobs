@@ -6,7 +6,7 @@
   }
 
 .container {
-    height: 110dvh;
+    height: 110svh;
     width: 100%;
     padding: 0% 7%;
     display: flex;
@@ -114,7 +114,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container {
-        height: 140dvh;
+        height: 140svh;
     }
     .title {
         font-size: 2.8rem;
@@ -132,7 +132,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 75dvh;
+        height: 75svh;
     }
     .title {
         font-size: 2.2rem;

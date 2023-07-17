@@ -7,7 +7,7 @@
   }
 
 .container {
-    height: 50dvh;
+    height: 50svh;
     width: 100%;
     padding: 0 7%;
     display: flex;
@@ -121,7 +121,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 75dvh;
+        height: 75svh;
         justify-content: flex-start;
         padding-top: 2%;
     }
@@ -159,7 +159,7 @@
 
 @media only screen and (max-width: 600px) {
     .container {
-        height: 95dvh;
+        height: 95svh;
     }
     .titleContainer {
         padding-top: 7%;

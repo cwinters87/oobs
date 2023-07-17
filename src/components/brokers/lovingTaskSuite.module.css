@@ -118,7 +118,7 @@
 
 @media only screen and (max-width: 1080px) {
     .container {
-        height: 72dvh;
+        height: 72svh;
         gap: 2.5rem;
     }
     .mainTitle {
@@ -154,7 +154,7 @@
 
 @media only screen and (max-width: 991px)  {
     .container {
-        height: 110dvh;
+        height: 110svh;
         justify-content: flex-start;
         padding-top: 10%;
     }
@@ -174,7 +174,7 @@
 
 @media only screen and (max-width: 600px)  {
     .container {
-        height: 135dvh;
+        height: 135svh;
         gap: 1.5rem;
     }
     .mainTitle {

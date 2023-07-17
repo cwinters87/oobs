@@ -6,7 +6,7 @@
 }
 
 .container {
-    height: 40dvh;
+    height: 40svh;
     width: 100%;
     padding: 0% 7% 2% 7%;
     display: flex;
@@ -79,7 +79,7 @@
 
 @media only screen and (min-width: 2561px)  {
     .container {
-        height: 50dvh;
+        height: 50svh;
         max-width: 2560px;
         padding: 26px 180px;
     }
@@ -155,7 +155,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 65dvh;
+        height: 65svh;
     }
     .textContainer {
         width: 100%;

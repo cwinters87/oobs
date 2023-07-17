@@ -150,7 +150,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 90dvh;
+        height: 90svh;
     }
     .textContainer {
         width: 100%;
