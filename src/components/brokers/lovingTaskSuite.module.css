@@ -8,7 +8,7 @@
 .container {
     height: auto;
     width: 100%;
-    padding: 4% 7% 7% 7%;
+    padding: 75px 7% 7% 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,12 +120,6 @@
 @media only screen and (min-width: 2561px)  {
     .container {
         max-width: 2560px;
-    }
-}
-
-@media only screen and (min-width: 1921px)  {
-    .container {
-        padding: 0 7% 7% 7%;
     }
 }
 

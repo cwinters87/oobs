@@ -150,7 +150,7 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 80svh;
+        height: auto;
         padding: 0 7% 7%;
     }
     .wrapper {
@@ -171,14 +171,15 @@
     .formWrapper {
         height: 100%;
         width: 100%;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: flex-start;
     }
     .title {
         font-size: 1.8rem;
         text-align: center;
     }
-        .buttonWrapper {
-        justify-content: center;
+    .buttonWrapper {
+        justify-content: flex-start;
         padding-top: 0;
         padding-bottom: 4%;
     }
@@ -191,7 +192,6 @@
         align-items: flex-start;
         justify-content: center;
     }
-
     .imgWrapper picture {
         height: 100%;
         width: 100%;
@@ -200,7 +200,6 @@
         justify-content: flex-start;
     }
     .imgWrapper picture img {
-        
         height: 100%;
         width: 100% !important;
         object-fit: cover;
@@ -212,9 +211,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        height: 72svh;
-    }
     .formContainer {
         height: 60%;
         padding: 0 15%;
@@ -226,9 +222,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 68svh;
-    }
     .formContainer {
         height: 65%;
         padding: 0 7%;
@@ -247,7 +240,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        height: 75svh;
+    .checkmarkWrapper {
+        display: none;
     }
 }

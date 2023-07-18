@@ -6,14 +6,13 @@
   }
 
 .container {
-    height: 60svh;
+    height: auto;
     width: 100%;
-    padding: 0% 7%;
+    padding: 150px 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding-top: 5%;
 }
 
 .textContainer {
@@ -93,13 +92,11 @@
         max-width: 2560px;
         padding: 26px 180px;
         padding-top: 5%;
-        height: 65svh;
     }
 }
 
 @media only screen and (max-width: 1921px) {
     .container {
-        height: 68svh;
         gap: 3rem;
     }
     .textContainer {
@@ -115,9 +112,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container {
-        height: 85svh;
         gap: 2rem;
-        padding-top: 8%;
     }
     .textContainer {
         gap: .5rem;
@@ -145,7 +140,6 @@
 
 @media only screen and (max-width: 991px) {
     .container {
-        height: 50svh;
         gap: 1rem;
     }
     .textContainer {
@@ -186,10 +180,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 62svh;
-        margin-top: 1rem;
-    }
     .title {
         font-size: 1.5rem;
     }
@@ -208,9 +198,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        height: 62vh;
-    }
     .title {
         font-size: 1.3rem;
     }
