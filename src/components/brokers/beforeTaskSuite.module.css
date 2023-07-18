@@ -37,10 +37,10 @@
 
 .numberContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 55%;
-    margin-bottom: 1rem;
+    width: 100%;
+    gap: 12rem;
 }
 
 .item {
@@ -76,7 +76,7 @@
 
 @media only screen and (max-width: 1600px) {
     .numberContainer {
-        width: 100%;
+        gap: 10rem;
     }
     .title {
         font-size: 1.5rem;
