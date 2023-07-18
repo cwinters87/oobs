@@ -6,8 +6,8 @@
   }
 
 .container {
-    padding: 0% 7%;
-    height: 62svh;
+    padding: 7%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,6 @@
         display: none;
     }
     .container {
-        height: 100svh;
         gap: 3rem;
         justify-content: center;
     }
@@ -140,7 +139,7 @@
 
 @media only screen and (max-width: 991px)  {
     .container {
-        padding: 14% 7%;
+        padding: 12% 7%;
         height: auto;
     }
     .textContainer {
@@ -151,7 +150,6 @@
     }
     .mainSubTitle {
         font-size: .85rem;
-        padding: 0 2%;
     }
     .topBreakPoint {
         display: none;
@@ -178,10 +176,12 @@
     .title h3 {
         font-size: 1.2rem;
     }
+    .subTitle {
+        padding: 0 10%;
+    }
     .subTitle p {
         font-size: .8rem;
     }
-    
 }
 
 @media only screen and (max-width: 600px) {
@@ -190,5 +190,8 @@
     }
     .mainSubTitle {
         font-size: .8rem;
+    }
+    .subTitle {
+        padding: 0 2%;
     }
 }

@@ -6,9 +6,9 @@
   }
 
 .container {
-    height: 65svh;
+    height: auto;
     width: 100%;
-    padding: 0 7%;
+    padding: 4% 7% 7% 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,44 +36,47 @@
 }
 
 .toolsContainer {
-    padding: 0 1%;
     display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    align-items: center;
     gap: 4rem;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 .card {
     flex: 1 1 0px;
     width: 0;
+    height: auto;
     border: solid 1px var(--khaki-light);
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
-    gap: .5em; 
+    padding: 2rem;
 }
 
 .icon {
     height: 35px;
     width: 35px;
+    margin-bottom: 10px;
 }
 
 .company {
     margin: 0;
+    height: 50px;
     font-family: var(--font-regular);
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .quoteBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100px;
+    height: 120px;
 }
 
 .quote {
@@ -86,6 +89,7 @@
 }
 
 .nameContainer {
+    height: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,12 +101,15 @@
     font-family: var(--font-light);
     font-weight: 600;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .position {
     margin: 0;
     font-family: var(--font-regular);
     font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .card:hover, .card:hover h4 {
@@ -116,18 +123,46 @@
     }
 }
 
-@media only screen and (max-width: 1500px)  {
+@media only screen and (min-width: 1921px)  {
     .container {
-        height: 60svh;
-        padding-top: 1%;
-        justify-content: flex-start;   
+        padding: 0 7% 7% 7%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        gap: 2.8rem;
     }
     .toolsContainer {
-        gap: 2rem;
-    }   
+        gap: 2.5rem;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    .mainTitle {
+        font-size: 2rem;
+    }
     .icon {
         height: 30px;
         width: 30px;
+    }
+    .company {
+        font-size: 1.4rem;
+    }
+    .quote {
+        font-size: .85rem;
+    }
+    .author {
+        font-size: 1rem;
+    }
+    .position {
+        font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .toolsContainer {
+        gap: 1.8rem;
     }
     .company {
         font-size: 1.2rem;
@@ -135,100 +170,42 @@
     .quote {
         font-size: .8rem;
     }
-    .author {
-        font-size: 1rem;
-    }
-    .position {
-        font-size: .85rem;
-    }
-    .card {
-        flex: 1 1 0px;
-        width: 0;
-        border: solid 1px var(--khaki-light);
-        border-radius: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: .5em; 
-    }
 }
 
 @media only screen and (max-width: 1080px) {
-    .container {
-        height: 72svh;
-        gap: 2.5rem;
-    }
-    .mainTitle {
-        font-size: 1.6rem;
-    }
-    .toolsContainer {
-        gap: 1rem;
-    }
-    .card {
-        padding: 1em;
-        gap: 1em;
-    }
-    .icon {
-        height: 20px;
-        width: 20px;
-    }
-    .company {
-        font-size: 1rem;
-    }
     .quoteBox {
-        height: 120px;
-    }
-    .quote {
-        font-size: .8rem;
-    }
-    .author {
-        font-size: 1rem;
-    }
-    .position {
-        font-size: .85rem;
+        height: 130px;
     }
 }
 
 @media only screen and (max-width: 991px)  {
     .container {
-        height: 110svh;
-        justify-content: flex-start;
-        padding-top: 10%;
+        padding: 14% 7% 14% 7%;
+        gap: 2rem;
+    }
+    .mainTitle {
+        font-size: 1.5rem;
     }
     .toolsContainer {
         flex-direction: column;
-        padding: 2%;
     }
     .card {
-        display: flex;
         height: auto;
-        width: 325px;
-    }
-    .quoteBox {
-        height: 95px;
-    }
-}
-
-@media only screen and (max-width: 600px)  {
-    .container {
-        height: 135svh;
-        gap: 1.5rem;
-    }
-    .mainTitle {
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .container {
-        height: 135vh;
+        width: 400px;
     }
     .quoteBox {
         height: 110px;
     }
+}
+
+@media only screen and (max-width: 600px) {
     .card {
-        padding: 1em;
-        gap: .5em;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainTitle {
+        font-size: 1.2rem;
     }
 }
