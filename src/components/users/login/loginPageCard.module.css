@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--money-green);
     overflow: hidden;
   }
 
@@ -14,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--money-green);
+    background-color: var(--khaki-light);
 }
 
 .box {
@@ -33,7 +32,7 @@
     left: -50%;
     width: 370px;
     height: 450px;
-    background: linear-gradient(60deg,transparent,var(--lime-green),var(--lime-green));
+    background: linear-gradient(60deg,transparent,var(--money-green),var(--money-green));
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     /* animation-delay: -3s; */
