@@ -14,7 +14,7 @@ const TodaysProblemCard = () => {
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.item}>
-                        <div className={styles.count}>$<CountUp duration={1} delay={1} end={80} enableScrollSpy/>k</div>
+                        <div className={styles.count}>$<CountUp duration={1} delay={1} end={300} enableScrollSpy/>k</div>
                         <div className={styles.text}>spent annually per lender <br className={styles.bottomBreakPoint}/>on average for servicing<br className={styles.bottomBreakPoint}/> and originatior cost</div>
                     </div>
                     <div className={styles.item}>

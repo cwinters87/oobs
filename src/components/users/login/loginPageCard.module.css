@@ -35,7 +35,6 @@
     background: linear-gradient(60deg,transparent,var(--money-green),var(--money-green));
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
-    /* animation-delay: -3s; */
 }
 
 .box::after {

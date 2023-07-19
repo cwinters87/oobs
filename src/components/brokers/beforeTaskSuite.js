@@ -14,7 +14,7 @@ const BeforeTaskSuiteCard = () => {
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.item}>
-                        <div className={styles.count}>$<CountUp duration={1} delay={1} end={65} enableScrollSpy/>k</div>
+                        <div className={styles.count}>$<CountUp duration={1} delay={1} end={100} enableScrollSpy/>k</div>
                         <div className={styles.text}>spent annually per broker <br className={styles.bottomBreakPoint}/>on average for servicing<br className={styles.bottomBreakPoint}/> and originatior cost</div>
                     </div>
                     <div className={styles.item}>
