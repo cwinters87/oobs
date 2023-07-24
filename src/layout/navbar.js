@@ -116,11 +116,13 @@ const theme = createTheme({
 function NavBar() {
   const [sideBarOpen, setSideBarOpen] = useState(false)
   const [anchorEl, setAnchorEl] = useState(null)
+  const [anchorElAccount, setAnchorElAccount] = useState(null)
   const [expanded, setExpanded] = useState(false)
   const authContext = useContext(AuthContext)
   const logOut = authContext?.logOut
   const isLoggedIn = authContext?.isLoggedIn
   const open = Boolean(anchorEl)
+  const openAccount = Boolean(anchorElAccount)
 
   const handleLogout = () => {
     if (typeof logOut === "function") {
@@ -134,8 +136,16 @@ function NavBar() {
     setAnchorEl(event.currentTarget)
   }
 
+  const handleDropdownAccount = (event) => {
+    setAnchorElAccount(event.currentTarget)
+  }
+
   const handleDropdownClose = () => {
     setAnchorEl(null)
+  }
+
+  const handleDropdownCloseAccount = () => {
+    setAnchorElAccount(null)
   }
 
   const handleSideBar = () => {
@@ -214,11 +224,33 @@ function NavBar() {
                 <p>Request a demo</p>
               </Button>
               <Divider />
-              <MenuLink
-              onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
-            >
-              {isLoggedIn ? "Logout" : "Login"}
-            </MenuLink>
+                {isLoggedIn ?           
+                <MenuGroup>
+                  <MenuLink onClick={handleDropdownAccount} className={openAccount ? "open" : ""}>
+                    <p>Account</p>
+                    <ChevronIcon />
+                  </MenuLink>
+                  <Dropdown
+                    id="account-menu"
+                    anchorEl={anchorElAccount}
+                    open={openAccount}
+                    onClose={handleDropdownCloseAccount}
+                    MenuListProps={{
+                      "aria-labelledby": "basic-button",
+                    }}
+                  >
+                    <DropdownItem onClick={() => navigate("/dashboard")}>
+                      Dashboard
+                    </DropdownItem>
+                    <DropdownItem onClick={handleLogout}>
+                      Logout
+                    </DropdownItem>
+                  </Dropdown>
+                </MenuGroup>
+                :  
+                <MenuLink onClick={() => navigate("/login")}>
+                  Login
+                </MenuLink>}
             </MenuGroup>
           </ToolBox>
         </Toolbar>
@@ -286,6 +318,7 @@ function NavBar() {
               For Brokers
             </MenuLink>
             <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
+            {isLoggedIn && <MenuLink onClick={() => navigate("/dashboard")}>Dashboard</MenuLink>}
             <MenuLink
               onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
             >

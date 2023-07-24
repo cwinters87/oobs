@@ -21,7 +21,7 @@ const Docs = () => {
         spec-url={`https://crm.tasksuite.com/web/content/19777?access_token=974cd285-7a0c-4467-bd2f-7eb0dbd3849a`}
         render-style="read"
         style={{
-          height: "100vh",
+          height: "calc(100vh - 72px)",
           width: "100%",
         }}
         fill-request-fields-with-example={true}
