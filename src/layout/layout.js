@@ -1,6 +1,7 @@
 import React from "react"
 import NavBar from "./navbar"
 import Footer from "./footer"
+import CookieConsent from "../components/cookieConsent/CookieConsent"
 import * as styles from "./layout.module.css"
 
 export default function Layout({ children }) {
@@ -9,6 +10,7 @@ export default function Layout({ children }) {
       <NavBar />
       {children}
       <Footer />
+      <CookieConsent />
     </div>
   )
 }
