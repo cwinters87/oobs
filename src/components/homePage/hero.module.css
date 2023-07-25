@@ -1,210 +1,211 @@
 .sectionWrapper {
-    width: 100%;
-    height: 110svh;
-    background: var(--khaki-light);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  height: 110svh;
+  background: var(--khaki-light);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .container {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    padding: 0 7%;
-    position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0 7%;
+  position: relative;
 }
 
 #subContainerOne {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem;
-    height: 100%;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  height: 100%;
+  width: 50%;
 }
 
 #subContainerTwo {
-    height: 100%;
-    width: 50%;
+  height: 100%;
+  width: 50%;
 }
 
 .image {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 #subContainerOne h1 {
-    margin: 0;
-    font-family: var(--font-regular);
-    color: var(--money-green);
-    font-size: 4.5rem;
+  margin: 0;
+  font-family: var(--font-regular);
+  color: var(--money-green);
+  font-size: 4.5rem;
 }
 
 #subContainerOne h2 {
-    margin: 0;
-    font-family: var(--font-regular);
-    font-size: 1.5rem;
+  margin: 0;
+  font-family: var(--font-regular);
+  font-size: 1.5rem;
 }
 
 #buttonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 /* adjust size of hero image */
 .imgWrapper {
-    position: absolute;
-    width: 60%;
-    height: 80%;
-    bottom: -12px;
-    right: 0;
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  bottom: -12px;
+  right: 0;
 }
 
 .imgContainer {
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .imgContainer picture {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .imgContainer picture img {
-    height: 100%;
-    width: 100% !important;
-    object-fit: cover;
-    object-position: 0% 0%;
+  height: 100%;
+  width: 100% !important;
+  object-fit: cover;
+  object-position: 0% 0%;
 }
 
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-        padding: 0 180px;
-    }
-    .imgWrapper {
-        width: 82%;
-        height: 87%;
-        bottom: -12px;
-        right: -18%;
-    }
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+    padding: 0 180px;
+  }
+  .imgWrapper {
+    width: 82%;
+    height: 87%;
+    bottom: -12px;
+    right: -18%;
+  }
 }
 
-@media only screen and (max-width: 1640px)  {
-    #subContainerOne h1 {
-        font-size: 4rem;    
-    }
-    #subContainerOne h2 {
-        font-size: 1.3rem;
-    }
+@media only screen and (max-width: 1640px) {
+  #subContainerOne h1 {
+    font-size: 4rem;
+  }
+  #subContainerOne h2 {
+    font-size: 1.3rem;
+  }
 }
 
-@media only screen and (max-width: 1500px)  {
-    #subContainerOne h1 {
-        font-size: 3.8rem;    
-    }
-    #subContainerOne h2 {
-        font-size: 1rem;
-    }
-    .breakPointTop {
-        display: none;
-    }
+@media only screen and (max-width: 1500px) {
+  #subContainerOne h1 {
+    font-size: 3.8rem;
+  }
+  #subContainerOne h2 {
+    font-size: 1rem;
+  }
+  .breakPointTop {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 1350px)  {
-    #subContainerOne h1 {
-        font-size: 3.5rem;    
-    }
+@media only screen and (max-width: 1350px) {
+  #subContainerOne h1 {
+    font-size: 3.5rem;
+  }
 }
 
-@media only screen and (max-width: 1025px)  {
-    #subContainerOne h1 {
-        font-size: 3rem;    
-    }
-    #subContainerOne h2 {
-        font-size: .85rem;
-    }
+@media only screen and (max-width: 1025px) {
+  #subContainerOne h1 {
+    font-size: 3rem;
+  }
+  #subContainerOne h2 {
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .container {
-        position: relative;
-        flex-direction: column;
-    }
-    #subContainerOne {
-        width: 100%;
-        height: 50%;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .breakPoint {
-        display: none;
-    }
-    #subContainerTwo {
-        width: 100%;
-        height: 50%;
-    }
-    .breakPointTop, .breakPoint {
-        display: block
-    }
-    #subContainerOne h1 {
-        font-size: 3rem;    
-    }
-    #subContainerOne h2 {
-        font-size: 1rem;
-    }
-    .imgWrapper {
-        position: absolute;
-        width: 92.9%;
-        height: 50.5%;
-        bottom: -12px;
-        right: 0;
-    }
+  .container {
+    position: relative;
+    flex-direction: column;
+  }
+  #subContainerOne {
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .breakPoint {
+    display: none;
+  }
+  #subContainerTwo {
+    width: 100%;
+    height: 50%;
+  }
+  .breakPointTop,
+  .breakPoint {
+    display: block;
+  }
+  #subContainerOne h1 {
+    font-size: 3rem;
+  }
+  #subContainerOne h2 {
+    font-size: 1rem;
+  }
+  .imgWrapper {
+    position: absolute;
+    width: 92.9%;
+    height: 50.5%;
+    bottom: -12px;
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 125svh;
-    }
-    #subContainerOne h1 {
-        font-size: 2.4rem;    
-    }
-    #subContainerOne h2 {
-        font-size: .8rem;
-    }
-    #subContainerOne {
-        height: 55%;
-    }
-    #subContainerTwo {
-        height: 45%;
-    }
+  .container {
+    height: 125svh;
+  }
+  #subContainerOne h1 {
+    font-size: 2.4rem;
+  }
+  #subContainerOne h2 {
+    font-size: 0.8rem;
+  }
+  #subContainerOne {
+    height: 55%;
+  }
+  #subContainerTwo {
+    height: 45%;
+  }
 }
 
 @media only screen and (max-width: 391px) {
-    #subContainerOne h1 {
-        font-size: 2.2rem;    
-    }
-    #subContainerOne h2 {
-        font-size: .7rem;
-    }
-    #subContainerOne {
-        height: 450px;
-    }
-    #subContainerTwo {
-        height: 240px;
-    }
-    .imgWrapper {
-        height: 45%;
-    }
+  #subContainerOne h1 {
+    font-size: 2.2rem;
+  }
+  #subContainerOne h2 {
+    font-size: 0.7rem;
+  }
+  #subContainerOne {
+    height: 450px;
+  }
+  #subContainerTwo {
+    height: 240px;
+  }
+  .imgWrapper {
+    height: 45%;
+  }
 }

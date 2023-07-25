@@ -1,18 +1,16 @@
-import * as React from 'react'
+import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ComingSoonCard from '../components/comingSoon'
+import ComingSoonCard from "../components/comingSoon"
 
 const SupportPage = () => {
   return (
     <Layout>
-      <ComingSoonCard/>
+      <ComingSoonCard />
     </Layout>
   )
 }
 
-export const Head = () => (
-  <Seo  title="TaskSuite - Support"/>
-)
+export const Head = () => <Seo title="TaskSuite - Support" />
 
 export default SupportPage

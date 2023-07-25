@@ -1,6 +1,6 @@
-import React from "react";
-import './src/styles/global.css';
-import { AuthProvider } from "./src/utils/context/AuthContext";
+import React from "react"
+import "./src/styles/global.css"
+import { AuthProvider } from "./src/utils/context/AuthContext"
 
 export const onClientEntry = async () => {
   if (typeof IntersectionObserver === "undefined") {
@@ -10,4 +10,4 @@ export const onClientEntry = async () => {
 
 export const wrapRootElement = ({ element }) => (
   <AuthProvider>{element}</AuthProvider>
-);
+)

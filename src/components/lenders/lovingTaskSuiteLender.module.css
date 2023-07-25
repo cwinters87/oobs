@@ -1,205 +1,206 @@
 .sectionWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .container {
-    height: auto;
-    width: 100%;
-    padding: 75px 7% 7% 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    gap: 4rem;
+  height: auto;
+  width: 100%;
+  padding: 75px 7% 7% 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 4rem;
 }
 
 .textContainer {
-    margin: 0 7%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 0 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainTitle {
-    margin: 0;
-    font-family: var(--font-regular);
-    font-weight: 600;
-    color: var(--money-green);
-    font-size: 2.6rem;
-    text-align: center;
+  margin: 0;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  color: var(--money-green);
+  font-size: 2.6rem;
+  text-align: center;
 }
 
 .toolsContainer {
-    display: flex;
-    gap: 4rem;
-    height: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  gap: 4rem;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .card {
-    flex: 1 1 0px;
-    width: 0;
-    height: auto;
-    border: solid 1px var(--khaki-light);
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+  flex: 1 1 0px;
+  width: 0;
+  height: auto;
+  border: solid 1px var(--khaki-light);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 .icon {
-    height: 35px;
-    width: 35px;
-    margin-bottom: 10px;
+  height: 35px;
+  width: 35px;
+  margin-bottom: 10px;
 }
 
 .company {
-    margin: 0;
-    height: 50px;
-    font-family: var(--font-regular);
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
+  margin: 0;
+  height: 50px;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .quoteBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
 }
 
 .quote {
-    margin: 0;
-    text-align: center;
-    font-family: var(--font-light);
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--money-green);
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-light);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--money-green);
 }
 
 .nameContainer {
-    height: 55px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .author {
-    margin: 0;
-    font-family: var(--font-light);
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
+  margin: 0;
+  font-family: var(--font-light);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .position {
-    margin: 0;
-    font-family: var(--font-regular);
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: center;
+  margin: 0;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.card:hover, .card:hover h4 {
-    transition: 250ms;
-    filter: brightness(90%);
+.card:hover,
+.card:hover h4 {
+  transition: 250ms;
+  filter: brightness(90%);
 }
 
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-    }
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    .container {
-        gap: 2.8rem;
-    }
-    .toolsContainer {
-        gap: 2.5rem;
-    }
-    .card {
-        padding: 1.5rem;
-    }
-    .mainTitle {
-        font-size: 2rem;
-    }
-    .icon {
-        height: 30px;
-        width: 30px;
-    }
-    .company {
-        font-size: 1.4rem;
-    }
-    .quote {
-        font-size: .85rem;
-    }
-    .author {
-        font-size: 1rem;
-    }
-    .position {
-        font-size: .85rem;
-    }
+  .container {
+    gap: 2.8rem;
+  }
+  .toolsContainer {
+    gap: 2.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .mainTitle {
+    font-size: 2rem;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  .company {
+    font-size: 1.4rem;
+  }
+  .quote {
+    font-size: 0.85rem;
+  }
+  .author {
+    font-size: 1rem;
+  }
+  .position {
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .toolsContainer {
-        gap: 1.8rem;
-    }
-    .company {
-        font-size: 1.2rem;
-    }
-    .quote {
-        font-size: .8rem;
-    }
+  .toolsContainer {
+    gap: 1.8rem;
+  }
+  .company {
+    font-size: 1.2rem;
+  }
+  .quote {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
-    .quoteBox {
-        height: 130px;
-    }
+  .quoteBox {
+    height: 130px;
+  }
 }
 
-@media only screen and (max-width: 991px)  {
-    .container {
-        padding: 14% 7% 14% 7%;
-        gap: 2rem;
-    }
-    .mainTitle {
-        font-size: 1.5rem;
-    }
-    .toolsContainer {
-        flex-direction: column;
-    }
-    .card {
-        height: auto;
-        width: 400px;
-    }
-    .quoteBox {
-        height: 110px;
-    }
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 14% 7% 14% 7%;
+    gap: 2rem;
+  }
+  .mainTitle {
+    font-size: 1.5rem;
+  }
+  .toolsContainer {
+    flex-direction: column;
+  }
+  .card {
+    height: auto;
+    width: 400px;
+  }
+  .quoteBox {
+    height: 110px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
-        width: auto;
-    }
+  .card {
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .mainTitle {
-        font-size: 1.2rem;
-    }
+  .mainTitle {
+    font-size: 1.2rem;
+  }
 }

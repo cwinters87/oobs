@@ -1,195 +1,195 @@
 .sectionWrapper {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    background-color: var(--khaki-light);
-    padding: 7%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--khaki-light);
+  padding: 7%;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    border-radius: 18px;
-    padding: 2.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary-font-color);
-    background-color: #ffffff;   
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  padding: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-font-color);
+  background-color: #ffffff;
 }
 
 .textContainer {
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1% 0 1% 2%;
-    gap: 1.8rem;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1% 0 1% 2%;
+  gap: 1.8rem;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .iconWrapper {
-    height: 72px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 72px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iconWrapper img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
 .middleWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .title {
-    color: var(--money-green);
-    font-family: var(--font-regular);
-    font-size: 3.2rem;
-    margin: 0;
+  color: var(--money-green);
+  font-family: var(--font-regular);
+  font-size: 3.2rem;
+  margin: 0;
 }
 
 .subTitle {
-    font-family: var(--font-regular);
-    font-size: 1.2rem;
-    margin: 0;
-    padding-bottom: 1.8rem;
+  font-family: var(--font-regular);
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 1.8rem;
 }
 
 .imgContainer {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .imgContainer picture {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgContainer picture img {
-    height: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    object-fit: contain;
-    border-radius: 18px;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  object-fit: contain;
+  border-radius: 18px;
 }
 
 .imgContainerMobile {
+  display: none;
+}
+
+@media only screen and (min-width: 2561px) {
+  .sectionWrapper {
+    padding: 7%;
+  }
+  .container {
+    max-width: 2560px;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .subTitle {
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1921px) {
+  .textContainer {
+    height: 85%;
+    width: 44%;
+    padding: 0;
+  }
+  .imgContainer {
+    height: 85%;
+    width: 56%;
+  }
+  .header {
+    height: 50px;
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+  .subTitle {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .topBreakPoint {
     display: none;
-}
-
-@media only screen and (min-width: 2561px)  {
-    .sectionWrapper {
-        padding: 7%;
-    }
-    .container {
-        max-width: 2560px;
-    }
-    .title {
-        font-size: 3.5rem;
-    }
-    .subTitle {
-        padding-bottom: 3rem;
-    }
-}
-
-@media only screen and (max-width: 1921px)  {
-    .textContainer {
-        height: 85%;
-        width: 44%;
-        padding: 0;
-    }
-    .imgContainer {
-        height: 85%;
-        width: 56%;
-    }
-    .header {
-        height: 50px;
-    }
-    .title {
-        font-size: 2.8rem;
-    }
-    .subTitle {
-        font-size: 1rem;
-        padding-bottom: 1rem;
-    }
-    .topBreakPoint {
-        display: none;
-    }
+  }
 }
 
 @media only screen and (max-width: 1600px) {
-    .header {
-        height: 40px;
-    }
-    .title {
-        font-size: 2.5rem;
-    }
-    .subTitle {
-        font-size: .9rem;
-        padding-bottom: 1rem;
-    }
+  .header {
+    height: 40px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subTitle {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .iconWrapper {
-        height: 45px;
-    }
-    .imgContainer {
-        display: none;
-    }
-    .imgContainerMobile {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-    .bottomBreakPoint {
-        display: none;
-    }
-    .textContainer {
-        width: 100%;
-        height: 100%;
-        gap: 1.2rem;
-        justify-content: center;
-    }
-    .middleWrapper {
-        gap: .85rem;
-    }
-    .header {
-        height: 2.5rem;
-    }
-    .title {
-        font-size: 1.5rem;
-    }
-    .subTitle {
-        font-size: .85rem;
-        padding-bottom: 0;
-    }
-    .textContainer button {
-        font-size: .8rem;
-    }
+  .iconWrapper {
+    height: 45px;
+  }
+  .imgContainer {
+    display: none;
+  }
+  .imgContainerMobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .bottomBreakPoint {
+    display: none;
+  }
+  .textContainer {
+    width: 100%;
+    height: 100%;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .middleWrapper {
+    gap: 0.85rem;
+  }
+  .header {
+    height: 2.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subTitle {
+    font-size: 0.85rem;
+    padding-bottom: 0;
+  }
+  .textContainer button {
+    font-size: 0.8rem;
+  }
 }

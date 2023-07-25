@@ -17,20 +17,17 @@ const CareersCard = () => {
             <div className={styles.middleWrapper}>
               <h2 className={styles.title}>
                 Want to help build the future
-                <br/> of the loan industry?
+                <br /> of the loan industry?
               </h2>
               <p className={styles.subTitle}>
-                We're always looking for talented people who{" "}
-                <br/>
-                are aligned with our core values. If this sounds{" "}
-                <br/>
-                like you, we'd love to hear from you, even if we{" "}
-                <br/>
+                We're always looking for talented people who <br />
+                are aligned with our core values. If this sounds <br />
+                like you, we'd love to hear from you, even if we <br />
                 aren't actively hiring for your ideal role.
               </p>
             </div>
             <Button
-              style={{ 
+              style={{
                 width: "150px",
                 padding: "6px 12px",
                 color: "#ffffff",

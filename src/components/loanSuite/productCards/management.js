@@ -5,7 +5,7 @@ import Icon from "../../../images/components/icon-products-management.png"
 import Checkmark from "../../../images/components/icon-products-check-management.png"
 import Image from "../../../images/loanSuite/products-management1.png"
 import ImageMobile from "../../../images/loanSuite/products-management-mobile.png"
-import ScrollFadeInImage from '../../effects/popOutImg'
+import ScrollFadeInImage from "../../effects/popOutImg"
 import imgPop from "../../../images/loanSuite/pop-management.png"
 import * as styles from "./productCard.module.css"
 
@@ -73,13 +73,17 @@ const Management = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
-        <ScrollFadeInImage src={imgPop} alt="pop-out" style={{
-            position: "absolute",
-            top: "65%",
-            left: "-120px",
-            height: "100px",
-            width: "auto",
-          }}/>
+          <ScrollFadeInImage
+            src={imgPop}
+            alt="pop-out"
+            style={{
+              position: "absolute",
+              top: "65%",
+              left: "-120px",
+              height: "100px",
+              width: "auto",
+            }}
+          />
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />

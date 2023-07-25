@@ -1,7 +1,7 @@
 import * as React from "react"
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive"
 import { StaticImage } from "gatsby-plugin-image"
-import ScrollFadeInImage from '../effects/popOutImg'
+import ScrollFadeInImage from "../effects/popOutImg"
 import Image from "../../images/demo/demo.png"
 import popImg from "../../images/demo/pop-demo.png"
 import ImageMobile from "../../images/demo/demo-mobile.png"
@@ -10,8 +10,7 @@ import { Button } from "../shared"
 import { navigate } from "gatsby"
 
 const DemoFormCard = () => {
-
-  const mobileMediaQuery = useMediaQuery({ query: '(min-width: 992px)' });
+  const mobileMediaQuery = useMediaQuery({ query: "(min-width: 992px)" })
 
   return (
     <div className={styles.sectionWrapper}>
@@ -29,9 +28,7 @@ const DemoFormCard = () => {
                       alt="checkmark"
                     />
                   </div>
-                  <p>
-                    Discover simpler & faster workflows
-                  </p>
+                  <p>Discover simpler & faster workflows</p>
                 </div>
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>
@@ -41,9 +38,7 @@ const DemoFormCard = () => {
                       alt="checkmark"
                     />
                   </div>
-                  <p>
-                    Experience revolutionary technology firsthand
-                  </p>
+                  <p>Experience revolutionary technology firsthand</p>
                 </div>
                 <div className={styles.feature}>
                   <div className={styles.checkmarkWrapper}>
@@ -53,9 +48,7 @@ const DemoFormCard = () => {
                       alt="checkmark"
                     />
                   </div>
-                  <p>
-                    Discover customizable & adaptable solutions
-                  </p>
+                  <p>Discover customizable & adaptable solutions</p>
                 </div>
               </div>
               <div className={styles.buttonWrapper}>
@@ -71,13 +64,19 @@ const DemoFormCard = () => {
           </div>
           <div className={styles.imgContainer}>
             <div className={styles.imgWrapper}>
-            { mobileMediaQuery && <ScrollFadeInImage src={popImg} alt="pop-out" style={{
-              position: "absolute",
-              bottom: "12%",
-              left: "-120px",
-              height: "90px",
-              width: "auto",
-              }}/>}
+              {mobileMediaQuery && (
+                <ScrollFadeInImage
+                  src={popImg}
+                  alt="pop-out"
+                  style={{
+                    position: "absolute",
+                    bottom: "12%",
+                    left: "-120px",
+                    height: "90px",
+                    width: "auto",
+                  }}
+                />
+              )}
               <picture>
                 <source media="(max-width: 991px)" srcSet={ImageMobile} />
                 <source media="(min-width: 992px)" srcSet={Image} />

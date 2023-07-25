@@ -1,43 +1,43 @@
 .sectionWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .container {
-    height: 100svh;
-    width: 100%;
-    padding: 0 7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100svh;
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #titleContainer {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 2.5rem;
-    gap: 6%;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2.5rem;
+  gap: 6%;
 }
 
 #titleContainer h2 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 #title {
-    font-family: var(--font-regular);
-    color: var(--money-green);
-    margin: 60px 0 0 0;
+  font-family: var(--font-regular);
+  color: var(--money-green);
+  margin: 60px 0 0 0;
 }
 
 #subTitle {
-    font-family: var(--font-regular);
-    font-size: 1.2rem;
-    margin: 0;
+  font-family: var(--font-regular);
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 #cardContainer {
@@ -62,157 +62,155 @@
 }
 
 #cardFit {
-    margin: 0%;
+  margin: 0%;
 }
 
-.card h3  {
-    font-family: var(--font-regular);
-    font-size: 1.5rem;
-    margin: 0 7%;
+.card h3 {
+  font-family: var(--font-regular);
+  font-size: 1.5rem;
+  margin: 0 7%;
 }
 
 .card p {
-    margin: 1% 7% 5% 7%;
-    font-size: .85rem;
+  margin: 1% 7% 5% 7%;
+  font-size: 0.85rem;
 }
 
 #linkContainer {
-    height: 10%;
-    padding: 2.5rem 0 0 0;
+  height: 10%;
+  padding: 2.5rem 0 0 0;
 }
 
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-        padding: 26px 180px;
-    }
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+    padding: 26px 180px;
+  }
 }
 
-@media only screen and (max-width: 1911px)  {
-    #title {
-        font-size: 3.4rem;
-    }
-    #subTitle {
-        font-size: 1rem;
-    }
-    .card h3  {
-        font-size: 1.2rem;
-
-    }
-    .card p {
-        font-size: .75rem;
-    }
+@media only screen and (max-width: 1911px) {
+  #title {
+    font-size: 3.4rem;
+  }
+  #subTitle {
+    font-size: 1rem;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.75rem;
+  }
 }
 
-@media only screen and (max-width: 1218px)  {
-    #title {
-        font-size: 3rem;
-    }
-    #subTitle {
-        font-size: .85rem;
-    }
-    .card h3  {
-        font-size: 1rem;
-    }
-    .card p {
-        font-size: .55rem;
-    }
+@media only screen and (max-width: 1218px) {
+  #title {
+    font-size: 3rem;
+  }
+  #subTitle {
+    font-size: 0.85rem;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.55rem;
+  }
 }
 
-@media only screen and (max-width: 991px)  {
-    #title {
-        font-size: 2.8em;
-    }
-    #subTitle {
-        font-size: .8rem;
-    }
-    .card h3  {
-        font-size: .85rem;
-    }
-    .card p {
-        font-size: .5rem;
-    }
+@media only screen and (max-width: 991px) {
+  #title {
+    font-size: 2.8em;
+  }
+  #subTitle {
+    font-size: 0.8rem;
+  }
+  .card h3 {
+    font-size: 0.85rem;
+  }
+  .card p {
+    font-size: 0.5rem;
+  }
 }
 
-@media only screen and (max-width: 905px)  {
-    .breakPoint {
-        display: none;
-    }
-    .container {
-        height: 165svh;
-    }
-    #cardContainer {
-        height: 100svh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5%;
-    }
-    .card {
-        width: 100%;
-        height: 33.33%;
-    }
-    #title {
-        font-size: 2em;
-    }
-    #subTitle {
-        font-size: .85rem;
-    }
-    .card h3  {
-        font-size: 1.2rem;
-    }
-    .card p {
-        font-size: .7rem;
-    }
+@media only screen and (max-width: 905px) {
+  .breakPoint {
+    display: none;
+  }
+  .container {
+    height: 165svh;
+  }
+  #cardContainer {
+    height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+  .card {
+    width: 100%;
+    height: 33.33%;
+  }
+  #title {
+    font-size: 2em;
+  }
+  #subTitle {
+    font-size: 0.85rem;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.7rem;
+  }
 }
 
-@media only screen and (max-width: 905px)  {
-    
-    .card p {
-        font-size: .55rem;
-    }
+@media only screen and (max-width: 905px) {
+  .card p {
+    font-size: 0.55rem;
+  }
 }
 
-@media only screen and (max-width: 600px)  {
-    .container {
-        height: 168svh;
-    }
-    #titleContainer h2 {
-        font-size: 2.5rem;
-    }
-    #titleContainer p {
-        font-size: .85rem;
-    }
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 168svh;
+  }
+  #titleContainer h2 {
+    font-size: 2.5rem;
+  }
+  #titleContainer p {
+    font-size: 0.85rem;
+  }
 }
 
-@media only screen and (max-width:400px) {
-    .container {
-        height: 190svh;
-    }
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 190svh;
+  }
 }
 
 @media only screen and (max-width: 391px) {
-    .container {
-        justify-content: space-between;
-        height: 185svh;
-    }
-    #titleContainer {
-        padding-bottom: 1.2rem;
-        gap: 10px;
-        padding-top: 0;
-        height: 350px;
-    }
-    #cardContainer {
-        height: 640px;
-    }
-    #linkContainer {
-        height: 100px;
-        padding-top: 1.2rem;
-    }
-    .card {
-        height: 185px
-    }
-    #titleContainer h2 {
-        font-size: 2rem;
-    }
+  .container {
+    justify-content: space-between;
+    height: 185svh;
+  }
+  #titleContainer {
+    padding-bottom: 1.2rem;
+    gap: 10px;
+    padding-top: 0;
+    height: 350px;
+  }
+  #cardContainer {
+    height: 640px;
+  }
+  #linkContainer {
+    height: 100px;
+    padding-top: 1.2rem;
+  }
+  .card {
+    height: 185px;
+  }
+  #titleContainer h2 {
+    font-size: 2rem;
+  }
 }

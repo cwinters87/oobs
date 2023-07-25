@@ -1,16 +1,23 @@
 import React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-export const Seo = ({ title, description, pathname, children, robots, noIndex,  }) => {
-  const { 
-    title: defaultTitle, 
-    description: defaultDescription, 
-    // image, 
-    siteUrl, 
+export const Seo = ({
+  title,
+  description,
+  pathname,
+  children,
+  robots,
+  noIndex,
+}) => {
+  const {
+    title: defaultTitle,
+    description: defaultDescription,
+    // image,
+    siteUrl,
     robots: defaultRobots,
-    noIndex: defaultNoIndex
+    noIndex: defaultNoIndex,
     // twitterUsername
-    } = useSiteMetadata()
+  } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
@@ -33,25 +40,35 @@ export const Seo = ({ title, description, pathname, children, robots, noIndex,  
   return (
     <>
       <title>{seo.title}</title>
-      <meta name="title" content=" Loan Management, Origination, Servicing, and Credit Software"></meta>
+      <meta
+        name="title"
+        content=" Loan Management, Origination, Servicing, and Credit Software"
+      ></meta>
       {/* <script>{googleScript}</script> */}
       <meta name="description" content={seo.description} />
-      <link rel="image_src" href="https://i.ibb.co/N1jbm4q/Untitled-design-1.png" />
+      <link
+        rel="image_src"
+        href="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
+      />
 
-     
       <meta name={seo.robots} content={seo.noIndex} />
-      
 
       <meta property="og:title" content="TaskSuite" />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:url" content={seo.url}/>
-      <meta property="og:image" content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png" />
+      <meta property="og:url" content={seo.url} />
+      <meta
+        property="og:image"
+        content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
+      />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="945" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"/>
+      <meta
+        name="twitter:image"
+        content="https://i.ibb.co/N1jbm4q/Untitled-design-1.png"
+      />
 
       {/* <meta name="image" content={seo.image} /> */}
 
@@ -63,7 +80,7 @@ export const Seo = ({ title, description, pathname, children, robots, noIndex,  
       <meta name="twitter:creator" content={seo.twitterUsername} /> */}
 
       {/* <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>" /> */}
-      
+
       {children}
     </>
   )

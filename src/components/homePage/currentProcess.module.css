@@ -1,470 +1,473 @@
 .sectionWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .container {
-    height: 100svh;
-    width: 100%;
-    padding: 0% 7%;
+  height: 100svh;
+  width: 100%;
+  padding: 0% 7%;
 }
 
 #titleContainer {
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 1rem;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 #title {
-    font-family: var(--font-regular);
-    font-weight: 600;
-    font-size: 2.8rem;
-    color: var(--money-green);
-    margin: 0;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: var(--money-green);
+  margin: 0;
 }
 
 #subTitle {
-    font-family: var(--font-regular);
-    font-size: 1rem;
-    margin: 0;
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  margin: 0;
 }
 
 #linkContainer {
-    height: 15%;
-    padding: 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
+  height: 15%;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 #cardContainer {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
 }
 
 .flexWrapper {
-    height: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 25px;
+  height: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 25px;
 }
 
 #flexWrapperTop {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 #flexWrapperBottom {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .card {
-    height: 100%;
-    max-height: 320px;
+  height: 100%;
+  max-height: 320px;
+  border: solid 2px var(--khaki-light);
+  border-radius: 18px;
+  background-color: var(--khaki-light);
+  padding-left: 12px;
+  padding-top: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 500ms;
+}
+
+/* adjust size of image */
+.imgWrapper {
+  position: absolute;
+  width: 60%;
+  height: 90%;
+  bottom: -3px;
+  right: -3px;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.imgContainer picture {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.imgContainer picture img {
+  height: 100%;
+  width: 100% !important;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textContainer p {
+  margin: 0;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-bold);
+  font-size: 2.5rem;
+  color: var(--font-primanry-color);
+}
+
+.cardSubTitle {
+  margin: 0;
+  max-width: 70%;
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  color: var(--font-primanry-color);
+}
+
+.cardHeader {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 18px;
+  font-size: 0.55rem;
+  font-family: var(--font-bold);
+  color: var(--money-green);
+  background-color: var(--khaki-light);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: brightness(90%);
+}
+
+.buttonContainer {
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card:hover {
+  border: solid 2px var(--khaki);
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: translateY(-0.05rem);
+  transition: 250ms;
+  transition: transform 250ms;
+}
+
+#cardOne {
+  flex: 2;
+}
+
+#cardTwo {
+  flex: 1;
+}
+
+#cardThree {
+  flex: 1;
+}
+
+#cardFour {
+  flex: 1;
+}
+
+#cardFive {
+  flex: 2;
+}
+
+#cardOne div p {
+  max-width: 40%;
+}
+
+#cardContainerMobile {
+  display: none;
+}
+
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+    padding: 26px 180px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .card {
+    max-height: 240px;
+  }
+  #title {
+    font-size: 2.5rem;
+  }
+  #subTitle {
+    font-size: 0.9rem;
+  }
+  .cardTitle {
+    font-size: 2.3rem;
+  }
+  .cardSubTitle {
+    font-size: 0.9rem;
+  }
+  .cardHeader {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .card {
+    max-height: 220px;
+  }
+  #title {
+    font-size: 2.2rem;
+  }
+  #subTitle {
+    font-size: 0.85rem;
+  }
+  .cardTitle {
+    font-size: 2rem;
+  }
+  .cardSubTitle {
+    font-size: 0.85rem;
+  }
+  .cardHeader {
+    font-size: 0.45rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #titleContainer {
+    height: 20%;
+    padding-bottom: 15px;
+  }
+  #cardContainer {
+    height: 60%;
+  }
+  #linkContainer {
+    height: 20%;
+    padding-top: 15px;
+  }
+  .card {
+    max-height: 200px;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  #subTitle {
+    font-size: 0.78rem;
+  }
+  .cardTitle {
+    font-size: 1.8rem;
+  }
+  .cardSubTitle {
+    font-size: 0.7rem;
+  }
+  .cardHeader {
+    font-size: 0.43rem;
+  }
+  #cardOne div p {
+    max-width: 36%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    height: 120svh;
+  }
+  #titleContainer {
+    height: 15%;
+  }
+  #linkContainer {
+    height: 15%;
+  }
+  #cardContainer {
+    display: none;
+  }
+  #cardContainerMobile {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContentMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .cardContentMobile p,
+  .cardContentMobile h3 {
+    margin: 0;
+  }
+  .firstRow {
+    height: 50%;
+    width: 100%;
+    padding: 5px 0 6px 0;
+  }
+  .secondRow {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    padding: 6px 0;
+    gap: 12px;
+  }
+  .thirdRow {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    padding: 6px 0;
+    gap: 12px;
+  }
+  .cardMobile {
     border: solid 2px var(--khaki-light);
     border-radius: 18px;
     background-color: var(--khaki-light);
     padding-left: 12px;
     padding-top: 12px;
-    position: relative;
-    overflow: hidden;
     transition: transform 500ms;
-}
-
-/* adjust size of image */
-.imgWrapper {
-    position: absolute;
-    width: 60%;
-    height: 90%;
-    bottom: -3px;
-    right: -3px;
-}
-
-.imgContainer {
-    width:100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.imgContainer picture {
+    overflow: hidden;
+  }
+  #cardOneMobile {
+    border: solid 2px var(--khaki);
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
+    position: relative;
+  }
+  #cardTwoMobile {
+    height: 100%;
+    width: 50%;
+  }
+  #cardThreeMobile {
+    height: 100%;
+    width: 50%;
+  }
+  #cardFourMobile {
+    height: 100%;
+    width: 50%;
+  }
+  #cardFiveMobile {
+    height: 100%;
+    width: 50%;
+  }
 
-.imgContainer picture img {
+  /* adjust image size here */
+  .imgWrapperMobile {
+    position: absolute;
+    width: 98.1%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+  .imgContainerMobile {
+    width: 100%;
+    height: 100%;
+  }
+  .imgContainerMobile picture {
+    height: 100%;
+    width: 100%;
+  }
+  .imgContainerMobile picture img {
     height: 100%;
     width: 100% !important;
     object-fit: cover;
     object-position: 0% 0%;
-}
-
-.textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.textContainer p {
-    margin: 0;
-}
-
-.cardTitle {
-    margin: 0;
-    font-family: var(--font-bold);
-    font-size: 2.5rem;
-    color: var(--font-primanry-color);
-}
-
-.cardSubTitle {
-    margin: 0;
-    max-width: 70%;
-    font-family: var(--font-regular);
-    font-size: 1rem;
-    color: var(--font-primanry-color);
-}
-
-.cardHeader {
-    margin: 0;
-    padding: 4px 12px;
-    border-radius: 18px;
-    font-size: .55rem;
-    font-family: var(--font-bold);
-    color: var(--money-green);
-    background-color: var(--khaki-light);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    filter: brightness(90%);
-}
-
-.buttonContainer {
-    height: 20%;
-    display: flex;
-    align-items: flex-end;
-}
-
-.card:hover {
-    border: solid 2px var(--khaki);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    transform: translateY(-.05rem);
-    transition: 250ms;
-    transition: transform 250ms;
-}
-
-#cardOne {
-    flex: 2;
-}
-
-#cardTwo {
-    flex: 1;
-}
-
-#cardThree {
-    flex: 1;
-}
-
-#cardFour {
-    flex: 1;
-}
-
-#cardFive {
-    flex: 2;
-}
-
-#cardOne div p {
-    max-width: 40%;
-}
-
-#cardContainerMobile {
-    display: none;
-}
-
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-        padding: 26px 180px;;
-    }
-}
-
-@media only screen and (max-width: 1920px) {
-    .card {
-        max-height: 240px;
-    }
-    #title {
-        font-size: 2.5rem;
-    }
-    #subTitle {
-        font-size: .9rem;
-    }
-    .cardTitle {
-        font-size: 2.3rem;
-    }
-    .cardSubTitle {
-        font-size: .9rem;
-    }
-    .cardHeader {
-        font-size: .5rem;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .card {
-        max-height: 220px;
-    }
-    #title {
-        font-size: 2.2rem;
-    }
-    #subTitle {
-        font-size: .85rem;
-    }
-    .cardTitle {
-        font-size: 2rem;
-    }
-    .cardSubTitle {
-        font-size: .85rem;
-    }
-    .cardHeader {
-        font-size: .45rem;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    #titleContainer {
-        height: 20%;
-        padding-bottom: 15px;
-    }
-    #cardContainer {
-        height: 60%;
-    }
-    #linkContainer {
-        height: 20%;
-        padding-top: 15px;
-    }
-    .card {
-        max-height: 200px;
-    }
-    #title {
-        font-size: 2rem;
-    }
-    #subTitle {
-        font-size: .78rem;
-    }
-    .cardTitle {
-        font-size: 1.8rem;
-    }
-    .cardSubTitle {
-        font-size: .7rem;
-    }
-    .cardHeader {
-        font-size: .43rem;
-    }
-    #cardOne div p {
-        max-width: 36%;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .container {
-        height: 120svh;
-    }
-    #titleContainer {
-        height: 15%;
-    }
-    #linkContainer {
-        height: 15%;
-    }
-    #cardContainer {
-        display: none;
-    }
-    #cardContainerMobile {
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-    }
-    .cardContentMobile {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-    .cardContentMobile p, .cardContentMobile h3 {
-        margin: 0;
-    }
-    .firstRow {
-        height: 50%;
-        width: 100%;
-        padding: 5px 0 6px 0;
-    }
-    .secondRow {
-        height: 25%;
-        width: 100%;
-        display: flex;
-        padding: 6px 0;
-        gap: 12px;
-    }
-    .thirdRow {
-        height: 25%;
-        width: 100%;
-        display: flex;
-        padding: 6px 0;
-        gap: 12px;
-    }
-    .cardMobile {
-        border: solid 2px var(--khaki-light);
-        border-radius: 18px;
-        background-color: var(--khaki-light);
-        padding-left: 12px;
-        padding-top: 12px;
-        transition: transform 500ms;
-        overflow: hidden;
-    }
-    #cardOneMobile {
-        border: solid 2px var(--khaki);
-        height: 100%;
-        width: 100%;
-        position: relative;
-    }
-    #cardTwoMobile {
-        height: 100%;
-        width: 50%;
-    }
-    #cardThreeMobile {
-        height: 100%;
-        width: 50%;
-    }
-    #cardFourMobile {
-        height: 100%;
-        width: 50%;
-    }
-    #cardFiveMobile {
-        height: 100%;
-        width: 50%;
-    }
-
-    /* adjust image size here */
-    .imgWrapperMobile {
-        position: absolute;
-        width: 98.1%;
-        height: 50%;
-        bottom: 0;
-        right: 0;
-    }
-    .imgContainerMobile {
-        width:100%;
-        height: 100%;
-    }
-    .imgContainerMobile picture {
-        height: 100%;
-        width: 100%;
-    }
-    .imgContainerMobile picture img {
-        height: 100%;
-        width: 100% !important;
-        object-fit: cover;
-        object-position: 0% 0%;
-    }
-    .cardHeader {
-        font-size: .55rem;
-    }
-    .cardTitle {
-        font-size: 2.2rem;
-    }
-    .cardSubTitle {
-        font-size: .8rem;
-    }
+  }
+  .cardHeader {
+    font-size: 0.55rem;
+  }
+  .cardTitle {
+    font-size: 2.2rem;
+  }
+  .cardSubTitle {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 786px) {
-    .container {
-        height: 100svh;
-    }
-    .cardContentMobile {
-        gap: 6px;
-    }
-    .cardHeader {
-        font-size: .55rem;
-    }
-    .cardTitle {
-        font-size: 2rem;
-    }
-    .cardSubTitle {
-        font-size: .7rem;
-    }
+  .container {
+    height: 100svh;
+  }
+  .cardContentMobile {
+    gap: 6px;
+  }
+  .cardHeader {
+    font-size: 0.55rem;
+  }
+  .cardTitle {
+    font-size: 2rem;
+  }
+  .cardSubTitle {
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 140svh;
-    }
-    #titleContainer {
-        gap: .5rem;
-        padding-bottom: 20px;
-    }
-    .cardContentMobile {
-        gap: 6px;
-    }
-    .firstRow {
-        height: 38%;
-    }
-    .secondRow {
-        height: 31%;
-    }
-    .thirdRow {
-        height: 31%;
-    }
-    #title {
-        font-size: 1.8rem;
-    }
-    #subTitle {
-        font-size: .7rem;
-        padding-bottom: 10px;
-    }
-    .cardHeader {
-        font-size: .4rem;
-    }
-    .cardTitle {
-        font-size: 1.1rem;
-    }
-    .cardSubTitle {
-        font-size: .7rem;
-    }
+  .container {
+    height: 140svh;
+  }
+  #titleContainer {
+    gap: 0.5rem;
+    padding-bottom: 20px;
+  }
+  .cardContentMobile {
+    gap: 6px;
+  }
+  .firstRow {
+    height: 38%;
+  }
+  .secondRow {
+    height: 31%;
+  }
+  .thirdRow {
+    height: 31%;
+  }
+  #title {
+    font-size: 1.8rem;
+  }
+  #subTitle {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+  }
+  .cardHeader {
+    font-size: 0.4rem;
+  }
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  .cardSubTitle {
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        height: 165svh;
-    }
-    #subTitle {
-        font-size: .85rem;
-    }
-    .cardSubTitle {
-        font-size: .75rem;
-    }
+  .container {
+    height: 165svh;
+  }
+  #subTitle {
+    font-size: 0.85rem;
+  }
+  .cardSubTitle {
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 391px) {
-    #titleContainer {
-        height: 250px;
-    }
-    .cardContentMobile {
-        height: 200px;
-    }
-    #linkContainer {
-        height: 200px;
-    }
-    .cardTitle {
-        font-size: 1.2rem;
-    }
-    .cardSubTitle {
-        font-size: .75rem;
-    }
+  #titleContainer {
+    height: 250px;
+  }
+  .cardContentMobile {
+    height: 200px;
+  }
+  #linkContainer {
+    height: 200px;
+  }
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  .cardSubTitle {
+    font-size: 0.75rem;
+  }
 }

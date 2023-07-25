@@ -1,71 +1,77 @@
 .sectionWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .container {
-    height: 100svh;
-    width: 100%;
-    min-height: 100vh;
-    padding: 0% 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--khaki-light);
+  height: 100svh;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0% 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--khaki-light);
 }
 
 .box {
-    position: relative;
-    width: 370px;
-    height: 450px;
-    background-color: var(--khaki-light);
-    border-radius: 18px;
-    overflow: hidden;
+  position: relative;
+  width: 370px;
+  height: 450px;
+  background-color: var(--khaki-light);
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 .box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 370px;
-    height: 450px;
-    background: linear-gradient(60deg,transparent,var(--money-green),var(--money-green));
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    var(--money-green),
+    var(--money-green)
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
 }
 
 .box::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 370px;
-    height: 450px;
-    background: linear-gradient(60deg,transparent,var(--cobalt-blue),var(--cobalt-blue));
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    var(--cobalt-blue),
+    var(--cobalt-blue)
+  );
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
 }
 
 @keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-
-
-
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-        padding: 26px 180px;
-    }
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+    padding: 26px 180px;
+  }
 }

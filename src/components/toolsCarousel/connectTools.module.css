@@ -1,127 +1,128 @@
 .container {
-    height: 60svh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  height: 60svh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .textContainer {
-    margin: 0 7%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 0 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .textContainer h2 {
-    margin: 0;
-    font-family: var(--font-regular);
-    color: var(--money-green);
-    font-size: 2.8rem;
-    text-align: center;
+  margin: 0;
+  font-family: var(--font-regular);
+  color: var(--money-green);
+  font-size: 2.8rem;
+  text-align: center;
 }
 
 .textContainer p {
-    margin: 1em 0 2.5em 0;
-    font-family: var(--font-light);
-    color: var(--primary-font-color);
-    font-size: 1.2rem;
-    text-align: center;
+  margin: 1em 0 2.5em 0;
+  font-family: var(--font-light);
+  color: var(--primary-font-color);
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .toolsContainer {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 1em;
-    overflow: hidden;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1em;
+  overflow: hidden;
 }
 
 .card {
-    flex: 1 1 0px;
-    width: 0;
-    border: solid 1px var(--khaki-light);
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
-    gap: .8em; 
+  flex: 1 1 0px;
+  width: 0;
+  border: solid 1px var(--khaki-light);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  gap: 0.8em;
 }
 
-.card:hover, .card:hover img, .card:hover h4 {
-    transition: 250ms;
-    filter: brightness(90%);
+.card:hover,
+.card:hover img,
+.card:hover h4 {
+  transition: 250ms;
+  filter: brightness(90%);
 }
-
 
 .card img {
-    height: 40px;
-    width: auto;
-    padding-top: .4em;
+  height: 40px;
+  width: auto;
+  padding-top: 0.4em;
 }
 
 .card h4 {
-    margin: 0;
-    font-family: var(--font-regular);
-    font-size: 1em;
+  margin: 0;
+  font-family: var(--font-regular);
+  font-size: 1em;
 }
 
 #firstCard {
-    border-left: 0;
-    border-radius: 0 18px 18px 0; 
+  border-left: 0;
+  border-radius: 0 18px 18px 0;
 }
 
 #lastCard {
-    border-right: 0;
-    border-radius: 18px 0 0 18px; 
+  border-right: 0;
+  border-radius: 18px 0 0 18px;
 }
 
-@media only screen and (max-width: 991px)  {
-    .container {
-        height: 70svh;
-    }
-    .card {
-        display: flex;
-        flex: 0;
-        height: 140px;
-        width: 140px;
-    }
+@media only screen and (max-width: 991px) {
+  .container {
+    height: 70svh;
+  }
+  .card {
+    display: flex;
+    flex: 0;
+    height: 140px;
+    width: 140px;
+  }
 }
 
-@media only screen and (max-width: 600px)  {
-    .textContainer h2 {
-        font-size: 2.2rem;
-    }
-    .textContainer p {
-        font-size: 1rem;
-    }
-    .card {
-        height: 100px;
-        width: 100px;
-        padding: 1.5em;
-        gap: .4em;
-    }
+@media only screen and (max-width: 600px) {
+  .textContainer h2 {
+    font-size: 2.2rem;
+  }
+  .textContainer p {
+    font-size: 1rem;
+  }
+  .card {
+    height: 100px;
+    width: 100px;
+    padding: 1.5em;
+    gap: 0.4em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        padding: 3rem 0;
-    }
-    .textContainer h2 {
-        font-size: 2rem;
-    }
-    .textContainer p {
-        font-size: .85rem;
-    }
-    .card {
-        padding: 1em;
-        gap: .2em;
-    }
+  .container {
+    padding: 3rem 0;
+  }
+  .textContainer h2 {
+    font-size: 2rem;
+  }
+  .textContainer p {
+    font-size: 0.85rem;
+  }
+  .card {
+    padding: 1em;
+    gap: 0.2em;
+  }
 }

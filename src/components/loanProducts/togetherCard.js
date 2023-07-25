@@ -27,10 +27,7 @@ const TogetherCard = ({ pageName }) => {
         </div>
         <div id={styles.cardContainer}>
           <div id={styles.cardWrapper}>
-            <Link
-              className={styles.card}
-              to="/loanorigination"
-            >
+            <Link className={styles.card} to="/loanorigination">
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>
                   <img
@@ -102,7 +99,7 @@ const TogetherCard = ({ pageName }) => {
         </div>
         <div className={styles.buttonContainer}>
           <Button
-          className={styles.button}
+            className={styles.button}
             onClick={() => {
               navigate("/loansuite")
             }}

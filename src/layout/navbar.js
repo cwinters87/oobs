@@ -215,7 +215,7 @@ function NavBar() {
               </MenuLink>
               <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
             </MenuGroup>
-            <MenuGroup>              
+            <MenuGroup>
               <Button
                 onClick={() => {
                   navigate("/contact")
@@ -224,9 +224,12 @@ function NavBar() {
                 <p>Request a demo</p>
               </Button>
               <Divider />
-                {isLoggedIn ?           
+              {isLoggedIn ? (
                 <MenuGroup>
-                  <MenuLink onClick={handleDropdownAccount} className={openAccount ? "open" : ""}>
+                  <MenuLink
+                    onClick={handleDropdownAccount}
+                    className={openAccount ? "open" : ""}
+                  >
                     <p>Account</p>
                     <ChevronIcon />
                   </MenuLink>
@@ -242,15 +245,12 @@ function NavBar() {
                     <DropdownItem onClick={() => navigate("/dashboard")}>
                       Dashboard
                     </DropdownItem>
-                    <DropdownItem onClick={handleLogout}>
-                      Logout
-                    </DropdownItem>
+                    <DropdownItem onClick={handleLogout}>Logout</DropdownItem>
                   </Dropdown>
                 </MenuGroup>
-                :  
-                <MenuLink onClick={() => navigate("/login")}>
-                  Login
-                </MenuLink>}
+              ) : (
+                <MenuLink onClick={() => navigate("/login")}>Login</MenuLink>
+              )}
             </MenuGroup>
           </ToolBox>
         </Toolbar>
@@ -318,7 +318,11 @@ function NavBar() {
               For Brokers
             </MenuLink>
             <MenuLink onClick={() => navigate("/about")}>About</MenuLink>
-            {isLoggedIn && <MenuLink onClick={() => navigate("/dashboard")}>Dashboard</MenuLink>}
+            {isLoggedIn && (
+              <MenuLink onClick={() => navigate("/dashboard")}>
+                Dashboard
+              </MenuLink>
+            )}
             <MenuLink
               onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
             >

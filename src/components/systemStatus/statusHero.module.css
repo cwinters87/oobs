@@ -1,27 +1,27 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .title {
-    font-weight: bold;
-    text-align: center;
-    font-size: 45px;  
+  font-weight: bold;
+  text-align: center;
+  font-size: 45px;
 }
 
 .subTitle {
-    font-family: var(--font-sub);
-    text-align: center;
-    font-size: 15px;
-    max-width: 680px;
+  font-family: var(--font-sub);
+  text-align: center;
+  font-size: 15px;
+  max-width: 680px;
 }
 
 @media screen and (max-width: 575px) {
-    .container {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }

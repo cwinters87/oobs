@@ -1,30 +1,32 @@
-import * as React from 'react'
+import * as React from "react"
 import { Seo } from "../components/seo"
-import Layout from '../layout/layout'
-
+import Layout from "../layout/layout"
 
 const CareersPage = () => {
   return (
     <Layout>
-        <main style={{
+      <main
+        style={{
           height: "100svh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "flex-start",
           padding: "7%",
-          }}>
-        <h4>Jobs Postings: <br/><br/>Please check back later for open roles</h4>
-        <ul>
-        </ul>
-        <div style={{height: "500px"}}></div>
-        </main>
+        }}
+      >
+        <h4>
+          Jobs Postings: <br />
+          <br />
+          Please check back later for open roles
+        </h4>
+        <ul></ul>
+        <div style={{ height: "500px" }}></div>
+      </main>
     </Layout>
   )
 }
 
-export const Head = () => (
-  <Seo  title="TaskSuite - Careers"/>
-)
+export const Head = () => <Seo title="TaskSuite - Careers" />
 
 export default CareersPage

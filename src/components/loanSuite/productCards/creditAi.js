@@ -5,7 +5,7 @@ import Icon from "../../../images/components/icon-products-creditai.png"
 import Checkmark from "../../../images/components/icon-products-check-creditai.png"
 import Image from "../../../images/loanSuite/products-creditai1.png"
 import ImageMobile from "../../../images/loanSuite/products-creditai-mobile.png"
-import ScrollFadeInImage from '../../effects/popOutImg'
+import ScrollFadeInImage from "../../effects/popOutImg"
 import imgPop from "../../../images/loanSuite/pop-credit.png"
 import * as styles from "./productCard.module.css"
 
@@ -74,13 +74,17 @@ const CreditAi = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
-        <ScrollFadeInImage src={imgPop} alt="pop-out" style={{
-            position: "absolute",
-            bottom: "-50px",
-            right: "20%",
-            height: "100px",
-            width: "auto",
-          }}/>
+          <ScrollFadeInImage
+            src={imgPop}
+            alt="pop-out"
+            style={{
+              position: "absolute",
+              bottom: "-50px",
+              right: "20%",
+              height: "100px",
+              width: "auto",
+            }}
+          />
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />

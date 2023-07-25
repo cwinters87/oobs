@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react"
-import { Link } from 'gatsby'
-import * as styles from './statusIcon.module.css'
-
+import { Link } from "gatsby"
+import * as styles from "./statusIcon.module.css"
 
 const StatusIcon = () => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
@@ -30,21 +29,23 @@ const StatusIcon = () => {
   if (data) {
     const status = data.instances[0].status
     const statusColor = data.instances[0].backgroundColor
-      const statusStyle = {
+    const statusStyle = {
       height: "15px",
       width: "15px",
       backgroundColor: statusColor,
       borderRadius: "50%",
       display: "inline-block",
-    }  
-    
+    }
+
     return (
-        <div className={styles.container}>
-            <span style={statusStyle}></span>
-            <Link className={styles.text} to="/">Status: <span className={styles.statusWrapper}>{status}</span></Link>
-        </div>
-      )
+      <div className={styles.container}>
+        <span style={statusStyle}></span>
+        <Link className={styles.text} to="/">
+          Status: <span className={styles.statusWrapper}>{status}</span>
+        </Link>
+      </div>
+    )
   }
 }
-  
+
 export default StatusIcon

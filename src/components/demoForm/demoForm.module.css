@@ -1,67 +1,67 @@
 .container {
-    font-family: var(--font-light);
+  font-family: var(--font-light);
 }
 
 .row {
-    padding-bottom: .9rem;
+  padding-bottom: 0.9rem;
 }
 
 .button {
-    border: solid 2px var(--money-green);
-    background-color: var(--money-green);
-    font-family: var(--font-light);
-    font-size: 1.1em;
-    margin-top: 15px;
-    width: 100%;
-    height: 55px;
-    transition: transform 500ms;
+  border: solid 2px var(--money-green);
+  background-color: var(--money-green);
+  font-family: var(--font-light);
+  font-size: 1.1em;
+  margin-top: 15px;
+  width: 100%;
+  height: 55px;
+  transition: transform 500ms;
 }
 
-.button:hover, .button:focus-visible {
-    background-color: var(--cobalt-blue);
-    filter: brightness(110%);
-    transform: translateY(-.12rem);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    transition: transform 250ms;
-    
+.button:hover,
+.button:focus-visible {
+  background-color: var(--cobalt-blue);
+  filter: brightness(110%);
+  transform: translateY(-0.12rem);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 250ms;
 }
 
 .formInput {
-    height: 55px;
-    font-size: 1.1em;
-    border: solid 2px var(--khaki);
-    background-color: var(--khaki-light);
+  height: 55px;
+  font-size: 1.1em;
+  border: solid 2px var(--khaki);
+  background-color: var(--khaki-light);
 }
 
 @media only screen and (max-width: 1400px) {
-    .row {
-        padding-bottom: .5rem;
-    }
-    .button {
-        margin-top: 6px;
-    }
+  .row {
+    padding-bottom: 0.5rem;
+  }
+  .button {
+    margin-top: 6px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .row {
-        padding-bottom: .5em;
-    }
-    .button {
-        margin-top: 0;
-    }
+  .row {
+    padding-bottom: 0.5em;
+  }
+  .button {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .row {
-        padding-bottom: .5em;
-    }
-    .formInput {
-        height: 40px;
-        font-size: 1em;
-    }
-    .button {
-        font-size: 1em;
-        margin-top: 0;
-        height: 40px;
-    }
+  .row {
+    padding-bottom: 0.5em;
+  }
+  .formInput {
+    height: 40px;
+    font-size: 1em;
+  }
+  .button {
+    font-size: 1em;
+    margin-top: 0;
+    height: 40px;
+  }
 }

@@ -5,7 +5,7 @@ import Icon from "../../../images/components/icon-products-origination.png"
 import Checkmark from "../../../images/components/icon-products-check-origination.png"
 import Image from "../../../images/loanSuite/products-origination1.png"
 import ImageMobile from "../../../images/loanSuite/products-origination-mobile.png"
-import ScrollFadeInImage from '../../effects/popOutImg'
+import ScrollFadeInImage from "../../effects/popOutImg"
 import imgPop from "../../../images/loanSuite/pop-origination.png"
 import * as styles from "./productCard.module.css"
 
@@ -76,13 +76,17 @@ const Origination = () => {
           </Button>
         </div>
         <div className={styles.imgContainer}>
-          <ScrollFadeInImage src={imgPop} alt="pop-out" style={{
-            position: "absolute",
-            top: "65%",
-            left: "-120px",
-            height: "100px",
-            width: "auto",
-          }}/>
+          <ScrollFadeInImage
+            src={imgPop}
+            alt="pop-out"
+            style={{
+              position: "absolute",
+              top: "65%",
+              left: "-120px",
+              height: "100px",
+              width: "auto",
+            }}
+          />
           <picture>
             <source media="(max-width: 991px)" srcSet={ImageMobile} />
             <source media="(min-width: 992px)" srcSet={Image} />

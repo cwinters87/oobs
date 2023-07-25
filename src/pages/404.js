@@ -48,5 +48,5 @@ const NotFoundPage = () => {
 export default NotFoundPage
 
 export const Head = () => (
-  <Seo  title="Not Found" robots="robots" noIndex="noindex"/>
+  <Seo title="Not Found" robots="robots" noIndex="noindex" />
 )

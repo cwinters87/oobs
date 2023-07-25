@@ -21,10 +21,7 @@ const CurrentProcessCard = () => {
         {/* destop view render */}
         <div id={styles.cardContainer}>
           <div className={styles.flexWrapper} id={styles.flexWrapperTop}>
-            <div
-              className={styles.card}
-              id={styles.cardOne}
-            >
+            <div className={styles.card} id={styles.cardOne}>
               <div className={styles.imgWrapper}>
                 <div className={styles.imgContainer}>
                   <picture>
@@ -53,10 +50,7 @@ const CurrentProcessCard = () => {
                 {/* <AnimatedArrow/> */}
               </div>
             </div>
-            <div
-              className={styles.card}
-              id={styles.cardTwo}
-            >
+            <div className={styles.card} id={styles.cardTwo}>
               <div className={styles.textContainer}>
                 <p>
                   <span className={styles.cardHeader}>WITH TASKSUITE</span>
@@ -73,10 +67,7 @@ const CurrentProcessCard = () => {
             </div>
           </div>
           <div className={styles.flexWrapper} id={styles.flexWrapperBottom}>
-            <div
-              className={styles.card}
-              id={styles.cardThree}
-            >
+            <div className={styles.card} id={styles.cardThree}>
               <div className={styles.textContainer}>
                 <p>
                   <span className={styles.cardHeader}>WITH TASKSUITE</span>
@@ -91,10 +82,7 @@ const CurrentProcessCard = () => {
                 {/* <AnimatedArrow/> */}
               </div>
             </div>
-            <div
-              className={styles.card}
-              id={styles.cardFour}
-            >
+            <div className={styles.card} id={styles.cardFour}>
               <div className={styles.textContainer}>
                 <p>
                   <span className={styles.cardHeader}>WITH TASKSUITE</span>
@@ -109,10 +97,7 @@ const CurrentProcessCard = () => {
                 {/* <AnimatedArrow/> */}
               </div>
             </div>
-            <div
-              className={styles.card}
-              id={styles.cardFive}
-            >
+            <div className={styles.card} id={styles.cardFive}>
               <div className={styles.textContainer}>
                 <p>
                   <span className={styles.cardHeader}>WITH TASKSUITE</span>

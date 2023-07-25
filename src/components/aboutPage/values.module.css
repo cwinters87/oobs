@@ -1,175 +1,173 @@
 .sectionWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .container {
-    height: 50svh;
-    width: 100%;
-    padding: 0 7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 50svh;
+  width: 100%;
+  padding: 0 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .titleContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardContainer {
-    height: 350px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 
 .title {
-    margin: 0;
-    font-size: 3rem;
-    font-family: var(--font-regular);
-    font-weight: 600;
-    color: var(--money-green);
-    text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  color: var(--money-green);
+  text-align: center;
 }
 
 .card {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .square {
-    height: 55px;
-    width: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px var(--khaki);
-    border-radius: 9px;
-    margin-bottom: 1.2rem;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--khaki);
+  border-radius: 9px;
+  margin-bottom: 1.2rem;
 }
 
 .cardText {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .cardTitle {
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: var(--font-regular);
-    font-weight: 600;
-    color: var(--money-green);
-    text-align: center;
-    padding-top: .75rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: var(--font-regular);
+  font-weight: 600;
+  color: var(--money-green);
+  text-align: center;
+  padding-top: 0.75rem;
 }
 
 .cardSubTitle {
-    margin: 0;
-    font-size: 1rem;
-    font-family: var(--font-regular);
-    color: var(--primary-font-color);
-    text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--font-regular);
+  color: var(--primary-font-color);
+  text-align: center;
 }
 
 .buttonContainer button {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 2561px)  {
-    .container {
-        max-width: 2560px;
-        padding: 26px 180px;;
-    }
+@media only screen and (min-width: 2561px) {
+  .container {
+    max-width: 2560px;
+    padding: 26px 180px;
+  }
 }
 
 @media only screen and (max-width: 1921px) {
-    .title {
-        font-size: 2.5rem;
-    }
-    .cardTitle {
-        font-size: 1.25rem;
-    }
-    .cardSubTitle {
-        font-size: .85rem;
-    }
+  .title {
+    font-size: 2.5rem;
+  }
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+  .cardSubTitle {
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (max-width: 1600px) {
-    .container {
-        height: 55vh;
-    }
-    .cardContainer {
-        height: 300px;
-    }
+  .container {
+    height: 55vh;
+  }
+  .cardContainer {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .container {
-        height: 75svh;
-        justify-content: flex-start;
-        padding-top: 2%;
-    }
-    .titleContainer{
-        padding-bottom: 8%;
-    }
-    .title {
-        font-size: 1.6rem;
-    }
-    .cardContainer {
-        height: auto;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: space-around;
-    }
-    .card {
-        height: auto;
-        width: 100%;
-    }
-    .square {
-        height: 40px;
-        width: 40px;
-    }
-    .cardText {
-        height: auto;
-        gap: .2rem;
-    }
-    .cardTitle {
-        font-size: 1rem;
-    }
-    .cardSubTitle {
-        font-size: .8rem;
-    }
+  .container {
+    height: 75svh;
+    justify-content: flex-start;
+    padding-top: 2%;
+  }
+  .titleContainer {
+    padding-bottom: 8%;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .cardContainer {
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  .card {
+    height: auto;
+    width: 100%;
+  }
+  .square {
+    height: 40px;
+    width: 40px;
+  }
+  .cardText {
+    height: auto;
+    gap: 0.2rem;
+  }
+  .cardTitle {
+    font-size: 1rem;
+  }
+  .cardSubTitle {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        height: 95svh;
-    }
-    .titleContainer {
-        padding-top: 7%;
-        padding-bottom: 10%;
-    }
-    
+  .container {
+    height: 95svh;
+  }
+  .titleContainer {
+    padding-top: 7%;
+    padding-bottom: 10%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        height: 100vh;
-    }
+  .container {
+    height: 100vh;
+  }
 }

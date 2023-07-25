@@ -5,7 +5,7 @@ const WebsiteStatus = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [time, setTime] = useState(0)
-  
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
@@ -25,11 +25,11 @@ const WebsiteStatus = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTime(prevTime => prevTime + 1)
+      setTime((prevTime) => prevTime + 1)
     }, 60000)
     return () => clearInterval(intervalId)
-  }, [])  
-  
+  }, [])
+
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error: {error.message}</p>
   if (!data) return null
@@ -44,18 +44,22 @@ const WebsiteStatus = () => {
       backgroundColor: statusColor,
       padding: "10px 20px",
       fontWeight: "bold",
-      color: fontColor
-    }  
-    
+      color: fontColor,
+    }
+
     return (
-        <div style={statusStyle}>
-          <div>{status}</div>
-          <div>
-            Refreshed {time >= 1 ? `${time} minute${time === 1 ? "" : "s"}` : "less than 1 minute"} ago
-          </div>
+      <div style={statusStyle}>
+        <div>{status}</div>
+        <div>
+          Refreshed{" "}
+          {time >= 1
+            ? `${time} minute${time === 1 ? "" : "s"}`
+            : "less than 1 minute"}{" "}
+          ago
         </div>
-      )
+      </div>
+    )
   }
 }
-  
+
 export default WebsiteStatus
