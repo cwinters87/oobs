@@ -55,16 +55,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          quality: 100,
-        },
-      },
-    },
-    `@emotion/babel-plugin`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `@emotion/babel-plugin`,
     // Plug in tracking ID for google analytics below...
 
     // {

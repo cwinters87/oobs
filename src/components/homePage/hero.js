@@ -1,5 +1,5 @@
 import * as React from "react"
-import Image from "../../images/homePage/Hero.png"
+import Image from "../../images/homePage/Hero.webp"
 import ImageMobile from "../../images/homePage/Hero-Mobile.png"
 import * as styles from "./hero.module.css"
 import { Button } from "../shared"

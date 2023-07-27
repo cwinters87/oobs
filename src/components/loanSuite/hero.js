@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive"
 import ScrollFadeInImage from "../effects/popOutImg"
 import imgPopOne from "../../images/loanSuite/pop-hero-1.png"
 import imgPopTwo from "../../images/loanSuite/pop-hero-2.png"
-import Image from "../../images/loanSuite/loansuite-hero.png"
+import Image from "../../images/loanSuite/loansuite-hero.webp"
 
 import ImageMobile from "../../images/loanSuite/hero-mobile-2.png"
 import * as styles from "./hero.module.css"
