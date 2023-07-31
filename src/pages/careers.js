@@ -18,9 +18,21 @@ const CareersPage = () => {
         <h4>
           Jobs Postings: <br />
           <br />
-          Please check back later for open roles
+          {/* Please check back later for open roles */}
         </h4>
-        <ul></ul>
+        <ul>
+          <li>
+            <a
+              id="resume-link"
+              href={
+                require("../../static/Controller-Job-Description.pdf").default
+              }
+              download
+            >
+              Controller
+            </a>
+          </li>
+        </ul>
         <div style={{ height: "500px" }}></div>
       </main>
     </Layout>
