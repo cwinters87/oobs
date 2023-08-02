@@ -1,6 +1,7 @@
 import * as React from "react"
-import { Seo } from "../components/seo"
-import Layout from "../layout/layout"
+import { Link } from "gatsby-link"
+import { Seo } from "../../components/seo"
+import Layout from "../../layout/layout"
 
 const CareersPage = () => {
   return (
@@ -18,25 +19,10 @@ const CareersPage = () => {
         <h4>
           Jobs Postings: <br />
           <br />
+          <Link to="/careers/controller">Controller</Link>
           {/* Please check back later for open roles */}
         </h4>
-        <ul>
-          <li>
-            CONTROLLER -
-            <a
-              id="resume-link"
-              href={require("../../static/Gotech-Controller.pdf").default}
-              download
-            >
-              Job Description
-            </a>
-            <br />
-            To apply, send a cover letter and detailed resume to Jill Strange,
-            Human Resources Manager, at{" "}
-            <a href="mailto: jill@tasksuite.com">jill@tasksuite.com</a>. REF:
-            Controller.
-          </li>
-        </ul>
+
         <div style={{ height: "500px" }}></div>
       </main>
     </Layout>
