@@ -22,15 +22,19 @@ const CareersPage = () => {
         </h4>
         <ul>
           <li>
+            CONTROLLER -
             <a
               id="resume-link"
-              href={
-                require("../../static/Controller-Job-Description.pdf").default
-              }
+              href={require("../../static/Gotech-Controller.pdf").default}
               download
             >
-              Controller
+              Job Description
             </a>
+            <br />
+            To apply, send a cover letter and detailed resume to Jill Strange,
+            Human Resources Manager, at{" "}
+            <a href="mailto: jill@tasksuite.com">jill@tasksuite.com</a>. REF:
+            Controller.
           </li>
         </ul>
         <div style={{ height: "500px" }}></div>
