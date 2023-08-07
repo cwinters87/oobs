@@ -12,10 +12,7 @@ const StatusIcon = () => {
       setLoading(true)
       try {
         const prodEnv = process.env.GATSBY_API_STATUS
-        const response = await fetch(prodEnv, { credentials: "include" })
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`)
-        }
+        const response = await fetch(prodEnv)
         const json = await response.json()
         setData(json)
       } catch (err) {
