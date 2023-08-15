@@ -36,6 +36,7 @@ const DynamicProductCardReverse = ({
         <div className={styles.imgContainer}>
           <div className={styles.imgWrapper}>
             <img
+              className={styles.image}
               src={Img}
               alt="TaskSuite product icons"
               style={{ width: "auto", height: "100%" }}
