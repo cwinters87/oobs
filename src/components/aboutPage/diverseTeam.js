@@ -22,9 +22,10 @@ const DiverseTeamCard = () => {
         <div className={styles.numberContainer}>
           <div className={styles.item}>
             <div className={styles.count}>
-              <CountUp duration={1} delay={0.5} end={30} enableScrollSpy />+
+              <CountUp duration={1} delay={0.5} end={5} enableScrollSpy />
+              /5
             </div>
-            <div className={styles.text}>employees</div>
+            <div className={styles.text}>average user rating</div>
           </div>
           <div className={styles.item}>
             <div className={styles.count}>
