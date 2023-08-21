@@ -4,9 +4,11 @@
 
 .row {
   padding-bottom: 0.9rem;
+  width: 100%;
 }
 
 .button {
+  color: var(--secondary-font-color);
   border: solid 2px var(--money-green);
   background-color: var(--money-green);
   font-family: var(--font-light);
@@ -15,10 +17,12 @@
   width: 100%;
   height: 55px;
   transition: transform 500ms;
+  border-radius: 8px;
 }
 
 .button:hover,
 .button:focus-visible {
+  border-color: var(--cobalt-blue);
   background-color: var(--cobalt-blue);
   filter: brightness(110%);
   transform: translateY(-0.12rem);
@@ -27,10 +31,14 @@
 }
 
 .formInput {
+  width: 100%;
   height: 55px;
   font-size: 1.1em;
+  font-family: var(--font-light);
   border: solid 2px var(--khaki);
   background-color: var(--khaki-light);
+  border-radius: 8px;
+  padding: 0 0.8rem;
 }
 
 @media only screen and (max-width: 1400px) {
