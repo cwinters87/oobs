@@ -2,13 +2,9 @@ import React, { useState, useEffect } from "react"
 import { useLocation } from "@reach/router"
 import queryString from "query-string"
 import { navigate } from "gatsby"
-import Button from "react-bootstrap/Button"
-import Col from "react-bootstrap/Col"
-import Form from "react-bootstrap/Form"
-import Row from "react-bootstrap/Row"
 import * as styles from "./demoForm.module.css"
 
-function DemoForm({ closeForm }) {
+const DemoForm = () => {
   const location = useLocation()
   const [utmSource, setUtmSource] = useState("")
   const [utmMedium, setUtmMedium] = useState("")
@@ -44,7 +40,7 @@ function DemoForm({ closeForm }) {
 
   // TODO: Need to have validation on render from server- Better validation for inputs like phone, email, and website
   // Form Validation
-  const [validated, setValidated] = useState(false)
+  // const [validated, setValidated] = useState(false)
 
   // Form Data with onChange data for future improvement
   const [firstNameValue, setFirstNameValue] = useState(),
@@ -71,169 +67,121 @@ function DemoForm({ closeForm }) {
   // On Submit
   // Need to trigger a success page for better Google Ad tracking
   const handleSubmit = (event) => {
-    const form = event.currentTarget
-    if (form.checkValidity() === false) {
-      event.preventDefault()
-      event.stopPropagation()
-    } else {
-      event.preventDefault()
-      console.log(utmSource)
-      console.log(utmMedium)
-      console.log(utmCampaign)
-      fetch(process.env.GATSBY_API_CREATE_LEAD, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          type: "demo",
-          firstname: firstNameValue,
-          lastname: lastNameValue,
-          email: emailValue,
-          phone: phoneValue,
-          company: companyValue,
-          website: websiteValue,
-          utm_source: utmSource,
-          utm_medium: utmMedium,
-          utm_campaign: utmCampaign,
-          utm_term: utmTerm,
-          notes: notesValue,
-        }),
+    event.preventDefault()
+
+    fetch(process.env.GATSBY_API_CREATE_LEAD, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        type: "demo",
+        firstname: firstNameValue,
+        lastname: lastNameValue,
+        email: emailValue,
+        phone: phoneValue,
+        company: companyValue,
+        website: websiteValue,
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign,
+        utm_term: utmTerm,
+        notes: notesValue,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok")
+        }
+        return response.json()
       })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok")
-          }
-          return response.json()
-        })
-        .then((data) => {})
-        .catch((error) => {
-          console.error(
-            "There has been a problem with your fetch operation:",
-            error
-          )
-        })
-      navigate("/success")
-    }
-    setValidated(true)
+      .catch((error) => {
+        console.error(
+          "There has been a problem with your submission, please try again:",
+          error
+        )
+      })
+    navigate("/success")
   }
 
   return (
-    <Form
-      className={styles.container}
-      noValidate
-      validated={validated}
-      onSubmit={handleSubmit}
-    >
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationFirstName">
-          {/* <Form.Label>First name:</Form.Label> */}
-          <Form.Control
-            className={styles.formInput}
-            required
-            type="text"
-            onChange={onFirstNameInput}
-            value={firstNameValue}
-            placeholder="*First name"
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide first name.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationLastName">
-          <Form.Control
-            className={styles.formInput}
-            required
-            type="text"
-            onChange={onLastNameInput}
-            value={lastNameValue}
-            placeholder="*Last name"
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a last name.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationPhone">
-          {/* <Form.Label>Phone Number:</Form.Label> */}
-          <Form.Control
-            className={styles.formInput}
-            type="tel"
-            onChange={onPhoneInput}
-            value={phoneValue}
-            placeholder="*Phone"
-            required
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a phone number.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationCompany">
-          <Form.Control
-            className={styles.formInput}
-            type="text"
-            onChange={onCompanyInput}
-            value={companyValue}
-            placeholder="*Company name"
-            required
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please provide a company name.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationEmail">
-          {/* <Form.Label>Email address:</Form.Label> */}
-          <Form.Control
-            className={styles.formInput}
-            type="email"
-            onChange={onEmailInput}
-            value={emailValue}
-            placeholder="*Business email"
-            required
-          />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          <Form.Control.Feedback type="invalid">
-            Please enter an email address.
-          </Form.Control.Feedback>
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationWebsite">
-          <Form.Control
-            className={styles.formInput}
-            type="text"
-            onChange={onWebsiteInput}
-            value={websiteValue}
-            placeholder="Company website"
-          />
-        </Form.Group>
-      </Row>
-      <Row className={styles.row}>
-        <Form.Group as={Col} controlId="validationNotes">
-          <Form.Control
-            className={styles.formInput}
-            type="text"
-            onChange={onNotesInput}
-            value={notesValue}
-            placeholder="Comments"
-          />
-        </Form.Group>
-      </Row>
-      <Button className={styles.button} type="submit">
-        Submit request for demo
-      </Button>
-    </Form>
+    <form className={styles.container} onSubmit={handleSubmit}>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onFirstNameInput}
+          type="text"
+          value={firstNameValue}
+          placeholder="*First name"
+          required
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onLastNameInput}
+          type="text"
+          value={lastNameValue}
+          placeholder="*Last name"
+          required
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onPhoneInput}
+          type="tel"
+          value={phoneValue}
+          placeholder="*Phone"
+          min="9"
+          max="15"
+          required
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onCompanyInput}
+          type="text"
+          value={companyValue}
+          placeholder="*Company name"
+          required
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onEmailInput}
+          type="email"
+          value={emailValue}
+          placeholder="*Business email"
+          required
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onWebsiteInput}
+          type="text"
+          value={websiteValue}
+          placeholder="Company website"
+        />
+      </div>
+      <div className={styles.row}>
+        <input
+          className={styles.formInput}
+          onChange={onNotesInput}
+          type="text"
+          value={notesValue}
+          placeholder="Comments"
+        />
+      </div>
+      <input
+        className={styles.button}
+        type="submit"
+        value="Submit request for demo"
+      ></input>
+    </form>
   )
 }
 
