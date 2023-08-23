@@ -10,7 +10,7 @@ const BenefitsCard = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageOne} alt="workflow icon" />
+            <img src={imageOne} alt="workflow icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>
@@ -30,7 +30,7 @@ const BenefitsCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageTwo} alt="efficient icon" />
+            <img src={imageTwo} alt="efficient icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>
@@ -50,7 +50,7 @@ const BenefitsCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageThree} alt="customizable icon" />
+            <img src={imageThree} alt="customizable icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>

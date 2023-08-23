@@ -30,7 +30,11 @@ const ServicingHero = () => {
               customer service.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Servicing Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Servicing Product"
+                loading="lazy"
+              />
             </div>
           </div>
           <Button
@@ -61,6 +65,7 @@ const ServicingHero = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

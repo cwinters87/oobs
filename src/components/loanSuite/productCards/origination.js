@@ -16,7 +16,7 @@ const Origination = () => {
         <div className={styles.textContainer}>
           <div className={styles.header}>
             <div className={styles.iconWrapper}>
-              <img src={Icon} alt="origination icon" />
+              <img src={Icon} alt="origination icon" loading="lazy" />
             </div>
             <p className={styles.headerTitle}>ORIGINATION</p>
           </div>
@@ -33,18 +33,22 @@ const Origination = () => {
               to efficiency, accuracy, and reliability.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Origination Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Origination Product"
+                loading="lazy"
+              />
             </div>
             <div className={styles.featureContainer}>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Powerful Integrations</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>
                   Credit Check & Verification
@@ -52,13 +56,13 @@ const Origination = () => {
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Built-In CRM</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>
                   White-Labeled Application & Portal
@@ -94,6 +98,7 @@ const Origination = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

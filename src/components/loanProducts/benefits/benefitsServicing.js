@@ -12,7 +12,7 @@ const BenefitsServicingCard = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageOne} alt="efficient icon" />
+            <img src={imageOne} alt="efficient icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Increase Team Efficiency</h3>
@@ -26,7 +26,7 @@ const BenefitsServicingCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageTwo} alt="experience icon" />
+            <img src={imageTwo} alt="experience icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Better Customer Experience</h3>
@@ -40,7 +40,7 @@ const BenefitsServicingCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageThree} alt="fraud protection icon" />
+            <img src={imageThree} alt="fraud protection icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Enhanced Risk & Fraud Protection</h3>
@@ -54,7 +54,7 @@ const BenefitsServicingCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFour} alt="risk management icon" />
+            <img src={imageFour} alt="risk management icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Improved Risk Management</h3>
@@ -68,7 +68,7 @@ const BenefitsServicingCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFive} alt="productivity icon" />
+            <img src={imageFive} alt="productivity icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Boost Productivity & Reduce Costs</h3>

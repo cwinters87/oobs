@@ -76,6 +76,7 @@ const DemoFormFullPageCard = () => {
                   src={Image}
                   alt="TaskSuite product"
                   style={{ width: "auto", height: "100%" }}
+                  loading="lazy"
                 />
               </picture>
             </div>

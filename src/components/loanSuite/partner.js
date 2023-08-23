@@ -20,7 +20,7 @@ const PartnerCard = () => {
           <div className={styles.card}>
             <h3 className={styles.cardTitle}>For Lenders</h3>
             <div className={styles.imgContainer}>
-              <img src={LenderImg} alt="man at desk on laptop" />
+              <img src={LenderImg} alt="man at desk on laptop" loading="lazy" />
             </div>
             <p className={styles.cardText}>
               Transform your lending operations with our innovative,
@@ -41,7 +41,11 @@ const PartnerCard = () => {
           <div className={styles.card}>
             <h3 className={styles.cardTitle}>For Brokers</h3>
             <div className={styles.imgContainer}>
-              <img src={BrokerImg} alt="person typing on laptop" />
+              <img
+                src={BrokerImg}
+                alt="person typing on laptop"
+                loading="lazy"
+              />
             </div>
             <p className={styles.cardText}>
               Enhance your brokerage service with our comprehensive, intuitive

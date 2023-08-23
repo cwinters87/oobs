@@ -12,7 +12,7 @@ const BenefitsOriginationCard = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageOne} alt="compliance icon" />
+            <img src={imageOne} alt="compliance icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Automated Regulation Compliance</h3>
@@ -27,7 +27,7 @@ const BenefitsOriginationCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageTwo} alt="efficient icon" />
+            <img src={imageTwo} alt="efficient icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Advanced Workflow Efficiency</h3>
@@ -41,7 +41,11 @@ const BenefitsOriginationCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageThree} alt="application accuracy icon" />
+            <img
+              src={imageThree}
+              alt="application accuracy icon"
+              loading="lazy"
+            />
           </div>
           <div className={styles.title}>
             <h3>Greater Application Data Accuracy</h3>
@@ -55,7 +59,7 @@ const BenefitsOriginationCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFour} alt="risk management icon" />
+            <img src={imageFour} alt="risk management icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Improved Risk Management</h3>
@@ -70,7 +74,7 @@ const BenefitsOriginationCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFive} alt="experience icon" />
+            <img src={imageFive} alt="experience icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Enhanced Customer Experience</h3>

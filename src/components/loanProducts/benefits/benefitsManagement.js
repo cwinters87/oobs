@@ -10,7 +10,7 @@ const BenefitsManagementCard = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageOne} alt="book management icon" />
+            <img src={imageOne} alt="book management icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Holistic Loan Book Management</h3>
@@ -24,7 +24,7 @@ const BenefitsManagementCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageTwo} alt="insights icon" />
+            <img src={imageTwo} alt="insights icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Actionable Analytics & Insights</h3>
@@ -38,7 +38,7 @@ const BenefitsManagementCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageThree} alt="customizable icon" />
+            <img src={imageThree} alt="customizable icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Customized & Flexible Features</h3>

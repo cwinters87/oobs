@@ -27,7 +27,11 @@ const CreditHero = () => {
               <br className={styles.bottomBreakPoint} /> for credit scoring.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Credit Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Credit Product"
+                loading="lazy"
+              />
             </div>
           </div>
           <Button
@@ -58,6 +62,7 @@ const CreditHero = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

@@ -21,7 +21,7 @@ const CreatedExclusivelyCard = () => {
               solution is tailored to meet your needs and use cases.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={Image} alt="TaskSuite Credit Product" />
+              <img src={Image} alt="TaskSuite Credit Product" loading="lazy" />
             </div>
           </div>
         </div>
@@ -33,6 +33,7 @@ const CreatedExclusivelyCard = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

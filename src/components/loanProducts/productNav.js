@@ -12,28 +12,28 @@ const ProductNav = () => {
       <div className={styles.container}>
         <Link className={styles.link} to="/loanorigination">
           <div className={styles.imgContainer}>
-            <img src={OrgIcon} alt="Orgination Icon" />
+            <img src={OrgIcon} alt="Orgination Icon" loading="lazy" />
           </div>
           <h3 className={styles.linkTitle}>ORIGINATION</h3>
         </Link>
 
         <Link className={styles.link} to="/loancreditai">
           <div className={styles.imgContainer}>
-            <img src={CreditIcon} alt="Credit AI Icon" />
+            <img src={CreditIcon} alt="Credit AI Icon" loading="lazy" />
           </div>
           <h3 className={styles.linkTitle}>CREDIT AI</h3>
         </Link>
 
         <Link className={styles.link} to="/loanservicing">
           <div className={styles.imgContainer}>
-            <img src={ServIcon} alt="Servicing Icon" />
+            <img src={ServIcon} alt="Servicing Icon" loading="lazy" />
           </div>
           <h3 className={styles.linkTitle}>SERVICING</h3>
         </Link>
 
         <Link className={styles.link} to="/loanmanagement">
           <div className={styles.imgContainer}>
-            <img src={MgmtIcon} alt="Manament Icon" />
+            <img src={MgmtIcon} alt="Manament Icon" loading="lazy" />
           </div>
           <h3 className={styles.linkTitle}>MANAGEMENT</h3>
         </Link>

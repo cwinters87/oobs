@@ -22,7 +22,7 @@ const FeaturesCard = () => {
           <div className={styles.cardContainer}>
             <div className={styles.card}>
               <div className={styles.imgContainer}>
-                <img src={Checkmark} alt="checkmark" />
+                <img src={Checkmark} alt="checkmark" loading="lazy" />
               </div>
               <div className={styles.cardText}>
                 <h3 className={styles.cardTitle}>Fully Integrated APIs</h3>
@@ -34,7 +34,7 @@ const FeaturesCard = () => {
             </div>
             <div className={styles.card}>
               <div className={styles.imgContainer}>
-                <img src={Checkmark} alt="checkmark" />
+                <img src={Checkmark} alt="checkmark" loading="lazy" />
               </div>
               <div className={styles.cardText}>
                 <h3 className={styles.cardTitle}>
@@ -48,7 +48,7 @@ const FeaturesCard = () => {
             </div>
             <div className={styles.card}>
               <div className={styles.imgContainer}>
-                <img src={Checkmark} alt="checkmark" />
+                <img src={Checkmark} alt="checkmark" loading="lazy" />
               </div>
               <div className={styles.cardText}>
                 <h3 className={styles.cardTitle}>

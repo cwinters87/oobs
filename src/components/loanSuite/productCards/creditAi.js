@@ -33,12 +33,16 @@ const CreditAi = () => {
               with credit bureaus for credit scoring.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Credit Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Credit Product"
+                loading="lazy"
+              />
             </div>
             <div className={styles.featureContainer}>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>
                   Credit Scoring Integrations
@@ -46,19 +50,19 @@ const CreditAi = () => {
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Automated Decision Making</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Document Scanning</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Customizable Rules Engine</p>
               </div>
@@ -92,6 +96,7 @@ const CreditAi = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

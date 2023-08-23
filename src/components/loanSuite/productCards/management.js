@@ -16,7 +16,7 @@ const Management = () => {
         <div className={styles.textContainer}>
           <div className={styles.header}>
             <div className={styles.iconWrapper}>
-              <img src={Icon} alt="management icon" />
+              <img src={Icon} alt="management icon" loading="lazy" />
             </div>
             <p className={styles.headerTitle}>MANAGEMENT</p>
           </div>
@@ -34,30 +34,34 @@ const Management = () => {
               manage and track loans from beginning to end.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Management Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Management Product"
+                loading="lazy"
+              />
             </div>
             <div className={styles.featureContainer}>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Online Borrower Portal</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Intelligent Reporting</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Data Security</p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.checkmarkWrapper}>
-                  <img src={Checkmark} alt="checkmark" />
+                  <img src={Checkmark} alt="checkmark" loading="lazy" />
                 </div>
                 <p className={styles.featureTitle}>Robust Integrations</p>
               </div>
@@ -91,6 +95,7 @@ const Management = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

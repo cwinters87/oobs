@@ -62,6 +62,7 @@ const LoanSuiteHero = () => {
                 src={Image}
                 alt="TaskSuite hero product"
                 style={{ width: "auto", height: "100%" }}
+                loading="lazy"
               />
             </picture>
           </div>

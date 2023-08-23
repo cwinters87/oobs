@@ -28,7 +28,7 @@ const EffortlessDealSourcingCard = () => {
         <div className={styles.cardContainer}>
           <div className={styles.card}>
             <div className={styles.image}>
-              <img src={imageOne} alt="volume icon" />
+              <img src={imageOne} alt="volume icon" loading="lazy" />
             </div>
             <div className={styles.title}>
               <h3>Expanded reach</h3>
@@ -43,7 +43,7 @@ const EffortlessDealSourcingCard = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.image}>
-              <img src={imageTwo} alt="data icon" />
+              <img src={imageTwo} alt="data icon" loading="lazy" />
             </div>
             <div className={styles.title}>
               <h3>Improved efficiency</h3>
@@ -58,7 +58,7 @@ const EffortlessDealSourcingCard = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.image}>
-              <img src={imageThree} alt="experience icon" />
+              <img src={imageThree} alt="experience icon" loading="lazy" />
             </div>
             <div className={styles.title}>
               <h3>Enhanced relationships</h3>
@@ -73,7 +73,7 @@ const EffortlessDealSourcingCard = () => {
           </div>
           <div className={styles.card}>
             <div className={styles.image}>
-              <img src={imageFour} alt="workflow icon" />
+              <img src={imageFour} alt="workflow icon" loading="lazy" />
             </div>
             <div className={styles.title}>
               <h3>Customizable solution</h3>

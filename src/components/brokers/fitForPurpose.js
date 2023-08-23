@@ -29,7 +29,7 @@ const FitForPurposeCard = () => {
         <div className={styles.numberContainer}>
           <div className={styles.item}>
             <div className={styles.image}>
-              <img src={imageOne} alt="workflow icon" />
+              <img src={imageOne} alt="workflow icon" loading="lazy" />
             </div>
             <div className={styles.count}>
               <CountUp duration={1} delay={0.5} end={30} enableScrollSpy />%
@@ -41,7 +41,7 @@ const FitForPurposeCard = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <img src={imageTwo} alt="efficient icon" />
+              <img src={imageTwo} alt="efficient icon" loading="lazy" />
             </div>
             <div className={styles.count}>
               <CountUp duration={1} delay={0.5} end={500} enableScrollSpy />%
@@ -53,7 +53,7 @@ const FitForPurposeCard = () => {
           </div>
           <div className={styles.item}>
             <div className={styles.image}>
-              <img src={imageThree} alt="customizable icon" />
+              <img src={imageThree} alt="customizable icon" loading="lazy" />
             </div>
             <div className={styles.count}>
               <CountUp duration={1} delay={0.5} end={1} enableScrollSpy />

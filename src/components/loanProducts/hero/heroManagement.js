@@ -27,7 +27,11 @@ const ManagementHero = () => {
               <br className={styles.bottomBreakPoint} /> beginning to end.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Management Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Management Product"
+                loading="lazy"
+              />
             </div>
           </div>
           <Button
@@ -58,6 +62,7 @@ const ManagementHero = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

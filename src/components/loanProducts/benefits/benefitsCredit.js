@@ -12,7 +12,7 @@ const BenefitsCreditCard = () => {
       <div className={styles.container}>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageOne} alt="volume icon" />
+            <img src={imageOne} alt="volume icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Increased Volume & Scalability</h3>
@@ -27,7 +27,7 @@ const BenefitsCreditCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageTwo} alt="data icon" />
+            <img src={imageTwo} alt="data icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Greater Application Data Accuracy</h3>
@@ -41,7 +41,7 @@ const BenefitsCreditCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageThree} alt="experience icon" />
+            <img src={imageThree} alt="experience icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Enhanced Customer Experience</h3>
@@ -56,7 +56,7 @@ const BenefitsCreditCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFour} alt="workflow icon" />
+            <img src={imageFour} alt="workflow icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Advanced Workflow Efficiency</h3>
@@ -71,7 +71,7 @@ const BenefitsCreditCard = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.image}>
-            <img src={imageFive} alt="risk management icon" />
+            <img src={imageFive} alt="risk management icon" loading="lazy" />
           </div>
           <div className={styles.title}>
             <h3>Improved Risk Management</h3>

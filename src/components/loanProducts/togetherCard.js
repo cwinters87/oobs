@@ -34,6 +34,7 @@ const TogetherCard = ({ pageName }) => {
                     className={styles.icon}
                     src={OrginationIcon}
                     alt="Origination Icon"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>ORIGINATION</h3>
@@ -51,6 +52,7 @@ const TogetherCard = ({ pageName }) => {
                     className={styles.icon}
                     src={CreditIcon}
                     alt="Credit AI Icon"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>CREDIT AI</h3>
@@ -68,6 +70,7 @@ const TogetherCard = ({ pageName }) => {
                     className={styles.icon}
                     src={ServiceIcon}
                     alt="Servicing Icon"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>SERVICING</h3>
@@ -85,6 +88,7 @@ const TogetherCard = ({ pageName }) => {
                     className={styles.icon}
                     src={ManagementIcon}
                     alt="Management Icon"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className={styles.cardTitle}>MANAGEMENT</h3>

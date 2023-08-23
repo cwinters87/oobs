@@ -42,7 +42,7 @@ const ConnectTools = () => {
                 : ""
             }
           >
-            <img src={item.image} alt={item.title} />
+            <img src={item.image} alt={item.title} loading="lazy" />
             <h4>{item.title}</h4>
           </div>
         ))}

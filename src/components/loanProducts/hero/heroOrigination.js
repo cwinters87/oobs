@@ -27,7 +27,11 @@ const OriginationHero = () => {
               <br className={styles.bottomBreakPoint} /> and reliability.
             </p>
             <div className={styles.imgContainerMobile}>
-              <img src={ImageMobile} alt="TaskSuite Origination Product" />
+              <img
+                src={ImageMobile}
+                alt="TaskSuite Origination Product"
+                loading="lazy"
+              />
             </div>
           </div>
           <Button
@@ -58,6 +62,7 @@ const OriginationHero = () => {
               src={Image}
               alt="TaskSuite hero product"
               style={{ width: "auto", height: "100%" }}
+              loading="lazy"
             />
           </picture>
         </div>

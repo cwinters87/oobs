@@ -57,7 +57,7 @@ const ToolsCarousel = () => {
       >
         {data.map((item, index) => (
           <div key={index} className="carousel-item">
-            <img src={item.image} alt={item.title} />
+            <img src={item.image} alt={item.title} loading="lazy" />
             <h4>{item.title}</h4>
           </div>
         ))}

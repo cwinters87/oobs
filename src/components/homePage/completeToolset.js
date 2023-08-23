@@ -120,6 +120,7 @@ const CompleteToolsetCard = () => {
                   src={Image}
                   alt="TaskSuite product"
                   style={{ width: "auto", height: "auto" }}
+                  loading="lazy"
                 />
               </picture>
             </div>
