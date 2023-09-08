@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby-link"
+// import { Link } from "gatsby-link"
 import { Seo } from "../../components/seo"
 import Layout from "../../layout/layout"
 
@@ -19,8 +19,8 @@ const CareersPage = () => {
         <h4>
           Jobs Postings: <br />
           <br />
-          <Link to="/careers/controller">Controller</Link>
-          {/* Please check back later for open roles */}
+          {/* <Link to="/careers/controller">Controller</Link> */}
+          Please check back later for open roles
         </h4>
 
         <div style={{ height: "500px" }}></div>
