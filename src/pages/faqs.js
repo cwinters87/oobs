@@ -1,12 +1,14 @@
 import * as React from "react"
 import { Seo } from "../components/seo"
 import Layout from "../layout/layout"
-import ComingSoonCard from "../components/comingSoon"
+import FAQAccordion from "../components/FAQ/faqAccordion"
+import FAQBanner from "../components/FAQ/faqBanner"
 
 const FaqsPage = () => {
   return (
     <Layout>
-      <ComingSoonCard />
+      <FAQBanner />
+      <FAQAccordion />
     </Layout>
   )
 }
