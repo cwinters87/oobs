@@ -1,0 +1,41 @@
+.sectionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    min-height: calc(100vh - 216px);
+    width: 100%;
+    padding: 0 7%;
+  }
+
+  .title {
+    font-family: var(--font-regular);
+    color: var(--money-green);
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+
+  .subTitle {
+    font-family: var(--font-light);
+    color: var(--primary-font-color);
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .link {
+    color: var(--cobalt-blue);
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    .subTitle {
+      font-size: 1rem;
+    }
+  }
+  
