@@ -37,10 +37,19 @@
     font-size: 1.2rem;
   }
   
-  /* @media only screen and (min-width: 2561px) {
+  @media only screen and (max-width: 991px) {
     .container {
-      max-width: 2560px;
-      padding: 26px 180px;
+      height: 108px;
     }
-  } */
+    .imgWrapper {
+      margin-top: 0px;
+      width: 34px;
+    }
+    .title {
+      font-size: 1.8rem;
+    }
+    .subTitle {
+      font-size: 1rem;
+    }
+  }
   

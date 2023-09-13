@@ -10,19 +10,9 @@ const AccordionItem = ({ question, answer }) => {
     <div className={styles.accordionItem}>
       {isOpen && <div className={styles.accordionOpenClose}>-</div>}
       {!isOpen && <div className={styles.accordionOpenClose}>+</div>}
-      <h3 
-        role="button" 
-        tabIndex="0" 
-        onClick={() => setIsOpen(!isOpen)} 
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            setIsOpen(!isOpen);
-          }
-        }} 
-        className={styles.accordionTitle}
-      >
+      <button onClick={() => setIsOpen(!isOpen)} className={styles.accordionTitle}>
         {question}
-      </h3>
+      </button>
       {isOpen && <p className={styles.accordionContent}>{answer}</p>}
     </div>
   )
