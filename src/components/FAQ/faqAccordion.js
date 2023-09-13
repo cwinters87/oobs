@@ -38,7 +38,7 @@ const FAQAccordion = () => {
   const email = () => {
     return (
         <p>
-          TaskSuite offers same day support for all users. just email support at <a href="mailto:support@tasksuite.com">support@tasksuite.com</a>
+          TaskSuite offers 24/7 support for all users. just email support at <a href="mailto:support@tasksuite.com">support@tasksuite.com</a>
         </p>
     )
   }
