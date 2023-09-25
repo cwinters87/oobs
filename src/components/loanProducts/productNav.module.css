@@ -6,9 +6,9 @@
 }
 
 .container {
-  height: 15svh;
+  height: 7svh;
   width: 100%;
-  padding: 4% 7% 0.25% 7%;
+  /* padding: 4% 7% 0.25% 7%; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -24,10 +24,12 @@
   text-decoration: none;
   color: lightgrey;
   transition: transform 500ms;
+  /* border: solid 2px green; */
 }
 
 .link:hover {
   /* color: var(--grey); */
+  color: var(--lime-green);
   filter: brightness(110%);
   transform: translateY(-0.12rem);
 
@@ -65,13 +67,13 @@
 
 @media only screen and (max-width: 1921px) {
   .container {
-    height: 16svh;
+    height: 7svh;
   }
 }
 
 @media only screen and (max-width: 1600px) {
   .container {
-    height: 18svh;
+    height: 7svh;
   }
 }
 
@@ -100,9 +102,9 @@
 
 @media (max-width: 767px) {
   .container {
-    height: 18vh;
+    height: 10vh;
     gap: 0;
-    padding: 15% 7% 0 7%;
+    padding: 2% 7% 0 7%;
   }
   .link {
     flex-basis: 50%;
@@ -115,8 +117,8 @@
 
 @media (max-width: 400px) {
   .container {
-    height: 17vh;
-    padding-top: 12%;
+    height: 10vh;
+    padding-top: 0;
   }
   .imgContainer {
     height: 1.6rem;

@@ -43,7 +43,7 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           backgroundColor: "var(--khaki-light)",
-          top: "55px !important",
+          // top: "55px !important",
           boxShadow: "none",
           border: "1px solid var(--money-green)",
           color: "var(--money-green)",
@@ -158,7 +158,7 @@ function NavBar() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar>
+      <AppBar position="sticky">
         <Toolbar>
           <ToolBox>
             <Logo>

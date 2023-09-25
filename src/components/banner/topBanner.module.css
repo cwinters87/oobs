@@ -1,0 +1,32 @@
+.topBanner {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--money-green);
+  color: var(--secondary-font-color);
+  filter: brightness(80%);
+  font-family: var(--font-light);
+  font-size: 0.75rem;
+  gap: 1.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topBanner a {
+  color: var(--lime-green);
+  text-decoration: none;
+}
+
+.topBanner a:hover {
+  color: var(--titanium-grey);
+  filter: brightness(110%);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

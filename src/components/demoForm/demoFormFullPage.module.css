@@ -7,9 +7,9 @@
 }
 
 .container {
-  height: 110svh;
+  height: calc(100vh - 90px);
   width: 100%;
-  padding: 8% 7% 7%;
+  padding: 3% 7%;
 }
 
 .wrapper {
@@ -68,6 +68,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20px;
+  width: auto;
 }
 
 .feature p {
@@ -107,6 +109,9 @@
 }
 
 @media only screen and (max-width: 1920px) {
+  /* .container {
+    height: 100svh;
+  } */
   .title {
     font-size: 2rem;
   }
@@ -137,12 +142,9 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .sectionWrapper {
-    padding-top: 5%;
-  }
   .container {
-    height: 100svh;
-    padding: 7% 7% 1% 7%;
+    height: calc(100vh - 107px);
+    padding: 1% 7% 1% 7%;
   }
   .wrapper {
     flex-direction: column;
@@ -201,7 +203,7 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 12% 7% 8% 7%;
+    padding: 1% 7% 1% 7%;
   }
   .formContainer {
     height: 100%;
@@ -215,11 +217,15 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 100svh;
+    height: 75vh;
+    padding-top: 1%;
   }
   .formContainer {
     height: 100%;
     padding: 0 7%;
+  }
+  .formWrapper {
+    padding: 2%;
   }
   .imgContainer {
     height: 35%;
@@ -235,6 +241,7 @@
 
 @media only screen and (max-width: 400px) {
   .container {
-    height: 100vh;
+    border: solid 2px red;
+    /* height: 50vh; */
   }
 }

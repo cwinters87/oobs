@@ -7,9 +7,9 @@
 }
 
 .container {
-  height: 100svh;
+  height: calc(100svh - 90px);
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 90px);
   padding: 0% 7%;
   display: flex;
   justify-content: center;
