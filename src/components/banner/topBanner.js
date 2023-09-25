@@ -8,10 +8,7 @@ const TopBanner = () => {
 
   return (
     <div className={styles.topBanner}>
-      <span>TaskFlow is part of the TaskSuite family</span>
-      <a href="https://tasksuite.com" target="_blank" rel="noreferrer">
-        Learn more
-      </a>
+      <span>TaskSuite will be at Money20/20 in Las Vegas Oct 22nd-25th</span>
       {/* <button
         className={styles.closeButton}
         onClick={() => setIsVisible(false)}
