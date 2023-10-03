@@ -10,7 +10,7 @@ import ExclusivelyCard from "../components/homePage/exclusively"
 import ConnectTools from "../components/toolsCarousel/connectTools"
 import DemoFormCard from "../components/demoForm/demoFormCard"
 import FadeInFromBottom from "../components/effects/fadeInFromBottom"
-import FadeInFromLeft from "../components/effects/fadeInFromLeft"
+// import FadeInFromLeft from "../components/effects/fadeInFromLeft"
 
 const IndexPage = () => {
   return (
@@ -37,9 +37,9 @@ const IndexPage = () => {
         <ExclusivelyCard />
       </FadeInFromBottom>
 
-      <FadeInFromLeft>
+      <FadeInFromBottom>
         <ConnectTools />
-      </FadeInFromLeft>
+      </FadeInFromBottom>
 
       <FadeInFromBottom>
         <DemoFormCard />

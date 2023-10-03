@@ -13,7 +13,7 @@ import "./carouselTools.css"
 
 const CarouselTools = () => {
   const data = [
-    { image: SlackImg, title: "Slacks" },
+    { image: SlackImg, title: "Slack" },
     { image: CreditsafeImg, title: "Creditsafe" },
     { image: ExperianImg, title: "Experian" },
     { image: UsioImg, title: "Usio" },
