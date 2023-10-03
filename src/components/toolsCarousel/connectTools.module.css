@@ -33,66 +33,9 @@
   text-align: center;
 }
 
-.toolsContainer {
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 1em;
-  overflow: hidden;
-}
-
-.card {
-  flex: 1 1 0px;
-  width: 0;
-  border: solid 1px var(--khaki-light);
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3em;
-  gap: 0.8em;
-}
-
-.card:hover,
-.card:hover img,
-.card:hover h4 {
-  transition: 250ms;
-  filter: brightness(90%);
-}
-
-.card img {
-  height: 40px;
-  width: auto;
-  padding-top: 0.4em;
-}
-
-.card h4 {
-  margin: 0;
-  font-family: var(--font-regular);
-  font-size: 1em;
-}
-
-#firstCard {
-  border-left: 0;
-  border-radius: 0 18px 18px 0;
-}
-
-#lastCard {
-  border-right: 0;
-  border-radius: 18px 0 0 18px;
-}
-
 @media only screen and (max-width: 991px) {
   .container {
     height: 70svh;
-  }
-  .card {
-    display: flex;
-    flex: 0;
-    height: 140px;
-    width: 140px;
   }
 }
 
@@ -102,12 +45,6 @@
   }
   .textContainer p {
     font-size: 1rem;
-  }
-  .card {
-    height: 100px;
-    width: 100px;
-    padding: 1.5em;
-    gap: 0.4em;
   }
 }
 
@@ -120,9 +57,5 @@
   }
   .textContainer p {
     font-size: 0.85rem;
-  }
-  .card {
-    padding: 1em;
-    gap: 0.2em;
   }
 }
