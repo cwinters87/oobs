@@ -8,7 +8,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,
-    description: `TASKSUITE combines 4 powerful systems into a single product, enabling lenders to streamline their operations. Request a Demo`,
+    description: `TaskSuite is a pioneering loan software firm, leveraging automation and AI, enabling lenders to streamline their operations. Request a Demo`,
     image: `./static/tasksuite.jpeg`,
     siteUrl: `https://www.tasksuite.com`,
     robots: `placeholderobot`,

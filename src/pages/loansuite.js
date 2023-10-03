@@ -58,6 +58,6 @@ const LoanSuite = () => {
   )
 }
 
-export const Head = () => <Seo title="TaskSuite - Loan Credit AI" />
+export const Head = () => <Seo title="TaskSuite - LoanSuite" />
 
 export default LoanSuite

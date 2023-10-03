@@ -22,10 +22,10 @@ const cardData = [
   },
   {
     imageUrl: backgroundImg,
-    quote: `We've been working with the TaskSuite team for over three years. They provide our business with the best tools in the industry. I am impressed with their product and their capabilities.`,
-    author: "Tom Sultenfuss",
-    position: "FOUNDER",
-    company: "CONTACTWORKS",
+    quote: `Since embarking on our journey with TaskSuite, we have access to a very knowledgeable team that understands our business proccess and needs. We are envisioning a long and fruitful relationship.`,
+    author: "Paul Bruwer",
+    position: "CFO",
+    company: "MANATI",
   },
   // Add more card data objects as needed
 ]
