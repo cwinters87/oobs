@@ -11,6 +11,7 @@ const cardData = [
     author: "Tucker S.",
     position: "COO",
     company: "BACKD",
+    companySecondHalf: "BUSINESS FUNDING",
   },
   {
     imageUrl: backgroundImg,
@@ -18,7 +19,8 @@ const cardData = [
       "TaskSuite has provided ongoing support and valuable insight as to how we can continue to utilize these tools to increase productivity and operate our business efficiently.",
     author: "Brandon Hoye",
     position: "CTO",
-    company: "TUA FINANCIAL",
+    company: "TUA",
+    companySecondHalf: "FINANCIAL",
   },
   {
     imageUrl: backgroundImg,
@@ -26,6 +28,7 @@ const cardData = [
     author: "Paul Bruwer",
     position: "CFO",
     company: "MANATI",
+    companySecondHalf: "ALTERNATE STUDENT FUNDING",
   },
   // Add more card data objects as needed
 ]

@@ -8,6 +8,7 @@ const Card = ({
   author,
   position,
   company,
+  companySecondHalf,
   prevCard,
   nextCard,
 }) => {
@@ -23,6 +24,7 @@ const Card = ({
         className={styles.imgContainer}
       >
         <p>{company}</p>
+        <p><span>{companySecondHalf}</span></p>
       </div>
       <div className={styles.cardContent}>
         <div className={styles.quoteIcon}>
@@ -39,7 +41,7 @@ const Card = ({
         </blockquote>
         <p className={styles.cardAuthor}>{author}</p>
         <div className={styles.authorJobTitle}>
-          {position}, {company}
+          {position}, {company} {companySecondHalf}
         </div>
         <div className={styles.buttonContainer}>
           <button className={styles.button} onClick={prevCard}>
