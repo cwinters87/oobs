@@ -28,7 +28,7 @@ const cardData = [
     author: "Paul Bruwer",
     position: "CFO",
     company: "MANATI",
-    companySecondHalf: "ALTERNATE STUDENT FUNDING",
+    companySecondHalf: "ALTERNATIVE STUDENT FUNDING",
   },
   // Add more card data objects as needed
 ]
