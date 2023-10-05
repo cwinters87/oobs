@@ -10,7 +10,7 @@ const ConnectTools = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h2>Connectivity Unleashed with TaskSuite</h2>
+        <h2>Powerful APIs'</h2>
         <p>Unifying your preferred tools for every solution.</p>
       </div>
       <CarouselTools />

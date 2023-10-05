@@ -51,7 +51,7 @@ const CarouselTools = () => {
           }
       });
     }
-}, []);
+  }, []);
 
 
   return (
@@ -59,7 +59,7 @@ const CarouselTools = () => {
         <ul className="card-container scroller_inner">
             {data.map((item, index) => (
                 <li key={index} className="card">
-                    <img className="card-img" src={item.image} alt={item.title} loading="lazy" />
+                    <img className="card-img" src={item.image} alt={item.title} />
                     <p className="card-title">{item.title}</p>
                 </li>
             ))}
