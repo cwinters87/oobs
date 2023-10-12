@@ -1,9 +1,6 @@
-import * as React from "react"
-import { Seo } from "../components/seo"
-import Layout from "../layout/Layout"
+import React from 'react'
 
-import ooblixLogo from '../images/home/ooblix-logo.svg'
-import ooblixLogoWhite from '../images/home/ooblix-logo-white.svg'
+import ooblixLogo from '../images/home/ooblix-logo-white.svg'
 import mediaImg from '../images/home/media.png'
 import imgOne from '../images/home/wws1.jpg'
 import imgTwo from '../images/home/wws2.jpg'
@@ -16,16 +13,17 @@ import socailReddit from '../images/home/reddit.svg'
 import socailTwitter from '../images/home/twitter.svg'
 import socailYT from '../images/home/yt.svg'
 
-const IndexPage = () => {
-  return (
-      <Layout>
+
+function HomePage() {
+    (
+<>
         <header>
           <nav className="navbar">
             <div className="container">
               <div className="navigation">
                 <a href="/" className="navbar-brand">
-                  <img id="logo" className="logo" src={ooblixLogo} alt="ooblix" />{' '}
-                  <img id="logo-white" className="logo" src={ooblixLogoWhite} alt="ooblix" />
+                  <img id="logo" className="logo" src="img/ooblix-logo.svg" alt="ooblix" />{' '}
+                  <img id="logo-white" className="logo" src={ooblixLogo} alt="ooblix" />
                 </a>
                 <div className="navbar-menu">
                   <ul className="navbar-nav">
@@ -195,10 +193,8 @@ const IndexPage = () => {
             </div>
           </div>
         </footer>
-      </Layout>
-  )
+</>
+  );
 }
 
-export const Head = () => <Seo />
-
-export default IndexPage
+export default HomePage;

@@ -7,10 +7,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Tasksuite | Loan Management, Origination, Servicing, and Credit Software`,
-    description: `TaskSuite is a pioneering loan software firm, leveraging automation and AI, enabling lenders to streamline their operations. Request a Demo`,
+    title: `ooblix | the lending software for a new generation of borrowers`,
+    description: `Lending software for a new generation of borrowers`,
     image: `./static/tasksuite.jpeg`,
-    siteUrl: `https://www.tasksuite.com`,
+    siteUrl: `https://www.ooblix.com`,
     robots: `placeholderobot`,
     noIndex: `placeholderindex`,
   },
@@ -42,6 +42,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
